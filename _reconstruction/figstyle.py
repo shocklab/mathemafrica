@@ -237,3 +237,70 @@ def paths_in(post):
         rel = m.group(1)
         out[os.path.basename(rel)] = rel
     return out
+
+
+# ---------------------------------------------------------------------------
+# Solids
+#
+# Several of the MAM1000 volume posts show solids of revolution, stacks of
+# approximating disks and cylinders. These build the meshes; the calling script
+# supplies the radius function the post actually names.
+# ---------------------------------------------------------------------------
+
+def solid3d(fig, pos=111, elev=18, azim=-58, box=(1, 1, 0.85)):
+    args = pos if isinstance(pos, tuple) else (pos,)
+    ax = fig.add_subplot(*args, projection="3d")
+    ax.view_init(elev=elev, azim=azim)
+    ax.set_box_aspect(box)
+    ax.grid(False)
+    for pane in (ax.xaxis, ax.yaxis, ax.zaxis):
+        pane.pane.set_alpha(0.0)
+        pane.pane.set_edgecolor("none")
+    return ax
+
+
+def revolve(ax, t, radius, axis="x", n=80, color=FILL, alpha=0.55,
+            edge="none", lw=0):
+    """Surface swept by rotating `radius(t)` about the named axis."""
+    th = np.linspace(0, 2 * np.pi, n)
+    T, TH = np.meshgrid(t, th)
+    Rr = radius(T)
+    if axis == "x":
+        X, Y, Z = T, Rr * np.cos(TH), Rr * np.sin(TH)
+    else:
+        X, Y, Z = Rr * np.cos(TH), Rr * np.sin(TH), T
+    ax.plot_surface(X, Y, Z, color=color, alpha=alpha, linewidth=lw,
+                    edgecolor=edge, shade=True, antialiased=True)
+    return X, Y, Z
+
+
+def disk_stack(ax, edges, radius, axis="x", n=60, color=FILL, alpha=0.5,
+               edgecolor="#5a9bd4"):
+    """Approximate a solid by cylinders spanning consecutive `edges`.
+
+    `radius` is evaluated at each cylinder's midpoint, which is how the posts
+    describe the approximation.
+    """
+    th = np.linspace(0, 2 * np.pi, n)
+    for lo, hi in zip(edges[:-1], edges[1:]):
+        rad = radius(0.5 * (lo + hi))
+        if rad <= 0:
+            continue
+        T, TH = np.meshgrid(np.array([lo, hi]), th)
+        Rr = np.full_like(T, rad)
+        if axis == "x":
+            X, Y, Z = T, Rr * np.cos(TH), Rr * np.sin(TH)
+        else:
+            X, Y, Z = Rr * np.cos(TH), Rr * np.sin(TH), T
+        ax.plot_surface(X, Y, Z, color=color, alpha=alpha, linewidth=0.3,
+                        edgecolor=edgecolor, shade=True)
+        for end in (lo, hi):
+            rr = np.linspace(0, rad, 6)
+            RR, TH2 = np.meshgrid(rr, th)
+            EE = np.full_like(RR, end)
+            if axis == "x":
+                ax.plot_surface(EE, RR * np.cos(TH2), RR * np.sin(TH2),
+                                color=color, alpha=alpha, linewidth=0, shade=True)
+            else:
+                ax.plot_surface(RR * np.cos(TH2), RR * np.sin(TH2), EE,
+                                color=color, alpha=alpha, linewidth=0, shade=True)
