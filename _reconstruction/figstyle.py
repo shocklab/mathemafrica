@@ -150,17 +150,23 @@ def mt(s):
     return _CTRL.sub(lambda m: "\\" + _ALIASES.get(m.group(1), m.group(1)), s)
 
 
-def _measure(strings, fontsize, dpi):
-    """Rendered pixel widths of a list of mathtext fragments."""
-    scratch = plt.figure(figsize=(20, 4), dpi=dpi)
+def _measure_wh(strings, fontsize, dpi):
+    """Rendered pixel (width, height) of each mathtext fragment."""
+    scratch = plt.figure(figsize=(24, 8), dpi=dpi)
     r = scratch.canvas.get_renderer()
     out = []
     for s in strings:
         t = scratch.text(0.01, 0.5, f"${s}$", fontsize=fontsize)
-        out.append(t.get_window_extent(r).width)
+        bb = t.get_window_extent(r)
+        out.append((bb.width, bb.height))
         t.remove()
     plt.close(scratch)
     return out
+
+
+def _measure(strings, fontsize, dpi):
+    """Rendered pixel widths of a list of mathtext fragments."""
+    return [w for w, _ in _measure_wh(strings, fontsize, dpi)]
 
 
 def cases(lhs, rows, dest, fontsize=17, dpi=130, gap=18, row_pt=40,
@@ -311,3 +317,86 @@ def disk_stack(ax, edges, radius, axis="x", n=60, color=FILL, alpha=0.5,
             else:
                 ax.plot_surface(RR * np.cos(TH2), RR * np.sin(TH2), EE,
                                 color=color, alpha=alpha, linewidth=0, shade=True)
+
+
+def display(expr, dest, fontsize=19, dpi=130, pad=16, mark=True):
+    """One centred mathtext expression on a canvas sized to fit it.
+
+    For the posts that show a single equation as a screenshot.
+    """
+    expr = mt(expr)
+    w = _measure([expr], fontsize, dpi)[0]
+    h = _measure(["X^{2}_{2}"], fontsize, dpi)[0]  # rough line height proxy
+    scratch = plt.figure(figsize=(20, 6), dpi=dpi)
+    t = scratch.text(0.01, 0.5, f"${expr}$", fontsize=fontsize)
+    bb = t.get_window_extent(scratch.canvas.get_renderer())
+    w, h = bb.width, bb.height
+    plt.close(scratch)
+
+    W, H = w + 2 * pad, h + 2 * pad + (14 if mark else 0)
+    fig = plt.figure(figsize=(W / dpi, H / dpi), dpi=dpi)
+    fig.text(0.5, (h / 2 + pad + (14 if mark else 0)) / H, f"${expr}$",
+             fontsize=fontsize, ha="center", va="center")
+    if mark:
+        fig.text(1 - pad / W / 2, 3 / H, NOTE, ha="right", va="bottom",
+                 fontsize=6.5, color="#9a9a9a")
+    out = os.path.join(UPLOADS, dest)
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    fig.savefig(out, dpi=dpi, facecolor="white")
+    plt.close(fig)
+    return out
+
+
+def table(headers, rows, dest, fontsize=15, dpi=130, pad=16, col_gap=26,
+          row_gap=14, mark=True, rule=True):
+    """A small mathtext table, for the posts that show one as a screenshot.
+
+    Row heights are measured, not assumed: a cell holding a fraction is much
+    taller than one holding an integer, and a fixed row pitch overlaps them.
+    """
+    headers = [mt(c) for c in headers]
+    rows = [[mt(c) for c in r] for r in rows]
+    ncol = len(headers)
+
+    dims = {}
+    for j in range(ncol):
+        col = [headers[j]] + [r[j] for r in rows]
+        for cell, wh in zip(col, _measure_wh(col, fontsize, dpi)):
+            dims[(j, cell)] = wh
+    widths = [max(dims[(j, c)][0]
+                  for c in [headers[j]] + [r[j] for r in rows])
+              for j in range(ncol)]
+    heights = [max(dims[(j, headers[j])][1] for j in range(ncol))] + \
+              [max(dims[(j, r[j])][1] for j in range(ncol)) for r in rows]
+
+    xs, x = [], pad
+    for w in widths:
+        xs.append(x)
+        x += w + col_gap
+    W = x - col_gap + 2 * pad
+    H = sum(heights) + row_gap * len(heights) + 2 * pad + (14 if mark else 0)
+
+    fig = plt.figure(figsize=(W / dpi, H / dpi), dpi=dpi)
+
+    def put(xpx, ypx, s):
+        fig.text(xpx / W, ypx / H, f"${s}$", fontsize=fontsize,
+                 ha="left", va="center")
+
+    y = H - pad
+    for i, line in enumerate([headers] + rows):
+        y -= heights[i] / 2 + row_gap / 2
+        for j, cell in enumerate(line):
+            put(xs[j], y, cell)
+        y -= heights[i] / 2 + row_gap / 2
+        if i == 0 and rule:
+            fig.add_artist(plt.Line2D([pad / W, (W - pad) / W],
+                                      [y / H, y / H], color="black", lw=1.0))
+
+    if mark:
+        fig.text(1 - pad / W / 2, 3 / H, NOTE, ha="right", va="bottom",
+                 fontsize=6.5, color="#9a9a9a")
+    out = os.path.join(UPLOADS, dest)
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    fig.savefig(out, dpi=dpi, facecolor="white")
+    plt.close(fig)
+    return out
