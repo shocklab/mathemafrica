@@ -124,10 +124,10 @@ save(fig, P["sinsquare.png"])
 fig, ax = plt.subplots(figsize=(7.2, 4.9))
 x = np.linspace(-3, 3, 700)
 ax.plot(x, p(x), color=BLUE, lw=2, zorder=3)
-for s in (lo_i, hi_i):
+for s, off in ((lo_i, (-46, 14)), (hi_i, (10, 14))):
     ax.plot([s], [0], "o", color=RED, ms=7, zorder=4)
     ax.annotate(f"${s:.2f}$", (s, 0), textcoords="offset points",
-                xytext=(4, -20), fontsize=10, color=RED)
+                xytext=off, fontsize=10, color=RED)
 axes(ax, (-3, 3), (-6.5, 3.2))
 ax.set_title(r"$p(x)=\sin x-x^2+2$", fontsize=12)
 save(fig, P["px.png"])

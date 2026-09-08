@@ -40,24 +40,60 @@ plt.rcParams.update({
 })
 
 
-def axes(ax, xr=None, yr=None, grid=True, equal=False,
-         xlabel="x", ylabel="y", spines="box"):
-    """Common axis furniture. spines='cross' puts the axes through the origin."""
+def axes(ax, xr=None, yr=None, grid=None, equal=False,
+         xlabel="x", ylabel="y", spines=None):
+    """Common axis furniture, in the house style of the surviving originals.
+
+    Three figures recovered from the archive (approxfunc.png, plboth.png and
+    the Plot3D in p3dlineb.png) are plainly Mathematica: axes crossing at the
+    origin, no frame, no grid, tick labels sitting on the axes themselves.
+    Reconstructions sit beside those on the same pages, so that is the default
+    here rather than matplotlib's boxed-and-gridded look.
+
+    Where the origin falls outside the plotted range, crossed axes would be
+    off-screen, so the fall-back is a plain frame. Pass spines="box" or
+    grid=True to force the older look.
+    """
     if xr: ax.set_xlim(*xr)
     if yr: ax.set_ylim(*yr)
     if equal: ax.set_aspect("equal")
-    if grid: ax.grid(True, color="#dddddd", lw=0.6)
-    if spines == "cross":
-        for s in ("top", "right"): ax.spines[s].set_visible(False)
-        ax.spines["left"].set_position("zero")
-        ax.spines["bottom"].set_position("zero")
-        ax.spines["left"].set_color("#666666")
-        ax.spines["bottom"].set_color("#666666")
+
+    x0, x1 = ax.get_xlim()
+    y0, y1 = ax.get_ylim()
+    inside = (x0 <= 0 <= x1) and (y0 <= 0 <= y1)
+    if spines is None:
+        spines = "cross" if inside else "box"
+    if grid is None:
+        grid = spines == "box"
+
+    # matplotlib re-enables the grid if line properties arrive alongside False
+    if grid:
+        ax.grid(True, color="#dddddd", lw=0.6)
     else:
-        ax.axhline(0, color="#999999", lw=0.8, zorder=1)
-        ax.axvline(0, color="#999999", lw=0.8, zorder=1)
-    if xlabel: ax.set_xlabel(xlabel)
-    if ylabel: ax.set_ylabel(ylabel)
+        ax.grid(False)
+    if spines == "cross":
+        for s in ("top", "right"):
+            ax.spines[s].set_visible(False)
+        for s in ("left", "bottom"):
+            ax.spines[s].set_position("zero")
+            ax.spines[s].set_color("#555555")
+            ax.spines[s].set_linewidth(0.9)
+        ax.tick_params(direction="out", length=3, width=0.8,
+                       colors="#333333", labelsize=8)
+        # Mathematica omits the tick at the origin, where the labels collide
+        ax.xaxis.set_major_formatter(
+            plt.FuncFormatter(lambda v, _: "" if abs(v) < 1e-12 else f"{v:g}"))
+        ax.yaxis.set_major_formatter(
+            plt.FuncFormatter(lambda v, _: "" if abs(v) < 1e-12 else f"{v:g}"))
+        # Mathematica's Plot carries no axis labels by default and neither do
+        # the surviving originals, and placed at the axis ends they collide
+        # with the title, so crossed axes go unlabelled.
+    else:
+        for s in ("top", "right"):
+            ax.spines[s].set_visible(False)
+        ax.tick_params(labelsize=8)
+        if xlabel: ax.set_xlabel(xlabel, fontsize=10)
+        if ylabel: ax.set_ylabel(ylabel, fontsize=10)
     return ax
 
 
