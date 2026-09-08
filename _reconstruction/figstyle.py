@@ -221,3 +221,19 @@ def cases(lhs, rows, dest, fontsize=17, dpi=130, gap=18, row_pt=40,
     fig.savefig(out, dpi=dpi, facecolor="white")
     plt.close(fig)
     return out
+
+
+def paths_in(post):
+    """Map each image basename in an archived post to its uploads-relative path.
+
+    Guessing the YYYY/MM directory from a filename is a good way to write a
+    figure nobody will ever see; read it out of the HTML instead.
+
+        P = paths_in("p=12378.html");  save(fig, P["step0.png"])
+    """
+    h = open(os.path.join(REPO, post), encoding="utf-8", errors="replace").read()
+    out = {}
+    for m in re.finditer(r'wp-content/uploads/([^"?\s]+)', h):
+        rel = m.group(1)
+        out[os.path.basename(rel)] = rel
+    return out
