@@ -98,7 +98,9 @@ def save(fig, dest, dpi=110, mark=True):
     '2015/09/pl1.png'.
     """
     if mark:
-        fig.text(0.995, 0.006, NOTE, ha="right", va="bottom",
+        # below the axes rather than inside them: with bbox_inches="tight" the
+        # crop grows to include it, so it never lands on an axis label
+        fig.text(1.0, -0.11, NOTE, ha="right", va="top",
                  fontsize=6.5, color="#9a9a9a")
     out = os.path.join(UPLOADS, dest)
     os.makedirs(os.path.dirname(out), exist_ok=True)
