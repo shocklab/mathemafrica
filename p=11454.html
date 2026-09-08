@@ -6,7 +6,7 @@
 
 	<title>Mathemafrica -   UCT MAM1000 lecture notes part 31 &#8211; differential equations part ii &#8211; the logistic equation</title>
 
-<link rel="stylesheet" href="/mathemafrica/wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector.css?v=3.1.9.7" type="text/css" media="all" />
+<link rel="stylesheet" href="wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector.css?v=3.1.9.7" type="text/css" media="all" />
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	
@@ -14,17 +14,17 @@
 	
 	
 	
-	<link rel="alternate" type="application/rss+xml" title="Mathemafrica &raquo; Feed" href="/mathemafrica/feed=rss2.xml" />
-<link rel="alternate" type="application/rss+xml" title="Mathemafrica &raquo; Comments Feed" href="/mathemafrica/feed=comments-rss2.xml" />
-<link rel="alternate" type="application/rss+xml" title="Mathemafrica &raquo; UCT MAM1000 lecture notes part 31 &#8211; differential equations part ii &#8211; the logistic equation Comments Feed" href="/mathemafrica/feed=rss2&#038;p=11454.xml" />
+	<link rel="alternate" type="application/rss+xml" title="Mathemafrica &raquo; Feed" href="_xml/feed=rss2.xml" />
+<link rel="alternate" type="application/rss+xml" title="Mathemafrica &raquo; Comments Feed" href="_xml/feed=comments-rss2.xml" />
+<link rel="alternate" type="application/rss+xml" title="Mathemafrica &raquo; UCT MAM1000 lecture notes part 31 &#8211; differential equations part ii &#8211; the logistic equation Comments Feed" href="_xml/feed=rss2&#038;p=11454.xml" />
 
 		<meta property="og:title" content="UCT MAM1000 lecture notes part 31 - differential equations part ii - the logistic equation"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="/mathemafrica/p=11454.html"/>
+		<meta property="og:url" content="p=11454.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="Let&#39;s try and make the previous example at least a little more realistic. Let&#39;s suppose that the environment only supports a fixed number of rabbits, let&#39;s call that fixed number $latex M$. This is the maximum number of rabbits that we can stably have. It turns out that there is a very very important equation"/>
 
-					<meta property="og:image" content="/mathemafrica/wp-content/uploads/2015/09/log.png?resize=913%2C571"/>
+					<meta property="og:image" content="wp-content/uploads/2015/09/log.png?resize=913%2C571"/>
 				<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.4"}};
 			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -43,33 +43,33 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='layerslider-css'  href='/mathemafrica/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='layerslider-css'  href='wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.5.0' type='text/css' media='all' />
 <link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='rs-plugin-settings-css'  href='/mathemafrica/wp-content/plugins/revslider/rs-plugin/css/settings.css?ver=4.6.93' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='wp-content/plugins/revslider/rs-plugin/css/settings.css?ver=4.6.93' type='text/css' media='all' />
 <style id='rs-plugin-settings-inline-css' type='text/css'>
 .avada_huge_white_text{position:absolute; color:#ffffff; font-size:130px; line-height:45px; font-family:museoslab500regular;   text-shadow:0px 2px 5px rgba(0,0,0,1)}.avada_huge_black_text{position:absolute; color:#000000; font-size:130px; line-height:45px; font-family:museoslab500regular}.avada_big_black_text{position:absolute; color:#333333; font-size:42px; line-height:45px; font-family:museoslab500regular}.avada_big_white_text{position:absolute; color:#fff; font-size:42px; line-height:45px; font-family:museoslab500regular}.avada_big_black_text_center{position:absolute; color:#333333; font-size:38px; line-height:45px; font-family:museoslab500regular;   text-align:center}.avada_med_green_text{position:absolute; color:#A0CE4E; font-size:24px; line-height:24px; font-family:PTSansRegular,Arial,Helvetica,sans-serif}.avada_small_gray_text{position:absolute; color:#747474; font-size:13px; line-height:20px; font-family:PTSansRegular,Arial,Helvetica,sans-serif}.avada_small_white_text{position:absolute; color:#fff; font-size:13px; line-height:20px; font-family:PTSansRegular,Arial,Helvetica,sans-serif;  text-shadow:0px 2px 5px rgba(0,0,0,0.5); font-weight:700}.avada_block_black{position:absolute; color:#A0CE4E; text-shadow:none; font-size:22px; line-height:34px; padding:0px 10px; padding-top:1px;margin:0px; border-width:0px; border-style:none; background-color:#000;font-family:PTSansRegular,Arial,Helvetica,sans-serif}.avada_block_green{position:absolute; color:#000; text-shadow:none; font-size:22px; line-height:34px; padding:0px 10px; padding-top:1px;margin:0px; border-width:0px; border-style:none; background-color:#A0CE4E;font-family:PTSansRegular,Arial,Helvetica,sans-serif}.avada_block_white{position:absolute; color:#fff; text-shadow:none; font-size:22px; line-height:34px; padding:0px 10px; padding-top:1px;margin:0px; border-width:0px; border-style:none; background-color:#000;font-family:PTSansRegular,Arial,Helvetica,sans-serif}.avada_block_white_trans{position:absolute; color:#fff; text-shadow:none; font-size:22px; line-height:34px; padding:0px 10px; padding-top:1px;margin:0px; border-width:0px; border-style:none; background-color:rgba(0,0,0,0.6);  font-family:PTSansRegular,Arial,Helvetica,sans-serif}.tp-caption a{color:#ff7302;text-shadow:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out}.tp-caption a:hover{color:#ffa902}
 </style>
 <link rel='stylesheet' id='avada-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700%2C700italic%7CRoboto+Condensed%3A400%2C400italic%2C700%2C700italic%7CPT+Sans%3A400%2C400italic%2C700%2C700italic&#038;subset=latin&#038;ver=4.2.4' type='text/css' media='all' />
-<link rel='stylesheet' id='avada-stylesheet-css'  href='/mathemafrica/wp-content/themes/Avada/style.css?ver=3.8.6' type='text/css' media='all' />
-<link rel='stylesheet' id='fontawesome-css'  href='/mathemafrica/wp-content/themes/Avada/assets/fonts/fontawesome/font-awesome.css?ver=3.8.6' type='text/css' media='all' />
+<link rel='stylesheet' id='avada-stylesheet-css'  href='wp-content/themes/Avada/style.css?ver=3.8.6' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='wp-content/themes/Avada/assets/fonts/fontawesome/font-awesome.css?ver=3.8.6' type='text/css' media='all' />
 
 
-<link rel='stylesheet' id='avada-iLightbox-css'  href='/mathemafrica/wp-content/themes/Avada/ilightbox.css?ver=3.8.6' type='text/css' media='all' />
-<link rel='stylesheet' id='avada-animations-css'  href='/mathemafrica/wp-content/themes/Avada/animations.css?ver=3.8.6' type='text/css' media='all' />
-<link rel='stylesheet' id='genericons-css'  href='/mathemafrica/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
-<link rel='stylesheet' id='jetpack_css-css'  href='/mathemafrica/wp-content/plugins/jetpack/css/jetpack.css?ver=3.6.1' type='text/css' media='all' />
-<link rel='stylesheet' id='tswStyleSheets-css'  href='/mathemafrica/wp-content/plugins/traffic-stats-widget/tsw-styles.css?ver=4.2.4' type='text/css' media='all' />
-<script type='text/javascript' src='/mathemafrica/wp-content/plugins/traffic-stats-widget/wp-tsw-ajax.js?ver=4.2.4'></script>
-<script type='text/javascript' src='/mathemafrica/wp-includes/js/jquery/jquery.js?ver=1.11.2'></script>
-<script type='text/javascript' src='/mathemafrica/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
-<script type='text/javascript' src='/mathemafrica/wp-content/plugins/jetpack/modules/related-posts/related-posts.js?ver=20150408'></script>
-<script type='text/javascript' src='/mathemafrica/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.8'></script>
-<script type='text/javascript' src='/mathemafrica/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.5.0'></script>
-<script type='text/javascript' src='/mathemafrica/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.5.0'></script>
-<script type='text/javascript' src='/mathemafrica/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?ver=4.6.93'></script>
-<script type='text/javascript' src='/mathemafrica/wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.6.93'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/mathemafrica/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/mathemafrica/wp-includes/wlwmanifest.xml" /> 
+<link rel='stylesheet' id='avada-iLightbox-css'  href='wp-content/themes/Avada/ilightbox.css?ver=3.8.6' type='text/css' media='all' />
+<link rel='stylesheet' id='avada-animations-css'  href='wp-content/themes/Avada/animations.css?ver=3.8.6' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='wp-content/plugins/jetpack/css/jetpack.css?ver=3.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tswStyleSheets-css'  href='wp-content/plugins/traffic-stats-widget/tsw-styles.css?ver=4.2.4' type='text/css' media='all' />
+<script type='text/javascript' src='wp-content/plugins/traffic-stats-widget/wp-tsw-ajax.js?ver=4.2.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js?ver=1.11.2'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='wp-content/plugins/jetpack/modules/related-posts/related-posts.js?ver=20150408'></script>
+<script type='text/javascript' src='wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.8'></script>
+<script type='text/javascript' src='wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.5.0'></script>
+<script type='text/javascript' src='wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.5.0'></script>
+<script type='text/javascript' src='wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.tools.min.js?ver=4.6.93'></script>
+<script type='text/javascript' src='wp-content/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.6.93'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.2.4" />
 <link rel='shortlink' href='http://wp.me/p6ysha-2YK' />
 		<script type="text/javascript">
@@ -96,7 +96,7 @@ img.emoji {
 					// SYNC AJAX REQUEST
 					jQuery.ajax({
 						type:"post",
-						url:"/mathemafrica/wp-admin/admin-ajax.php",
+						url:"wp-admin/admin-ajax.php",
 						dataType: 'json',
 						data:data,
 						async:false,
@@ -186,7 +186,7 @@ padding: 10px;
 	});
 	</script>
 
-	<script src="/mathemafrica/wp-content/themes/Avada/assets/js/excanvas.js"></script>
+	<script src="wp-content/themes/Avada/assets/js/excanvas.js"></script>
 
 	<![endif]-->
 
@@ -235,23 +235,23 @@ padding: 10px;
 		<div class="fusion-row">
 					
 		<div class="fusion-logo" data-margin-top="15px" data-margin-bottom="15px" data-margin-left="0px" data-margin-right="0px">
-										<a href="/mathemafrica/">
-										<img src="/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg" width="300px" height="45px" alt="Mathemafrica" class="fusion-logo-1x fusion-standard-logo" />
-										<img src="/mathemafrica/wp-content/uploads/2015/06/mathem-x2.png" width="300px" height="45px" alt="Mathemafrica" style="max-height: 45pxpx; height: auto;" class="fusion-standard-logo fusion-logo-2x" />
+										<a href="./">
+										<img src="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg" width="300px" height="45px" alt="Mathemafrica" class="fusion-logo-1x fusion-standard-logo" />
+										<img src="wp-content/uploads/2015/06/mathem-x2.png" width="300px" height="45px" alt="Mathemafrica" style="max-height: 45pxpx; height: auto;" class="fusion-standard-logo fusion-logo-2x" />
 									
 				<!-- mobile logo -->
 				
 				<!-- sticky header logo -->
 							</a>
 					</div>
-	<div class="fusion-main-menu"><ul id="menu-main-menu" class="fusion-menu"><li  id="menu-item-10636"  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10636"  ><a  href="/mathemafrica/"><span class="menu-text">Home</span></a></li>
-<li  id="menu-item-10638"  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10638"  ><a  href="/mathemafrica/page_id=69.html"><span class="menu-text">About</span></a></li>
-<li  id="menu-item-10639"  class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-10639"  ><a  href="/mathemafrica/page_id=9813.html"><span class="menu-text">Blog</span></a></li>
-<li  id="menu-item-10637"  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10637"  ><a  href="/mathemafrica/page_id=86.html"><span class="menu-text">Contact Us</span></a></li>
-</ul></div><div class="fusion-main-menu fusion-sticky-menu"><ul id="menu-main-menu-1" class="fusion-menu"><li   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10636"  ><a  href="/mathemafrica/"><span class="menu-text">Home</span></a></li>
-<li   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10638"  ><a  href="/mathemafrica/page_id=69.html"><span class="menu-text">About</span></a></li>
-<li   class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-10639"  ><a  href="/mathemafrica/page_id=9813.html"><span class="menu-text">Blog</span></a></li>
-<li   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10637"  ><a  href="/mathemafrica/page_id=86.html"><span class="menu-text">Contact Us</span></a></li>
+	<div class="fusion-main-menu"><ul id="menu-main-menu" class="fusion-menu"><li  id="menu-item-10636"  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10636"  ><a  href="./"><span class="menu-text">Home</span></a></li>
+<li  id="menu-item-10638"  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10638"  ><a  href="page_id=69.html"><span class="menu-text">About</span></a></li>
+<li  id="menu-item-10639"  class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-10639"  ><a  href="page_id=9813.html"><span class="menu-text">Blog</span></a></li>
+<li  id="menu-item-10637"  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10637"  ><a  href="page_id=86.html"><span class="menu-text">Contact Us</span></a></li>
+</ul></div><div class="fusion-main-menu fusion-sticky-menu"><ul id="menu-main-menu-1" class="fusion-menu"><li   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10636"  ><a  href="./"><span class="menu-text">Home</span></a></li>
+<li   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10638"  ><a  href="page_id=69.html"><span class="menu-text">About</span></a></li>
+<li   class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-10639"  ><a  href="page_id=9813.html"><span class="menu-text">Blog</span></a></li>
+<li   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10637"  ><a  href="page_id=86.html"><span class="menu-text">Contact Us</span></a></li>
 </ul></div><div class="fusion-mobile-nav-holder"></div><div class="fusion-mobile-nav-holder fusion-mobile-sticky-nav-holder"></div>		</div>
 	</div>
 					</div>
@@ -267,12 +267,12 @@ padding: 10px;
 			<div class="fusion-row" style="">
 		<div id="content" class="portfolio-one-sidebar" style="float:left;">
 				<div class="single-navigation clearfix">
-			<a href="/mathemafrica/p=11450.html" rel="prev">Previous</a>			<a href="/mathemafrica/p=11463.html" rel="next">Next</a>		</div>
+			<a href="p=11450.html" rel="prev">Previous</a>			<a href="p=11463.html" rel="next">Next</a>		</div>
 						<div id="post-11454" class="post post-11454 type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
 						<div class="fusion-flexslider flexslider fusion-flexslider-loading post-slideshow fusion-post-slideshow">
 				<ul class="slides">
 																														<li>
-												<a href="/mathemafrica/wp-content/uploads/2015/09/log.png?resize=913%2C571" data-rel="iLightbox[gallery11454]" title="Solutions to the logistic equation with a stable population of 10,000 rabbits and a growth rate of 13 rabbits per rabbit per year." data-title="log" data-caption="Solutions to the logistic equation with a stable population of 10,000 rabbits and a growth rate of 13 rabbits per rabbit per year."><img src="/mathemafrica/wp-content/uploads/2015/09/log.png?resize=913%2C571" alt="" /></a>
+												<a href="wp-content/uploads/2015/09/log.png?resize=913%2C571" data-rel="iLightbox[gallery11454]" title="Solutions to the logistic equation with a stable population of 10,000 rabbits and a growth rate of 13 rabbits per rabbit per year." data-title="log" data-caption="Solutions to the logistic equation with a stable population of 10,000 rabbits and a growth rate of 13 rabbits per rabbit per year."><img src="wp-content/uploads/2015/09/log.png?resize=913%2C571" alt="" /></a>
 											</li>
 														</ul>
 			</div>
@@ -323,7 +323,7 @@ padding: 10px;
 <p>&nbsp;</p>
 <p>In fact we could have written our original solution like this, and you would see that this, too is a solution to the differential equation, just written in a slightly different way &#8211; basically we&#8217;ve redefined our integration constants to get the new form.</p>
 <p>Check that at <img src="//s0.wp.com/latex.php?latex=t%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t=0" title="t=0" class="latex" />, <img src="//s0.wp.com/latex.php?latex=P%28t%29%3DP_0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P(t)=P_0" title="P(t)=P_0" class="latex" />. Now we have everything we need. I can give you a value for <img src="//s0.wp.com/latex.php?latex=k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k" title="k" class="latex" /> (population growth for a small population) and <img src="//s0.wp.com/latex.php?latex=M&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="M" title="M" class="latex" />, a maximum sustainable population, and a <img src="//s0.wp.com/latex.php?latex=P_0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P_0" title="P_0" class="latex" /> the initial population, and you can work out how this population will vary over time. Let&#8217;s go back to our rabbits and say that <img src="//s0.wp.com/latex.php?latex=k%3D13&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k=13" title="k=13" class="latex" /> and say that in a given environment 10,000 rabbits can be sustained. Let&#8217;s look at what happens over time as we start with different numbers of rabbits. The graph in figure \ref{log} shows what happens when you start with 2, 100, 1000, 5000, 200000 and 500000 rabbits.</p>
-<p><a href="/mathemafrica/wp-content/uploads/2015/09/log.png"><img class="aligncenter size-full wp-image-11458" src="/mathemafrica/wp-content/uploads/2015/09/log.png?resize=669%2C418" alt="log" data-recalc-dims="1" /></a></p>
+<p><a href="wp-content/uploads/2015/09/log.png"><img class="aligncenter size-full wp-image-11458" src="wp-content/uploads/2015/09/log.png?resize=669%2C418" alt="log" data-recalc-dims="1" /></a></p>
 <p>You can see something remarkable happening here (not that remarkable because it is exactly what we had predicted, but a bit remarkable because we&#8217;re about to remark on it!). Independent of the initial population (except if <img src="//s0.wp.com/latex.php?latex=P_0%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P_0=0" title="P_0=0" class="latex" />, if that&#8217;s the case then you will always have a population of zero &#8211; spontaneous rabbit production is not built into our equations), over time the population will always tend to the value that the environment can sustain (10,000). This isn&#8217;t all that surprising because we built the logistic equation to have precisely this behaviour, but it&#8217;s nice to see that indeed it gives the expected result when we plot the solutions.</p>
 <p>Incidentally, the solution to the logistic equation is called the sigmoidal function and shows up all over the place.</p>
 <p>What you see in the graph above is very important to understand. What we are saying is that for all of these function <img src="//s0.wp.com/latex.php?latex=P%28t%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P(t)" title="P(t)" class="latex" /> they satisfy the differential equation:</p>
@@ -350,15 +350,15 @@ padding: 10px;
 <li>That the integration constants we found before are really related to the freedom to set the initial conditions in a system described by a differential equation</li>
 </ul>
 <p>&nbsp;</p>
-<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-11454" class="share-twitter sd-button share-icon no-text" href="/mathemafrica/p=11454&amp;share=twitter.html" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-11454" class="share-facebook sd-button share-icon no-text" href="/mathemafrica/p=11454&amp;share=facebook.html" target="_blank" title="Share on Facebook"><span></span><span class="sharing-screen-reader-text">Share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-11454" class="share-google-plus-1 sd-button share-icon no-text" href="/mathemafrica/p=11454&amp;share=google-plus-1.html" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-11454" class="share-twitter sd-button share-icon no-text" href="p=11454&amp;share=twitter.html" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-11454" class="share-facebook sd-button share-icon no-text" href="p=11454&amp;share=facebook.html" target="_blank" title="Share on Facebook"><span></span><span class="sharing-screen-reader-text">Share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-11454" class="share-google-plus-1 sd-button share-icon no-text" href="p=11454&amp;share=google-plus-1.html" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>
 <div id='jp-relatedposts' class='jp-relatedposts' >
 	
 </div>							</div>
-						<div class="fusion-meta-info"><div class="fusion-meta-info-wrapper">By <span class="vcard"><span class="fn"><a href="/mathemafrica/author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span><span class="updated" style="display:none;">2015-09-01T11:00:48+00:00</span><span>September 1st, 2015</span><span class="fusion-inline-sep">|</span><a href="/mathemafrica/cat=1.html" rel="category">Uncategorized</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="/mathemafrica/p=11454.html#respond">0 Comments</a></span></div></div>							<div class="fusion-sharing-box fusion-single-sharing-box share-box">
+						<div class="fusion-meta-info"><div class="fusion-meta-info-wrapper">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span><span class="updated" style="display:none;">2015-09-01T11:00:48+00:00</span><span>September 1st, 2015</span><span class="fusion-inline-sep">|</span><a href="cat=1.html" rel="category">Uncategorized</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="p=11454.html#respond">0 Comments</a></span></div></div>							<div class="fusion-sharing-box fusion-single-sharing-box share-box">
 					<h4>Share This Story, Choose Your Platform!</h4>
-					<div class="fusion-social-networks"><a class="fusion-social-network-icon fusion-tooltip fusion-facebook fusion-icon-facebook" style="color:#bebdbd;" target="_blank" href="http://www.facebook.com/sharer.php?m2w&amp;s=100&amp;p&#091;url&#093;=/mathemafrica/p=11454&amp;p&.html#091;images&#093;&#091;0&#093;=/mathemafrica/wp-content/uploads/2015/09/log.png&amp;p&#091;title&#093;=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation" data-placement="top" data-title="Facebook" data-toggle="tooltip" title="Facebook"></a><a class="fusion-social-network-icon fusion-tooltip fusion-twitter fusion-icon-twitter" style="color:#bebdbd;" target="_blank" href="https://twitter.com/share?text=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation&amp;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11454" data-placement="top" data-title="Twitter" data-toggle="tooltip" title="Twitter"></a><a class="fusion-social-network-icon fusion-tooltip fusion-pinterest fusion-icon-pinterest" style="color:#bebdbd;" target="_blank" href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11454&amp;description=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation&amp;media=http%3A%2F%2Fi2.wp.com%2Fwww.mathemafrica.org%2Fwp-content%2Fuploads%2F2015%2F09%2Flog.png%3Fresize%3D913%252C571" data-placement="top" data-title="Pinterest" data-toggle="tooltip" title="Pinterest"></a><a class="fusion-social-network-icon fusion-tooltip fusion-tumblr fusion-icon-tumblr" style="color:#bebdbd;" target="_blank" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11454&amp;name=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation&amp;description=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation" data-placement="top" data-title="Tumblr" data-toggle="tooltip" title="Tumblr"></a><a class="fusion-social-network-icon fusion-tooltip fusion-googleplus fusion-icon-googleplus" style="color:#bebdbd;" target="_blank" href="https://plus.google.com/share?url=/mathemafrica/p=11454&quot; onclick=&quot;javascript:window.open(this.href,&.html#039;&#039;, &#039;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&#039;);return false;" data-placement="top" data-title="Google+" data-toggle="tooltip" title="Google+"></a><a class="fusion-social-network-icon fusion-tooltip fusion-linkedin fusion-icon-linkedin" style="color:#bebdbd;" target="_blank" href="http://linkedin.com/shareArticle?mini=true&amp;url=/mathemafrica/p=11454&amp;title=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation.html" data-placement="top" data-title="Linkedin" data-toggle="tooltip" title="Linkedin"></a><a class="fusion-social-network-icon fusion-tooltip fusion-reddit fusion-icon-reddit" style="color:#bebdbd;" target="_blank" href="http://reddit.com/submit?url=/mathemafrica/p=11454&amp;title=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation.html" data-placement="top" data-title="Reddit" data-toggle="tooltip" title="Reddit"></a><a class="fusion-social-network-icon fusion-tooltip fusion-vk fusion-icon-vk fusion-last-social-icon" style="color:#bebdbd;" target="_blank" href="http://vkontakte.ru/share.php?url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11454&amp;title=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation&amp;description=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation" data-placement="top" data-title="Vk" data-toggle="tooltip" title="Vk"></a><div class="fusion-clearfix"></div></div>				</div>
+					<div class="fusion-social-networks"><a class="fusion-social-network-icon fusion-tooltip fusion-facebook fusion-icon-facebook" style="color:#bebdbd;" target="_blank" href="http://www.facebook.com/sharer.php?m2w&amp;s=100&amp;p&#091;url&#093;=p=11454&amp;p&.html#091;images&#093;&#091;0&#093;=wp-content/uploads/2015/09/log.png&amp;p&#091;title&#093;=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation" data-placement="top" data-title="Facebook" data-toggle="tooltip" title="Facebook"></a><a class="fusion-social-network-icon fusion-tooltip fusion-twitter fusion-icon-twitter" style="color:#bebdbd;" target="_blank" href="https://twitter.com/share?text=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation&amp;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11454" data-placement="top" data-title="Twitter" data-toggle="tooltip" title="Twitter"></a><a class="fusion-social-network-icon fusion-tooltip fusion-pinterest fusion-icon-pinterest" style="color:#bebdbd;" target="_blank" href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11454&amp;description=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation&amp;media=http%3A%2F%2Fi2.wp.com%2Fwww.mathemafrica.org%2Fwp-content%2Fuploads%2F2015%2F09%2Flog.png%3Fresize%3D913%252C571" data-placement="top" data-title="Pinterest" data-toggle="tooltip" title="Pinterest"></a><a class="fusion-social-network-icon fusion-tooltip fusion-tumblr fusion-icon-tumblr" style="color:#bebdbd;" target="_blank" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11454&amp;name=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation&amp;description=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation" data-placement="top" data-title="Tumblr" data-toggle="tooltip" title="Tumblr"></a><a class="fusion-social-network-icon fusion-tooltip fusion-googleplus fusion-icon-googleplus" style="color:#bebdbd;" target="_blank" href="https://plus.google.com/share?url=p=11454&quot; onclick=&quot;javascript:window.open(this.href,&.html#039;&#039;, &#039;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&#039;);return false;" data-placement="top" data-title="Google+" data-toggle="tooltip" title="Google+"></a><a class="fusion-social-network-icon fusion-tooltip fusion-linkedin fusion-icon-linkedin" style="color:#bebdbd;" target="_blank" href="http://linkedin.com/shareArticle?mini=true&amp;url=p=11454&amp;title=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation.html" data-placement="top" data-title="Linkedin" data-toggle="tooltip" title="Linkedin"></a><a class="fusion-social-network-icon fusion-tooltip fusion-reddit fusion-icon-reddit" style="color:#bebdbd;" target="_blank" href="http://reddit.com/submit?url=p=11454&amp;title=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation.html" data-placement="top" data-title="Reddit" data-toggle="tooltip" title="Reddit"></a><a class="fusion-social-network-icon fusion-tooltip fusion-vk fusion-icon-vk fusion-last-social-icon" style="color:#bebdbd;" target="_blank" href="http://vkontakte.ru/share.php?url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11454&amp;title=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation&amp;description=UCT%20MAM1000%20lecture%20notes%20part%2031%20%26%238211%3B%20differential%20equations%20part%20ii%20%26%238211%3B%20the%20logistic%20equation" data-placement="top" data-title="Vk" data-toggle="tooltip" title="Vk"></a><div class="fusion-clearfix"></div></div>				</div>
 									<div class="about-author">
-				<div class="fusion-title title fusion-title-size-three"><h3 class="title-heading-left">About the Author: <a href="/mathemafrica/author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></h3><div class="title-sep-container"><div class="title-sep sep-double"></div></div></div>				<div class="about-author-container">
+				<div class="fusion-title title fusion-title-size-three"><h3 class="title-heading-left">About the Author: <a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></h3><div class="title-sep-container"><div class="title-sep sep-double"></div></div></div>				<div class="about-author-container">
 					<div class="avatar">
 						<img alt='' src='http://1.gravatar.com/avatar/de97c6b56e49531f2d6228ced78c057e?s=72&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/de97c6b56e49531f2d6228ced78c057e?s=144&amp;d=mm&amp;r=g 2x' class='avatar avatar-72 photo' height='72' width='72' />					</div>
 					<div class="description">
@@ -366,65 +366,65 @@ padding: 10px;
 				</div>
 			</div>
 			
-			<div class="related-posts single-related-posts"><div class="fusion-title title fusion-title-size-three"><h3 class="title-heading-left">Related Posts</h3><div class="title-sep-container"><div class="title-sep sep-double"></div></div></div><div class="fusion-carousel" data-imagesize="fixed" data-metacontent="no" data-autoplay="no" data-touchscroll="no" data-columns="5" data-itemmargin="44" data-itemwidth="180" data-touchscroll="yes" data-scrollitems=""><div class="fusion-carousel-positioner"><ul class="fusion-carousel-holder"><li class="fusion-carousel-item"><div class="fusion-carousel-item-wrapper"><div class="fusion-image-wrapper fusion-image-size-fixed" aria-haspopup="true"><img src="/mathemafrica/wp-content/uploads/2015/09/exptrig-500x383.png" width="500" height="383" alt="UCT MAM1000 lecture notes part 35 &#8211; differential equations part vi &#8211; second order differential equations" />		<div class="fusion-rollover">
+			<div class="related-posts single-related-posts"><div class="fusion-title title fusion-title-size-three"><h3 class="title-heading-left">Related Posts</h3><div class="title-sep-container"><div class="title-sep sep-double"></div></div></div><div class="fusion-carousel" data-imagesize="fixed" data-metacontent="no" data-autoplay="no" data-touchscroll="no" data-columns="5" data-itemmargin="44" data-itemwidth="180" data-touchscroll="yes" data-scrollitems=""><div class="fusion-carousel-positioner"><ul class="fusion-carousel-holder"><li class="fusion-carousel-item"><div class="fusion-carousel-item-wrapper"><div class="fusion-image-wrapper fusion-image-size-fixed" aria-haspopup="true"><img src="wp-content/uploads/2015/09/exptrig-500x383.png" width="500" height="383" alt="UCT MAM1000 lecture notes part 35 &#8211; differential equations part vi &#8211; second order differential equations" />		<div class="fusion-rollover">
 			<div class="fusion-rollover-content">
 
 				
-											<a class="fusion-rollover-link" href="/mathemafrica/p=11488.html">Permalink</a>
+											<a class="fusion-rollover-link" href="p=11488.html">Permalink</a>
 					
 											
 													<div class="fusion-rollover-sep"></div>
 						
-																				<a class="fusion-rollover-gallery" href="/mathemafrica/wp-content/uploads/2015/09/exptrig.png?resize=913%2C531" data-id="11488" data-rel="iLightbox[gallery]" data-title="exptrig" data-caption="Solutions to the equation $latex y''+y'+y=0$ with different boundary conditions. All of the solutions are trigonometric functions multiplied by decaying exponentials but the initial position and initial gradient affect the overall solution">Gallery</a>															
-									<h4 class="fusion-rollover-title"><a href="/mathemafrica/p=11488.html">UCT MAM1000 lecture notes part 35 &#8211; differential equations part vi &#8211; second order differential equations</a></h4>
+																				<a class="fusion-rollover-gallery" href="wp-content/uploads/2015/09/exptrig.png?resize=913%2C531" data-id="11488" data-rel="iLightbox[gallery]" data-title="exptrig" data-caption="Solutions to the equation $latex y''+y'+y=0$ with different boundary conditions. All of the solutions are trigonometric functions multiplied by decaying exponentials but the initial position and initial gradient affect the overall solution">Gallery</a>															
+									<h4 class="fusion-rollover-title"><a href="p=11488.html">UCT MAM1000 lecture notes part 35 &#8211; differential equations part vi &#8211; second order differential equations</a></h4>
 				
 				
 				
 							</div>
 		</div>
-		</div></div></li><li class="fusion-carousel-item"><div class="fusion-carousel-item-wrapper"><div class="fusion-image-wrapper fusion-image-size-fixed" aria-haspopup="true"><img src="/mathemafrica/wp-content/uploads/2015/09/steak_100km-500x383.png" width="500" height="383" alt="UCT MAM1000 lecture notes part 34 &#8211; differential equations part v &#8211; first order differential equations" />		<div class="fusion-rollover">
+		</div></div></li><li class="fusion-carousel-item"><div class="fusion-carousel-item-wrapper"><div class="fusion-image-wrapper fusion-image-size-fixed" aria-haspopup="true"><img src="wp-content/uploads/2015/09/steak_100km-500x383.png" width="500" height="383" alt="UCT MAM1000 lecture notes part 34 &#8211; differential equations part v &#8211; first order differential equations" />		<div class="fusion-rollover">
 			<div class="fusion-rollover-content">
 
 				
-											<a class="fusion-rollover-link" href="/mathemafrica/p=11480.html">Permalink</a>
+											<a class="fusion-rollover-link" href="p=11480.html">Permalink</a>
 					
 											
 													<div class="fusion-rollover-sep"></div>
 						
-																				<a class="fusion-rollover-gallery" href="/mathemafrica/wp-content/uploads/2015/09/steak_100km.png?resize=457%2C290" data-id="11480" data-rel="iLightbox[gallery]" data-title="steak_100km" data-caption="https://what-if.xkcd.com/28/">Gallery</a>															
-									<h4 class="fusion-rollover-title"><a href="/mathemafrica/p=11480.html">UCT MAM1000 lecture notes part 34 &#8211; differential equations part v &#8211; first order differential equations</a></h4>
+																				<a class="fusion-rollover-gallery" href="wp-content/uploads/2015/09/steak_100km.png?resize=457%2C290" data-id="11480" data-rel="iLightbox[gallery]" data-title="steak_100km" data-caption="https://what-if.xkcd.com/28/">Gallery</a>															
+									<h4 class="fusion-rollover-title"><a href="p=11480.html">UCT MAM1000 lecture notes part 34 &#8211; differential equations part v &#8211; first order differential equations</a></h4>
 				
 				
 				
 							</div>
 		</div>
-		</div></div></li><li class="fusion-carousel-item"><div class="fusion-carousel-item-wrapper"><div class="fusion-image-wrapper fusion-image-size-fixed" aria-haspopup="true"><img src="/mathemafrica/wp-content/uploads/2015/09/allsol-500x383.png" width="500" height="383" alt="UCT MAM1000 lecture notes part 33- differential equations part iv &#8211; separable differential equations" />		<div class="fusion-rollover">
+		</div></div></li><li class="fusion-carousel-item"><div class="fusion-carousel-item-wrapper"><div class="fusion-image-wrapper fusion-image-size-fixed" aria-haspopup="true"><img src="wp-content/uploads/2015/09/allsol-500x383.png" width="500" height="383" alt="UCT MAM1000 lecture notes part 33- differential equations part iv &#8211; separable differential equations" />		<div class="fusion-rollover">
 			<div class="fusion-rollover-content">
 
 				
-											<a class="fusion-rollover-link" href="/mathemafrica/p=11471.html">Permalink</a>
+											<a class="fusion-rollover-link" href="p=11471.html">Permalink</a>
 					
 											
 													<div class="fusion-rollover-sep"></div>
 						
-																				<a class="fusion-rollover-gallery" href="/mathemafrica/wp-content/uploads/2015/09/allsol.png?resize=913%2C578" data-id="11471" data-rel="iLightbox[gallery]" data-title="allsol" data-caption="Solutions to the differential equation $latex \frac{dy}{dt}=\frac{4\sin 2t}{y}$ with different initial conditions (dashed lines) and with the particular initial condition $latex y(0)=1$ in the thick blue line.">Gallery</a>															
-									<h4 class="fusion-rollover-title"><a href="/mathemafrica/p=11471.html">UCT MAM1000 lecture notes part 33- differential equations part iv &#8211; separable differential equations</a></h4>
+																				<a class="fusion-rollover-gallery" href="wp-content/uploads/2015/09/allsol.png?resize=913%2C578" data-id="11471" data-rel="iLightbox[gallery]" data-title="allsol" data-caption="Solutions to the differential equation $latex \frac{dy}{dt}=\frac{4\sin 2t}{y}$ with different initial conditions (dashed lines) and with the particular initial condition $latex y(0)=1$ in the thick blue line.">Gallery</a>															
+									<h4 class="fusion-rollover-title"><a href="p=11471.html">UCT MAM1000 lecture notes part 33- differential equations part iv &#8211; separable differential equations</a></h4>
 				
 				
 				
 							</div>
 		</div>
-		</div></div></li><li class="fusion-carousel-item"><div class="fusion-carousel-item-wrapper"><div class="fusion-image-wrapper fusion-image-size-fixed" aria-haspopup="true"><img src="/mathemafrica/wp-content/uploads/2015/09/rabbit-overpopulation-500x383.jpg" width="500" height="383" alt="UCT MAM100 lecture notes part 30 &#8211; differential equations and rabbits moving at the speed of light" />		<div class="fusion-rollover">
+		</div></div></li><li class="fusion-carousel-item"><div class="fusion-carousel-item-wrapper"><div class="fusion-image-wrapper fusion-image-size-fixed" aria-haspopup="true"><img src="wp-content/uploads/2015/09/rabbit-overpopulation-500x383.jpg" width="500" height="383" alt="UCT MAM100 lecture notes part 30 &#8211; differential equations and rabbits moving at the speed of light" />		<div class="fusion-rollover">
 			<div class="fusion-rollover-content">
 
 				
-											<a class="fusion-rollover-link" href="/mathemafrica/p=11450.html">Permalink</a>
+											<a class="fusion-rollover-link" href="p=11450.html">Permalink</a>
 					
 											
 													<div class="fusion-rollover-sep"></div>
 						
-																				<a class="fusion-rollover-gallery" href="/mathemafrica/wp-content/uploads/2015/09/rabbit-overpopulation.jpg?resize=640%2C424" data-id="11450" data-rel="iLightbox[gallery]" data-title="rabbit-overpopulation" data-caption="https://afktravel.com/wp-content/uploads/2014/10/rabbit-overpopulation.jpg">Gallery</a>															
-									<h4 class="fusion-rollover-title"><a href="/mathemafrica/p=11450.html">UCT MAM100 lecture notes part 30 &#8211; differential equations and rabbits moving at the speed of light</a></h4>
+																				<a class="fusion-rollover-gallery" href="wp-content/uploads/2015/09/rabbit-overpopulation.jpg?resize=640%2C424" data-id="11450" data-rel="iLightbox[gallery]" data-title="rabbit-overpopulation" data-caption="https://afktravel.com/wp-content/uploads/2014/10/rabbit-overpopulation.jpg">Gallery</a>															
+									<h4 class="fusion-rollover-title"><a href="p=11450.html">UCT MAM100 lecture notes part 30 &#8211; differential equations and rabbits moving at the speed of light</a></h4>
 				
 				
 				
@@ -435,13 +435,13 @@ padding: 10px;
 			<div class="fusion-rollover-content">
 
 				
-											<a class="fusion-rollover-link" href="/mathemafrica/p=11441.html">Permalink</a>
+											<a class="fusion-rollover-link" href="p=11441.html">Permalink</a>
 					
 											
 													<div class="fusion-rollover-sep"></div>
 						
 															
-									<h4 class="fusion-rollover-title"><a href="/mathemafrica/p=11441.html">UCT MAM1000 lecture notes part x &#8211; summary</a></h4>
+									<h4 class="fusion-rollover-title"><a href="p=11441.html">UCT MAM1000 lecture notes part x &#8211; summary</a></h4>
 				
 				
 				
@@ -457,7 +457,7 @@ padding: 10px;
 
 							<div id="respond" class="comment-respond">
 				<h3 id="reply-title" class="comment-reply-title">Leave A Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/?p=11454#respond" style="display:none;">Cancel reply</a></small></h3>
-									<form action="/mathemafrica/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+									<form action="wp-comments-post.php" method="post" id="commentform" class="comment-form">
 																										<div id="comment-input"><input type="text" name="author" id="author" value="" placeholder="Name (required)" size="22" tabindex="1" aria-required="true" class="input-name" />
 <input type="text" name="email" id="email" value="" placeholder="Email (required)" size="22" tabindex="2" aria-required="true" class="input-email"  />
 <input type="text" name="url" id="url" value="" placeholder="Website" size="22" tabindex="3" class="input-website" /></div>
@@ -482,58 +482,58 @@ padding: 10px;
 							<div class="fusion-row">
 								<div class="fusion-columns fusion-columns-3 fusion-widget-area">
 
-									<div class="fusion-column col-lg-4 col-md-4 col-sm-4"><div id="tag_cloud-3" class="fusion-footer-widget-column widget widget_tag_cloud"><h4 class="widget-title">Tags</h4><div class="tagcloud"><a href='/mathemafrica/tag=advertising.html' class='tag-link-50' title='1 topic' style='font-size: 8pt;'>advertising</a>
-<a href='/mathemafrica/tag=aims.html' class='tag-link-30' title='2 topics' style='font-size: 10.1913043478pt;'>AIMS</a>
-<a href='/mathemafrica/tag=cape-town.html' class='tag-link-38' title='1 topic' style='font-size: 8pt;'>Cape Town</a>
-<a href='/mathemafrica/tag=coding.html' class='tag-link-46' title='2 topics' style='font-size: 10.1913043478pt;'>coding</a>
-<a href='/mathemafrica/tag=complex-numbers.html' class='tag-link-61' title='12 topics' style='font-size: 17.8608695652pt;'>complex numbers</a>
-<a href='/mathemafrica/tag=confererence.html' class='tag-link-37' title='1 topic' style='font-size: 8pt;'>confererence</a>
-<a href='/mathemafrica/tag=cooking.html' class='tag-link-44' title='1 topic' style='font-size: 8pt;'>cooking</a>
-<a href='/mathemafrica/tag=differential-equations.html' class='tag-link-66' title='5 topics' style='font-size: 13.8434782609pt;'>differential equations</a>
-<a href='/mathemafrica/tag=direction-fields.html' class='tag-link-68' title='1 topic' style='font-size: 8pt;'>direction fields</a>
-<a href='/mathemafrica/tag=economics.html' class='tag-link-41' title='1 topic' style='font-size: 8pt;'>Economics</a>
-<a href='/mathemafrica/tag=english.html' class='tag-link-19' title='3 topics' style='font-size: 11.652173913pt;'>English</a>
-<a href='/mathemafrica/tag=eulers-method.html' class='tag-link-67' title='1 topic' style='font-size: 8pt;'>euler's method</a>
-<a href='/mathemafrica/tag=first-order.html' class='tag-link-70' title='1 topic' style='font-size: 8pt;'>first order</a>
-<a href='/mathemafrica/tag=graph-theory.html' class='tag-link-43' title='2 topics' style='font-size: 10.1913043478pt;'>graph theory</a>
-<a href='/mathemafrica/tag=imaginary.html' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>Imaginary</a>
-<a href='/mathemafrica/tag=imaginary-numbers.html' class='tag-link-62' title='1 topic' style='font-size: 8pt;'>imaginary numbers</a>
-<a href='/mathemafrica/tag=lecture-notes.html' class='tag-link-54' title='26 topics' style='font-size: 21.7565217391pt;'>Lecture notes</a>
-<a href='/mathemafrica/tag=level-intermediate.html' class='tag-link-28' title='1 topic' style='font-size: 8pt;'>Level: Intermediate</a>
-<a href='/mathemafrica/tag=level-simple.html' class='tag-link-27' title='2 topics' style='font-size: 10.1913043478pt;'>Level: Simple</a>
-<a href='/mathemafrica/tag=maclaurin-polynomial.html' class='tag-link-58' title='1 topic' style='font-size: 8pt;'>Maclaurin polynomial</a>
-<a href='/mathemafrica/tag=mam1000.html' class='tag-link-53' title='27 topics' style='font-size: 22pt;'>MAM1000</a>
-<a href='/mathemafrica/tag=mam-1000-lecture-notes.html' class='tag-link-64' title='1 topic' style='font-size: 8pt;'>MAM 1000 lecture notes</a>
-<a href='/mathemafrica/tag=mam1000-lecture-notes.html' class='tag-link-63' title='2 topics' style='font-size: 10.1913043478pt;'>MAM1000 lecture notes</a>
-<a href='/mathemafrica/tag=mam1000-uct-lecture-notes.html' class='tag-link-55' title='1 topic' style='font-size: 8pt;'>MAM1000 UCT lecture notes</a>
-<a href='/mathemafrica/tag=mandelbrot-set.html' class='tag-link-65' title='1 topic' style='font-size: 8pt;'>mandelbrot set</a>
-<a href='/mathemafrica/tag=mathematics-societies.html' class='tag-link-52' title='1 topic' style='font-size: 8pt;'>Mathematics societies</a>
-<a href='/mathemafrica/tag=number-theory.html' class='tag-link-45' title='1 topic' style='font-size: 8pt;'>number theory</a>
-<a href='/mathemafrica/tag=programming.html' class='tag-link-48' title='1 topic' style='font-size: 8pt;'>programming</a>
-<a href='/mathemafrica/tag=second-order.html' class='tag-link-71' title='1 topic' style='font-size: 8pt;'>second order</a>
-<a href='/mathemafrica/tag=separable-equations.html' class='tag-link-69' title='1 topic' style='font-size: 8pt;'>separable equations</a>
-<a href='/mathemafrica/tag=south-africa.html' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>South Africa</a>
-<a href='/mathemafrica/tag=taylor-polynomial.html' class='tag-link-57' title='1 topic' style='font-size: 8pt;'>taylor polynomial</a>
-<a href='/mathemafrica/tag=taylor-polynomials.html' class='tag-link-59' title='2 topics' style='font-size: 10.1913043478pt;'>taylor polynomials</a>
-<a href='/mathemafrica/tag=taylor-series.html' class='tag-link-60' title='1 topic' style='font-size: 8pt;'>Taylor series</a>
-<a href='/mathemafrica/tag=uct.html' class='tag-link-56' title='21 topics' style='font-size: 20.6608695652pt;'>UCT</a>
-<a href='/mathemafrica/tag=wikipedia.html' class='tag-link-51' title='1 topic' style='font-size: 8pt;'>Wikipedia</a></div>
+									<div class="fusion-column col-lg-4 col-md-4 col-sm-4"><div id="tag_cloud-3" class="fusion-footer-widget-column widget widget_tag_cloud"><h4 class="widget-title">Tags</h4><div class="tagcloud"><a href='tag=advertising.html' class='tag-link-50' title='1 topic' style='font-size: 8pt;'>advertising</a>
+<a href='tag=aims.html' class='tag-link-30' title='2 topics' style='font-size: 10.1913043478pt;'>AIMS</a>
+<a href='tag=cape-town.html' class='tag-link-38' title='1 topic' style='font-size: 8pt;'>Cape Town</a>
+<a href='tag=coding.html' class='tag-link-46' title='2 topics' style='font-size: 10.1913043478pt;'>coding</a>
+<a href='tag=complex-numbers.html' class='tag-link-61' title='12 topics' style='font-size: 17.8608695652pt;'>complex numbers</a>
+<a href='tag=confererence.html' class='tag-link-37' title='1 topic' style='font-size: 8pt;'>confererence</a>
+<a href='tag=cooking.html' class='tag-link-44' title='1 topic' style='font-size: 8pt;'>cooking</a>
+<a href='tag=differential-equations.html' class='tag-link-66' title='5 topics' style='font-size: 13.8434782609pt;'>differential equations</a>
+<a href='tag=direction-fields.html' class='tag-link-68' title='1 topic' style='font-size: 8pt;'>direction fields</a>
+<a href='tag=economics.html' class='tag-link-41' title='1 topic' style='font-size: 8pt;'>Economics</a>
+<a href='tag=english.html' class='tag-link-19' title='3 topics' style='font-size: 11.652173913pt;'>English</a>
+<a href='tag=eulers-method.html' class='tag-link-67' title='1 topic' style='font-size: 8pt;'>euler's method</a>
+<a href='tag=first-order.html' class='tag-link-70' title='1 topic' style='font-size: 8pt;'>first order</a>
+<a href='tag=graph-theory.html' class='tag-link-43' title='2 topics' style='font-size: 10.1913043478pt;'>graph theory</a>
+<a href='tag=imaginary.html' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>Imaginary</a>
+<a href='tag=imaginary-numbers.html' class='tag-link-62' title='1 topic' style='font-size: 8pt;'>imaginary numbers</a>
+<a href='tag=lecture-notes.html' class='tag-link-54' title='26 topics' style='font-size: 21.7565217391pt;'>Lecture notes</a>
+<a href='tag=level-intermediate.html' class='tag-link-28' title='1 topic' style='font-size: 8pt;'>Level: Intermediate</a>
+<a href='tag=level-simple.html' class='tag-link-27' title='2 topics' style='font-size: 10.1913043478pt;'>Level: Simple</a>
+<a href='tag=maclaurin-polynomial.html' class='tag-link-58' title='1 topic' style='font-size: 8pt;'>Maclaurin polynomial</a>
+<a href='tag=mam1000.html' class='tag-link-53' title='27 topics' style='font-size: 22pt;'>MAM1000</a>
+<a href='tag=mam-1000-lecture-notes.html' class='tag-link-64' title='1 topic' style='font-size: 8pt;'>MAM 1000 lecture notes</a>
+<a href='tag=mam1000-lecture-notes.html' class='tag-link-63' title='2 topics' style='font-size: 10.1913043478pt;'>MAM1000 lecture notes</a>
+<a href='tag=mam1000-uct-lecture-notes.html' class='tag-link-55' title='1 topic' style='font-size: 8pt;'>MAM1000 UCT lecture notes</a>
+<a href='tag=mandelbrot-set.html' class='tag-link-65' title='1 topic' style='font-size: 8pt;'>mandelbrot set</a>
+<a href='tag=mathematics-societies.html' class='tag-link-52' title='1 topic' style='font-size: 8pt;'>Mathematics societies</a>
+<a href='tag=number-theory.html' class='tag-link-45' title='1 topic' style='font-size: 8pt;'>number theory</a>
+<a href='tag=programming.html' class='tag-link-48' title='1 topic' style='font-size: 8pt;'>programming</a>
+<a href='tag=second-order.html' class='tag-link-71' title='1 topic' style='font-size: 8pt;'>second order</a>
+<a href='tag=separable-equations.html' class='tag-link-69' title='1 topic' style='font-size: 8pt;'>separable equations</a>
+<a href='tag=south-africa.html' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>South Africa</a>
+<a href='tag=taylor-polynomial.html' class='tag-link-57' title='1 topic' style='font-size: 8pt;'>taylor polynomial</a>
+<a href='tag=taylor-polynomials.html' class='tag-link-59' title='2 topics' style='font-size: 10.1913043478pt;'>taylor polynomials</a>
+<a href='tag=taylor-series.html' class='tag-link-60' title='1 topic' style='font-size: 8pt;'>Taylor series</a>
+<a href='tag=uct.html' class='tag-link-56' title='21 topics' style='font-size: 20.6608695652pt;'>UCT</a>
+<a href='tag=wikipedia.html' class='tag-link-51' title='1 topic' style='font-size: 8pt;'>Wikipedia</a></div>
 <div style="clear:both;"></div></div></div><div class="fusion-column col-lg-4 col-md-4 col-sm-4"><div id="archives-4" class="fusion-footer-widget-column widget widget_archive"><h4 class="widget-title">Archives</h4>		<ul>
-	<li><a href='/mathemafrica/m=201509.html'>September 2015 (6)</a></li>
-	<li><a href='/mathemafrica/m=201508.html'>August 2015 (46)</a></li>
-	<li><a href='/mathemafrica/m=201507.html'>July 2015 (17)</a></li>
-	<li><a href='/mathemafrica/m=201506.html'>June 2015 (10)</a></li>
-	<li><a href='/mathemafrica/m=201505.html'>May 2015 (4)</a></li>
-	<li><a href='/mathemafrica/m=201504.html'>April 2015 (3)</a></li>
-	<li><a href='/mathemafrica/m=201503.html'>March 2015 (5)</a></li>
-	<li><a href='/mathemafrica/m=201502.html'>February 2015 (2)</a></li>
-	<li><a href='/mathemafrica/m=201412.html'>December 2014 (3)</a></li>
-	<li><a href='/mathemafrica/m=201411.html'>November 2014 (4)</a></li>
+	<li><a href='m=201509.html'>September 2015 (6)</a></li>
+	<li><a href='m=201508.html'>August 2015 (46)</a></li>
+	<li><a href='m=201507.html'>July 2015 (17)</a></li>
+	<li><a href='m=201506.html'>June 2015 (10)</a></li>
+	<li><a href='m=201505.html'>May 2015 (4)</a></li>
+	<li><a href='m=201504.html'>April 2015 (3)</a></li>
+	<li><a href='m=201503.html'>March 2015 (5)</a></li>
+	<li><a href='m=201502.html'>February 2015 (2)</a></li>
+	<li><a href='m=201412.html'>December 2014 (3)</a></li>
+	<li><a href='m=201411.html'>November 2014 (4)</a></li>
 		</ul>
 <div style="clear:both;"></div></div></div><div class="fusion-column col-lg-4 col-md-4 col-sm-4"><div id="traffic-stats" class="fusion-footer-widget-column widget widget_traffic_stats"><h4 class="widget-title">Blog Traffic</h4>
 <strong> <p id="tsw_stats_title">Pages</p></strong>
 
-<p id="tswmenu"><a href="javascript:tsw_show('pages','/mathemafrica/wp-content/plugins/traffic-stats-widget/TSW-loading.gif', 'http://localhost')" target="_self">Pages</a>|<a href="javascript:tsw_show('hits','/mathemafrica/wp-content/plugins/traffic-stats-widget/TSW-loading.gif', 'http://localhost')" target="_self" >Hits </a>|<a href="javascript:tsw_show('unique','/mathemafrica/wp-content/plugins/traffic-stats-widget/TSW-loading.gif', 'http://localhost')" target="_self" >Unique</a></p>
+<p id="tswmenu"><a href="javascript:tsw_show('pages','wp-content/plugins/traffic-stats-widget/TSW-loading.gif', 'http://localhost')" target="_self">Pages</a>|<a href="javascript:tsw_show('hits','wp-content/plugins/traffic-stats-widget/TSW-loading.gif', 'http://localhost')" target="_self" >Hits </a>|<a href="javascript:tsw_show('unique','wp-content/plugins/traffic-stats-widget/TSW-loading.gif', 'http://localhost')" target="_self" >Unique</a></p>
 
   
   <ul>
@@ -542,7 +542,7 @@ padding: 10px;
   <li>Last 30 days: <span id='tsw_lms'>16,419</span></li>
   <li>Online now: 1</li>
   </ul>
-<div align="center" style="display:none;"><small><a href="http://garcinia-cambogia.fr/" target="_blank">garcinia cambogia effets secondaires</a></small></div> 
+ 
 
 <div style="clear:both;"></div></div></div>
 									<div class="fusion-clearfix"></div>
@@ -614,13 +614,13 @@ padding: 10px;
 			});
 		});
 		</script>
-		<script type='text/javascript' src='/mathemafrica/wp-content/plugins/akismet/_inc/form.js?ver=3.1.3'></script>
+		<script type='text/javascript' src='wp-content/plugins/akismet/_inc/form.js?ver=3.1.3'></script>
 
 							<div id="lang_sel_footer">
 									<ul>
-									    <li><a href="/mathemafrica/p=11454.html" class="lang_sel_sel"><span  class="icl_lang_sel_current">English</span></a></li>
+									    <li><a href="p=11454.html" class="lang_sel_sel"><span  class="icl_lang_sel_current">English</span></a></li>
 									</ul>
-							</div><script type='text/javascript' src='/mathemafrica/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+							</div><script type='text/javascript' src='wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
 <script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201536'></script>
 <script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2015Sepaa'></script>
 <script type='text/javascript'>
@@ -628,26 +628,26 @@ padding: 10px;
 var WPGroHo = {"my_hash":""};
 /* ]]> */
 </script>
-<script type='text/javascript' src='/mathemafrica/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.2.4'></script>
-<script type='text/javascript' src='/mathemafrica/wp-includes/js/comment-reply.min.js?ver=4.2.4'></script>
+<script type='text/javascript' src='wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.2.4'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js?ver=4.2.4'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var js_local_vars = {"admin_ajax":"\/mathemafrica\/wp-admin\/admin-ajax.php","admin_ajax_nonce":"a20eae7a3f","protocol":"","theme_url":"\/mathemafrica\/wp-content\/themes\/Avada","dropdown_goto":"Go to...","mobile_nav_cart":"Shopping Cart","page_smoothHeight":"false","flex_smoothHeight":"false","language_flag":"en","infinite_blog_finished_msg":"<em>All posts displayed.<\/em>","infinite_finished_msg":"<em>All items displayed.<\/em>","infinite_blog_text":"<em>Loading the next set of posts...<\/em>","portfolio_loading_text":"<em>Loading Portfolio Items...<\/em>","faqs_loading_text":"<em>Loading FAQ Items...<\/em>","order_actions":"Details","avada_rev_styles":"1","avada_styles_dropdowns":"0","blog_grid_column_spacing":"40","blog_pagination_type":"Pagination","body_font_size":"13","carousel_speed":"2500","custom_icon_image_retina":"","disable_mobile_animate_css":"1","portfolio_pagination_type":"Pagination","header_transparency":"0","header_padding_bottom":"0px","header_padding_top":"0px","header_position":"Top","header_sticky":"1","header_sticky_tablet":"1","header_sticky_mobile":"0","header_sticky_type2_layout":"menu_only","ipad_potrait":"1","is_responsive":"1","isotope_type":"masonry","layout_mode":"wide","lightbox_animation_speed":"Fast","lightbox_arrows":"1","lightbox_autoplay":"0","lightbox_behavior":"all","lightbox_desc":"1","lightbox_deeplinking":"1","lightbox_gallery":"1","lightbox_opacity":"0.8","lightbox_path":"vertical","lightbox_post_images":"0","lightbox_skin":"metro-white","lightbox_slideshow_speed":"5000","lightbox_social":"1","lightbox_title":"1","lightbox_video_height":"720","lightbox_video_width":"1280","logo_alignment":"Left","logo_margin_bottom":"15px","logo_margin_top":"15px","megamenu_max_width":"1100px","mobile_menu_design":"classic","nav_height":"70","nav_highlight_border":"3","page_title_fading":"0","pagination_video_slide":"0","related_posts_speed":"2500","retina_icon_height":"","retina_icon_width":"","submenu_slideout":"0","side_header_break_point":"1023","sidenav_behavior":"Hover","site_width":"1100px","slider_position":"Below","slideshow_autoplay":"1","slideshow_speed":"7000","smooth_scrolling":"1","status_lightbox":"0","status_totop_mobile":"0","status_vimeo":"0","status_yt":"0","testimonials_speed":"4000","tfes_animation":"sides","tfes_autoplay":"1","tfes_interval":"3000","tfes_speed":"800","tfes_width":"150","title_style_type":"double","typography_responsive":"0","typography_sensitivity":"0.6","typography_factor":"1.5","woocommerce_shop_page_columns":"4","sticky_header_shrinkage":"1","side_header_width":"0"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='/mathemafrica/wp-content/themes/Avada/assets/js/main.min.js?ver=3.8.6' async ></script> 
+<script type='text/javascript' src='wp-content/themes/Avada/assets/js/main.min.js?ver=3.8.6' async ></script> 
 <script type='text/javascript'>
 /* <![CDATA[ */
 var icl_vars = {"current_language":"en","icl_home":"http:\/\/localhost"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='/mathemafrica/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js?ver=4.2.4'></script>
+<script type='text/javascript' src='wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js?ver=4.2.4'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var sharing_js_options = {"lang":"en","counts":"1"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='/mathemafrica/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js?ver=3.6.1'></script>
+<script type='text/javascript' src='wp-content/plugins/jetpack/modules/sharedaddy/sharing.js?ver=3.6.1'></script>
 <script type='text/javascript'>
 	_stq = window._stq || [];
 	_stq.push([ 'view', {v:'ext',j:'1:3.6.1',blog:'96869864',post:'11454',tz:'0',srv:'www.mathemafrica.org'} ]);

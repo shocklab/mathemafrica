@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found &#8211; Mathemafrica</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+<style>
+	body { margin: 0; background: #fff; color: #333;
+	       font: 16px/1.6 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+	.wrap { max-width: 620px; margin: 0 auto; padding: 60px 24px 80px; }
+	img.logo { max-width: 300px; height: auto; display: block; margin-bottom: 36px; }
+	h1 { font-size: 26px; font-weight: 600; margin: 0 0 18px; color: #222; }
+	p { margin: 0 0 16px; }
+	a { color: #e0703c; }
+	ul { padding-left: 20px; }
+	li { margin-bottom: 6px; }
+	.note { margin-top: 34px; padding-top: 20px; border-top: 1px solid #e6e6e6;
+	        font-size: 14px; color: #777; }
+</style>
+<script>
+/* Some archived filenames carry extra query parameters (p=123&replytocom=45.html).
+   If the exact file is missing, fall back to the plain post before giving up. */
+(function () {
+	var path = decodeURIComponent(location.pathname);
+	var m = path.match(/\/((?:p|page_id|cat|tag|m|author)=[^&\/]+)&[^\/]*\.html$/);
+	if (m && !/[?&]nofallback/.test(location.search)) {
+		location.replace(m[1] + ".html?nofallback=1");
+	}
+})();
+</script>
+</head>
+<body>
+<div class="wrap">
+	<a href="./"><img class="logo" src="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg" alt="Mathemafrica"></a>
+	<h1>That page isn&rsquo;t here</h1>
+	<p>Mathemafrica&rsquo;s original server was lost. What you are reading is a
+	static reconstruction rebuilt from the Internet Archive, and the capture is
+	not complete &mdash; some posts, tag pages and images were never crawled.</p>
+	<p>Try instead:</p>
+	<ul>
+		<li><a href="./">The front page</a></li>
+		<li><a href="page_id=9813.html">The blog index</a></li>
+		<li><a href="page_id=69.html">About Mathemafrica</a></li>
+	</ul>
+	<p class="note">If you know the original address of the page you wanted, it may
+	still be readable at
+	<a href="https://web.archive.org/web/*/mathemafrica.org/*">web.archive.org</a>.</p>
+</div>
+</body>
+</html>
