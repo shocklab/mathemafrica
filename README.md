@@ -19,7 +19,7 @@ The original site was WordPress with query permalinks, so pages were addressed a
 
 | | |
 |---|---|
-| post pages | 522 (33 more are linked but were never crawled) |
+| posts | 426, plus 96 files that are query-string variants of the same posts (a further 33 posts are linked from the archives but were never crawled) |
 | static pages | 4 (about, blog index, contact, home) |
 | monthly archives | 99 |
 | tag / category / author pages | 81 / 42 / 40 |
@@ -28,11 +28,11 @@ The original site was WordPress with query permalinks, so pages were addressed a
 
 ## Known gaps
 
-- **558 images were never captured.** 275 of the 522 post pages have at least
+- **558 images were never captured.** 275 of the 522 post files have at least
   one broken image. The files are only referenced, not present. Most should be
   recoverable from the Wayback Machine directly.
 - Equations are rendered by WordPress's hosted LaTeX service
-  (`s0.wp.com/latex.php`), which still works. Roughly 8,000 equations depend on
+  (`s0.wp.com/latex.php`), which still works. 8,660 equations depend on
   it. If it ever goes away the maths will vanish, so converting to MathJax is
   worth doing eventually.
 - Comment forms, search and the login box post to WordPress endpoints that no
