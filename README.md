@@ -33,9 +33,11 @@ The original site was WordPress with query permalinks, so pages were addressed a
   Machine restored the 127 that had been archived; the rest have no capture
   anywhere, under the site's own host or under the Jetpack CDN it served
   images through, so they are not recoverable from the archive.
-- The recovered photographs are camera originals, several megabytes each,
-  which the pages display at a few hundred pixels wide. Some posts are
-  therefore heavy to load.
+- The recovered photographs arrived as camera originals of 5184x3456, several
+  megabytes each, which the pages display a few hundred pixels wide. The 70
+  JPEGs over 1.5 MB were resized to a 1600 px longest side at quality 85,
+  taking 260 MB down to 14 MB. Plots, screenshots and the animated GIFs were
+  left untouched, and the originals remain in the git history.
 - Equations are rendered by WordPress's hosted LaTeX service
   (`s0.wp.com/latex.php`), which still works. 8,660 equations depend on
   it. If it ever goes away the maths will vanish, so converting to MathJax is
