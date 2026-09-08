@@ -28,9 +28,14 @@ The original site was WordPress with query permalinks, so pages were addressed a
 
 ## Known gaps
 
-- **558 images were never captured.** 275 of the 522 post files have at least
-  one broken image. The files are only referenced, not present. Most should be
-  recoverable from the Wayback Machine directly.
+- **431 images were never captured and are gone.** 206 of the 522 post files
+  still have at least one broken image. A recovery pass against the Wayback
+  Machine restored the 127 that had been archived; the rest have no capture
+  anywhere, under the site's own host or under the Jetpack CDN it served
+  images through, so they are not recoverable from the archive.
+- The recovered photographs are camera originals, several megabytes each,
+  which the pages display at a few hundred pixels wide. Some posts are
+  therefore heavy to load.
 - Equations are rendered by WordPress's hosted LaTeX service
   (`s0.wp.com/latex.php`), which still works. 8,660 equations depend on
   it. If it ever goes away the maths will vanish, so converting to MathJax is
