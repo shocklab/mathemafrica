@@ -110,7 +110,12 @@ def save(fig, dest, dpi=110, mark=True):
 
 def check(label, got, want, tol=1e-9):
     """Assert a claim the post itself makes. Prints so the run is auditable."""
-    ok = (got == want) if want in (np.inf, -np.inf) else abs(got - want) <= tol
+    if isinstance(want, (bool, np.bool_)) or isinstance(got, (bool, np.bool_)):
+        ok = bool(got) == bool(want)
+    elif want in (np.inf, -np.inf):
+        ok = got == want
+    else:
+        ok = abs(got - want) <= tol
     print(f"    {'ok  ' if ok else 'FAIL'} {label}: got {got}, post says {want}")
     if not ok:
         raise AssertionError(f"{label}: {got} != {want}")
