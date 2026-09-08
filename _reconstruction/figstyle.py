@@ -400,3 +400,56 @@ def table(headers, rows, dest, fontsize=15, dpi=130, pad=16, col_gap=26,
     fig.savefig(out, dpi=dpi, facecolor="white")
     plt.close(fig)
     return out
+
+
+# ---------------------------------------------------------------------------
+# Mathematica-style plane plots
+#
+# p3dlineb.png survives on p=11646 and is plainly a Mathematica Plot3D: default
+# surface colours, a dark mesh over each surface, a thin bounding box with
+# ticks. Its lost siblings are drawn to match it rather than to this project's
+# usual matplotlib look, since a reader sees them side by side.
+# ---------------------------------------------------------------------------
+
+MMA = ["#5E81B5", "#E19C24", "#8FB031", "#EB6235", "#8778B3"]
+
+
+def mma_axes(fig, pos=111, elev=16, azim=-64):
+    ax = fig.add_subplot(*(pos if isinstance(pos, tuple) else (pos,)),
+                         projection="3d")
+    ax.view_init(elev=elev, azim=azim)
+    ax.grid(False)
+    for a in (ax.xaxis, ax.yaxis, ax.zaxis):
+        a.pane.set_facecolor("white")
+        a.pane.set_alpha(1.0)
+        a.pane.set_edgecolor("#b0b0b0")
+        a.line.set_color("#909090")
+    ax.tick_params(labelsize=8, colors="#333333")
+    ax.set_xlabel("x", fontsize=11)
+    ax.set_ylabel("y", fontsize=11)
+    ax.set_zlabel("z", fontsize=11)
+    return ax
+
+
+def plane(ax, coeffs, xr, yr, zr, color, n=14, alpha=0.92, mesh="#3a3a3a"):
+    """Draw the plane a*x + b*y + c*z = d inside the given box.
+
+    Solves for whichever variable has the largest coefficient, so vertical
+    planes such as y = 1 come out as well as graphs of z.
+    """
+    a, b, c, d = coeffs
+    j = int(np.argmax(np.abs([a, b, c])))
+    if j == 2:
+        U, V = np.meshgrid(np.linspace(*xr, n), np.linspace(*yr, n))
+        X, Y, Z = U, V, (d - a * U - b * V) / c
+    elif j == 1:
+        U, V = np.meshgrid(np.linspace(*xr, n), np.linspace(*zr, n))
+        X, Y, Z = U, (d - a * U - c * V) / b, V
+    else:
+        U, V = np.meshgrid(np.linspace(*yr, n), np.linspace(*zr, n))
+        X, Y, Z = (d - b * U - c * V) / a, U, V
+    Z = np.where((Z >= zr[0]) & (Z <= zr[1]), Z, np.nan)
+    X = np.where((X >= xr[0]) & (X <= xr[1]), X, np.nan)
+    Y = np.where((Y >= yr[0]) & (Y <= yr[1]), Y, np.nan)
+    ax.plot_surface(X, Y, Z, color=color, alpha=alpha, linewidth=0.4,
+                    edgecolor=mesh, shade=False, antialiased=True)
