@@ -188,6 +188,8 @@ _ALIASES = {
     "ge": "geq", "le": "leq", "ne": "neq",
     "implies": "Rightarrow", "text": "mathrm", "to": "rightarrow",
     "textrm": "mathrm", "rm": "mathrm",
+    # mathtext has no \bmod or \pmod; \mathrm{mod} renders the same
+    "bmod": "mathrm{mod}", "dfrac": "frac", "tfrac": "frac",
 }
 _CTRL = re.compile(r"\\([A-Za-z]+)")
 
