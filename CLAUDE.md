@@ -128,31 +128,44 @@ two-panel layout of one figure was identified before drawing it.
 Leave a gap rather than invent a figure. A wrong figure in a teaching post is
 worse than a missing one.
 
-### Pilot
+### Progress
 
-Six figures for `p=13193.html`, "Checking direction fields", complete and
-verified, in `_reconstruction/pilot-direction-fields/` with the script that made
-them. **They have not been placed into `wp-content/uploads/`**, pending the two
-decisions below.
+One script per post under `_reconstruction/posts/`, each writing straight into
+`wp-content/uploads/` and asserting the post's own arithmetic before it draws.
+`rebuild_all.py` runs the lot and doubles as the regression test for changes to
+`figstyle`. `dump_post.py <post.html>` prints a post as prose with figure slots
+and the equations decoded out of the latex.php URLs; that is the way in to a new
+post. Never guess an upload path: `figstyle.paths_in(post)` reads the YYYY/MM
+directory out of the HTML.
 
 One editorial point to raise with Jonathan: his text says "Along the y-axis we
 have vertical lines", but the reason he then gives is that tan(y) = 0 when y = 0,
 which is the x-axis. The reconstruction boxes y = 0, following the explanation
 rather than the wording.
 
-### Open decisions, both Jonathan's, both applying to all 222
+### The originals were Mathematica
 
-1. **Should a reconstructed figure be visibly marked as one?** The pilot carries
-   a small grey "figure reconstructed from the post text, 2026" in the corner.
-   The alternatives are a clean image with the list recorded in `README.md`, or a
-   clean image with the note in the PNG metadata. This matters for whether a
-   reader can tell an original from a reconstruction.
-2. **What should the figures look like?** The pilot uses a neutral matplotlib
-   style making no claim to match the originals. Jonathan may remember what he
-   drew them in; if it was Mathematica the styling should probably follow.
+Three figures recovered from the archive settle this. `approxfunc.png` and
+`plboth.png` are Mathematica `Plot` output: axes crossing at the origin, no
+frame, no grid, tick labels sitting on the axes themselves, and in `plboth` a
+`GraphicsRow` pair. `p3dlineb.png` is a `Plot3D` with the default surface
+colours and a dark mesh. Reconstructions sit beside these on the same pages, so
+`figstyle.axes()` draws crossed unlabelled axes by default, falling back to a
+frame only where the origin lies outside the plotted range, and
+`figstyle.mma_axes`/`plane` match the 3D look.
 
-He was asked both and shut the session down before answering, so ask again
-before generating at scale.
+If a post you are working on still has a surviving figure, look at it before
+drawing its siblings. It is the best guide available.
+
+### The one decision still open
+
+**Should a reconstructed figure be visibly marked as one?** Every figure
+currently carries a small grey "figure reconstructed from the post text, 2026"
+below the axes, defined once in `figstyle.NOTE` and placed by `figstyle.save`.
+The alternatives are a clean image with the list recorded in `README.md`, or a
+clean image with the note in the PNG metadata. Jonathan was asked and shut the
+session down before answering, then said to carry on, so the marker stayed as
+the default. Changing it is a one-line edit plus `rebuild_all.py`.
 
 ## Conventions
 
