@@ -19,6 +19,9 @@ listed here are simply not done yet.
 |---|---|---|
 | p=12064 | `curvloc.png`, `smalllarge1.png`, `finallines.png`, `Dougieweight.png` | Every one of these plots data the post extracted, pixel by pixel, from a figure in that Nature paper. The paper's figure is not in the archive, so the density profiles behind all four are unavailable. Profiles fitted backwards to the post's stated answers (a 30 kg Dougie weighing about 71 kg at the outer limb and about 190 kg on the solid surface) would be invented data attributed to a published measurement. |
 
+| p=10484, "Cooking with Mathematics" | `foodgroups3.png`, `foodgroups5.png` | The flavour-pairing data was scraped from an external site and is gone. The post quotes enough of it (five ingredients' lists, twelve seven-cliques, several named pairs) to rebuild a genuine subgraph, which is what the other two figures use, but not the whole graph. `foodgroups5` shows the path from eggplant to white chocolate with four ingredients between them, and the post never names those four; inventing them would be a fabricated claim about which flavours pair. |
+| p=13826, "Graph Theory, Numberphile and Mathematica" | the two Mathematica screenshots | They show code that the post then quotes in full in its prose, so a reader loses nothing. A fabricated notebook screenshot would assert a formatting nobody can know. |
+
 ## Animations
 
 A still cannot stand in for these, and the posts use them as animations.

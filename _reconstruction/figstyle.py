@@ -161,6 +161,8 @@ def check(label, got, want, tol=1e-9):
     """Assert a claim the post itself makes. Prints so the run is auditable."""
     if isinstance(want, (bool, np.bool_)) or isinstance(got, (bool, np.bool_)):
         ok = bool(got) == bool(want)
+    elif isinstance(want, (str, list, tuple, dict, set)):
+        ok = got == want
     elif want in (np.inf, -np.inf):
         ok = got == want
     else:
