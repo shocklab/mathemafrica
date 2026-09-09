@@ -17,7 +17,7 @@ repository is that work plus the fixes below.
 - Jonathan wrote most of the maths posts himself and is the author of most of
   the lost figures, so he can adjudicate any reconstruction.
 
-## State as of 2026-09-08
+## State as of 2026-09-09
 
 Done and pushed:
 
@@ -129,6 +129,21 @@ Leave a gap rather than invent a figure. A wrong figure in a teaching post is
 worse than a missing one.
 
 ### Progress
+
+As of 2026-09-09: 47 scripts, 241 images written, and every missing PNG in the
+archive is either drawn or recorded in `_reconstruction/not-reconstructed.md`
+with its reason. Measured the same way at both ends (`git ls-tree` at sanxofon's
+last commit against the working tree), the archive went from 561 missing image
+files to 193, and from 226 posts intact of 427 to 322.
+
+The 193 that remain are all JPEG or GIF, and 120 of them are not yet in the
+manifest. Most are photographs of people and events, which nothing can bring
+back, but there is a tail of the blog's own diagrams and animations in that
+format: the trig graphs on p=14675, the asymptotic-notation graphs on p=12734,
+the graph-theory pictures on p=13883, `pl1.jpg`-`pl6.jpg` on p=13535, the nine
+figures on p=11261, the induction pair on p=12797, `Recaman.jpg` on p=14624 and
+a dozen animated GIFs. That is the next tranche, and the first pass missed it
+because it swept for PNGs.
 
 One script per post under `_reconstruction/posts/`, each writing straight into
 `wp-content/uploads/` and asserting the post's own arithmetic before it draws.
