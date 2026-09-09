@@ -10,6 +10,7 @@ listed here are simply not done yet.
 |---|---|---|
 | p=11427, the Mandelbrot set | `Mandelset_hires.png` | The text says it is "an image taken from wikipedia". Not Jonathan's figure to reconstruct. |
 | p=12064, "How much does a Dougie weigh on Jupiter?" | `Jupiter.png` | A screenshot of the abstract of a Nature paper (nature14278). Reproducing it would be reproducing the paper. |
+| p=16040, "Scaled Reinforcement Learning" | all four: `RL_agent_env_int.png`, `cliff.png`, `DQN_graphicsx.png`, `dqn_algos.png` | Every figure on this post is credited in the text to someone else: two to Francois-Lavet et al. 2018, the cliff-walking gridworld to Sutton and Barto, and the algorithm box to Mnih et al. 2015. The agent-environment diagram is generic enough to redraw, but the post points at a particular rendition of it, so redrawing would put words in that citation's mouth. |
 | p=15060, "Introduction to Wolfram Mathematica programming" | `wcFolderIcon.png`, `upload-button.png`, `WCfileexplorer.png`, `downloadButton.png` | Screenshots of the Wolfram Cloud interface. Drawing imitations of another product's UI would be inventing evidence of what that product looks like. |
 
 ## Data that is not in the archive
