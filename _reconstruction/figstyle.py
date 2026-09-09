@@ -177,7 +177,9 @@ def animate(draw, frames, dest, dpi=90, mark=True, ms=90, figsize=(5.0, 4.0),
             ax = fig.add_subplot(111)
         draw(ax, i)
         if mark:
-            fig.text(1.0, -0.02, NOTE, ha="right", va="top", fontsize=6.5,
+            # the frame is written without a tight bbox, so the marker has to
+            # sit inside the canvas or it is simply cropped away
+            fig.text(0.99, 0.015, NOTE, ha="right", va="bottom", fontsize=6.0,
                      color="#9a9a9a", transform=fig.transFigure)
         buf = io.BytesIO()
         fig.savefig(buf, format="png", dpi=dpi, facecolor="white",
