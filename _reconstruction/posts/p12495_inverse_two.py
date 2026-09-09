@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import numpy as np
 import matplotlib.pyplot as plt
-from figstyle import BLUE, RED, GREEN, GREY, save, check, paths_in
+from figstyle import BLUE, RED, GREEN, GREY, save, axes, check, paths_in
 
 P = paths_in("p=12495.html")
 A = np.arcsin(0.5)                 # pi/6
@@ -29,11 +29,7 @@ def sinframe(ax, lo, hi, ylo=-1.3, yhi=1.3):
     ax.plot(t, np.sin(t), color=BLUE, lw=1.8)
     ax.axhline(0.5, color=GREY, lw=1.2, ls="--")
     ax.text(hi, 0.56, r"$y=\frac{1}{2}$", ha="right", fontsize=10, color=GREY)
-    ax.set_xlim(lo, hi); ax.set_ylim(ylo, yhi)
-    ax.grid(True, color="#eeeeee", lw=0.6)
-    ax.axhline(0, color="#999999", lw=0.8)
-    ax.axvline(0, color="#999999", lw=0.8)
-    ax.tick_params(labelsize=8)
+    axes(ax, (lo, hi), (ylo, yhi))
 
 
 # --- firstsol.png (476x474): arcsin, and arcsin(1/2) ---------------------
@@ -46,11 +42,7 @@ ax.annotate(rf"$\arcsin\frac{{1}}{{2}}\approx{A:.2f}$", (0.5, A),
             color=RED)
 ax.plot([0.5, 0.5], [-1.8, A], color=RED, lw=0.9, ls=":")
 ax.plot([-1.05, 0.5], [A, A], color=RED, lw=0.9, ls=":")
-ax.set_xlim(-1.05, 1.05); ax.set_ylim(-1.8, 1.8)
-ax.grid(True, color="#eeeeee", lw=0.6)
-ax.axhline(0, color="#999999", lw=0.8)
-ax.axvline(0, color="#999999", lw=0.8)
-ax.tick_params(labelsize=8)
+axes(ax, (-1.05, 1.05), (-1.8, 1.8))
 ax.legend(fontsize=10, frameon=False, loc="upper left")
 save(fig, P["firstsol.png"])
 

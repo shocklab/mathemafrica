@@ -22,7 +22,7 @@ import numpy as np
 from scipy import stats
 from scipy.integrate import quad
 import matplotlib.pyplot as plt
-from figstyle import RED, GREY, save, check, paths_in
+from figstyle import RED, GREY, save, axes, check, paths_in
 
 P = paths_in("p=15925.html")
 SIZE = (4.2, 2.3)          # 300x163 as displayed
@@ -34,11 +34,7 @@ def continuous(dens, g, lo, hi, dest, title, gl):
     ax.plot(x, dens(x), color="black", lw=1.6, label="density")
     ax.plot(x, g(x) * dens(x), color=RED, lw=1.6, label=gl)
     ax.fill_between(x, 0, g(x) * dens(x), color=RED, alpha=0.16)
-    ax.axhline(0, color=GREY, lw=0.8)
-    ax.set_xlim(lo, hi)
-    ax.grid(True, color="#eeeeee", lw=0.6)
-    ax.tick_params(labelsize=8)
-    ax.set_xlabel("$x$", fontsize=9)
+    axes(ax, (lo, hi), None)
     ax.legend(fontsize=7.5, frameon=False, loc="upper right")
     ax.set_title(title, fontsize=9)
     save(fig, dest)
@@ -68,11 +64,7 @@ ax.vlines(k, 0, pmf, color="black", lw=1.0)
 ax.plot(k, pmf, "o", color="black", ms=3.4, label="mass")
 ax.vlines(k + 0.14, 0, k * pmf, color=RED, lw=1.0)
 ax.plot(k + 0.14, k * pmf, "o", color=RED, ms=3.4, label=r"$x\,p(x)$")
-ax.axhline(0, color=GREY, lw=0.8)
-ax.set_xlim(-0.6, 15.6)
-ax.grid(True, color="#eeeeee", lw=0.6)
-ax.tick_params(labelsize=8)
-ax.set_xlabel("$x$", fontsize=9)
+axes(ax, (-0.6, 15.6), None)
 ax.legend(fontsize=7.5, frameon=False, loc="upper right")
 ax.set_title(r"Poisson, $\lambda=4$:  $\mathbb{E}[X]=4$", fontsize=9)
 save(fig, P["poisson_mean.png"])

@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import numpy as np
 import matplotlib.pyplot as plt
-from figstyle import BLUE, RED, GREEN, GREY, save, check, paths_in
+from figstyle import BLUE, RED, GREEN, GREY, save, axes, check, paths_in
 
 P = paths_in("p=12480.html")
 DOMAINS = [("all of $\\mathbb{R}$", (-2.2, 2.2), BLUE),
@@ -26,9 +26,7 @@ DOMAINS = [("all of $\\mathbb{R}$", (-2.2, 2.2), BLUE),
 
 
 def frame(ax):
-    ax.grid(True, color="#eeeeee", lw=0.6)
-    ax.axhline(0, color="#999999", lw=0.8)
-    ax.axvline(0, color="#999999", lw=0.8)
+    axes(ax, None, None, xlabel=None, ylabel=None)
     ax.tick_params(labelsize=7)
 
 
