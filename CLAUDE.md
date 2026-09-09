@@ -130,20 +130,19 @@ worse than a missing one.
 
 ### Progress
 
-As of 2026-09-09: 47 scripts, 241 images written, and every missing PNG in the
-archive is either drawn or recorded in `_reconstruction/not-reconstructed.md`
-with its reason. Measured the same way at both ends (`git ls-tree` at sanxofon's
-last commit against the working tree), the archive went from 561 missing image
-files to 193, and from 226 posts intact of 427 to 322.
+As of 2026-09-09: 56 scripts, 277 images written, and every missing image in
+the archive, of any format, is either drawn or recorded in
+`_reconstruction/not-reconstructed.md` with its reason. Measured the same way at
+both ends (`git ls-tree` at sanxofon's last commit against the working tree),
+the archive went from 561 missing image files to 157, and from 226 posts intact
+of 427 to 334.
 
-The 193 that remain are all JPEG or GIF, and 120 of them are not yet in the
-manifest. Most are photographs of people and events, which nothing can bring
-back, but there is a tail of the blog's own diagrams and animations in that
-format: the trig graphs on p=14675, the asymptotic-notation graphs on p=12734,
-the graph-theory pictures on p=13883, `pl1.jpg`-`pl6.jpg` on p=13535, the nine
-figures on p=11261, the induction pair on p=12797, `Recaman.jpg` on p=14624 and
-a dozen animated GIFs. That is the next tranche, and the first pass missed it
-because it swept for PNGs.
+The first sweep triaged on file format, looking only at PNGs, and so missed a
+whole tier of the blog's own diagrams stored as JPEGs and animated GIFs. Do not
+repeat that: sweep by what a figure is, not by what it is called. What remains
+missing is photographs, posters, screenshots of other people's slides, figures
+from the papers a post surveys, and a handful of cases where the data behind a
+plot is gone.
 
 One script per post under `_reconstruction/posts/`, each writing straight into
 `wp-content/uploads/` and asserting the post's own arithmetic before it draws.
