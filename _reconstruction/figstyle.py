@@ -500,3 +500,42 @@ def plane(ax, coeffs, xr, yr, zr, color, n=14, alpha=0.92, mesh="#3a3a3a"):
     Y = np.where((Y >= yr[0]) & (Y <= yr[1]), Y, np.nan)
     ax.plot_surface(X, Y, Z, color=color, alpha=alpha, linewidth=0.4,
                     edgecolor=mesh, shade=False, antialiased=True)
+
+
+def stack(lines, dest, fontsize=17, dpi=130, pad=16, gap=14, mark=True,
+          align="center", note=None):
+    """Several mathtext lines stacked, for multi-step displays.
+
+    `note` adds a small grey line underneath, for the rare figure that needs to
+    say something about itself.
+    """
+    lines = [mt(s) for s in lines]
+    wh = _measure_wh(lines, fontsize, dpi)
+    widths = [w for w, _ in wh]
+    heights = [h for _, h in wh]
+    note_h = 0
+    if note:
+        note_h = _measure_wh([note], 9, dpi)[0][1] + gap
+    W = max(widths) + 2 * pad
+    H = sum(heights) + gap * (len(lines) - 1) + 2 * pad + note_h + \
+        (14 if mark else 0)
+
+    fig = plt.figure(figsize=(W / dpi, H / dpi), dpi=dpi)
+    y = H - pad
+    for s, h in zip(lines, heights):
+        y -= h / 2
+        x = 0.5 if align == "center" else pad / W
+        fig.text(x, y / H, f"${s}$", fontsize=fontsize,
+                 ha="center" if align == "center" else "left", va="center")
+        y -= h / 2 + gap
+    if note:
+        fig.text(0.5, (y - note_h / 2 + gap) / H, note, fontsize=9,
+                 ha="center", va="center", color="#777777")
+    if mark:
+        fig.text(1 - pad / W / 2, 3 / H, NOTE, ha="right", va="bottom",
+                 fontsize=6.5, color="#9a9a9a")
+    out = os.path.join(UPLOADS, dest)
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    fig.savefig(out, dpi=dpi, facecolor="white")
+    plt.close(fig)
+    return out
