@@ -140,8 +140,19 @@ def save(fig, dest, dpi=110, mark=True):
                  fontsize=6.5, color="#9a9a9a")
     out = os.path.join(UPLOADS, dest)
     os.makedirs(os.path.dirname(out), exist_ok=True)
-    fig.savefig(out, dpi=dpi, facecolor="white",
-                bbox_inches="tight", pad_inches=0.18)
+    if out.lower().endswith(".gif"):
+        # matplotlib has no GIF writer; a few archived stills are named .gif
+        import io
+        from PIL import Image
+        buf = io.BytesIO()
+        fig.savefig(buf, format="png", dpi=dpi, facecolor="white",
+                    bbox_inches="tight", pad_inches=0.18)
+        buf.seek(0)
+        Image.open(buf).convert("RGB").convert(
+            "P", palette=Image.ADAPTIVE).save(out)
+    else:
+        fig.savefig(out, dpi=dpi, facecolor="white",
+                    bbox_inches="tight", pad_inches=0.18)
     plt.close(fig)
     return out
 
