@@ -157,6 +157,44 @@ def save(fig, dest, dpi=110, mark=True):
     return out
 
 
+def animate(draw, frames, dest, dpi=90, mark=True, ms=90, figsize=(5.0, 4.0),
+            three_d=False, **axkw):
+    """Write an animated GIF, one frame per call to `draw(ax, i)`.
+
+    Several archived figures are animations, and a still cannot stand in for
+    them: the post says "watch what happens as ...". Each frame is rendered
+    through the same `save` styling so an animation matches the static figures
+    beside it, then Pillow writes the loop.
+    """
+    import io
+    from PIL import Image
+    ims = []
+    for i in range(frames):
+        fig = plt.figure(figsize=figsize)
+        if three_d:
+            ax = mma_axes(fig, **axkw)
+        else:
+            ax = fig.add_subplot(111)
+        draw(ax, i)
+        if mark:
+            fig.text(1.0, -0.02, NOTE, ha="right", va="top", fontsize=6.5,
+                     color="#9a9a9a", transform=fig.transFigure)
+        buf = io.BytesIO()
+        fig.savefig(buf, format="png", dpi=dpi, facecolor="white",
+                    bbox_inches=None, pad_inches=0.18)
+        plt.close(fig)
+        buf.seek(0)
+        ims.append(Image.open(buf).convert("RGB"))
+    size = ims[0].size
+    ims = [im if im.size == size else im.resize(size) for im in ims]
+    pal = [im.convert("P", palette=Image.ADAPTIVE, colors=128) for im in ims]
+    out = os.path.join(UPLOADS, dest)
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    pal[0].save(out, save_all=True, append_images=pal[1:], duration=ms, loop=0,
+                optimize=True)
+    return out
+
+
 def check(label, got, want, tol=1e-9):
     """Assert a claim the post itself makes. Prints so the run is auditable."""
     if isinstance(want, (bool, np.bool_)) or isinstance(got, (bool, np.bool_)):
