@@ -11,7 +11,7 @@ import subprocess
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-scripts = sorted(glob.glob(os.path.join(HERE, "posts", "p*.py")))
+scripts = sorted(glob.glob(os.path.join(HERE, "posts", "*.py")))
 failed = []
 for s in scripts:
     r = subprocess.run([sys.executable, s], capture_output=True, text=True)
