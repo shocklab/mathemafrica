@@ -21,6 +21,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import numpy as np
 import matplotlib.pyplot as plt
+import figstyle
 from figstyle import NOTE, UPLOADS, check, paths_in
 
 P = paths_in("p=12378.html")
@@ -123,8 +124,9 @@ def frame(step, dest):
                  y - ROW_H / 2 + 3)
         y -= ROW_H
 
-    fig.text(1 - 6 / W, 4 / H, NOTE, ha="right", va="bottom",
-             fontsize=6.5, color="#9a9a9a")
+    if figstyle.VISIBLE_MARK:
+        fig.text(1 - 6 / W, 4 / H, NOTE, ha="right", va="bottom",
+                 fontsize=6.5, color="#9a9a9a")
     out = os.path.join(UPLOADS, dest)
     os.makedirs(os.path.dirname(out), exist_ok=True)
     fig.savefig(out, dpi=DPI, facecolor="white")

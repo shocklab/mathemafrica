@@ -34,6 +34,7 @@ import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
 from torchvision import datasets, transforms
+import figstyle
 from figstyle import UPLOADS, NOTE, check, paths_in
 
 P = paths_in("p=16790.html")
@@ -141,8 +142,9 @@ def tile(vec, dest):
     ax.set_xticks([]); ax.set_yticks([])
     for s in ax.spines.values():
         s.set_color("#cccccc")
-    fig.text(0.99, 0.005, NOTE, ha="right", va="bottom", fontsize=5.0,
-             color="#9a9a9a")
+    if figstyle.VISIBLE_MARK:
+        fig.text(0.99, 0.005, NOTE, ha="right", va="bottom", fontsize=5.0,
+                 color="#9a9a9a")
     out = os.path.join(UPLOADS, dest)
     os.makedirs(os.path.dirname(out), exist_ok=True)
     fig.savefig(out, dpi=110, facecolor="white")

@@ -19,6 +19,10 @@ UPLOADS = os.path.join(REPO, "wp-content", "uploads")
 
 NOTE = "figure reconstructed from the post text, 2026"
 
+# The note travels in the image file's metadata (see `stamp`). Set this True to
+# also print it under each figure, as the first rebuilds did.
+VISIBLE_MARK = False
+
 BLUE   = "#1f4e79"
 RED    = "#d02020"
 GREEN  = "#2e7d32"
@@ -133,7 +137,7 @@ def save(fig, dest, dpi=110, mark=True):
     `dest` is the uploads-relative path the archived HTML asks for, e.g.
     '2015/09/pl1.png'.
     """
-    if mark:
+    if mark and VISIBLE_MARK:
         # below the axes rather than inside them: with bbox_inches="tight" the
         # crop grows to include it, so it never lands on an axis label
         fig.text(1.0, -0.11, NOTE, ha="right", va="top",
@@ -154,6 +158,8 @@ def save(fig, dest, dpi=110, mark=True):
         fig.savefig(out, dpi=dpi, facecolor="white",
                     bbox_inches="tight", pad_inches=0.18)
     plt.close(fig)
+    if mark:
+        stamp(out)
     return out
 
 
@@ -176,7 +182,7 @@ def animate(draw, frames, dest, dpi=90, mark=True, ms=90, figsize=(5.0, 4.0),
         else:
             ax = fig.add_subplot(111)
         draw(ax, i)
-        if mark:
+        if mark and VISIBLE_MARK:
             # the frame is written without a tight bbox, so the marker has to
             # sit inside the canvas or it is simply cropped away
             fig.text(0.99, 0.015, NOTE, ha="right", va="bottom", fontsize=6.0,
@@ -194,7 +200,44 @@ def animate(draw, frames, dest, dpi=90, mark=True, ms=90, figsize=(5.0, 4.0),
     os.makedirs(os.path.dirname(out), exist_ok=True)
     pal[0].save(out, save_all=True, append_images=pal[1:], duration=ms, loop=0,
                 optimize=True)
+    if mark:
+        stamp(out)
     return out
+
+
+def stamp(path, note=NOTE):
+    """Write `note` into an image file's metadata without re-encoding it.
+
+    PNG gets a tEXt "Description" chunk after IHDR, JPEG a COM segment after
+    SOI, GIF a comment extension after the global colour table. The pixels are
+    untouched, and a file already carrying the note is left alone.
+    """
+    import struct
+    import zlib
+    data = open(path, "rb").read()
+    text = note.encode("latin-1")
+    if text in data:
+        return False
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        body = b"tEXt" + b"Description\x00" + text
+        chunk = (struct.pack(">I", len(body) - 4) + body
+                 + struct.pack(">I", zlib.crc32(body) & 0xffffffff))
+        at = 8 + 8 + 13 + 4                     # signature + IHDR chunk
+        data = data[:at] + chunk + data[at:]
+    elif data[:2] == b"\xff\xd8":
+        data = data[:2] + b"\xff\xfe" + struct.pack(">H", len(text) + 2) \
+            + text + data[2:]
+    elif data[:3] == b"GIF":
+        packed = data[10]
+        at = 13 + (3 * 2 ** ((packed & 7) + 1) if packed & 0x80 else 0)
+        blocks = b"".join(bytes([len(text[i:i + 255])]) + text[i:i + 255]
+                          for i in range(0, len(text), 255))
+        data = b"GIF89a" + data[6:at] + b"\x21\xfe" + blocks + b"\x00" \
+            + data[at:]
+    else:
+        raise ValueError(f"cannot stamp {path}: unknown format")
+    open(path, "wb").write(data)
+    return True
 
 
 def check(label, got, want, tol=1e-9):
@@ -292,7 +335,7 @@ def cases(lhs, rows, dest, fontsize=17, dpi=130, gap=18, row_pt=40,
     x_word = x_expr + (max(expr_w) if expr_w else 0) + gap
     x_cond = x_word + word_w + (gap if word else 0)
     total_w = x_cond + (max(cond_w) if cond_w else 0) + pad
-    total_h = block_h + 2 * pad + (14 if mark else 0)
+    total_h = block_h + 2 * pad + (14 if mark and VISIBLE_MARK else 0)
 
     fig = plt.figure(figsize=(total_w / dpi, total_h / dpi), dpi=dpi)
     r = fig.canvas.get_renderer()
@@ -317,7 +360,7 @@ def cases(lhs, rows, dest, fontsize=17, dpi=130, gap=18, row_pt=40,
                 put(x_word, y, word)
             put(x_cond, y, c)
 
-    if mark:
+    if mark and VISIBLE_MARK:
         fig.text(1 - pad / total_w / 2, 3 / total_h, NOTE, ha="right",
                  va="bottom", fontsize=6.5, color="#9a9a9a")
     out = os.path.join(UPLOADS, dest)
@@ -424,11 +467,11 @@ def display(expr, dest, fontsize=19, dpi=130, pad=16, mark=True):
     w, h = bb.width, bb.height
     plt.close(scratch)
 
-    W, H = w + 2 * pad, h + 2 * pad + (14 if mark else 0)
+    W, H = w + 2 * pad, h + 2 * pad + (14 if mark and VISIBLE_MARK else 0)
     fig = plt.figure(figsize=(W / dpi, H / dpi), dpi=dpi)
-    fig.text(0.5, (h / 2 + pad + (14 if mark else 0)) / H, f"${expr}$",
+    fig.text(0.5, (h / 2 + pad + (14 if mark and VISIBLE_MARK else 0)) / H, f"${expr}$",
              fontsize=fontsize, ha="center", va="center")
-    if mark:
+    if mark and VISIBLE_MARK:
         fig.text(1 - pad / W / 2, 3 / H, NOTE, ha="right", va="bottom",
                  fontsize=6.5, color="#9a9a9a")
     out = os.path.join(UPLOADS, dest)
@@ -465,7 +508,7 @@ def table(headers, rows, dest, fontsize=15, dpi=130, pad=16, col_gap=26,
         xs.append(x)
         x += w + col_gap
     W = x - col_gap + 2 * pad
-    H = sum(heights) + row_gap * len(heights) + 2 * pad + (14 if mark else 0)
+    H = sum(heights) + row_gap * len(heights) + 2 * pad + (14 if mark and VISIBLE_MARK else 0)
 
     fig = plt.figure(figsize=(W / dpi, H / dpi), dpi=dpi)
 
@@ -483,7 +526,7 @@ def table(headers, rows, dest, fontsize=15, dpi=130, pad=16, col_gap=26,
             fig.add_artist(plt.Line2D([pad / W, (W - pad) / W],
                                       [y / H, y / H], color="black", lw=1.0))
 
-    if mark:
+    if mark and VISIBLE_MARK:
         fig.text(1 - pad / W / 2, 3 / H, NOTE, ha="right", va="bottom",
                  fontsize=6.5, color="#9a9a9a")
     out = os.path.join(UPLOADS, dest)
@@ -562,7 +605,7 @@ def stack(lines, dest, fontsize=17, dpi=130, pad=16, gap=14, mark=True,
         note_h = _measure_wh([note], 9, dpi)[0][1] + gap
     W = max(widths) + 2 * pad
     H = sum(heights) + gap * (len(lines) - 1) + 2 * pad + note_h + \
-        (14 if mark else 0)
+        (14 if mark and VISIBLE_MARK else 0)
 
     fig = plt.figure(figsize=(W / dpi, H / dpi), dpi=dpi)
     y = H - pad
@@ -575,7 +618,7 @@ def stack(lines, dest, fontsize=17, dpi=130, pad=16, gap=14, mark=True,
     if note:
         fig.text(0.5, (y - note_h / 2 + gap) / H, note, fontsize=9,
                  ha="center", va="center", color="#777777")
-    if mark:
+    if mark and VISIBLE_MARK:
         fig.text(1 - pad / W / 2, 3 / H, NOTE, ha="right", va="bottom",
                  fontsize=6.5, color="#9a9a9a")
     out = os.path.join(UPLOADS, dest)
