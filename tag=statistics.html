@@ -161,7 +161,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive tag tag-statistics tag-261 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -284,7 +285,7 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=15998.html">The Objective Function</a></h2><div class="fusion-post-content-container"><p>In both Supervised and Unsupervised machine learning, most algorithms are centered around minimising (or, equivalently) maximising some objective function. This function is supposed to somehow represent what the model knows/can get right. Normally, as one would expect, the objective function does not always reflect exactly what we want.</p>
 <p>The objective function presents 2 main problems: 1. how do we minimise it (the answer to this is up for debate and there is lots of interesting research about efficient optimisation of non-convex functions and 2) assuming we can minimise it perfectly, is it the correct thing to be minimising?</p>
 <p>It is point 2 which is the focus of this post.</p>
-<p>Let&#8217;s take the example of square-loss-linear-regression.<em> </em>To do so we train a linear regression model with a square loss <img src="//s0.wp.com/latex.php?latex=%5Cmathcal%7BL%7D%28%5Cmathbf%7Bw%7D%29%3D%5Csum_i+%28y_i+-+%5Cmathbf%7Bw%7D%5ETx_i%29%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathcal{L}(&#92;mathbf{w})=&#92;sum_i (y_i - &#92;mathbf{w}^Tx_i)^2" title="&#92;mathcal{L}(&#92;mathbf{w})=&#92;sum_i (y_i - &#92;mathbf{w}^Tx_i)^2" class="latex" />. (Where we are taking the inner product of learned weights with a vector of features for each observation to predict the outcome).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=81.html" title="Posts by Dean Bunce" rel="author">Dean Bunce</a></span></span><span class="fusion-inline-sep">|</span>
+<p>Let&#8217;s take the example of square-loss-linear-regression.<em> </em>To do so we train a linear regression model with a square loss \(\mathcal{L}(\mathbf{w})=\sum_i (y_i - \mathbf{w}^Tx_i)^2\). (Where we are taking the inner product of learned weights with a vector of features for each observation to predict the outcome).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=81.html" title="Posts by Dean Bunce" rel="author">Dean Bunce</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -491,7 +492,7 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=15734.html">R-squared values for linear regression</a></h2><div class="fusion-post-content-container"><p><strong>What we are talking about</strong></p>
 <p>Linear regression is a common and useful statistical tool. You will have almost certainly come across it if your studies have presented you with any sort of statistical problems.</p>
 <p>The pros of regression are that it is relatively easy to implement and that the relationship between inputs and outputs is linear (it&#8217;s in the name, but this simplifies the interpretation of the relationship significantly). On the downside, it relies fairly heavily on frequentist interpretation of probability (which is a little counterintuitive) and it&#8217;s very easy to draw erroneous conclusions from different models.</p>
-<p>This post will deal with a measure of how good a model is: <img src="//s0.wp.com/latex.php?latex=R%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="R^2" title="R^2" class="latex" />. First, I will go through what this value means and what it measures. Then, I will discuss an example of how reliance on  <img src="//s0.wp.com/latex.php?latex=R%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="R^2" title="R^2" class="latex" />  is a dangerous game when it comes to linear models.</p>
+<p>This post will deal with a measure of how good a model is: \(R^2\). First, I will go through what this value means and what it measures. Then, I will discuss an example of how reliance on  \(R^2\)  is a dangerous game when it comes to linear models.</p>
 <p><strong>What you should know</strong></p>
 <p>Firstly, let&#8217;s establish a bit of context.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=81.html" title="Posts by Dean Bunce" rel="author">Dean Bunce</a></span></span><span class="fusion-inline-sep">|</span>
 	

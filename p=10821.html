@@ -34,11 +34,11 @@
 
 		<meta property="og:title" content="UCT MAM1000 lecture notes part 3"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=10821.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=10821.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="Today is going to be the last day where we will focus on integration by parts. We&#39;re going to run through a few more examples, but each of them will be slightly different from what you&#39;ve seen already and will give you a few more insights into some of the tricks you might have to"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -86,7 +86,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=10821.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=10821.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-2Ox' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D10821.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D10821&.html#038;format=xml" />
@@ -173,7 +173,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-10821 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -249,31 +250,31 @@ img.emoji {
 <p><strong>Definite integrals using integration by parts</strong></p>
 <p>Let&#8217;s look at the following integral:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%7B%5Cfrac%7B%5Cpi%7D%7B2%7D%7D+x%5E2+%5Csin+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^{&#92;frac{&#92;pi}{2}} x^2 &#92;sin x dx" title="&#92;int_0^{&#92;frac{&#92;pi}{2}} x^2 &#92;sin x dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^{\frac{\pi}{2}} x^2 \sin x dx\]</p>
 <p>&nbsp;</p>
-<p>Where as usual we see that the <img src="//s0.wp.com/latex.php?latex=x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2" title="x^2" class="latex" /> term becomes simpler if we differentiate it and so we choose:</p>
+<p>Where as usual we see that the \(x^2\) term becomes simpler if we differentiate it and so we choose:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=u%3Dx%5E2%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+dv%3D%5Csin+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u=x^2,&#92;,&#92;,&#92;,&#92;,&#92;, dv=&#92;sin x dx" title="u=x^2,&#92;,&#92;,&#92;,&#92;,&#92;, dv=&#92;sin x dx" class="latex" /></p>
+<p style="text-align: center;">\[u=x^2,\,\,\,\,\, dv=\sin x dx\]</p>
 <p>&nbsp;</p>
 <p>Thus</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=du%3D2x+dx%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+v%3D-%5Ccos+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="du=2x dx,&#92;,&#92;,&#92;,&#92;,&#92;, v=-&#92;cos x" title="du=2x dx,&#92;,&#92;,&#92;,&#92;,&#92;, v=-&#92;cos x" class="latex" /></p>
+<p style="text-align: center;">\[du=2x dx,\,\,\,\,\, v=-\cos x\]</p>
 <p>&nbsp;</p>
 <p>Using the normal integration parts algorithm we will get the following, and note that now we need to evaluate the result at the limits of integration:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cleft.-x%5E2+%5Ccos+x%5Cright%7C_0%5E%7B%5Cfrac%7B%5Cpi%7D%7B2%7D%7D%2B+%5Cint_0%5E%7B%5Cfrac%7B%5Cpi%7D%7B2%7D%7D+2x+%5Ccos+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;left.-x^2 &#92;cos x&#92;right|_0^{&#92;frac{&#92;pi}{2}}+ &#92;int_0^{&#92;frac{&#92;pi}{2}} 2x &#92;cos x dx" title="&#92;left.-x^2 &#92;cos x&#92;right|_0^{&#92;frac{&#92;pi}{2}}+ &#92;int_0^{&#92;frac{&#92;pi}{2}} 2x &#92;cos x dx" class="latex" /></p>
+<p style="text-align: center;">\[\left.-x^2 \cos x\right|_0^{\frac{\pi}{2}}+ \int_0^{\frac{\pi}{2}} 2x \cos x dx\]</p>
 <p>&nbsp;</p>
-<p>We can&#8217;t quite solve this last integral directly so we integrate by parts again. However, we note that the first term in this expression actually evaluates to zero when we plug in both limits, so we are left with just the integral term. We again make a choice for a new <img src="//s0.wp.com/latex.php?latex=u&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u" title="u" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=dv&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="dv" title="dv" class="latex" /> as:</p>
+<p>We can&#8217;t quite solve this last integral directly so we integrate by parts again. However, we note that the first term in this expression actually evaluates to zero when we plug in both limits, so we are left with just the integral term. We again make a choice for a new \(u\) and \(dv\) as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=u%3Dx%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+dv%3D%5Ccos+xdx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u=x,&#92;,&#92;,&#92;,&#92;,&#92;, dv=&#92;cos xdx" title="u=x,&#92;,&#92;,&#92;,&#92;,&#92;, dv=&#92;cos xdx" class="latex" /></p>
+<p style="text-align: center;">\[u=x,\,\,\,\,\, dv=\cos xdx\]</p>
 <p>&nbsp;</p>
 <p>Thus</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=du%3Ddx%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+v%3D%5Csin+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="du=dx,&#92;,&#92;,&#92;,&#92;,&#92;, v=&#92;sin x" title="du=dx,&#92;,&#92;,&#92;,&#92;,&#92;, v=&#92;sin x" class="latex" /></p>
+<p style="text-align: center;">\[du=dx,\,\,\,\,\, v=\sin x\]</p>
 <p>&nbsp;</p>
-<p>Remembering the factor of <img src="//s0.wp.com/latex.php?latex=2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2" title="2" class="latex" /> we get:</p>
+<p>Remembering the factor of \(2\) we get:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cleft.+2+x+%5Csin+x%5Cright%7C_0%5E%7B%5Cfrac%7B%5Cpi%7D%7B2%7D%7D-2+%5Cint_0%5E%7B%5Cfrac%7B%5Cpi%7D%7B2%7D%7D+%5Csin+x+dx%3D2%5Cfrac%7B%5Cpi%7D%7B2%7D%5Csin%5Cfrac%7B%5Cpi%7D%7B2%7D%2B%5Cleft%28%5Cleft.+2%5Ccos+x%5Cright%7C_0%5E%7B%5Cfrac%7B%5Cpi%7D%7B2%7D%7D%5Cright%29%3D%5Cpi%2B2%280-1%29%3D%5Cpi-2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;left. 2 x &#92;sin x&#92;right|_0^{&#92;frac{&#92;pi}{2}}-2 &#92;int_0^{&#92;frac{&#92;pi}{2}} &#92;sin x dx=2&#92;frac{&#92;pi}{2}&#92;sin&#92;frac{&#92;pi}{2}+&#92;left(&#92;left. 2&#92;cos x&#92;right|_0^{&#92;frac{&#92;pi}{2}}&#92;right)=&#92;pi+2(0-1)=&#92;pi-2" title="&#92;left. 2 x &#92;sin x&#92;right|_0^{&#92;frac{&#92;pi}{2}}-2 &#92;int_0^{&#92;frac{&#92;pi}{2}} &#92;sin x dx=2&#92;frac{&#92;pi}{2}&#92;sin&#92;frac{&#92;pi}{2}+&#92;left(&#92;left. 2&#92;cos x&#92;right|_0^{&#92;frac{&#92;pi}{2}}&#92;right)=&#92;pi+2(0-1)=&#92;pi-2" class="latex" /></p>
+<p style="text-align: center;">\[\left. 2 x \sin x\right|_0^{\frac{\pi}{2}}-2 \int_0^{\frac{\pi}{2}} \sin x dx=2\frac{\pi}{2}\sin\frac{\pi}{2}+\left(\left. 2\cos x\right|_0^{\frac{\pi}{2}}\right)=\pi+2(0-1)=\pi-2\]</p>
 <p>&nbsp;</p>
 <p>Note that we could quite happily have worked out the whole thing as an indefinite integral and then used the evaluation theorem at the very end. Try it both ways and make sure that you see that they give the same answer.</p>
 <p>&nbsp;</p>
@@ -281,66 +282,66 @@ img.emoji {
 <p>&nbsp;</p>
 <p>In this example we&#8217;re going to see an integration that looks like it comes to a dead-end, but in fact before we know it we&#8217;ve solved it!</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+e%5Ex%5Csin+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int e^x&#92;sin x dx" title="&#92;int e^x&#92;sin x dx" class="latex" /></p>
+<p style="text-align: center;">\[\int e^x\sin x dx\]</p>
 <p>&nbsp;</p>
 <p>In this case neither the exponential nor the trig function get simpler when we differentiate them. We will choose:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=u%3De%5Ex%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+dv%3D%5Csin+x+dx%5Clongrightarrow+du%3De%5Ex+dx%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+v%3D-%5Ccos+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u=e^x,&#92;,&#92;,&#92;,&#92;,&#92;, dv=&#92;sin x dx&#92;longrightarrow du=e^x dx,&#92;,&#92;,&#92;,&#92;,&#92;, v=-&#92;cos x" title="u=e^x,&#92;,&#92;,&#92;,&#92;,&#92;, dv=&#92;sin x dx&#92;longrightarrow du=e^x dx,&#92;,&#92;,&#92;,&#92;,&#92;, v=-&#92;cos x" class="latex" /></p>
+<p style="text-align: center;">\[u=e^x,\,\,\,\,\, dv=\sin x dx\longrightarrow du=e^x dx,\,\,\,\,\, v=-\cos x\]</p>
 <p>&nbsp;</p>
 <p>plug this in and we get:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+e%5Ex%5Csin+x+dx%3D+-e%5Ex+%5Ccos+x%2B%5Cint+e%5Ex+%5Ccos+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int e^x&#92;sin x dx= -e^x &#92;cos x+&#92;int e^x &#92;cos x dx" title="&#92;int e^x&#92;sin x dx= -e^x &#92;cos x+&#92;int e^x &#92;cos x dx" class="latex" /></p>
+<p style="text-align: center;">\[\int e^x\sin x dx= -e^x \cos x+\int e^x \cos x dx\]</p>
 <p>&nbsp;</p>
 <p>This integral looks just as hard as the first, but we&#8217;ll plug away at it. Now make a new choice to solve the second integral:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=u%3De%5Ex%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+dv%3D%5Ccos+x+dx%5Clongrightarrow+du%3De%5Ex+dx%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+v%3D%5Csin+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u=e^x,&#92;,&#92;,&#92;,&#92;,&#92;, dv=&#92;cos x dx&#92;longrightarrow du=e^x dx,&#92;,&#92;,&#92;,&#92;,&#92;, v=&#92;sin x" title="u=e^x,&#92;,&#92;,&#92;,&#92;,&#92;, dv=&#92;cos x dx&#92;longrightarrow du=e^x dx,&#92;,&#92;,&#92;,&#92;,&#92;, v=&#92;sin x" class="latex" /></p>
+<p style="text-align: center;">\[u=e^x,\,\,\,\,\, dv=\cos x dx\longrightarrow du=e^x dx,\,\,\,\,\, v=\sin x\]</p>
 <p>&nbsp;</p>
 <p>Plug this in and we have:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+e%5Ex%5Csin+x+dx%3D+-e%5Ex+%5Ccos+x%2Be%5Ex%5Csin+x-%5Cint+e%5Ex%5Csin+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int e^x&#92;sin x dx= -e^x &#92;cos x+e^x&#92;sin x-&#92;int e^x&#92;sin x dx" title="&#92;int e^x&#92;sin x dx= -e^x &#92;cos x+e^x&#92;sin x-&#92;int e^x&#92;sin x dx" class="latex" /></p>
+<p style="text-align: center;">\[\int e^x\sin x dx= -e^x \cos x+e^x\sin x-\int e^x\sin x dx\]</p>
 <p>&nbsp;</p>
 <p>Disaster!! It looks like our answer includes the thing that we were trying to find in the first place&#8230;.but there&#8217;s a subtle but important difference, and that is in the minus sign! We can now rearrange the above equation by taking the integral on the right hand side to the left:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5Cint+e%5Ex%5Csin+x+dx%3D+-e%5Ex+%5Ccos+x%2Be%5Ex%5Csin+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2&#92;int e^x&#92;sin x dx= -e^x &#92;cos x+e^x&#92;sin x" title="2&#92;int e^x&#92;sin x dx= -e^x &#92;cos x+e^x&#92;sin x" class="latex" /></p>
+<p style="text-align: center;">\[2\int e^x\sin x dx= -e^x \cos x+e^x\sin x\]</p>
 <p>&nbsp;</p>
 <p>and so</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+e%5Ex%5Csin+x+dx%3D%5Cfrac%7Be%5Ex%7D%7B2%7D%5Cleft%28%5Csin+x-%5Ccos+x%5Cright%29%2Bc&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int e^x&#92;sin x dx=&#92;frac{e^x}{2}&#92;left(&#92;sin x-&#92;cos x&#92;right)+c" title="&#92;int e^x&#92;sin x dx=&#92;frac{e^x}{2}&#92;left(&#92;sin x-&#92;cos x&#92;right)+c" class="latex" /></p>
+<p style="text-align: center;">\[\int e^x\sin x dx=\frac{e^x}{2}\left(\sin x-\cos x\right)+c\]</p>
 <p>&nbsp;</p>
 <p>So we actually have the answer without having to do the second integral&#8230;magic!!</p>
 <p>&nbsp;</p>
-<p>Note that it might be a bit surprising that the <img src="//s0.wp.com/latex.php?latex=c&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="c" title="c" class="latex" /> popped up out of nowhere. The point is that an indefinite integral is only ever defined up to an additive constant and so we are always free to add this.</p>
+<p>Note that it might be a bit surprising that the \(c\) popped up out of nowhere. The point is that an indefinite integral is only ever defined up to an additive constant and so we are always free to add this.</p>
 <p>&nbsp;</p>
 <p><strong>A cheeky trig integral</strong></p>
 <p>&nbsp;</p>
 <p>Let&#8217;s look at something which seems really hard to do but actually using integration by parts becomes pretty easy&#8230;</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+%5Carcsin+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int &#92;arcsin x dx" title="&#92;int &#92;arcsin x dx" class="latex" /></p>
+<p style="text-align: center;">\[\int \arcsin x dx\]</p>
 <p style="text-align: left;">Integration by parts helps us because it allows us to work with the derivatives of functions to simplify things.</p>
 <p style="text-align: left;">We&#8217;re going to choose here to have:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=u%3D%5Carcsin+x%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+dv%3Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u=&#92;arcsin x,&#92;,&#92;,&#92;,&#92;,&#92;, dv=dx" title="u=&#92;arcsin x,&#92;,&#92;,&#92;,&#92;,&#92;, dv=dx" class="latex" /></p>
-<p style="text-align: left;">To work out what <img src="//s0.wp.com/latex.php?latex=du&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="du" title="du" class="latex" /> is it&#8217;s easiest to invert the expression to get <img src="//s0.wp.com/latex.php?latex=x%3D%5Csin+u&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=&#92;sin u" title="x=&#92;sin u" class="latex" />, then take <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdx%7D%7Bdu%7D%3D%5Ccos+u%3D%5Csqrt%7B1-%5Csin%5E2u%7D%3D%5Csqrt%7B1-x%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dx}{du}=&#92;cos u=&#92;sqrt{1-&#92;sin^2u}=&#92;sqrt{1-x^2}" title="&#92;frac{dx}{du}=&#92;cos u=&#92;sqrt{1-&#92;sin^2u}=&#92;sqrt{1-x^2}" class="latex" />. Thus:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=du%3D%5Cfrac%7Bdx%7D%7B%5Csqrt%7B1-x%5E2%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="du=&#92;frac{dx}{&#92;sqrt{1-x^2}}" title="du=&#92;frac{dx}{&#92;sqrt{1-x^2}}" class="latex" /></p>
+<p style="text-align: center;">\[u=\arcsin x,\,\,\,\,\, dv=dx\]</p>
+<p style="text-align: left;">To work out what \(du\) is it&#8217;s easiest to invert the expression to get \(x=\sin u\), then take \(\frac{dx}{du}=\cos u=\sqrt{1-\sin^2u}=\sqrt{1-x^2}\). Thus:</p>
+<p style="text-align: center;">\[du=\frac{dx}{\sqrt{1-x^2}}\]</p>
 <p style="text-align: left;">Plugging this into the integration by parts formula:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+%5Carcsin+x+dx%3Dx%5Carcsin+x-%5Cint+%5Cfrac%7Bx%7D%7B%5Csqrt%7B1-x%5E2%7D%7D+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int &#92;arcsin x dx=x&#92;arcsin x-&#92;int &#92;frac{x}{&#92;sqrt{1-x^2}} dx" title="&#92;int &#92;arcsin x dx=x&#92;arcsin x-&#92;int &#92;frac{x}{&#92;sqrt{1-x^2}} dx" class="latex" /></p>
-<p style="text-align: left;">This last expression we can solve with a substitution: <img src="//s0.wp.com/latex.php?latex=p%3D1-x%5E2%5Crightarrow+dp%3D-2x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="p=1-x^2&#92;rightarrow dp=-2x dx" title="p=1-x^2&#92;rightarrow dp=-2x dx" class="latex" />:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+%5Carcsin+x+dx%3Dx%5Carcsin+x%2B%5Cfrac%7B1%7D%7B2%7D%5Cint+%5Cfrac%7B1%7D%7B%5Csqrt%7Bp%7D%7D+dp%3Dx%5Carcsin+x%2B%5Csqrt%7Bp%7D%2Bc%3Dx%5Carcsin+x%2B%5Csqrt%7B1-x%5E2%7D%2Bc&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int &#92;arcsin x dx=x&#92;arcsin x+&#92;frac{1}{2}&#92;int &#92;frac{1}{&#92;sqrt{p}} dp=x&#92;arcsin x+&#92;sqrt{p}+c=x&#92;arcsin x+&#92;sqrt{1-x^2}+c" title="&#92;int &#92;arcsin x dx=x&#92;arcsin x+&#92;frac{1}{2}&#92;int &#92;frac{1}{&#92;sqrt{p}} dp=x&#92;arcsin x+&#92;sqrt{p}+c=x&#92;arcsin x+&#92;sqrt{1-x^2}+c" class="latex" /></p>
+<p style="text-align: center;">\[\int \arcsin x dx=x\arcsin x-\int \frac{x}{\sqrt{1-x^2}} dx\]</p>
+<p style="text-align: left;">This last expression we can solve with a substitution: \(p=1-x^2\rightarrow dp=-2x dx\):</p>
+<p style="text-align: center;">\[\int \arcsin x dx=x\arcsin x+\frac{1}{2}\int \frac{1}{\sqrt{p}} dp=x\arcsin x+\sqrt{p}+c=x\arcsin x+\sqrt{1-x^2}+c\]</p>
 <p style="text-align: left;"><strong>Substitution then by parts</strong></p>
 <p style="text-align: left;">How about the following integral:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+%5Ccos%5Csqrt%7Bx%7D+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int &#92;cos&#92;sqrt{x} dx" title="&#92;int &#92;cos&#92;sqrt{x} dx" class="latex" /></p>
-<p style="text-align: left;">We start with a simpler substitution: <img src="//s0.wp.com/latex.php?latex=%5Csqrt%7Bx%7D%3Du%5Crightarrow+%5Cfrac%7Bdx%7D%7B2%5Csqrt%7Bx%7D%7D%3Ddu%5Crightarrow+dx%3D2u+du&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sqrt{x}=u&#92;rightarrow &#92;frac{dx}{2&#92;sqrt{x}}=du&#92;rightarrow dx=2u du" title="&#92;sqrt{x}=u&#92;rightarrow &#92;frac{dx}{2&#92;sqrt{x}}=du&#92;rightarrow dx=2u du" class="latex" /> which gives:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+%5Ccos%5Csqrt%7Bx%7D+dx%3D2+%5Cint+u%5Ccos+u+du&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int &#92;cos&#92;sqrt{x} dx=2 &#92;int u&#92;cos u du" title="&#92;int &#92;cos&#92;sqrt{x} dx=2 &#92;int u&#92;cos u du" class="latex" /></p>
-<p style="text-align: left;">And now we use integration by parts on this, choosing <img src="//s0.wp.com/latex.php?latex=dg%3D%5Ccos+u+du%2C+%5C%2C%5C%2C%5C%2C%5C%2C+f%3Du&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="dg=&#92;cos u du, &#92;,&#92;,&#92;,&#92;, f=u" title="dg=&#92;cos u du, &#92;,&#92;,&#92;,&#92;, f=u" class="latex" /> (note that I&#8217;ve chosen these variable labels so that you have to pay attention to what we&#8217;re doing in the integration by parts).</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+%5Ccos%5Csqrt%7Bx%7Ddx%3D2+%5Cint+u%5Ccos+u+du%3D2+u%5Csin+u-%5Cint+2%5Csin+u+du%3D2u%5Csin+u%2B2%5Ccos+u%2Bc&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int &#92;cos&#92;sqrt{x}dx=2 &#92;int u&#92;cos u du=2 u&#92;sin u-&#92;int 2&#92;sin u du=2u&#92;sin u+2&#92;cos u+c" title="&#92;int &#92;cos&#92;sqrt{x}dx=2 &#92;int u&#92;cos u du=2 u&#92;sin u-&#92;int 2&#92;sin u du=2u&#92;sin u+2&#92;cos u+c" class="latex" /></p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%28%5Csqrt%7Bx%7D%5Csin%5Csqrt%7Bx%7D%2B%5Ccos%5Csqrt%7Bx%7D%29%2Bc&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2(&#92;sqrt{x}&#92;sin&#92;sqrt{x}+&#92;cos&#92;sqrt{x})+c" title="2(&#92;sqrt{x}&#92;sin&#92;sqrt{x}+&#92;cos&#92;sqrt{x})+c" class="latex" /></p>
+<p style="text-align: center;">\[\int \cos\sqrt{x} dx\]</p>
+<p style="text-align: left;">We start with a simpler substitution: \(\sqrt{x}=u\rightarrow \frac{dx}{2\sqrt{x}}=du\rightarrow dx=2u du\) which gives:</p>
+<p style="text-align: center;">\[\int \cos\sqrt{x} dx=2 \int u\cos u du\]</p>
+<p style="text-align: left;">And now we use integration by parts on this, choosing \(dg=\cos u du, \,\,\,\, f=u\) (note that I&#8217;ve chosen these variable labels so that you have to pay attention to what we&#8217;re doing in the integration by parts).</p>
+<p style="text-align: center;">\[\int \cos\sqrt{x}dx=2 \int u\cos u du=2 u\sin u-\int 2\sin u du=2u\sin u+2\cos u+c\]</p>
+<p style="text-align: center;">\[2(\sqrt{x}\sin\sqrt{x}+\cos\sqrt{x})+c\]</p>
 <p style="text-align: left;"><strong>Try them yourself&#8230;</strong></p>
 <p style="text-align: left;">Try solving:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+%28%5Cln+x%29%5E2+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int (&#92;ln x)^2 dx" title="&#92;int (&#92;ln x)^2 dx" class="latex" /></p>
-<p style="text-align: left;">Both by choosing <img src="//s0.wp.com/latex.php?latex=u%3D%28%5Cln+x%29%5E2%5C%2C%5C%2C%5C%2C+dv%3D+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u=(&#92;ln x)^2&#92;,&#92;,&#92;, dv= dx" title="u=(&#92;ln x)^2&#92;,&#92;,&#92;, dv= dx" class="latex" /> and separately by choosing <img src="//s0.wp.com/latex.php?latex=u%3D%5Cln+x%5C%2C%5C%2C%5C%2C+dv%3D%5Cln+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u=&#92;ln x&#92;,&#92;,&#92;, dv=&#92;ln x dx" title="u=&#92;ln x&#92;,&#92;,&#92;, dv=&#92;ln x dx" class="latex" />. Make sure that you get the same answer.</p>
+<p style="text-align: center;">\[\int (\ln x)^2 dx\]</p>
+<p style="text-align: left;">Both by choosing \(u=(\ln x)^2\,\,\, dv= dx\) and separately by choosing \(u=\ln x\,\,\, dv=\ln x dx\). Make sure that you get the same answer.</p>
 <p style="text-align: left;">Note importantly that:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cln+%7Cx%7C%3D%5Cln+x%2B+c&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln |x|=&#92;ln x+ c" title="&#92;ln |x|=&#92;ln x+ c" class="latex" /></p>
-<p style="text-align: left;">Though we won&#8217;t be able to explain exactly why until you have done complex numbers. What this means though is that in reality you can always convert a <img src="//s0.wp.com/latex.php?latex=%5Cln+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln x" title="&#92;ln x" class="latex" /> into a <img src="//s0.wp.com/latex.php?latex=%5Cln+x%2Bc&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln x+c" title="&#92;ln x+c" class="latex" />.</p>
+<p style="text-align: center;">\[\ln |x|=\ln x+ c\]</p>
+<p style="text-align: left;">Though we won&#8217;t be able to explain exactly why until you have done complex numbers. What this means though is that in reality you can always convert a \(\ln x\) into a \(\ln x+c\).</p>
 <p style="text-align: left;">Try this one yourself too:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+x+%5Csin+x%5Ccos+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int x &#92;sin x&#92;cos x dx" title="&#92;int x &#92;sin x&#92;cos x dx" class="latex" /></p>
-<p style="text-align: left;">Hint: you will have to work out how to integrate <img src="//s0.wp.com/latex.php?latex=%5Csin+x%5Ccos+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sin x&#92;cos x" title="&#92;sin x&#92;cos x" class="latex" /> and this can be done with a simple integration by parts, or by writing this in terms of a double angle formula.</p>
+<p style="text-align: center;">\[\int x \sin x\cos x dx\]</p>
+<p style="text-align: left;">Hint: you will have to work out how to integrate \(\sin x\cos x\) and this can be done with a simple integration by parts, or by writing this in terms of a double angle formula.</p>
 <h2 style="text-align: left;"></h2>
 <h2 style="text-align: left;"><span style="color: #0000ff;">Bonus Section</span></h2>
 <p><span style="color: #0000ff;"> </span></p>
@@ -349,13 +350,13 @@ img.emoji {
 <p><span style="color: #0000ff;">I&#8217;m sure you all know what a prime number is: those numbers greater than 1 which are divisible only by themselves and 1. They are in many ways the most fundamental of numbers. All other numbers can be constructed from them.</span></p>
 <p><span style="color: #0000ff;"><strong>The Fundamental Theorem of Arithmetic</strong> tells us that all numbers can be written as the product of prime numbers. This in itself is not so special &#8211; the theorem tells us however that each number can be written like this in only one way &#8211; the product is unique for every number. For instance:</span></p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><span style="color: #0000ff;"><img src="//s0.wp.com/latex.php?latex=50%3D2%2A5%2A5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="50=2*5*5" title="50=2*5*5" class="latex" /></span></p>
+<p style="text-align: center;"><span style="color: #0000ff;">\(50=2*5*5\)</span></p>
 <p>&nbsp;</p>
 <p><span style="color: #0000ff;">There is no other way to write 50 as the product of primes (other than by rearranging the above).</span></p>
 <p><span style="color: #0000ff;">The way we break down each number into its prime factors is called Prime Factorization. It&#8217;s actually quite easy to prove this by induction.</span></p>
 <p><span style="color: #0000ff;">There&#8217;s a second statement which looks like it should be just as easy to prove:</span></p>
 <p><span style="color: #0000ff;"><strong>Every even integer greater than 2 can be written as the sum of two primes.</strong></span></p>
-<p><span style="color: #0000ff;">This is known as <strong>Goldbach&#8217;s conjecture</strong> and we still cannot prove that it is true, although we know that it holds true for integers up to around <img src="//s0.wp.com/latex.php?latex=10%5E%7B18%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="10^{18}" title="10^{18}" class="latex" />. Doesn&#8217;t that seem strange?</span></p>
+<p><span style="color: #0000ff;">This is known as <strong>Goldbach&#8217;s conjecture</strong> and we still cannot prove that it is true, although we know that it holds true for integers up to around \(10^{18}\). Doesn&#8217;t that seem strange?</span></p>
 <p><span style="color: #0000ff;">Prime numbers really are the bricks and mortar of all  numbers. Next up, how many primes are there and how many twin primes are there?</span></p>
 <p><span style="color: #0000ff;">See a nice video here showing some mysteries of the prime numbers:</span></p>
 <p>&nbsp;</p>

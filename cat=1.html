@@ -165,7 +165,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive category category-uncategorized category-1 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -237,9 +238,9 @@ img.emoji {
 <blockquote><p>Here, we shall attempt to mitigate the challenges that we have encountered, as before, and we shall give a rather beautiful closing which shall link concepts in this space of inverse reinforcement learning to &#8216;general&#8217; machine learning structures, in particular generative adversarial networks. </p></blockquote>
 <p align="center"><strong>Inverse Reinforcement Learning with Unknown Dynamics and Possibly Higher Dimensional Spaces</strong></p>
 <p>As we saw previously, the maximum entropy inverse reinforcement learning approach proceeds by defining the probability of a certain trajectory under the expert as being,</p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=p%28%5Ctau%29%3D%5Cdfrac%7B1%7D%7BZ%7De%5E%7BR_%5Cpsi+%28%5Ctau%29%7D%2C&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="p(&#92;tau)=&#92;dfrac{1}{Z}e^{R_&#92;psi (&#92;tau)}," title="p(&#92;tau)=&#92;dfrac{1}{Z}e^{R_&#92;psi (&#92;tau)}," class="latex" /></p>
+<p align="center">\[p(\tau)=\dfrac{1}{Z}e^{R_\psi (\tau)},\]</p>
 <p>where </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=Z%3D%5Cint+e%5E%7BR_%5Cpsi%28%5Ctau%29%7Dd+%5Ctau.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Z=&#92;int e^{R_&#92;psi(&#92;tau)}d &#92;tau." title="Z=&#92;int e^{R_&#92;psi(&#92;tau)}d &#92;tau." class="latex" /></p>
+<p align="center">\[Z=\int e^{R_\psi(\tau)}d \tau.\]</p>
 <p>We mentioned that this is hard to compute in higher dimensional spaces.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=61.html" title="Posts by Siphelele Danisa" rel="author">Siphelele Danisa</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
@@ -263,22 +264,22 @@ img.emoji {
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=16521.html">Inverse Reinforcement Learning: The general basics</a></h2><div class="fusion-post-content-container"><p align="center"><strong>Standard Reinforcement Learning</strong></p>
 <p>The very basic ideas in Reinforcement Learning are usually defined in the context of Markov Decision Processes. For everything that follows, unless stated otherwise, assume that the structures are finite.</p>
-<p>A Markov Decision Process (MDP) is a tuple <img src="//s0.wp.com/latex.php?latex=%28S%2CA%2C+P%2C+%5Cgamma%2C+R%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(S,A, P, &#92;gamma, R)" title="(S,A, P, &#92;gamma, R)" class="latex" /> where the following is true:<br />
-<em>1. <img src="//s0.wp.com/latex.php?latex=S&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="S" title="S" class="latex" /> is the set of states <img src="//s0.wp.com/latex.php?latex=s_k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s_k" title="s_k" class="latex" /> with <img src="//s0.wp.com/latex.php?latex=k%5Cin+%5Cmathbb%7BN%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k&#92;in &#92;mathbb{N} " title="k&#92;in &#92;mathbb{N} " class="latex" />.<br />
-2. <img src="//s0.wp.com/latex.php?latex=A&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="A" title="A" class="latex" /> is the set of actions <img src="//s0.wp.com/latex.php?latex=a_k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_k" title="a_k" class="latex" /> with <img src="//s0.wp.com/latex.php?latex=k%5Cin+%5Cmathbb%7BN%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k&#92;in &#92;mathbb{N} " title="k&#92;in &#92;mathbb{N} " class="latex" />.<br />
-3. <img src="//s0.wp.com/latex.php?latex=P&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P" title="P" class="latex" /> is the matrix of transition probabilities for taking action <img src="//s0.wp.com/latex.php?latex=a_k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_k" title="a_k" class="latex" /> given state <img src="//s0.wp.com/latex.php?latex=s_j&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s_j" title="s_j" class="latex" />.<br />
-4. <img src="//s0.wp.com/latex.php?latex=%5Cgamma&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;gamma" title="&#92;gamma" class="latex" /> is the discount factor in the unit interval.<br />
-5. <img src="//s0.wp.com/latex.php?latex=R&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="R" title="R" class="latex" /> is defined as the reward function, and is taken as a function from <img src="//s0.wp.com/latex.php?latex=A%5Ctimes+S%5Cto+%5Cmathbb%7BR%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="A&#92;times S&#92;to &#92;mathbb{R}" title="A&#92;times S&#92;to &#92;mathbb{R}" class="latex" />.</em></p>
+<p>A Markov Decision Process (MDP) is a tuple \((S,A, P, \gamma, R)\) where the following is true:<br />
+<em>1. \(S\) is the set of states \(s_k\) with \(k\in \mathbb{N}\).<br />
+2. \(A\) is the set of actions \(a_k\) with \(k\in \mathbb{N}\).<br />
+3. \(P\) is the matrix of transition probabilities for taking action \(a_k\) given state \(s_j\).<br />
+4. \(\gamma\) is the discount factor in the unit interval.<br />
+5. \(R\) is defined as the reward function, and is taken as a function from \(A\times S\to \mathbb{R}\).</em></p>
 <p>In this context, we have policies as maps
-</p><p align="center"><img src="//s0.wp.com/latex.php?latex=%5Cpi%3AS%5Cto+A+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi:S&#92;to A " title="&#92;pi:S&#92;to A " class="latex" />, </p>
-<p>state value functions for a policy, <img src="//s0.wp.com/latex.php?latex=%5Cpi+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi " title="&#92;pi " class="latex" />, evaluated at <img src="//s0.wp.com/latex.php?latex=s_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s_1" title="s_1" class="latex" /> as </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=V%5E%5Cpi%28s_1%29%3D%5Cmathbb%7BE%7D%5B%5Csum_%7Bi%3D0%7D%5Cgamma+%5Ei+R%28s_i%29%7C%5Cpi%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="V^&#92;pi(s_1)=&#92;mathbb{E}[&#92;sum_{i=0}&#92;gamma ^i R(s_i)|&#92;pi]" title="V^&#92;pi(s_1)=&#92;mathbb{E}[&#92;sum_{i=0}&#92;gamma ^i R(s_i)|&#92;pi]" class="latex" />, </p>
+</p><p align="center">\(\pi:S\to A\), </p>
+<p>state value functions for a policy, \(\pi\), evaluated at \(s_1\) as </p>
+<p align="center">\(V^\pi(s_1)=\mathbb{E}[\sum_{i=0}\gamma ^i R(s_i)|\pi]\), </p>
 <p>and state action values defined as </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=Q%5E%5Cpi+%28s%2Ca%29%3DR%28s%29%2B%5Cgamma+%5Cmathbb%7BE%7D_%7Bs%27%5Csim+P_%7Bsa%7D%7D%5BV%5E%5Cpi+%28s%27%29%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Q^&#92;pi (s,a)=R(s)+&#92;gamma &#92;mathbb{E}_{s&#039;&#92;sim P_{sa}}[V^&#92;pi (s&#039;)]" title="Q^&#92;pi (s,a)=R(s)+&#92;gamma &#92;mathbb{E}_{s&#039;&#92;sim P_{sa}}[V^&#92;pi (s&#039;)]" class="latex" />. </p>
+<p align="center">\(Q^\pi (s,a)=R(s)+\gamma \mathbb{E}_{s'\sim P_{sa}}[V^\pi (s')]\). </p>
 <p>The optimal functions are defined as </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=V%5E%2A%28s%29%3D%5Csup_%5Cpi+V%5E%7B%5Cpi%7D%28s%29%2C+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="V^*(s)=&#92;sup_&#92;pi V^{&#92;pi}(s), " title="V^*(s)=&#92;sup_&#92;pi V^{&#92;pi}(s), " class="latex" /> </p>
+<p align="center">\[V^*(s)=\sup_\pi V^{\pi}(s),\]</p>
 <p>and </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=Q%5E%2A%28s%2Ca%29%3D%5Csup_%5Cpi+Q%5E%5Cpi+%28s%2Ca%29.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Q^*(s,a)=&#92;sup_&#92;pi Q^&#92;pi (s,a)." title="Q^*(s,a)=&#92;sup_&#92;pi Q^&#92;pi (s,a)." class="latex" /></p>
+<p align="center">\[Q^*(s,a)=\sup_\pi Q^\pi (s,a).\]</p>
 <blockquote><p>Here we assume that we have a reward function, and this reward function is used to determine an optimal policy.</p></blockquote>&hellip;</div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=61.html" title="Posts by Siphelele Danisa" rel="author">Siphelele Danisa</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
@@ -343,11 +344,11 @@ img.emoji {
 <span>March 28th, 2020</span><span class="fusion-inline-sep">|</span><a href="cat=19.html" rel="category">English</a>, <a href="cat=40.html" rel="category">Level: intermediate</a>, <a href="cat=1.html" rel="category">Uncategorized</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="p=16127.html#respond">0 Comments</a></span></div><div class="fusion-alignright"><a href="p=16127.html" class="fusion-read-more">Read More</a></div></div></div><div id="post-16082" class="fusion-post-large post fusion-clearfix post-16082 type-post status-publish format-standard hentry category-uncategorized">
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=16082.html">The Res-Net-NODE Narrative</a></h2><div class="fusion-post-content-container"><p align="center"><strong>Humble Beginnings: Ordinary Differential Equations</strong></p>
-<p>The story begins with differential equations. Consider <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" /> such that <img src="//s0.wp.com/latex.php?latex=f%3A%5B0%2CT%5D%5Ctimes+%5Cmathbb%7BR%7D%5En%5Cto+%5Cmathbb%7BR%7D%5En&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f:[0,T]&#92;times &#92;mathbb{R}^n&#92;to &#92;mathbb{R}^n" title="f:[0,T]&#92;times &#92;mathbb{R}^n&#92;to &#92;mathbb{R}^n" class="latex" /> is a continuous function. We can construct a rather simple differential equation given this in the following way. We let</p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%5Cbegin%7Bcases%7D++%7By%27%28t%29%7D%3Df%28t%2Cy%28t%29%29%5C%5C++y%280%29%3Dy_0%5Cin+%5Cmathbb%7BR%7D%5En++%5Cend%7Bcases%7D++&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;begin{cases}  {y&#039;(t)}=f(t,y(t))&#92;&#92;  y(0)=y_0&#92;in &#92;mathbb{R}^n  &#92;end{cases}  " title="&#92;begin{cases}  {y&#039;(t)}=f(t,y(t))&#92;&#92;  y(0)=y_0&#92;in &#92;mathbb{R}^n  &#92;end{cases}  " class="latex" /></p>
-<p>A solution to this system is a continuous map that is defined in the neighbourhood of <img src="//s0.wp.com/latex.php?latex=t%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t=0" title="t=0" class="latex" /> such that this map satisfies the differential equation. </p>
-<p>Ordinary differential equations are well-studied, and we know that, for example, a solution to the given differential equation will exist whenever the function <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" /> satisfies the following:</p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%28%5Cforall+x%2Cy%5Cin+%5Cmathbb%7BR%7D%5En%29%28%5Cexists+C%3E0+%28%5Cin+%5Cmathbb%7BR%7D%29%29%28%7C%7Cf%28t%2Cy%29-f%28t%2Cx%29%7C%7C%5Cleq+C%7C%7Cy-x%7C%7C%29++&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(&#92;forall x,y&#92;in &#92;mathbb{R}^n)(&#92;exists C&gt;0 (&#92;in &#92;mathbb{R}))(||f(t,y)-f(t,x)||&#92;leq C||y-x||)  " title="(&#92;forall x,y&#92;in &#92;mathbb{R}^n)(&#92;exists C&gt;0 (&#92;in &#92;mathbb{R}))(||f(t,y)-f(t,x)||&#92;leq C||y-x||)  " class="latex" /></p>
+<p>The story begins with differential equations. Consider \(f\) such that \(f:[0,T]\times \mathbb{R}^n\to \mathbb{R}^n\) is a continuous function. We can construct a rather simple differential equation given this in the following way. We let</p>
+<p align="center">\[\begin{cases}  {y'(t)}=f(t,y(t))\\  y(0)=y_0\in \mathbb{R}^n  \end{cases}\]</p>
+<p>A solution to this system is a continuous map that is defined in the neighbourhood of \(t=0\) such that this map satisfies the differential equation. </p>
+<p>Ordinary differential equations are well-studied, and we know that, for example, a solution to the given differential equation will exist whenever the function \(f\) satisfies the following:</p>
+<p align="center">\[(\forall x,y\in \mathbb{R}^n)(\exists C&gt;0 (\in \mathbb{R}))(||f(t,y)-f(t,x)||\leq C||y-x||)\]</p>
 <p>This property is known as <em>Lipschitz continuity</em>. A function that satisfies this condition is said to be Lipschitz. We shall see that whenever we require this condition, on up coming situations, wonderful things happen!</p>
 <p>A remarkable field that almost always couples with differential equations is numerical analysis, where we learn to solve differential equations numerically and we study these numerical schemes. We shall explore numerical integration briefly.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=61.html" title="Posts by Siphelele Danisa" rel="author">Siphelele Danisa</a></span></span><span class="fusion-inline-sep">|</span>
 	
@@ -389,7 +390,7 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=15998.html">The Objective Function</a></h2><div class="fusion-post-content-container"><p>In both Supervised and Unsupervised machine learning, most algorithms are centered around minimising (or, equivalently) maximising some objective function. This function is supposed to somehow represent what the model knows/can get right. Normally, as one would expect, the objective function does not always reflect exactly what we want.</p>
 <p>The objective function presents 2 main problems: 1. how do we minimise it (the answer to this is up for debate and there is lots of interesting research about efficient optimisation of non-convex functions and 2) assuming we can minimise it perfectly, is it the correct thing to be minimising?</p>
 <p>It is point 2 which is the focus of this post.</p>
-<p>Let&#8217;s take the example of square-loss-linear-regression.<em> </em>To do so we train a linear regression model with a square loss <img src="//s0.wp.com/latex.php?latex=%5Cmathcal%7BL%7D%28%5Cmathbf%7Bw%7D%29%3D%5Csum_i+%28y_i+-+%5Cmathbf%7Bw%7D%5ETx_i%29%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathcal{L}(&#92;mathbf{w})=&#92;sum_i (y_i - &#92;mathbf{w}^Tx_i)^2" title="&#92;mathcal{L}(&#92;mathbf{w})=&#92;sum_i (y_i - &#92;mathbf{w}^Tx_i)^2" class="latex" />. (Where we are taking the inner product of learned weights with a vector of features for each observation to predict the outcome).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=81.html" title="Posts by Dean Bunce" rel="author">Dean Bunce</a></span></span><span class="fusion-inline-sep">|</span>
+<p>Let&#8217;s take the example of square-loss-linear-regression.<em> </em>To do so we train a linear regression model with a square loss \(\mathcal{L}(\mathbf{w})=\sum_i (y_i - \mathbf{w}^Tx_i)^2\). (Where we are taking the inner product of learned weights with a vector of features for each observation to predict the outcome).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=81.html" title="Posts by Dean Bunce" rel="author">Dean Bunce</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -403,7 +404,7 @@ img.emoji {
 <ul>
 <li>Squaring the circle: With only a compass and a straight edge, draw a square with the same area as that of a given circle.</li>
 <li>Doubling the cube: With only a compass and a straight edge, draw the edge of a cube with volume twice that of a cube whose edge is given.</li>
-<li>Constructing regular polygons: Given a compass and a straight edge, construct a regular n-gon in a given circle for <img src="//s0.wp.com/latex.php?latex=n%5Cge+3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 3" title="n&#92;ge 3" class="latex" />.</li>
+<li>Constructing regular polygons: Given a compass and a straight edge, construct a regular n-gon in a given circle for \(n\ge 3\).</li>
 <li>Trisecting an angle: Given a compass and a straight edge, and a given angle, construct an angle that is one third of the original.</li></ul>&hellip;</div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	

@@ -21,11 +21,11 @@
 
 		<meta property="og:title" content="Domain of a composite function - part 1"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=12438.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=12438.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="This post was written by Muhammad Azhar Rohiman, a first year student on MAM1000W at UCT. This post came about when he asked me a question related to domains of composite functions, and it was clear that on first learning about such topics, there are some simple misunderstandings. I suggested that he write a couple"/>
 
-					<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+					<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 				<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -74,7 +74,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=12438.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=12438.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-3eC' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D12438.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D12438&.html#038;format=xml" />
@@ -224,7 +224,8 @@ padding: 10px;
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-12438 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar no-mobile-totop layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -294,43 +295,43 @@ padding: 10px;
 															<h2 class="entry-title">Domain of a composite function &#8211; part 1</h2>						<div class="post-content">
 				<p>This post was written by Muhammad Azhar Rohiman, a first year student on MAM1000W at UCT. This post came about when he asked me a question related to domains of composite functions, and it was clear that on first learning about such topics, there are some simple misunderstandings. I suggested that he write a couple of paragraphs explaining what he had learnt, and the following is, I think, a very clear explanation of some of the ideas and pitfalls of this topic.</p>
 <p>&nbsp;</p>
-<p>Consider the two functions below, from which we want to find the domain of <img src="//s0.wp.com/latex.php?latex=%28+f+%5Ccirc+g+%29%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="( f &#92;circ g )(x)" title="( f &#92;circ g )(x)" class="latex" /></p>
+<p>Consider the two functions below, from which we want to find the domain of \(( f \circ g )(x)\)</p>
 <p>&nbsp;</p>
 <p style="text-align: center;">
-<img src="//s0.wp.com/latex.php?latex=f%28x%29+%3D+%5Cfrac%7B1%7D%7Bx%2B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x) = &#92;frac{1}{x+2}" title="f(x) = &#92;frac{1}{x+2}" class="latex" />, <img src="//s0.wp.com/latex.php?latex=g%28x%29+%3D+%5Cfrac%7Bx%7D%7Bx-3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x) = &#92;frac{x}{x-3}" title="g(x) = &#92;frac{x}{x-3}" class="latex" />
+\(f(x) = \frac{1}{x+2}\), \(g(x) = \frac{x}{x-3}\)
 </p>
 <p>&nbsp;</p>
 <p>We know that f(x) and g(x) cannot be defined at the values x = -2 and x = 3 respectively. This can be written as follows: f(-2) and g(3) are not defined. The domain of a composite function will not allow any values restricted by the domain of the starting function, which is g(x). This means that x = 3 will never be included in the domain of the composite function f(g(x)).</p>
 <p>&nbsp;</p>
-<p>Remember that <img src="//s0.wp.com/latex.php?latex=%28+f+%5Ccirc+g%29%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="( f &#92;circ g)(x)" title="( f &#92;circ g)(x)" class="latex" /> which is equal to f(g(x)) is written as <img src="//s0.wp.com/latex.php?latex=f%28%5Cfrac%7Bx%7D%7Bx-3%7D%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(&#92;frac{x}{x-3})" title="f(&#92;frac{x}{x-3})" class="latex" /> in this case. So, we want to make sure that every value being returned by g(x), i.e <img src="//s0.wp.com/latex.php?latex=%28%5Cfrac%7Bx%7D%7Bx-3%7D%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(&#92;frac{x}{x-3})" title="(&#92;frac{x}{x-3})" class="latex" />, is in the domain of the function f(x). Think of it in this way: f (can take on any value except -2).</p>
+<p>Remember that \(( f \circ g)(x)\) which is equal to f(g(x)) is written as \(f(\frac{x}{x-3})\) in this case. So, we want to make sure that every value being returned by g(x), i.e \((\frac{x}{x-3})\), is in the domain of the function f(x). Think of it in this way: f (can take on any value except -2).</p>
 <p>&nbsp;</p>
-<p>Therefore, we do not want the function <img src="//s0.wp.com/latex.php?latex=g%28x%29+%3D+%5Cfrac%7Bx%7D%7Bx-3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x) = &#92;frac{x}{x-3}" title="g(x) = &#92;frac{x}{x-3}" class="latex" /> to give us a value of -2 because f(-2) is not defined. So, we need to find out when g(x) = -2. We solve this algebraically:</p>
+<p>Therefore, we do not want the function \(g(x) = \frac{x}{x-3}\) to give us a value of -2 because f(-2) is not defined. So, we need to find out when g(x) = -2. We solve this algebraically:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bx%7D%7Bx-3%7D+%3D+-2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{x}{x-3} = -2" title="&#92;frac{x}{x-3} = -2" class="latex" /></p>
+<p style="text-align: center;">\[\frac{x}{x-3} = -2\]</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=x+%3D+-2%28x-3%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x = -2(x-3)" title="x = -2(x-3)" class="latex" /></p>
+<p style="text-align: center;">\[x = -2(x-3)\]</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=x+%2B2x+%3D6&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x +2x =6" title="x +2x =6" class="latex" /></p>
+<p style="text-align: center;">\[x +2x =6\]</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=x+%3D+2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x = 2" title="x = 2" class="latex" /></p>
+<p style="text-align: center;">\[x = 2\]</p>
 <p>&nbsp;</p>
-<p>When x = 2, we get g(x) = -2. This will then give us f(-2), and we do not want that. Thus, we can conclude that the domain of <img src="//s0.wp.com/latex.php?latex=%28+f+%5Ccirc+g+%29%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="( f &#92;circ g )(x)" title="( f &#92;circ g )(x)" class="latex" /> will be all real numbers except 3 and 2.</p>
+<p>When x = 2, we get g(x) = -2. This will then give us f(-2), and we do not want that. Thus, we can conclude that the domain of \(( f \circ g )(x)\) will be all real numbers except 3 and 2.</p>
 <p>&nbsp;</p>
-<p><strong>Note</strong>: One of the excluded values of x is 2, not -2. The value x = -2 makes it through the composite function because the value of f(g(-2)) returns <img src="//s0.wp.com/latex.php?latex=f%28%5Cfrac%7B2%7D%7B5%7D%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(&#92;frac{2}{5})" title="f(&#92;frac{2}{5})" class="latex" /> which is defined in f(x).</p>
+<p><strong>Note</strong>: One of the excluded values of x is 2, not -2. The value x = -2 makes it through the composite function because the value of f(g(-2)) returns \(f(\frac{2}{5})\) which is defined in f(x).</p>
 <p>&nbsp;</p>
-<p><strong>(ii) Now let&#8217;s try to find the domain of <img src="//s0.wp.com/latex.php?latex=%28+g+%5Ccirc+f+%29%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="( g &#92;circ f )(x)" title="( g &#92;circ f )(x)" class="latex" />, using the same functions as above.</strong></p>
+<p><strong>(ii) Now let&#8217;s try to find the domain of \(( g \circ f )(x)\), using the same functions as above.</strong></p>
 <p>&nbsp;</p>
-<p>This time, we have <img src="//s0.wp.com/latex.php?latex=%28+g+%5Ccirc+f+%29%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="( g &#92;circ f )(x)" title="( g &#92;circ f )(x)" class="latex" />, which is equivalent to g(f(x)).  So, the starting function is now f(x) and we know that the values restricted by the domain of the starting function will not be allowed in the domain of a composite function. Therefore, x = -2 can be excluded already from the domain of the composite function.</p>
+<p>This time, we have \(( g \circ f )(x)\), which is equivalent to g(f(x)).  So, the starting function is now f(x) and we know that the values restricted by the domain of the starting function will not be allowed in the domain of a composite function. Therefore, x = -2 can be excluded already from the domain of the composite function.</p>
 <p>&nbsp;</p>
-<p>Since <img src="//s0.wp.com/latex.php?latex=%28+g+%5Ccirc+f+%29%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="( g &#92;circ f )(x)" title="( g &#92;circ f )(x)" class="latex" /> or g(f(x)) is written as <img src="//s0.wp.com/latex.php?latex=g%28%5Cfrac%7B1%7D%7Bx%2B2%7D%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(&#92;frac{1}{x+2})" title="g(&#92;frac{1}{x+2})" class="latex" />, we want f(x) to be in the domain of g(x). That is, g (can take on any value except 3). Therefore, we need to know when the function f(x) gives us a value of 3. To know that, we solve algebraically:</p>
+<p>Since \(( g \circ f )(x)\) or g(f(x)) is written as \(g(\frac{1}{x+2})\), we want f(x) to be in the domain of g(x). That is, g (can take on any value except 3). Therefore, we need to know when the function f(x) gives us a value of 3. To know that, we solve algebraically:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7Bx%2B2%7D+%3D+3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{x+2} = 3" title="&#92;frac{1}{x+2} = 3" class="latex" /></p>
+<p style="text-align: center;">\[\frac{1}{x+2} = 3\]</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=3x%2B6+%3D+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3x+6 = 1" title="3x+6 = 1" class="latex" /></p>
+<p style="text-align: center;">\[3x+6 = 1\]</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=x+%3D+%5Cfrac%7B-5%7D%7B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x = &#92;frac{-5}{3}" title="x = &#92;frac{-5}{3}" class="latex" /></p>
+<p style="text-align: center;">\[x = \frac{-5}{3}\]</p>
 <p>&nbsp;</p>
-<p>We get f(x) = 3 when <img src="//s0.wp.com/latex.php?latex=x+%3D+%5Cfrac%7B-5%7D%7B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x = &#92;frac{-5}{3}" title="x = &#92;frac{-5}{3}" class="latex" />. It implies that the domain of $latex( g \circ f )(x)$ will be all real numbers except -2 and <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B-5%7D%7B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{-5}{3}" title="&#92;frac{-5}{3}" class="latex" />.</p>
+<p>We get f(x) = 3 when \(x = \frac{-5}{3}\). It implies that the domain of $latex( g \circ f )(x)$ will be all real numbers except -2 and \(\frac{-5}{3}\).</p>
 <p>&nbsp;</p>
 <p><strong>Note:</strong></p>
 <ul>

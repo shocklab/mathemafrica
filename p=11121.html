@@ -34,13 +34,13 @@
 
 		<meta property="og:title" content="UCT MAM1000 lecture notes part 17 - Thursday 13th August"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=11121.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=11121.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="Here we&#39;re going to continue looking at how many different ways there are to order collections of objects, but with certain constraints.
 
 We saw previously that if you have $latex n$ (distinguishable) objects, you can arrange them in $latex n!$ ways ($latex n$ positions for the first object $latex (n-1)$ for the second, etc, with a"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -88,7 +88,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=11121.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=11121.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-2Tn' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11121.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11121&.html#038;format=xml" />
@@ -175,7 +175,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-11121 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -247,58 +248,58 @@ img.emoji {
 							<h2 class="entry-title">UCT MAM1000 lecture notes part 17 &#8211; Thursday 13th August</h2>			
 			<div class="post-content">
 				<p>Here we&#8217;re going to continue looking at how many different ways there are to order collections of objects, but with certain constraints.</p>
-<p>We saw previously that if you have <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> (distinguishable) objects, you can arrange them in <img src="//s0.wp.com/latex.php?latex=n%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n!" title="n!" class="latex" /> ways (<img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> positions for the first object <img src="//s0.wp.com/latex.php?latex=%28n-1%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(n-1)" title="(n-1)" class="latex" /> for the second, etc, with a single position for the last object).</p>
-<p>Now we can ask what is the way of arranging <img src="//s0.wp.com/latex.php?latex=r&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="r" title="r" class="latex" /> of <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> objects. That is, if I give you a deck of cards and ask you to take any five cards and put them in some order, how many possibilities are there in total?</p>
+<p>We saw previously that if you have \(n\) (distinguishable) objects, you can arrange them in \(n!\) ways (\(n\) positions for the first object \((n-1)\) for the second, etc, with a single position for the last object).</p>
+<p>Now we can ask what is the way of arranging \(r\) of \(n\) objects. That is, if I give you a deck of cards and ask you to take any five cards and put them in some order, how many possibilities are there in total?</p>
 <p>Well, clearly the first card is going to be one of 52 different possibilities (in a 52 card deck). The second card is going to be one of 51 possibilities, etc. So the answer is going to be:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=52%5Ctimes+51%5Ctimes+50%5Ctimes+49%5Ctimes+48&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="52&#92;times 51&#92;times 50&#92;times 49&#92;times 48" title="52&#92;times 51&#92;times 50&#92;times 49&#92;times 48" class="latex" /></p>
+<p style="text-align: center;">\[52\times 51\times 50\times 49\times 48\]</p>
 <p>&nbsp;</p>
-<p>can we write this in terms of factorials? Let&#8217;s multiply and divide this number by <img src="//s0.wp.com/latex.php?latex=47%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="47!" title="47!" class="latex" />:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B52%5Ctimes+51%5Ctimes+50%5Ctimes+49%5Ctimes+48%5Ctimes+47%21%7D%7B47%21%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{52&#92;times 51&#92;times 50&#92;times 49&#92;times 48&#92;times 47!}{47!}" title="&#92;frac{52&#92;times 51&#92;times 50&#92;times 49&#92;times 48&#92;times 47!}{47!}" class="latex" /></p>
+<p>can we write this in terms of factorials? Let&#8217;s multiply and divide this number by \(47!\):</p>
+<p style="text-align: center;">\[\frac{52\times 51\times 50\times 49\times 48\times 47!}{47!}\]</p>
 <p>&nbsp;</p>
-<p>But the top is just <img src="//s0.wp.com/latex.php?latex=52%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="52!" title="52!" class="latex" />, so this is given by:</p>
+<p>But the top is just \(52!\), so this is given by:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B52%21%7D%7B47%21%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{52!}{47!}" title="&#92;frac{52!}{47!}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{52!}{47!}\]</p>
 <p>&nbsp;</p>
-<p>Where did the <img src="//s0.wp.com/latex.php?latex=47&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="47" title="47" class="latex" /> come from? It&#8217;s just the total cards in the deck minus the number of cards we were choosing. So this is:</p>
+<p>Where did the \(47\) come from? It&#8217;s just the total cards in the deck minus the number of cards we were choosing. So this is:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B52%21%7D%7B%2852-5%29%21%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{52!}{(52-5)!}" title="&#92;frac{52!}{(52-5)!}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{52!}{(52-5)!}\]</p>
 <p>&nbsp;</p>
 <p>In general an expression of this form is known as a falling factorial and is denoted:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=n_k%3D%5Cfrac%7Bn%21%7D%7B%28n-k%29%21%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n_k=&#92;frac{n!}{(n-k)!}" title="n_k=&#92;frac{n!}{(n-k)!}" class="latex" /></p>
+<p style="text-align: center;">\[n_k=\frac{n!}{(n-k)!}\]</p>
 <p>&nbsp;</p>
-<p>What if we had asked for all the ways to arrange not 5 cards, but 52 cards in the deck? Well, then both <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k" title="k" class="latex" /> would be 52, so we would have:</p>
+<p>What if we had asked for all the ways to arrange not 5 cards, but 52 cards in the deck? Well, then both \(n\) and \(k\) would be 52, so we would have:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=52_%7B52%7D%3D%5Cfrac%7B52%21%7D%7B0%21%7D%3D52%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="52_{52}=&#92;frac{52!}{0!}=52!" title="52_{52}=&#92;frac{52!}{0!}=52!" class="latex" /></p>
+<p style="text-align: center;">\[52_{52}=\frac{52!}{0!}=52!\]</p>
 <p>&nbsp;</p>
-<p>In general <img src="//s0.wp.com/latex.php?latex=n_n%3Dn%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n_n=n!" title="n_n=n!" class="latex" />.</p>
-<p>How many different one-to-one functions are there from the set <img src="//s0.wp.com/latex.php?latex=%7Ba%2C+b%2C+c%2C+d%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="{a, b, c, d}" title="{a, b, c, d}" class="latex" /> to the set <img src="//s0.wp.com/latex.php?latex=%7B1%2C2%2C3%2C4%2C5%2C6%2C7%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="{1,2,3,4,5,6,7}" title="{1,2,3,4,5,6,7}" class="latex" />?</p>
-<p>Well let&#8217;s call our function <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" />. For instance we might have <img src="//s0.wp.com/latex.php?latex=f%28a%29%3D1%2C+f%28b%29%3D2%2C+f%28c%29%3D3%2C+f%28d%29%3D4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(a)=1, f(b)=2, f(c)=3, f(d)=4" title="f(a)=1, f(b)=2, f(c)=3, f(d)=4" class="latex" />. How many possible functions of this form are there?</p>
-<p>Well, we can see that we are essentially choosing 4 objects from the set of 7 to be the results of <img src="//s0.wp.com/latex.php?latex=f%28a%29%2C+f%28b%29%2C+f%28c%29%2C+f%28d%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(a), f(b), f(c), f(d)" title="f(a), f(b), f(c), f(d)" class="latex" />. The order is important here, so it is exactly the same as saying how many ways can we draw four cards from a deck of 7. The answer is thus:</p>
+<p>In general \(n_n=n!\).</p>
+<p>How many different one-to-one functions are there from the set \({a, b, c, d}\) to the set \({1,2,3,4,5,6,7}\)?</p>
+<p>Well let&#8217;s call our function \(f\). For instance we might have \(f(a)=1, f(b)=2, f(c)=3, f(d)=4\). How many possible functions of this form are there?</p>
+<p>Well, we can see that we are essentially choosing 4 objects from the set of 7 to be the results of \(f(a), f(b), f(c), f(d)\). The order is important here, so it is exactly the same as saying how many ways can we draw four cards from a deck of 7. The answer is thus:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=7_4%3D%5Cfrac%7B7%21%7D%7B%287-4%29%21%7D%3D7%5Ctimes+6%5Ctimes+5%5Ctimes+4%3D840&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="7_4=&#92;frac{7!}{(7-4)!}=7&#92;times 6&#92;times 5&#92;times 4=840" title="7_4=&#92;frac{7!}{(7-4)!}=7&#92;times 6&#92;times 5&#92;times 4=840" class="latex" /></p>
+<p style="text-align: center;">\[7_4=\frac{7!}{(7-4)!}=7\times 6\times 5\times 4=840\]</p>
 <p>&nbsp;</p>
 <p>If I were to deal you four cards randomly from a deck of 52, what are the chances that you would get the same cards twice in a row, in the same order?</p>
-<p>Well, the first answer is zero because I haven&#8217;t told you that I was going to put the first cards back in the deck, but presuming I have put them back, we can ask how many possible draws of four cards there could be. The answer of course is <img src="//s0.wp.com/latex.php?latex=52_4%3D6497400&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="52_4=6497400" title="52_4=6497400" class="latex" />. So the chances of getting the same draw twice in a row (given that I am only doing this experiment once) is <img src="//s0.wp.com/latex.php?latex=1%2F6497400&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1/6497400" title="1/6497400" class="latex" />.</p>
+<p>Well, the first answer is zero because I haven&#8217;t told you that I was going to put the first cards back in the deck, but presuming I have put them back, we can ask how many possible draws of four cards there could be. The answer of course is \(52_4=6497400\). So the chances of getting the same draw twice in a row (given that I am only doing this experiment once) is \(1/6497400\).</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><strong>Bonus material: Graham&#8217;s number</strong></p>
 <p>So we&#8217;ve seen that there is an efficient notation for writing towers of exponents and we&#8217;ve defined a few pretty big numbers, but these are minuscule compared to what we&#8217;re about to get.</p>
 <p>We saw that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=3%5Cuparrow%5Cuparrow%5Cuparrow+3%3D3%5E%7B3%5E%7B.%5E%7B.%5E3%7D%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3&#92;uparrow&#92;uparrow&#92;uparrow 3=3^{3^{.^{.^3}}}" title="3&#92;uparrow&#92;uparrow&#92;uparrow 3=3^{3^{.^{.^3}}}" class="latex" /></p>
+<p style="text-align: center;">\[3\uparrow\uparrow\uparrow 3=3^{3^{.^{.^3}}}\]</p>
 <p>&nbsp;</p>
-<p>where the tower is <img src="//s0.wp.com/latex.php?latex=3%5Cuparrow%5Cuparrow+3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3&#92;uparrow&#92;uparrow 3" title="3&#92;uparrow&#92;uparrow 3" class="latex" /> high. ie. <img src="//s0.wp.com/latex.php?latex=3%5E%7B27%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3^{27}" title="3^{27}" class="latex" /> high. This is a huge huge number!!&#8230;but we&#8217;re going further. What about:</p>
+<p>where the tower is \(3\uparrow\uparrow 3\) high. ie. \(3^{27}\) high. This is a huge huge number!!&#8230;but we&#8217;re going further. What about:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=3%5Cuparrow%5Cuparrow%5Cuparrow%5Cuparrow+3%3D3%5E%7B3%5E%7B.%5E%7B.%5E3%7D%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3&#92;uparrow&#92;uparrow&#92;uparrow&#92;uparrow 3=3^{3^{.^{.^3}}}" title="3&#92;uparrow&#92;uparrow&#92;uparrow&#92;uparrow 3=3^{3^{.^{.^3}}}" class="latex" /></p>
+<p style="text-align: center;">\[3\uparrow\uparrow\uparrow\uparrow 3=3^{3^{.^{.^3}}}\]</p>
 <p>&nbsp;</p>
-<p>Where now the tower of 3&#8217;s is <img src="//s0.wp.com/latex.php?latex=3%5Cuparrow%5Cuparrow%5Cuparrow+3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3&#92;uparrow&#92;uparrow&#92;uparrow 3" title="3&#92;uparrow&#92;uparrow&#92;uparrow 3" class="latex" /> high. We have gone way way beyond the realms of comprehension already. We will name this number <img src="//s0.wp.com/latex.php?latex=G_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="G_1" title="G_1" class="latex" />. Now let&#8217;s see how hyperbolically silly this can go. What if we defined:</p>
+<p>Where now the tower of 3&#8217;s is \(3\uparrow\uparrow\uparrow 3\) high. We have gone way way beyond the realms of comprehension already. We will name this number \(G_1\). Now let&#8217;s see how hyperbolically silly this can go. What if we defined:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=G_2%3D3%5Cuparrow%5Cuparrow.....%5Cuparrow%5Cuparrow+3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="G_2=3&#92;uparrow&#92;uparrow.....&#92;uparrow&#92;uparrow 3" title="G_2=3&#92;uparrow&#92;uparrow.....&#92;uparrow&#92;uparrow 3" class="latex" /></p>
+<p style="text-align: center;">\[G_2=3\uparrow\uparrow.....\uparrow\uparrow 3\]</p>
 <p>&nbsp;</p>
-<p>Where the number of <img src="//s0.wp.com/latex.php?latex=%5Cuparrow&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;uparrow" title="&#92;uparrow" class="latex" />&#8216;s was <img src="//s0.wp.com/latex.php?latex=G_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="G_1" title="G_1" class="latex" />. Now we define <img src="//s0.wp.com/latex.php?latex=G_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="G_3" title="G_3" class="latex" /> in the same way by having <img src="//s0.wp.com/latex.php?latex=G_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="G_2" title="G_2" class="latex" /> <img src="//s0.wp.com/latex.php?latex=%5Cuparrow&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;uparrow" title="&#92;uparrow" class="latex" />&#8216;s&#8230;etc. you see where this is going.</p>
-<p>OK, So Graham&#8217;s number is <img src="//s0.wp.com/latex.php?latex=G_%7B64%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="G_{64}" title="G_{64}" class="latex" /> It is an unimaginably, outrageously, ludicrously large number, but it is well defined, and, (only) in theory computable. There are larger numbers discussed in the mathematics literature but this (for some time) was known as the largest number which can in theory be computed and was in a mathematical proof.</p>
+<p>Where the number of \(\uparrow\)&#8216;s was \(G_1\). Now we define \(G_3\) in the same way by having \(G_2\) \(\uparrow\)&#8216;s&#8230;etc. you see where this is going.</p>
+<p>OK, So Graham&#8217;s number is \(G_{64}\) It is an unimaginably, outrageously, ludicrously large number, but it is well defined, and, (only) in theory computable. There are larger numbers discussed in the mathematics literature but this (for some time) was known as the largest number which can in theory be computed and was in a mathematical proof.</p>
 <p>Graham&#8217;s number is used in an area of mathematics called Ramsey theory which has connections to graph theory (the theory of connected nodes, their structure and their order). One famous result from Ramsey theory, which you can test yourself is that if you are at a party with at least six people, you will always find that there are at least 3 people, all of whom know one another, or you will find at least three people, none of whom know one another.</p>
 <p>Graham&#8217;s number is the upper bound to a problem in Ramsey theory which is similar to the above. The answer is not known (ie. what is the minimum number of people at a party, for a particular condition to hold), but it is known to be greater than or equal to 13 and less than Graham&#8217;s number&#8230;you can see that this is a pretty weak bound!!</p>
 <table class="rw-rating-table rw-ltr rw-left"><tr><td><nobr>How clear is this post?</nobr></td><td><div class="rw-left"><div class="rw-ui-container rw-class-blog-post rw-urid-111220"></div></div></td></tr></table>							</div>

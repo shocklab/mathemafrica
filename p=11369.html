@@ -34,13 +34,13 @@
 
 		<meta property="og:title" content="UCT MAM1000 lecture notes part 28 – complex numbers part vi"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=11369.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=11369.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="So last time we discovered that there was this amazing link between exponentials and trigonometric functions where the bridge between them was precisely complex numbers.
 
 We now know how to take the exponential of any complex number and it is given by the exponential of a real number and a sum of terms which contain trig"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.33"}};
 			!function(e,n,t){var a;function i(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d"),i=String.fromCharCode;return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(i(55356,56806,55356,56826),0,0),3e3<t.toDataURL().length):"diversity"===e?(a.fillText(i(55356,57221),0,0),t=a.getImageData(16,16,1,1).data,a.fillText(i(55356,57221,55356,57343),0,0),(t=a.getImageData(16,16,1,1).data)[0],t[1],t[2],t[3],!0):("simple"===e?a.fillText(i(55357,56835),0,0):a.fillText(i(55356,57135),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function o(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:i("simple"),flag:i("flag"),unicode8:i("unicode8"),diversity:i("diversity")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag&&t.supports.unicode8&&t.supports.diversity||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?o(a.concatemoji):a.wpemoji&&a.twemoji&&(o(a.twemoji),o(a.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -89,7 +89,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.33" />
-<link rel="canonical" href="p=11369.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=11369.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-2Xn' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11369.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11369&.html#038;format=xml" />
@@ -176,7 +176,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-11369 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -250,67 +251,67 @@ img.emoji {
 				<p>So last time we discovered that there was this amazing link between exponentials and trigonometric functions where the bridge between them was precisely complex numbers.</p>
 <p>We now know how to take the exponential of any complex number and it is given by the exponential of a real number and a sum of terms which contain trig functions of real numbers:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7Ba%2Bib%7D%3De%5Ea%28%5Ccos+b%2Bi%5Csin+b%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{a+ib}=e^a(&#92;cos b+i&#92;sin b)" title="e^{a+ib}=e^a(&#92;cos b+i&#92;sin b)" class="latex" /></p>
+<p style="text-align: center;">\[e^{a+ib}=e^a(\cos b+i\sin b)\]</p>
 <p>&nbsp;</p>
 <p>We can see also that now we have a third way to write a complex number. If you have a number in modulus argument form like:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=r%28%5Ccos%5Ctheta%2Bi%5Csin%5Ctheta%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="r(&#92;cos&#92;theta+i&#92;sin&#92;theta)" title="r(&#92;cos&#92;theta+i&#92;sin&#92;theta)" class="latex" /></p>
+<p style="text-align: center;">\[r(\cos\theta+i\sin\theta)\]</p>
 <p>&nbsp;</p>
-<p>Then we can also write this as <img src="//s0.wp.com/latex.php?latex=re%5E%7Bi%5Ctheta%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="re^{i&#92;theta}" title="re^{i&#92;theta}" class="latex" />. This is an alternative way of writing the modulus argument form.</p>
+<p>Then we can also write this as \(re^{i\theta}\). This is an alternative way of writing the modulus argument form.</p>
 <p>In this form it also becomes more obvious that moduli multiply and arguments add. If we have two complex numbers:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=z%3D%7Cz%7Ce%5E%7Bi%5Ctheta%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z=|z|e^{i&#92;theta}" title="z=|z|e^{i&#92;theta}" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=w%3D%7Cw%7Ce%5E%7Bi%5Cphi%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="w=|w|e^{i&#92;phi}" title="w=|w|e^{i&#92;phi}" class="latex" /> Then:</p>
+<p style="text-align: center;">\(z=|z|e^{i\theta}\) and \(w=|w|e^{i\phi}\) Then:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=zw%3D%7Cz%7C%7Cw%7Ce%5E%7Bi%28%5Ctheta%2B%5Cphi%29%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="zw=|z||w|e^{i(&#92;theta+&#92;phi)}" title="zw=|z||w|e^{i(&#92;theta+&#92;phi)}" class="latex" /></p>
+<p style="text-align: center;">\[zw=|z||w|e^{i(\theta+\phi)}\]</p>
 <p>&nbsp;</p>
 <p>The fact that we can now take the exponential of any complex number is very powerful. The point is that in order to calculate this function, all we need to be able to do is to take exponentials and trig functions of real numbers, and that we can do.</p>
 <p>This also allows us to invert the process of exponentiating. We know that given an equation of the form:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5Ex%3D3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^x=3" title="e^x=3" class="latex" /></p>
-<p>We can calculate the value of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> simply by taking <img src="//s0.wp.com/latex.php?latex=%5Cln+3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln 3" title="&#92;ln 3" class="latex" />. However, if I tell you that:</p>
+<p style="text-align: center;">\[e^x=3\]</p>
+<p>We can calculate the value of \(x\) simply by taking \(\ln 3\). However, if I tell you that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5Ez%3D1%2Bi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^z=1+i" title="e^z=1+i" class="latex" /></p>
+<p style="text-align: center;">\[e^z=1+i\]</p>
 <p>&nbsp;</p>
-<p>We&#8217;re a bit stuck because we don&#8217;t know how to take the natural logarithm of a complex number. In fact we do know how to solve for <img src="//s0.wp.com/latex.php?latex=z&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z" title="z" class="latex" /> but we have to be a bit more clever&#8230;</p>
+<p>We&#8217;re a bit stuck because we don&#8217;t know how to take the natural logarithm of a complex number. In fact we do know how to solve for \(z\) but we have to be a bit more clever&#8230;</p>
 <p>The first step in a question like this is to convert the right hand side into modulus argument form, but in its exponential version.</p>
-<p>We know that the modulus of <img src="//s0.wp.com/latex.php?latex=1%2Bi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+i" title="1+i" class="latex" /> is <img src="//s0.wp.com/latex.php?latex=%5Csqrt%7B1%5E2%2B1%5E2%7D%3D%5Csqrt%7B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sqrt{1^2+1^2}=&#92;sqrt{2}" title="&#92;sqrt{1^2+1^2}=&#92;sqrt{2}" class="latex" />, and the argument is <img src="//s0.wp.com/latex.php?latex=%5Carctan+%5Cleft%28%5Cfrac%7B1%7D%7B1%7D%5Cright%29%2B2n%5Cpi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;arctan &#92;left(&#92;frac{1}{1}&#92;right)+2n&#92;pi" title="&#92;arctan &#92;left(&#92;frac{1}{1}&#92;right)+2n&#92;pi" class="latex" /> with <img src="//s0.wp.com/latex.php?latex=n%5Cin+%7B%5Cmathbb+Z%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;in {&#92;mathbb Z}" title="n&#92;in {&#92;mathbb Z}" class="latex" />. Thus, we can write our equation as:</p>
+<p>We know that the modulus of \(1+i\) is \(\sqrt{1^2+1^2}=\sqrt{2}\), and the argument is \(\arctan \left(\frac{1}{1}\right)+2n\pi\) with \(n\in {\mathbb Z}\). Thus, we can write our equation as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5Ez%3D%5Csqrt%7B2%7De%5E%7B%5Cfrac%7Bi+%5Cpi%7D%7B4%7D%2B2n%5Cpi+i%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^z=&#92;sqrt{2}e^{&#92;frac{i &#92;pi}{4}+2n&#92;pi i}" title="e^z=&#92;sqrt{2}e^{&#92;frac{i &#92;pi}{4}+2n&#92;pi i}" class="latex" /></p>
+<p style="text-align: center;">\[e^z=\sqrt{2}e^{\frac{i \pi}{4}+2n\pi i}\]</p>
 <p>&nbsp;</p>
-<p>Now we know that we want to solve for <img src="//s0.wp.com/latex.php?latex=z&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z" title="z" class="latex" /> and we&#8217;d really like to get it in cartesian form, so we can say that we want to find <img src="//s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a" title="a" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b" title="b" class="latex" /> in <img src="//s0.wp.com/latex.php?latex=z%3Da%2Bib&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z=a+ib" title="z=a+ib" class="latex" />. We write:</p>
+<p>Now we know that we want to solve for \(z\) and we&#8217;d really like to get it in cartesian form, so we can say that we want to find \(a\) and \(b\) in \(z=a+ib\). We write:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7Ba%2Bib%7D%3D%5Csqrt%7B2%7De%5E%7B%5Cfrac%7Bi+%5Cpi%7D%7B4%7D%2B2n%5Cpi+i%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{a+ib}=&#92;sqrt{2}e^{&#92;frac{i &#92;pi}{4}+2n&#92;pi i}" title="e^{a+ib}=&#92;sqrt{2}e^{&#92;frac{i &#92;pi}{4}+2n&#92;pi i}" class="latex" /></p>
+<p style="text-align: center;">\[e^{a+ib}=\sqrt{2}e^{\frac{i \pi}{4}+2n\pi i}\]</p>
 <p>&nbsp;</p>
 <p>This can then be written as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7Ba%7De%5E%7Bib%7D%3D%5Csqrt%7B2%7De%5E%7B%5Cfrac%7Bi+%5Cpi%7D%7B4%7D%2B2n%5Cpi+i%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{a}e^{ib}=&#92;sqrt{2}e^{&#92;frac{i &#92;pi}{4}+2n&#92;pi i}" title="e^{a}e^{ib}=&#92;sqrt{2}e^{&#92;frac{i &#92;pi}{4}+2n&#92;pi i}" class="latex" /></p>
+<p style="text-align: center;">\[e^{a}e^{ib}=\sqrt{2}e^{\frac{i \pi}{4}+2n\pi i}\]</p>
 <p>&nbsp;</p>
 <p>We can take the modulus of both sides of this and we get:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5Ea%3D%5Csqrt%7B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^a=&#92;sqrt{2}" title="e^a=&#92;sqrt{2}" class="latex" /></p>
+<p style="text-align: center;">\[e^a=\sqrt{2}\]</p>
 <p>&nbsp;</p>
-<p>and so <img src="//s0.wp.com/latex.php?latex=a%3D%5Cln%5Csqrt%7B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a=&#92;ln&#92;sqrt{2}" title="a=&#92;ln&#92;sqrt{2}" class="latex" />. Note that this is fine, because we do know how to take the natural logarithm of a real number, it was just complex numbers we had problems with. Now we can look at what we&#8217;ve got left after plugging this in:</p>
+<p>and so \(a=\ln\sqrt{2}\). Note that this is fine, because we do know how to take the natural logarithm of a real number, it was just complex numbers we had problems with. Now we can look at what we&#8217;ve got left after plugging this in:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csqrt%7B2%7De%5E%7Bib%7D%3D%5Csqrt%7B2%7De%5E%7B%5Cfrac%7Bi+%5Cpi%7D%7B4%7D%2B2n%5Cpi+i%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sqrt{2}e^{ib}=&#92;sqrt{2}e^{&#92;frac{i &#92;pi}{4}+2n&#92;pi i}" title="&#92;sqrt{2}e^{ib}=&#92;sqrt{2}e^{&#92;frac{i &#92;pi}{4}+2n&#92;pi i}" class="latex" /></p>
+<p style="text-align: center;">\[\sqrt{2}e^{ib}=\sqrt{2}e^{\frac{i \pi}{4}+2n\pi i}\]</p>
 <p>&nbsp;</p>
-<p>and so <img src="//s0.wp.com/latex.php?latex=b%3D%5Cfrac%7B%5Cpi%7D%7B4%7D%2B2n%5Cpi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b=&#92;frac{&#92;pi}{4}+2n&#92;pi" title="b=&#92;frac{&#92;pi}{4}+2n&#92;pi" class="latex" />.</p>
+<p>and so \(b=\frac{\pi}{4}+2n\pi\).</p>
 <p>&nbsp;</p>
-<p>So therefore: <img src="//s0.wp.com/latex.php?latex=z%3D%5Cln%5Csqrt%7B2%7D%2B%28%5Cfrac%7B%5Cpi%7D%7B4%7D%2B2n%5Cpi%29i&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z=&#92;ln&#92;sqrt{2}+(&#92;frac{&#92;pi}{4}+2n&#92;pi)i" title="z=&#92;ln&#92;sqrt{2}+(&#92;frac{&#92;pi}{4}+2n&#92;pi)i" class="latex" /> with <img src="//s0.wp.com/latex.php?latex=n%5Cin+%7B%5Cmathbb+Z%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;in {&#92;mathbb Z}" title="n&#92;in {&#92;mathbb Z}" class="latex" />. This is interesting. Up until now we thought that solving an equation of the form <img src="//s0.wp.com/latex.php?latex=e%5Ex%3Dy&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^x=y" title="e^x=y" class="latex" /> for <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> would yield a single result. Now we see that this isn&#8217;t the case. Actually we have an infinite number of results. Here are a few in this infinite tower:</p>
+<p>So therefore: \(z=\ln\sqrt{2}+(\frac{\pi}{4}+2n\pi)i\) with \(n\in {\mathbb Z}\). This is interesting. Up until now we thought that solving an equation of the form \(e^x=y\) for \(x\) would yield a single result. Now we see that this isn&#8217;t the case. Actually we have an infinite number of results. Here are a few in this infinite tower:</p>
 <p><a href="wp-content/uploads/2015/08/logfunc.png"><img class="aligncenter size-full wp-image-11382" src="wp-content/uploads/2015/08/logfunc.png?resize=750%2C472" alt="logfunc" srcset="wp-content/uploads/2015/08/logfunc.png?resize=300%2C189 300w, wp-content/uploads/2015/08/logfunc.png?resize=320%2C202 320w, wp-content/uploads/2015/08/logfunc.png?resize=700%2C441 700w, wp-content/uploads/2015/08/logfunc.png?fit=750%2C472 750w" sizes="(max-width: 750px) 100vw, 750px" data-recalc-dims="1" /></a></p>
 <p>This method is a very general method for solving such problems as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7Bp+z%7D%3Dw&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{p z}=w" title="e^{p z}=w" class="latex" /></p>
+<p style="text-align: center;">\[e^{p z}=w\]</p>
 <p>&nbsp;</p>
-<p>for <img src="//s0.wp.com/latex.php?latex=z&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z" title="z" class="latex" />, where complex <img src="//s0.wp.com/latex.php?latex=p&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="p" title="p" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=w&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="w" title="w" class="latex" /> are given complex numbers. Convert the right hand side to exponential modulus argument form, then write <img src="//s0.wp.com/latex.php?latex=z&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z" title="z" class="latex" /> as <img src="//s0.wp.com/latex.php?latex=a%2Bbi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a+bi" title="a+bi" class="latex" />, find the modulus of both sides, and the argument of both sides to find <img src="//s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a" title="a" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b" title="b" class="latex" /> and you&#8217;re done.</p>
+<p>for \(z\), where complex \(p\) and \(w\) are given complex numbers. Convert the right hand side to exponential modulus argument form, then write \(z\) as \(a+bi\), find the modulus of both sides, and the argument of both sides to find \(a\) and \(b\) and you&#8217;re done.</p>
 <p>In fact we can even do this in general:</p>
 <p>If we write the right hand side as $w=|w|e^{i arg(w)}$ Then we have that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7BRe%28p+z%29%7D%3D%7Cw%7C&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{Re(p z)}=|w|" title="e^{Re(p z)}=|w|" class="latex" /></p>
+<p style="text-align: center;">\[e^{Re(p z)}=|w|\]</p>
 <p>&nbsp;</p>
-<p>and thus <img src="//s0.wp.com/latex.php?latex=Re%28p+z%29%3D%5Cln+%7Cw%7C&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Re(p z)=&#92;ln |w|" title="Re(p z)=&#92;ln |w|" class="latex" />, and</p>
+<p>and thus \(Re(p z)=\ln |w|\), and</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=Im%28p+z%29%3Darg%28w%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Im(p z)=arg(w)" title="Im(p z)=arg(w)" class="latex" /></p>
+<p style="text-align: center;">\[Im(p z)=arg(w)\]</p>
 <p>&nbsp;</p>
-<p>If you are given <img src="//s0.wp.com/latex.php?latex=p&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="p" title="p" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=w&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="w" title="w" class="latex" /> then you can work these out explicitly and get the value of the real and imaginary parts of <img src="//s0.wp.com/latex.php?latex=z&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z" title="z" class="latex" />.</p>
+<p>If you are given \(p\) and \(w\) then you can work these out explicitly and get the value of the real and imaginary parts of \(z\).</p>
 <p><strong>An animation of the exponential function &#8211; this is extra and while it&#8217;s nice if you can understand what&#8217;s happening here, it&#8217;s not examinable.<br />
 </strong></p>
 <p>I&#8217;ve created a little animation of one of the mappings from the previous post. I mentioned in that post that you can think about mappings from the complex plane to itself. In this animation I have taken horizontal and vertical lines and mapped where they go to under the exponential function. What happens in the middle isn&#8217;t too important, but it allows you to track what&#8217;s happening to each point in the complex plane as you exponentiate it.</p>

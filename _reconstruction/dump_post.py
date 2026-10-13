@@ -3,7 +3,8 @@
 
 Images are replaced by [[[FIGURE ...]]] markers carrying the filename, whether
 the file is present or lost, and the width the page displays it at. Equations
-are decoded out of the latex.php URLs back into $...$ source. Usage:
+are printed as $...$ source, read from the MathJax delimiters the pages now
+carry or, in an unconverted page, decoded out of the latex.php URLs. Usage:
 
     python3 dump_post.py p=14953.html
 """
@@ -57,6 +58,7 @@ def main(name):
     body = re.sub(r"<[^>]+>", " ", body)
     body = re.sub(r"\x00(\d+)\x00", lambda mo: stash[int(mo.group(1))], body)
     txt = re.sub(r"[ \t]+", " ", H.unescape(body))
+    txt = re.sub(r"\\[(\[]|\\[)\]]", "$", txt)
     txt = re.sub(r"\n\s*\n+", "\n\n", txt).strip()
     print("=" * 96)
     for para in txt.split("\n\n"):

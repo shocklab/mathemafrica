@@ -34,7 +34,7 @@
 
 		<meta property="og:title" content="Inverse Reinforcement Learning: The general basics"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=16521.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=16521.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="Standard Reinforcement Learning
 
@@ -43,7 +43,7 @@ The very basic ideas in Reinforcement Learning are usually defined in the contex
 A Markov Decision Process (MDP) is a tuple $latex (S,A, P, \gamma, R)$ where the following is true:
 1. $latex S$ is the set"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -92,7 +92,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=16521.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=16521.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-4it' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D16521.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D16521&.html#038;format=xml" />
@@ -179,7 +179,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-16521 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -252,22 +253,22 @@ img.emoji {
 			<div class="post-content">
 				<p align="center"><strong>Standard Reinforcement Learning</strong></p>
 <p>The very basic ideas in Reinforcement Learning are usually defined in the context of Markov Decision Processes. For everything that follows, unless stated otherwise, assume that the structures are finite.</p>
-<p>A Markov Decision Process (MDP) is a tuple <img src="//s0.wp.com/latex.php?latex=%28S%2CA%2C+P%2C+%5Cgamma%2C+R%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(S,A, P, &#92;gamma, R)" title="(S,A, P, &#92;gamma, R)" class="latex" /> where the following is true:<br />
-<em>1. <img src="//s0.wp.com/latex.php?latex=S&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="S" title="S" class="latex" /> is the set of states <img src="//s0.wp.com/latex.php?latex=s_k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s_k" title="s_k" class="latex" /> with <img src="//s0.wp.com/latex.php?latex=k%5Cin+%5Cmathbb%7BN%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k&#92;in &#92;mathbb{N} " title="k&#92;in &#92;mathbb{N} " class="latex" />.<br />
-2. <img src="//s0.wp.com/latex.php?latex=A&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="A" title="A" class="latex" /> is the set of actions <img src="//s0.wp.com/latex.php?latex=a_k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_k" title="a_k" class="latex" /> with <img src="//s0.wp.com/latex.php?latex=k%5Cin+%5Cmathbb%7BN%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k&#92;in &#92;mathbb{N} " title="k&#92;in &#92;mathbb{N} " class="latex" />.<br />
-3. <img src="//s0.wp.com/latex.php?latex=P&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P" title="P" class="latex" /> is the matrix of transition probabilities for taking action <img src="//s0.wp.com/latex.php?latex=a_k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_k" title="a_k" class="latex" /> given state <img src="//s0.wp.com/latex.php?latex=s_j&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s_j" title="s_j" class="latex" />.<br />
-4. <img src="//s0.wp.com/latex.php?latex=%5Cgamma&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;gamma" title="&#92;gamma" class="latex" /> is the discount factor in the unit interval.<br />
-5. <img src="//s0.wp.com/latex.php?latex=R&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="R" title="R" class="latex" /> is defined as the reward function, and is taken as a function from <img src="//s0.wp.com/latex.php?latex=A%5Ctimes+S%5Cto+%5Cmathbb%7BR%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="A&#92;times S&#92;to &#92;mathbb{R}" title="A&#92;times S&#92;to &#92;mathbb{R}" class="latex" />.</em></p>
+<p>A Markov Decision Process (MDP) is a tuple \((S,A, P, \gamma, R)\) where the following is true:<br />
+<em>1. \(S\) is the set of states \(s_k\) with \(k\in \mathbb{N}\).<br />
+2. \(A\) is the set of actions \(a_k\) with \(k\in \mathbb{N}\).<br />
+3. \(P\) is the matrix of transition probabilities for taking action \(a_k\) given state \(s_j\).<br />
+4. \(\gamma\) is the discount factor in the unit interval.<br />
+5. \(R\) is defined as the reward function, and is taken as a function from \(A\times S\to \mathbb{R}\).</em></p>
 <p>In this context, we have policies as maps
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%5Cpi%3AS%5Cto+A+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi:S&#92;to A " title="&#92;pi:S&#92;to A " class="latex" />, </p>
-<p>state value functions for a policy, <img src="//s0.wp.com/latex.php?latex=%5Cpi+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi " title="&#92;pi " class="latex" />, evaluated at <img src="//s0.wp.com/latex.php?latex=s_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s_1" title="s_1" class="latex" /> as </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=V%5E%5Cpi%28s_1%29%3D%5Cmathbb%7BE%7D%5B%5Csum_%7Bi%3D0%7D%5Cgamma+%5Ei+R%28s_i%29%7C%5Cpi%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="V^&#92;pi(s_1)=&#92;mathbb{E}[&#92;sum_{i=0}&#92;gamma ^i R(s_i)|&#92;pi]" title="V^&#92;pi(s_1)=&#92;mathbb{E}[&#92;sum_{i=0}&#92;gamma ^i R(s_i)|&#92;pi]" class="latex" />, </p>
+<p align="center">\(\pi:S\to A\), </p>
+<p>state value functions for a policy, \(\pi\), evaluated at \(s_1\) as </p>
+<p align="center">\(V^\pi(s_1)=\mathbb{E}[\sum_{i=0}\gamma ^i R(s_i)|\pi]\), </p>
 <p>and state action values defined as </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=Q%5E%5Cpi+%28s%2Ca%29%3DR%28s%29%2B%5Cgamma+%5Cmathbb%7BE%7D_%7Bs%27%5Csim+P_%7Bsa%7D%7D%5BV%5E%5Cpi+%28s%27%29%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Q^&#92;pi (s,a)=R(s)+&#92;gamma &#92;mathbb{E}_{s&#039;&#92;sim P_{sa}}[V^&#92;pi (s&#039;)]" title="Q^&#92;pi (s,a)=R(s)+&#92;gamma &#92;mathbb{E}_{s&#039;&#92;sim P_{sa}}[V^&#92;pi (s&#039;)]" class="latex" />. </p>
+<p align="center">\(Q^\pi (s,a)=R(s)+\gamma \mathbb{E}_{s'\sim P_{sa}}[V^\pi (s')]\). </p>
 <p>The optimal functions are defined as </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=V%5E%2A%28s%29%3D%5Csup_%5Cpi+V%5E%7B%5Cpi%7D%28s%29%2C+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="V^*(s)=&#92;sup_&#92;pi V^{&#92;pi}(s), " title="V^*(s)=&#92;sup_&#92;pi V^{&#92;pi}(s), " class="latex" /> </p>
+<p align="center">\[V^*(s)=\sup_\pi V^{\pi}(s),\]</p>
 <p>and </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=Q%5E%2A%28s%2Ca%29%3D%5Csup_%5Cpi+Q%5E%5Cpi+%28s%2Ca%29.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Q^*(s,a)=&#92;sup_&#92;pi Q^&#92;pi (s,a)." title="Q^*(s,a)=&#92;sup_&#92;pi Q^&#92;pi (s,a)." class="latex" /></p>
+<p align="center">\[Q^*(s,a)=\sup_\pi Q^\pi (s,a).\]</p>
 <blockquote><p>Here we assume that we have a reward function, and this reward function is used to determine an optimal policy. It is interesting, however, to ask if we can determine, given a policy, a reward function that generates that policy, and this is the essence of <strong>Inverse Reinforcement Learning. </strong>
 </p></blockquote>
 <p align="center"><strong>Inverse Reinforcement Learning<br />
@@ -290,53 +291,53 @@ Is it possible to determine the reward function being optimised?</p>
 <p>The name of the game from this point:</p>
 <blockquote><p><strong>Inference of reward functions from demonstrations.</strong></p></blockquote>
 <p>Recall that:</p>
-<p><em>1. If we have an MPD <img src="//s0.wp.com/latex.php?latex=%28S%2CA%2C+P%2C%5Cgamma%2C+R%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(S,A, P,&#92;gamma, R)" title="(S,A, P,&#92;gamma, R)" class="latex" /> and a policy <img src="//s0.wp.com/latex.php?latex=%5Cpi+%3A+S%5Cto+A+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi : S&#92;to A " title="&#92;pi : S&#92;to A " class="latex" />, then for all <img src="//s0.wp.com/latex.php?latex=s%2Ca%5Cin+S%2C+A+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s,a&#92;in S, A " title="s,a&#92;in S, A " class="latex" />, it is the case that <img src="//s0.wp.com/latex.php?latex=V%5E%5Cpi+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="V^&#92;pi " title="V^&#92;pi " class="latex" /> and <img src="//s0.wp.com/latex.php?latex=Q%5E%5Cpi+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Q^&#92;pi " title="Q^&#92;pi " class="latex" /> satisfy</p>
+<p><em>1. If we have an MPD \((S,A, P,\gamma, R)\) and a policy \(\pi : S\to A\), then for all \(s,a\in S, A\), it is the case that \(V^\pi\) and \(Q^\pi\) satisfy</p>
 <p>a)
-<p align="center"><img src="//s0.wp.com/latex.php?latex=V%5E%5Cpi+%28s%29%3DR%28s%29%2B%5Cgamma+%5Csum_%7Bs%27%7DP_%7Bs%5Cpi%28s%29%7D%28s%27%29V%5E%5Cpi%28s%27%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="V^&#92;pi (s)=R(s)+&#92;gamma &#92;sum_{s&#039;}P_{s&#92;pi(s)}(s&#039;)V^&#92;pi(s&#039;)" title="V^&#92;pi (s)=R(s)+&#92;gamma &#92;sum_{s&#039;}P_{s&#92;pi(s)}(s&#039;)V^&#92;pi(s&#039;)" class="latex" /></p>
+<p align="center">\[V^\pi (s)=R(s)+\gamma \sum_{s'}P_{s\pi(s)}(s')V^\pi(s')\]</p>
 <p>b)
-<p align="center"><img src="//s0.wp.com/latex.php?latex=Q%5E%5Cpi+%28s%2Ca%29%3DR%28s%29%2B%5Cgamma+%5Csum_%7Bs%27%7DP_%7Bsa%7D%28s%27%29V%5E%5Cpi%28s%27%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Q^&#92;pi (s,a)=R(s)+&#92;gamma &#92;sum_{s&#039;}P_{sa}(s&#039;)V^&#92;pi(s&#039;)" title="Q^&#92;pi (s,a)=R(s)+&#92;gamma &#92;sum_{s&#039;}P_{sa}(s&#039;)V^&#92;pi(s&#039;)" class="latex" /></p>
-<p>2. If we have an MDP and policy as in 1., then the policy, <img src="//s0.wp.com/latex.php?latex=%5Cpi+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi " title="&#92;pi " class="latex" />, is optimal if and only if for all <img src="//s0.wp.com/latex.php?latex=s%5Cin+S+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s&#92;in S " title="s&#92;in S " class="latex" />,
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%5Cpi+%28s%29%5Cin+argmax+_%7Ba%5Cin+A%7DQ%5E%5Cpi+%28s%2Ca%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi (s)&#92;in argmax _{a&#92;in A}Q^&#92;pi (s,a)" title="&#92;pi (s)&#92;in argmax _{a&#92;in A}Q^&#92;pi (s,a)" class="latex" />.</em></p>
+<p align="center">\[Q^\pi (s,a)=R(s)+\gamma \sum_{s'}P_{sa}(s')V^\pi(s')\]</p>
+<p>2. If we have an MDP and policy as in 1., then the policy, \(\pi\), is optimal if and only if for all \(s\in S\),
+<p align="center">\(\pi (s)\in argmax _{a\in A}Q^\pi (s,a)\).</em></p>
 <p><em>1. and 2. respectively give us the Bellman equations as well as their optimality.</em></p>
 <p>Moving on,</p>
 <p align="center"><a href="wp-content/uploads/2020/05/bernie.jpg" rel="attachment wp-att-16539"><img src="wp-content/uploads/2020/05/bernie.jpg?resize=500%2C500" alt="bernie" class="alignnone size-full wp-image-16539" srcset="wp-content/uploads/2020/05/bernie.jpg?resize=66%2C66 66w, wp-content/uploads/2020/05/bernie.jpg?resize=150%2C150 150w, wp-content/uploads/2020/05/bernie.jpg?resize=200%2C200 200w, wp-content/uploads/2020/05/bernie.jpg?resize=300%2C300 300w, wp-content/uploads/2020/05/bernie.jpg?resize=400%2C400 400w, wp-content/uploads/2020/05/bernie.jpg?fit=500%2C500 500w" sizes="(max-width: 500px) 100vw, 500px" data-recalc-dims="1" /></a></p>
-<p>We shall, without loss of generality write <img src="//s0.wp.com/latex.php?latex=%5Cpi+%28s%29%3Da_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi (s)=a_1" title="&#92;pi (s)=a_1" class="latex" />, and we can rename where necessary. This is to simplify computations.</p>
-<p>It is posssible to show that if <img src="//s0.wp.com/latex.php?latex=S+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="S " title="S " class="latex" /> is finite, and <img src="//s0.wp.com/latex.php?latex=A%3D%5C%7Ba_1%2C%5Ccdots%2Ca_k%5C%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="A=&#92;{a_1,&#92;cdots,a_k&#92;} " title="A=&#92;{a_1,&#92;cdots,a_k&#92;} " class="latex" />, then transition probability matrices <img src="//s0.wp.com/latex.php?latex=%5C%7BP_a%5C%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;{P_a&#92;} " title="&#92;{P_a&#92;} " class="latex" />, and a discount factor <img src="//s0.wp.com/latex.php?latex=%5Cgamma+%5Cin+%280%2C1%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;gamma &#92;in (0,1) " title="&#92;gamma &#92;in (0,1) " class="latex" /> are given, then the policy <img src="//s0.wp.com/latex.php?latex=%5Cpi+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi " title="&#92;pi " class="latex" /> given by <img src="//s0.wp.com/latex.php?latex=%5Cpi+%28s%29%3Da_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi (s)=a_1" title="&#92;pi (s)=a_1" class="latex" /> is optimal if and only if for all <img src="//s0.wp.com/latex.php?latex=a%3Da_2%2C%5Ccdots%2Ca_k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a=a_2,&#92;cdots,a_k" title="a=a_2,&#92;cdots,a_k" class="latex" />, the reward satisfies:</p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%28P_%7Ba_1%7D-P_%7Ba%7D%29%28I-%5Cgamma+P_%7Ba_1%7D%29%5E%7B-1%7DR%5Cgeq+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(P_{a_1}-P_{a})(I-&#92;gamma P_{a_1})^{-1}R&#92;geq 0" title="(P_{a_1}-P_{a})(I-&#92;gamma P_{a_1})^{-1}R&#92;geq 0" class="latex" /></p>
-<p>where we are assuming the comparison <img src="//s0.wp.com/latex.php?latex=%5Cgeq&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;geq" title="&#92;geq" class="latex" /> works on a componentwise level. This result is from (Ng, Russell. 2000. )</p>
+<p>We shall, without loss of generality write \(\pi (s)=a_1\), and we can rename where necessary. This is to simplify computations.</p>
+<p>It is posssible to show that if \(S\) is finite, and \(A=\{a_1,\cdots,a_k\}\), then transition probability matrices \(\{P_a\}\), and a discount factor \(\gamma \in (0,1)\) are given, then the policy \(\pi\) given by \(\pi (s)=a_1\) is optimal if and only if for all \(a=a_2,\cdots,a_k\), the reward satisfies:</p>
+<p align="center">\[(P_{a_1}-P_{a})(I-\gamma P_{a_1})^{-1}R\geq 0\]</p>
+<p>where we are assuming the comparison \(\geq\) works on a componentwise level. This result is from (Ng, Russell. 2000. )</p>
 <p>From this we get the following:<br />
-<em>1. One can show that this condition is necessary and sufficient for <img src="//s0.wp.com/latex.php?latex=%5Cpi+%3Da_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi =a_1" title="&#92;pi =a_1" class="latex" /> to be a unique optimal policy.<br />
+<em>1. One can show that this condition is necessary and sufficient for \(\pi =a_1\) to be a unique optimal policy.<br />
 2. For finite MDPs, this result gives a characterisation of all reward functions that are solutions to the inverse reinforcement learning problems.</em> </p>
 <p>The problem is that the zero reward function is admissible, i.e if the reward is the same no matter which action is taken then any policy is optimal. Demanding uniqueness would remedy this, but this move is unsatisfactory since then some reward functions arbitrarily close to zero would be admissible. Moreover, in many contexts, it seems like it would be the case that there would be many reward functions that are admissible, and it is expensive to evaluate the goodness of a learned reward function.</p>
 <p>A way forward rephrases the problem in a Linear Programming setting wherein we obtain an efficiently solvable problem.<br />
 There are a couple of key observations to be made:<br />
-<em>1. A way to choose the reward function is to choose those that satisfy the characterisation condition given above (and <img src="//s0.wp.com/latex.php?latex=%7CR%28s%29%7C%5Cleq+R_%7B%5Ctext%7Bmax%7D%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="|R(s)|&#92;leq R_{&#92;text{max}} " title="|R(s)|&#92;leq R_{&#92;text{max}} " class="latex" /> ) for all <img src="//s0.wp.com/latex.php?latex=s%5Cin+S&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s&#92;in S" title="s&#92;in S" class="latex" />, and one that makes a single step deviation away from <img src="//s0.wp.com/latex.php?latex=%5Cpi+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi " title="&#92;pi " class="latex" /> as costly as possible, i.e we want one that maximises <img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bs%7D%5Cbig+%28Q%5E%5Cpi%28s%2Ca_1%29-%5Cmax_%7Ba%5Cin+A%5Cbackslash+a_1%7DQ%5E%5Cpi+%28s%2Ca%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{s}&#92;big (Q^&#92;pi(s,a_1)-&#92;max_{a&#92;in A&#92;backslash a_1}Q^&#92;pi (s,a) " title="&#92;sum_{s}&#92;big (Q^&#92;pi(s,a_1)-&#92;max_{a&#92;in A&#92;backslash a_1}Q^&#92;pi (s,a) " class="latex" /> where <img src="//s0.wp.com/latex.php?latex=%5Cpi+%3Da_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi =a_1" title="&#92;pi =a_1" class="latex" /> in the shorthand notation from above.</p>
-<p>2. If we believe that solutions with lower rewards are simpler, then we might add a regularisation term <img src="//s0.wp.com/latex.php?latex=-%5Clambda+%7C%7CR%7C%7C_1+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-&#92;lambda ||R||_1 " title="-&#92;lambda ||R||_1 " class="latex" /> where <img src="//s0.wp.com/latex.php?latex=%5Clambda+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lambda " title="&#92;lambda " class="latex" /> is an adjustable coefficient that balances maximising the above expression and doing this in a simple way. </em></p>
+<em>1. A way to choose the reward function is to choose those that satisfy the characterisation condition given above (and \(|R(s)|\leq R_{\text{max}}\) ) for all \(s\in S\), and one that makes a single step deviation away from \(\pi\) as costly as possible, i.e we want one that maximises \(\sum_{s}\big (Q^\pi(s,a_1)-\max_{a\in A\backslash a_1}Q^\pi (s,a)\) where \(\pi =a_1\) in the shorthand notation from above.</p>
+<p>2. If we believe that solutions with lower rewards are simpler, then we might add a regularisation term \(-\lambda ||R||_1\) where \(\lambda\) is an adjustable coefficient that balances maximising the above expression and doing this in a simple way. </em></p>
 <p>Putting these details together, with some fine print acting as the glue, one gets that the optimisation problem we have in mind is actually the following:</p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%5Cmax+%5Csum_%7Bi%3D1%7D%5EN+%5Cmin+_%7Ba%5Cin+A%5Cbackslash+a_1%7D%5C%7B%28P_%7Ba_1%7D%28i%29-P_a%28i%29%29%28I-%5Cgamma+P_%7Ba_1%7D%29%5E%7B-1%7DR%5C%7D-%5Cgamma+%7C%7CR%7C%7C_1+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;max &#92;sum_{i=1}^N &#92;min _{a&#92;in A&#92;backslash a_1}&#92;{(P_{a_1}(i)-P_a(i))(I-&#92;gamma P_{a_1})^{-1}R&#92;}-&#92;gamma ||R||_1 " title="&#92;max &#92;sum_{i=1}^N &#92;min _{a&#92;in A&#92;backslash a_1}&#92;{(P_{a_1}(i)-P_a(i))(I-&#92;gamma P_{a_1})^{-1}R&#92;}-&#92;gamma ||R||_1 " class="latex" /></p>
+<p align="center">\[\max \sum_{i=1}^N \min _{a\in A\backslash a_1}\{(P_{a_1}(i)-P_a(i))(I-\gamma P_{a_1})^{-1}R\}-\gamma ||R||_1\]</p>
 <p> such that</p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%28P_%7Ba_1%7D-P_%7Ba%7D%29%28I-%5Cgamma+P_%7Ba_1%7D%29%5E%7B-1%7DR%5Cgeq+0+%5Cforall+a%5Cin+A%5Cbackslash+a_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(P_{a_1}-P_{a})(I-&#92;gamma P_{a_1})^{-1}R&#92;geq 0 &#92;forall a&#92;in A&#92;backslash a_1" title="(P_{a_1}-P_{a})(I-&#92;gamma P_{a_1})^{-1}R&#92;geq 0 &#92;forall a&#92;in A&#92;backslash a_1" class="latex" /> </p>
+<p align="center">\[(P_{a_1}-P_{a})(I-\gamma P_{a_1})^{-1}R\geq 0 \forall a\in A\backslash a_1\]</p>
 <p>and</p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%7CR_i%7C%5Cgeq+R_%7B%5Cmax%7D%2C%5C%2Ci%5Cin+%5C%7B1%2C%5Ccdots%2C+N%5C%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="|R_i|&#92;geq R_{&#92;max},&#92;,i&#92;in &#92;{1,&#92;cdots, N&#92;}" title="|R_i|&#92;geq R_{&#92;max},&#92;,i&#92;in &#92;{1,&#92;cdots, N&#92;}" class="latex" /></p>
-<p>where <img src="//s0.wp.com/latex.php?latex=P_a%28i%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P_a(i)" title="P_a(i)" class="latex" /> denotes the <img src="//s0.wp.com/latex.php?latex=i+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="i " title="i " class="latex" />th row of <img src="//s0.wp.com/latex.php?latex=P_a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P_a" title="P_a" class="latex" />. </p>
+<p align="center">\[|R_i|\geq R_{\max},\,i\in \{1,\cdots, N\}\]</p>
+<p>where \(P_a(i)\) denotes the \(i\)th row of \(P_a\). </p>
 <p>This formulation can then be formulated as a linear programme and can be solved efficiently. </p>
 <p>The paper (Ng, Russell. 2000. ) goes on to give linear function approximations for large spaces, and introduces a more realistic method where trajectories are sampled. This gives a bootstrapping procedure, which essentially formed the basis for the applications. </p>
 <p>Another interesting paper is (Ng. Abbel. 2001) which has the following content. </p>
 <p>The authors assume that an expert is trying to optimise an unknown reward function that can be expressed as a linear combination of known features, and show that there is an algorithm that will find a policy that performs as well as the expert. They present what they call an apprenticeship learning algorithm, which one can find on the papers if they wish. We are more interested in the results for now, and we will go through the algorithms at a later stage. </p>
 <p>In order to proceed, we define some vector of features </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%5Cphi+%3A+S%5Cto+%5B0%2C1%5D%5Ek&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;phi : S&#92;to [0,1]^k" title="&#92;phi : S&#92;to [0,1]^k" class="latex" /></p>
-<p> such that there is some <img src="//s0.wp.com/latex.php?latex=%5Ctextit%7Btrue%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;textit{true}" title="&#92;textit{true}" class="latex" /> reward function </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=R%5E%2A%28s%29%3Dw%5E%2A%5Ccdot+%5Cphi%28s%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="R^*(s)=w^*&#92;cdot &#92;phi(s) " title="R^*(s)=w^*&#92;cdot &#92;phi(s) " class="latex" />, </p>
-<p>where <img src="//s0.wp.com/latex.php?latex=w%5E%2A%5Cin+%5Cmathbb%7BR%7D%5Ek+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="w^*&#92;in &#92;mathbb{R}^k " title="w^*&#92;in &#92;mathbb{R}^k " class="latex" />.</p>
-<p><em>1. Let a MDP without the usual reward function, <img src="//s0.wp.com/latex.php?latex=%5Cphi+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;phi " title="&#92;phi " class="latex" /> and an <img src="//s0.wp.com/latex.php?latex=%5Cepsilon%3E0+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;epsilon&gt;0 " title="&#92;epsilon&gt;0 " class="latex" /> be given. Then the apprenticeship learning algorithm will terminate with <img src="//s0.wp.com/latex.php?latex=t%5E%7B%28i%29%7D%5Cleq+%5Cepsilon+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t^{(i)}&#92;leq &#92;epsilon " title="t^{(i)}&#92;leq &#92;epsilon " class="latex" /> after at most </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=n%3D%5Cmathcal%7BO%7D%5Cbigg%28%5Cdfrac%7Bk%7D%7B%281-%5Cgamma%29%5E2%5Cepsilon%5E2%7Dlog%5Cdfrac%7Bk%7D%7B%281-%5Cgamma%29%5Cepsilon%7D%5Cbigg%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n=&#92;mathcal{O}&#92;bigg(&#92;dfrac{k}{(1-&#92;gamma)^2&#92;epsilon^2}log&#92;dfrac{k}{(1-&#92;gamma)&#92;epsilon}&#92;bigg) " title="n=&#92;mathcal{O}&#92;bigg(&#92;dfrac{k}{(1-&#92;gamma)^2&#92;epsilon^2}log&#92;dfrac{k}{(1-&#92;gamma)&#92;epsilon}&#92;bigg) " class="latex" /> </p>
-<p>where <img src="//s0.wp.com/latex.php?latex=t%5E%7B%28i%29%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t^{(i)}" title="t^{(i)}" class="latex" /> is a metric of how well the agent is doing compared to the expert. </p>
-<p>2. Let a MDP without the usual reward function, <img src="//s0.wp.com/latex.php?latex=%5Cphi+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;phi " title="&#92;phi " class="latex" />, <img src="//s0.wp.com/latex.php?latex=%5Cdelta%3E0+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;delta&gt;0 " title="&#92;delta&gt;0 " class="latex" /> and an <img src="//s0.wp.com/latex.php?latex=%5Cepsilon%3E0+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;epsilon&gt;0 " title="&#92;epsilon&gt;0 " class="latex" /> be given. Suppose that the apprenticeship learning algorithm is run using an estimate of from <img src="//s0.wp.com/latex.php?latex=m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="m" title="m" class="latex" /> Monte-Carlo samples. In order to ensure that with probability at least <img src="//s0.wp.com/latex.php?latex=1-%5Cdelta+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1-&#92;delta " title="1-&#92;delta " class="latex" /> the algorithm terminates after at most a number of iterations <img src="//s0.wp.com/latex.php?latex=n+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n " title="n " class="latex" /> given in 1., and outputs a policy <img src="//s0.wp.com/latex.php?latex=%5Ctilde%7B%5Cpi%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;tilde{&#92;pi} " title="&#92;tilde{&#92;pi} " class="latex" /> so that for any true reward </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=R%5E%2A%28s%29%3Dw%5E%7B%2AT%7D%5Cphi%28s%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="R^*(s)=w^{*T}&#92;phi(s) " title="R^*(s)=w^{*T}&#92;phi(s) " class="latex" /></p>
-<p> <img src="//s0.wp.com/latex.php?latex=%5Cbig%28+%7C%7Cw%5E%2A%7C%7C_1%5Cleq+1%5Cbig%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;big( ||w^*||_1&#92;leq 1&#92;big) " title="&#92;big( ||w^*||_1&#92;leq 1&#92;big) " class="latex" /> we have </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%5Cmathbb%7BE%7D%28%5Csum+_%7Bt%3D0%7D%5Cgamma+%5EtR%5E%2A%28s_t%29%7C%5Ctilde%7B%5Cpi%7D%29%5Cgeq+%5Cmathbb%7BR%7D%28%5Csum_%7Bt%3D0%7D%5Cgamma+%5EtR%5E%2A%28s_t%29%7C%5Cpi_E%29-%5Cepsilon+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathbb{E}(&#92;sum _{t=0}&#92;gamma ^tR^*(s_t)|&#92;tilde{&#92;pi})&#92;geq &#92;mathbb{R}(&#92;sum_{t=0}&#92;gamma ^tR^*(s_t)|&#92;pi_E)-&#92;epsilon " title="&#92;mathbb{E}(&#92;sum _{t=0}&#92;gamma ^tR^*(s_t)|&#92;tilde{&#92;pi})&#92;geq &#92;mathbb{R}(&#92;sum_{t=0}&#92;gamma ^tR^*(s_t)|&#92;pi_E)-&#92;epsilon " class="latex" /></p>
+<p align="center">\[\phi : S\to [0,1]^k\]</p>
+<p> such that there is some \(\textit{true}\) reward function </p>
+<p align="center">\(R^*(s)=w^*\cdot \phi(s)\), </p>
+<p>where \(w^*\in \mathbb{R}^k\).</p>
+<p><em>1. Let a MDP without the usual reward function, \(\phi\) and an \(\epsilon&gt;0\) be given. Then the apprenticeship learning algorithm will terminate with \(t^{(i)}\leq \epsilon\) after at most </p>
+<p align="center">\[n=\mathcal{O}\bigg(\dfrac{k}{(1-\gamma)^2\epsilon^2}log\dfrac{k}{(1-\gamma)\epsilon}\bigg)\]</p>
+<p>where \(t^{(i)}\) is a metric of how well the agent is doing compared to the expert. </p>
+<p>2. Let a MDP without the usual reward function, \(\phi\), \(\delta&gt;0\) and an \(\epsilon&gt;0\) be given. Suppose that the apprenticeship learning algorithm is run using an estimate of from \(m\) Monte-Carlo samples. In order to ensure that with probability at least \(1-\delta\) the algorithm terminates after at most a number of iterations \(n\) given in 1., and outputs a policy \(\tilde{\pi}\) so that for any true reward </p>
+<p align="center">\[R^*(s)=w^{*T}\phi(s)\]</p>
+<p> \(\big( ||w^*||_1\leq 1\big)\) we have </p>
+<p align="center">\[\mathbb{E}(\sum _{t=0}\gamma ^tR^*(s_t)|\tilde{\pi})\geq \mathbb{R}(\sum_{t=0}\gamma ^tR^*(s_t)|\pi_E)-\epsilon\]</p>
 <p>it suffices that </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=m%5Cgeq+%5Cdfrac%7B2k%7D%7B%5Cepsilon%5E2%281-%5Cgamma%29%5E2%7D%5Clog+%5Cdfrac%7B2k%7D%7B%5Cdelta%7D.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="m&#92;geq &#92;dfrac{2k}{&#92;epsilon^2(1-&#92;gamma)^2}&#92;log &#92;dfrac{2k}{&#92;delta}." title="m&#92;geq &#92;dfrac{2k}{&#92;epsilon^2(1-&#92;gamma)^2}&#92;log &#92;dfrac{2k}{&#92;delta}." class="latex" /></em></p>
+<p align="center">\(m\geq \dfrac{2k}{\epsilon^2(1-\gamma)^2}\log \dfrac{2k}{\delta}.\)</em></p>
 <p>These results give us convergence guarantees in a computational setting, at least, which is something that we would, of course, be interested in knowing. </p>
 <p>The next post shows some mechanics behind the method, and we shall attempt to understand things better from both a mathematical perspective as well as a computational one.</p>
 <p><strong>Resources:</strong></p>

@@ -34,13 +34,13 @@
 
 		<meta property="og:title" content="The Objective Function"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=15998.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=15998.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="In both Supervised and Unsupervised machine learning, most algorithms are centered around minimising (or, equivalently) maximising some objective function. This function is supposed to somehow represent what the model knows/can get right. Normally, as one would expect, the objective function does not always reflect exactly what we want.
 
 The objective function presents 2 main problems: 1."/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -89,7 +89,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=15998.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=15998.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-4a2' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D15998.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D15998&.html#038;format=xml" />
@@ -176,7 +176,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-15998 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -250,12 +251,12 @@ img.emoji {
 				<p>In both Supervised and Unsupervised machine learning, most algorithms are centered around minimising (or, equivalently) maximising some objective function. This function is supposed to somehow represent what the model knows/can get right. Normally, as one would expect, the objective function does not always reflect exactly what we want.</p>
 <p>The objective function presents 2 main problems: 1. how do we minimise it (the answer to this is up for debate and there is lots of interesting research about efficient optimisation of non-convex functions and 2) assuming we can minimise it perfectly, is it the correct thing to be minimising?</p>
 <p>It is point 2 which is the focus of this post.</p>
-<p>Let&#8217;s take the example of square-loss-linear-regression.<em> </em>To do so we train a linear regression model with a square loss <img src="//s0.wp.com/latex.php?latex=%5Cmathcal%7BL%7D%28%5Cmathbf%7Bw%7D%29%3D%5Csum_i+%28y_i+-+%5Cmathbf%7Bw%7D%5ETx_i%29%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathcal{L}(&#92;mathbf{w})=&#92;sum_i (y_i - &#92;mathbf{w}^Tx_i)^2" title="&#92;mathcal{L}(&#92;mathbf{w})=&#92;sum_i (y_i - &#92;mathbf{w}^Tx_i)^2" class="latex" />. (Where we are taking the inner product of learned weights with a vector of features for each observation to predict the outcome).</p>
+<p>Let&#8217;s take the example of square-loss-linear-regression.<em> </em>To do so we train a linear regression model with a square loss \(\mathcal{L}(\mathbf{w})=\sum_i (y_i - \mathbf{w}^Tx_i)^2\). (Where we are taking the inner product of learned weights with a vector of features for each observation to predict the outcome).</p>
 <p>Let&#8217;s take stock of the situation:</p>
 <p><em>What we want: </em>For our model to be as correct as possible</p>
 <p><em>What we have asked for: </em>For the total squared difference in actual and predicted amounts in our data to be as small as possible</p>
 <p>Clearly, these are different. But not unrelated &#8211; often they can lead to materially the same solutions. However, there are cases where they don&#8217;t. For example, the square loss of a really good solution (in terms of being close to the &#8216;truth&#8217;) can be increased significantly by a(some) outliers(s). The square loss is sensitive to outliers because the distance between the predicted value and the true value is squared- so a large error is made relatively larger than it otherwise would have been.</p>
-<p>As an alternative we might minimise the <em>absolute value</em> of the errors i.e. <img src="//s0.wp.com/latex.php?latex=%5Cmathcal%7BL%7D+%28%5Cmathbf%7Bw%7D%29+%3D+%5Csum_i+%7Cy_i+-+%5Cmathbf%7Bw%7D%5ETx_i%7C&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathcal{L} (&#92;mathbf{w}) = &#92;sum_i |y_i - &#92;mathbf{w}^Tx_i|" title="&#92;mathcal{L} (&#92;mathbf{w}) = &#92;sum_i |y_i - &#92;mathbf{w}^Tx_i|" class="latex" />.</p>
+<p>As an alternative we might minimise the <em>absolute value</em> of the errors i.e. \(\mathcal{L} (\mathbf{w}) = \sum_i |y_i - \mathbf{w}^Tx_i|\).</p>
 <p><a href="wp-content/uploads/2020/02/MADvsOLS_clean.png" rel="attachment wp-att-16010"><img class="alignnone  wp-image-16010" src="wp-content/uploads/2020/02/MADvsOLS_clean.png?resize=584%2C389" alt="MADvsOLS_clean" srcset="wp-content/uploads/2020/02/MADvsOLS_clean.png?resize=300%2C200 300w, wp-content/uploads/2020/02/MADvsOLS_clean.png?resize=400%2C267 400w, wp-content/uploads/2020/02/MADvsOLS_clean.png?resize=768%2C513 768w, wp-content/uploads/2020/02/MADvsOLS_clean.png?resize=800%2C534 800w, wp-content/uploads/2020/02/MADvsOLS_clean.png?resize=1024%2C684 1024w, wp-content/uploads/2020/02/MADvsOLS_clean.png?fit=2404%2C1606 2404w" sizes="(max-width: 584px) 100vw, 584px" data-recalc-dims="1" /></a></p>
 <p>Fig. 1 Best fit lines for Mean Absolute Deviation (MAD) and Ordinary Least Squares (OLS) regression.</p>
 <p><a href="wp-content/uploads/2020/02/MADvsOLS-1.png" rel="attachment wp-att-16008"><img class="alignnone  wp-image-16008" src="wp-content/uploads/2020/02/MADvsOLS-1.png?resize=575%2C383" alt="MADvsOLS" srcset="wp-content/uploads/2020/02/MADvsOLS-1.png?resize=300%2C200 300w, wp-content/uploads/2020/02/MADvsOLS-1.png?resize=400%2C267 400w, wp-content/uploads/2020/02/MADvsOLS-1.png?resize=768%2C513 768w, wp-content/uploads/2020/02/MADvsOLS-1.png?resize=800%2C534 800w, wp-content/uploads/2020/02/MADvsOLS-1.png?resize=1024%2C684 1024w, wp-content/uploads/2020/02/MADvsOLS-1.png?fit=2404%2C1606 2404w" sizes="(max-width: 575px) 100vw, 575px" data-recalc-dims="1" /></a></p>
@@ -266,7 +267,7 @@ img.emoji {
 <ul>
 <li>When the Wasserstein GAN (Generative Adversarial Network) was introduced it was claimed that the loss function correlated more closely with high fidelity samples than Goodfellow&#8217;s original GAN.</li>
 <li>The use of the likelihood function in place of a square loss function when training an Autoencoder makes part of the optimisation problem (minimising the loss with respect to the weights and biases in the last layer)  convex (and therefore easier to solve)</li>
-<li>The <img src="//s0.wp.com/latex.php?latex=%5Cbeta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;beta" title="&#92;beta" class="latex" />-VAE adjusts the objective function of a standard VAE to encourage the learning of disentangled representations</li>
+<li>The \(\beta\)-VAE adjusts the objective function of a standard VAE to encourage the learning of disentangled representations</li>
 </ul>
 <p>As usual, for those in data science/applied machine learning, the consequences and risks of the decision need to be taken into account. If our model is inappropriate due to the loss function being misspecified, there may be unintended consequences that come from model predictions (even if the &#8216;fit&#8217; of the model is good).</p>
 <p>&nbsp;</p>

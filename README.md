@@ -28,20 +28,17 @@ The original site was WordPress with query permalinks, so pages were addressed a
 
 ## Known gaps
 
-- **431 images were never captured and are gone.** 206 of the 522 post files
-  still have at least one broken image. A recovery pass against the Wayback
-  Machine restored the 127 that had been archived; the rest have no capture
-  anywhere, under the site's own host or under the Jetpack CDN it served
-  images through, so they are not recoverable from the archive.
+- **Some images were never captured.** A recovery pass against the Wayback
+  Machine restored the 127 that had been archived under the Jetpack CDN the
+  site served images through. Of the rest, the mathematical figures have been
+  redrawn from the text of their posts (below). Photographs, posters and
+  material from other sources cannot be redrawn; each is listed with its
+  reason in `_reconstruction/not-reconstructed.md`.
 - The recovered photographs arrived as camera originals of 5184x3456, several
   megabytes each, which the pages display a few hundred pixels wide. The 70
   JPEGs over 1.5 MB were resized to a 1600 px longest side at quality 85,
   taking 260 MB down to 14 MB. Plots, screenshots and the animated GIFs were
   left untouched, and the originals remain in the git history.
-- Equations are rendered by WordPress's hosted LaTeX service
-  (`s0.wp.com/latex.php`), which still works. 8,660 equations depend on
-  it. If it ever goes away the maths will vanish, so converting to MathJax is
-  worth doing eventually.
 - Comment forms, search and the login box post to WordPress endpoints that no
   longer exist. They are inert.
 - Traffic-stats and rating widgets show frozen 2018 numbers.
@@ -61,14 +58,21 @@ The original site was WordPress with query permalinks, so pages were addressed a
   old link to `/?p=1234` still lands on the right post.
 - A `404.html` explains that the archive is partial, and falls back from
   addresses like `p=1234&share=twitter.html` to `p=1234.html`.
+- Equations, which WordPress served as images from its hosted LaTeX service,
+  are now LaTeX in the page, typeset by MathJax 3.2.2 from the copy in
+  `mathjax/`. An equation that made up a whole paragraph is set as displayed
+  maths. `_reconstruction/latex_to_mathjax.py` does the conversion.
+- Lost figures are redrawn from the text of their posts, one script per post
+  in `_reconstruction/posts/`, each checking the post's own numbers before it
+  draws. `_reconstruction/rebuild_all.py` regenerates them all. Every redrawn
+  image carries the note "figure reconstructed from the post text, 2026" in
+  its file metadata.
+- The `og:url`, `og:image` and canonical tags are absolute, so link previews
+  and search engines resolve them.
 
 ## Putting mathemafrica.org back in front of it
 
-The domain is still registered (GoDaddy, expiring 2026-11-06) and still delegated
-to `ns5/ns6.kasserver.com`, but the zone is empty, so nothing resolves. Restoring
-it needs access to either the registrar account or the All-Inkl DNS account.
-
-Once there is DNS control, at the DNS host:
+At the DNS host for the domain:
 
     @      A      185.199.108.153
     @      A      185.199.109.153
@@ -82,6 +86,9 @@ Once there is DNS control, at the DNS host:
 
 and in this repository, add a `CNAME` file containing `mathemafrica.org`, then
 enable HTTPS in the repository's Pages settings once the certificate is issued.
+Finally point the sharing tags at the domain:
+
+    python3 _reconstruction/absolute_urls.py https://mathemafrica.org/
 
 ## Licence
 

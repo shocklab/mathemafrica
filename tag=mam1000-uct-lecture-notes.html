@@ -161,7 +161,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive tag tag-mam1000-uct-lecture-notes tag-55 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -286,18 +287,18 @@ img.emoji {
 <span>April 17th, 2017</span><span class="fusion-inline-sep">|</span><a href="cat=1.html" rel="category">Uncategorized</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="p=13399.html#respond">0 Comments</a></span></div><div class="fusion-alignright"><a href="p=13399.html" class="fusion-read-more">Read More</a></div></div></div><div id="post-11091" class="fusion-post-large post fusion-clearfix post-11091 type-post status-publish format-standard hentry category-english category-level-intermediate-2 tag-mam1000-uct-lecture-notes">
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11091.html">The mean value theorem for integrals &#8211; proof</a></h2><div class="fusion-post-content-container"><p>I left out one line at the beginning, which was pointed out in class.</p>
-<p>We start with some function, <img src="//s0.wp.com/latex.php?latex=f%28t%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(t)" title="f(t)" class="latex" /> which is continuous on <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" />. We define:</p>
-<p><img src="//s0.wp.com/latex.php?latex=F%28x%29%3D%5Cint_a%5Ex+f%28t%29dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F(x)=&#92;int_a^x f(t)dt" title="F(x)=&#92;int_a^x f(t)dt" class="latex" /></p>
-<p>By the fundamental theorem of calculus, this is continuous of <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" /> and differentiable on <img src="//s0.wp.com/latex.php?latex=%28a%2Cb%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(a,b)" title="(a,b)" class="latex" />.</p>
-<p>Now, we use the mean value theorem for derivatives (somewhere in an interval, a function has a gradient which is equal to its average gradient) which say that if <img src="//s0.wp.com/latex.php?latex=g&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g" title="g" class="latex" /> is differentiable on <img src="//s0.wp.com/latex.php?latex=%28a%2Cb%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(a,b)" title="(a,b)" class="latex" /> and continuous on <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" /> then there exists some <img src="//s0.wp.com/latex.php?latex=c&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="c" title="c" class="latex" /> between <img src="//s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a" title="a" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b" title="b" class="latex" /> such that <img src="//s0.wp.com/latex.php?latex=g%27%28c%29%3D%5Cfrac%7Bg%28b%29-g%28a%29%7D%7Bb-a%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g&#039;(c)=&#92;frac{g(b)-g(a)}{b-a}" title="g&#039;(c)=&#92;frac{g(b)-g(a)}{b-a}" class="latex" />.</p>
-<p>Now simply using our function <img src="//s0.wp.com/latex.php?latex=F%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F(x)" title="F(x)" class="latex" /> in the mean value theorem for derivatives, we have that:</p>
-<p><img src="//s0.wp.com/latex.php?latex=F%27%28c%29%3D%5Cfrac%7BF%28b%29-F%28a%29%7D%7Bb-a%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F&#039;(c)=&#92;frac{F(b)-F(a)}{b-a}" title="F&#039;(c)=&#92;frac{F(b)-F(a)}{b-a}" class="latex" /></p>
-<p>But we know that <img src="//s0.wp.com/latex.php?latex=F%27%28c%29%3Df%28c%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F&#039;(c)=f(c)" title="F&#039;(c)=f(c)" class="latex" />. We also have defined <img src="//s0.wp.com/latex.php?latex=F%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F(x)" title="F(x)" class="latex" /> above, so we can plug in <img src="//s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a" title="a" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b" title="b" class="latex" /> to get:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f%28c%29%3D%5Cfrac%7B%5Cint_a%5Eb+f%28t%29+dt-%5Cint_a%5Ea+f%28t%29+dt%7D%7Bb-a%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(c)=&#92;frac{&#92;int_a^b f(t) dt-&#92;int_a^a f(t) dt}{b-a}" title="f(c)=&#92;frac{&#92;int_a^b f(t) dt-&#92;int_a^a f(t) dt}{b-a}" class="latex" /></p>
+<p>We start with some function, \(f(t)\) which is continuous on \([a,b]\). We define:</p>
+<p>\[F(x)=\int_a^x f(t)dt\]</p>
+<p>By the fundamental theorem of calculus, this is continuous of \([a,b]\) and differentiable on \((a,b)\).</p>
+<p>Now, we use the mean value theorem for derivatives (somewhere in an interval, a function has a gradient which is equal to its average gradient) which say that if \(g\) is differentiable on \((a,b)\) and continuous on \([a,b]\) then there exists some \(c\) between \(a\) and \(b\) such that \(g'(c)=\frac{g(b)-g(a)}{b-a}\).</p>
+<p>Now simply using our function \(F(x)\) in the mean value theorem for derivatives, we have that:</p>
+<p>\[F'(c)=\frac{F(b)-F(a)}{b-a}\]</p>
+<p>But we know that \(F'(c)=f(c)\). We also have defined \(F(x)\) above, so we can plug in \(a\) and \(b\) to get:</p>
+<p>\[f(c)=\frac{\int_a^b f(t) dt-\int_a^a f(t) dt}{b-a}\]</p>
 <p>The second term on the right hand side is zero as the two limits are the same, so we have:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f%28c%29%3D%5Cfrac%7B%5Cint_a%5Eb+f%28t%29+dt%7D%7Bb-a%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(c)=&#92;frac{&#92;int_a^b f(t) dt}{b-a}" title="f(c)=&#92;frac{&#92;int_a^b f(t) dt}{b-a}" class="latex" /></p>
-<p>But we know that <img src="//s0.wp.com/latex.php?latex=%5Cint_a%5Eb+f%28t%29+dt%3D%5Cint_a%5Eb+f%28x%29+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_a^b f(t) dt=&#92;int_a^b f(x) dx" title="&#92;int_a^b f(t) dt=&#92;int_a^b f(x) dx" class="latex" /> as <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> are just dummy variables, and so we have proved that:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f%28c%29%3D%5Cfrac%7B%5Cint_a%5Eb+f%28x%29+dx%7D%7Bb-a%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(c)=&#92;frac{&#92;int_a^b f(x) dx}{b-a}" title="f(c)=&#92;frac{&#92;int_a^b f(x) dx}{b-a}" class="latex" /></p>
+<p>\[f(c)=\frac{\int_a^b f(t) dt}{b-a}\]</p>
+<p>But we know that \(\int_a^b f(t) dt=\int_a^b f(x) dx\) as \(t\) and \(x\) are just dummy variables, and so we have proved that:</p>
+<p>\[f(c)=\frac{\int_a^b f(x) dx}{b-a}\]</p>
 <p>This finishes the proof.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	

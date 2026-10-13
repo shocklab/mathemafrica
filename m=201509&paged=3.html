@@ -160,7 +160,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive date paged paged-3 date-paged-3 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -266,13 +267,13 @@ img.emoji {
 </li>
 																																																																										</ul>
 	</div>
-<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11454.html">UCT MAM1000 lecture notes part 33 &#8211; differential equations part ii &#8211; the logistic equation</a></h2><div class="fusion-post-content-container"><p>Let&#8217;s try and make the previous example at least a little more realistic. Let&#8217;s suppose that the environment only supports a fixed number of rabbits, let&#8217;s call that fixed number <img src="//s0.wp.com/latex.php?latex=M&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="M" title="M" class="latex" />. This is the maximum number of rabbits that we can stably have. It turns out that there is a very very important equation which will model this sort of behaviour very well, and it shows up all over the place. This is called the logistic equation and looks like:</p>
+<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11454.html">UCT MAM1000 lecture notes part 33 &#8211; differential equations part ii &#8211; the logistic equation</a></h2><div class="fusion-post-content-container"><p>Let&#8217;s try and make the previous example at least a little more realistic. Let&#8217;s suppose that the environment only supports a fixed number of rabbits, let&#8217;s call that fixed number \(M\). This is the maximum number of rabbits that we can stably have. It turns out that there is a very very important equation which will model this sort of behaviour very well, and it shows up all over the place. This is called the logistic equation and looks like:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7BdP%28t%29%7D%7Bdt%7D%3DkP%28t%29%5Cleft%281-%5Cfrac%7BP%28t%29%7D%7BM%7D%5Cright%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dP(t)}{dt}=kP(t)&#92;left(1-&#92;frac{P(t)}{M}&#92;right)" title="&#92;frac{dP(t)}{dt}=kP(t)&#92;left(1-&#92;frac{P(t)}{M}&#92;right)" class="latex" /></p>
+<p style="text-align: center;">\[\frac{dP(t)}{dt}=kP(t)\left(1-\frac{P(t)}{M}\right)\]</p>
 <p>&nbsp;</p>
 <p>Solving this equation means finding a function whose derivative and whose functional form are linked in this specific way.</p>
 <p>We have pulled this equation out of thin air, so rather than deriving where it comes from, we will simply motivate that it seems to have the right sort of behaviour of what we want.</p>
-<p>For very small populations (much less than the stable equilibrium population <img src="//s0.wp.com/latex.php?latex=M&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="M" title="M" class="latex" />), <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7BP%28t%29%7D%7BM%7D%3C%3C1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{P(t)}{M}&lt;&lt;1" title="&#92;frac{P(t)}{M}&lt;&lt;1" class="latex" />, so the term in brackets can be safely ignored.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>For very small populations (much less than the stable equilibrium population \(M\)), \(\frac{P(t)}{M}&lt;&lt;1\), so the term in brackets can be safely ignored.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -321,12 +322,12 @@ img.emoji {
 </li>
 																																																																										</ul>
 	</div>
-<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11450.html">UCT MAM1000 lecture notes part 32 &#8211; differential equations and rabbits moving at the speed of light</a></h2><div class="fusion-post-content-container"><p>Up to now if I gave you an equation, and asked you to solve it for <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> you would be, in general, looking for a value of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> which solved the equation. Given:</p>
+<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11450.html">UCT MAM1000 lecture notes part 32 &#8211; differential equations and rabbits moving at the speed of light</a></h2><div class="fusion-post-content-container"><p>Up to now if I gave you an equation, and asked you to solve it for \(x\) you would be, in general, looking for a value of \(x\) which solved the equation. Given:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=x%5E2%2B3x%2B2%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2+3x+2=0" title="x^2+3x+2=0" class="latex" /></p>
+<p style="text-align: center;">\[x^2+3x+2=0\]</p>
 <p>&nbsp;</p>
-<p>You can solve this equation to find two values of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />.</p>
-<p>I could also give you an equation which linked <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> explicitly, and you could find a relationship between the two which, given a value of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> would give you a value of <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" />. You&#8217;ve been doing this now for many years. Now we&#8217;re going to add a hugely powerful tool to our mathematical arsenal. We&#8217;re going to allow our equations to include information about gradients of the function&#8230;let&#8217;s see what this means&#8230;</p>
+<p>You can solve this equation to find two values of \(x\).</p>
+<p>I could also give you an equation which linked \(x\) and \(y\) explicitly, and you could find a relationship between the two which, given a value of \(x\) would give you a value of \(y\). You&#8217;ve been doing this now for many years. Now we&#8217;re going to add a hugely powerful tool to our mathematical arsenal. We&#8217;re going to allow our equations to include information about gradients of the function&#8230;let&#8217;s see what this means&#8230;</p>
 <p>We&#8217;re going to take everything that you learnt about integration and turn it into a way to model and understand the world around us. This is a very powerful statement and indeed differential equations are without a doubt the most powerful mathematical tool we have to understand the behaviour of everything from fundamental particles to populations, economies, weather, flow of wealth, heat, fluids, the motion of planets, the life of stars, the flight of an aircraft, the trajectory of a meteor, the way a pendulum swings, the way a ponytail swings (see paper on this <a href="http://epubs.siam.org/doi/pdf/10.1137/090760477">here</a>), the way fish move, the way algae grow, the way a neuron fires, the way a fire spreads&#8230;and so much more.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	

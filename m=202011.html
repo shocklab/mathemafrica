@@ -160,7 +160,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive date fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -228,7 +229,7 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=16895.html">A challenging limit</a></h2><div class="fusion-post-content-container"><p><em>This post comes mostly from the youtube video by BlackPenRedPen found here: https://www.youtube.com/watch?v=89d5f8WUf1Y&amp;t=3s</em></p>
 <p><em>This in turn comes from Brilliant.com &#8211; details and links can be found in the original video</em></p>
 <p>In this post we will have a look at a complicated-looking limit that has an interesting solution. Here it is:</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bn+%5Crightarrow+%5Cinfty%7D+%28+%5Cfrac%7Bn%21%7D%7Bn%5En%7D%29%5E%7B%5Cfrac%7B1%7D%7Bn%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{n &#92;rightarrow &#92;infty} ( &#92;frac{n!}{n^n})^{&#92;frac{1}{n}}" title="&#92;lim_{n &#92;rightarrow &#92;infty} ( &#92;frac{n!}{n^n})^{&#92;frac{1}{n}}" class="latex" /></p>
+<p>\[\lim_{n \rightarrow \infty} ( \frac{n!}{n^n})^{\frac{1}{n}}\]</p>
 <p>This looks pretty daunting &#8211; but we will break the solution down into sections:</p>
 <ul>
 <li>taking the logarithms and rearranging</li>
@@ -238,12 +239,12 @@ img.emoji {
 <p>&nbsp;</p>
 <p><strong>Step 1: Taking the Logarithm</strong></p>
 <p>The first step here is to take the logarithm, a generally useful trick when applying limits. First we assign the variable <em>L</em> to the limit (so that we can solve for it in the end). Now lets do some algebra:</p>
-<p><img src="//s0.wp.com/latex.php?latex=L+%3D%C2%A0%5Clim_%7Bn+%5Crightarrow+%5Cinfty%7D+%28+%5Cfrac%7Bn%21%7D%7Bn%5En%7D%29%5E%7B%5Cfrac%7B1%7D%7Bn%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="L = &#92;lim_{n &#92;rightarrow &#92;infty} ( &#92;frac{n!}{n^n})^{&#92;frac{1}{n}}" title="L = &#92;lim_{n &#92;rightarrow &#92;infty} ( &#92;frac{n!}{n^n})^{&#92;frac{1}{n}}" class="latex" /></p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cln%28L%29+%3D+%5Cln%28%5Clim_%7Bn+%5Crightarrow+%5Cinfty%7D+%28+%5Cfrac%7Bn%21%7D%7Bn%5En%7D%29%5E%7B%5Cfrac%7B1%7D%7Bn%7D%7D%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln(L) = &#92;ln(&#92;lim_{n &#92;rightarrow &#92;infty} ( &#92;frac{n!}{n^n})^{&#92;frac{1}{n}})" title="&#92;ln(L) = &#92;ln(&#92;lim_{n &#92;rightarrow &#92;infty} ( &#92;frac{n!}{n^n})^{&#92;frac{1}{n}})" class="latex" /></p>
-<p>Noting that the natural logarithm <img src="//s0.wp.com/latex.php?latex=%5Cln&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln" title="&#92;ln" class="latex" /> is a continuous function and therefore we can take the limit outside of the function:</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cln%28L%29+%3D%C2%A0+%5Clim_%7Bn+%5Crightarrow+%5Cinfty%7D%C2%A0%5Cln%28+%28%5Cfrac%7Bn%21%7D%7Bn%5En%7D%29%5E%7B%5Cfrac%7B1%7D%7Bn%7D%7D%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln(L) =  &#92;lim_{n &#92;rightarrow &#92;infty} &#92;ln( (&#92;frac{n!}{n^n})^{&#92;frac{1}{n}})" title="&#92;ln(L) =  &#92;lim_{n &#92;rightarrow &#92;infty} &#92;ln( (&#92;frac{n!}{n^n})^{&#92;frac{1}{n}})" class="latex" /></p>
+<p>\[L = \lim_{n \rightarrow \infty} ( \frac{n!}{n^n})^{\frac{1}{n}}\]</p>
+<p>\[\ln(L) = \ln(\lim_{n \rightarrow \infty} ( \frac{n!}{n^n})^{\frac{1}{n}})\]</p>
+<p>Noting that the natural logarithm \(\ln\) is a continuous function and therefore we can take the limit outside of the function:</p>
+<p>\[\ln(L) =  \lim_{n \rightarrow \infty} \ln( (\frac{n!}{n^n})^{\frac{1}{n}})\]</p>
 <p>Next we can use the logarithm laws to bring down the exponent:</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cln%28L%29+%3D%C2%A0+%5Clim_%7Bn+%5Crightarrow+%5Cinfty%7D%C2%A0+%5Cfrac%7B1%7D%7Bn%7D+%5Cln%28%5Cfrac%7Bn%21%7D%7Bn%5En%7D%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln(L) =  &#92;lim_{n &#92;rightarrow &#92;infty}  &#92;frac{1}{n} &#92;ln(&#92;frac{n!}{n^n})" title="&#92;ln(L) =  &#92;lim_{n &#92;rightarrow &#92;infty}  &#92;frac{1}{n} &#92;ln(&#92;frac{n!}{n^n})" class="latex" /></p>
+<p>\[\ln(L) =  \lim_{n \rightarrow \infty}  \frac{1}{n} \ln(\frac{n!}{n^n})\]</p>
 <p>Alright, now we have taken the logarithm, step 1 is complete.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=81.html" title="Posts by Dean Bunce" rel="author">Dean Bunce</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	

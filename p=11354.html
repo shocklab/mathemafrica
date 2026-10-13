@@ -34,13 +34,13 @@
 
 		<meta property="og:title" content="UCT MAM1000 lecture notes part 27 - complex numbers part v"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=11354.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=11354.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="We&#39;re about to make one of the most profound links that we will obtain through complex numbers. This is going to show how complex numbers are a bridge between different areas that you already know about, but never knew had anything to do with one another.
 
 We know about exponential functions and how they have very"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.33"}};
 			!function(e,n,t){var a;function i(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d"),i=String.fromCharCode;return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(i(55356,56806,55356,56826),0,0),3e3<t.toDataURL().length):"diversity"===e?(a.fillText(i(55356,57221),0,0),t=a.getImageData(16,16,1,1).data,a.fillText(i(55356,57221,55356,57343),0,0),(t=a.getImageData(16,16,1,1).data)[0],t[1],t[2],t[3],!0):("simple"===e?a.fillText(i(55357,56835),0,0):a.fillText(i(55356,57135),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function o(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:i("simple"),flag:i("flag"),unicode8:i("unicode8"),diversity:i("diversity")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag&&t.supports.unicode8&&t.supports.diversity||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?o(a.concatemoji):a.wpemoji&&a.twemoji&&(o(a.twemoji),o(a.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -89,7 +89,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.33" />
-<link rel="canonical" href="p=11354.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=11354.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-2X8' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11354.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11354&.html#038;format=xml" />
@@ -176,7 +176,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-11354 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -248,61 +249,61 @@ img.emoji {
 							<h2 class="entry-title">UCT MAM1000 lecture notes part 27 &#8211; complex numbers part v</h2>			
 			<div class="post-content">
 				<p>We&#8217;re about to make one of the most profound links that we will obtain through complex numbers. This is going to show how complex numbers are a bridge between different areas that you already know about, but never knew had anything to do with one another.</p>
-<p>We know about exponential functions and how they have very special properties related to their derivatives. <img src="//s0.wp.com/latex.php?latex=e%5Ex&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^x" title="e^x" class="latex" /> is a function which is practically defined as the function which is equal to its derivative. We also know that exponential functions tell us about growth, and we will see this in more detail when we come on to differential equations.</p>
+<p>We know about exponential functions and how they have very special properties related to their derivatives. \(e^x\) is a function which is practically defined as the function which is equal to its derivative. We also know that exponential functions tell us about growth, and we will see this in more detail when we come on to differential equations.</p>
 <p>We know that trigonometric functions are to do with triangles, and circles, and angles and they tend to be periodic. They tell us how things vary in a way where they come back to where they started after some time.</p>
-<p>Exponential functions and trigonometric functions couldn&#8217;t really look much more different if they tried. But we&#8217;re going to see here that they are in fact intimately linked. In fact, we might already have guessed that there was something funny going on under the surface when we studied the Maclaurin polynomials of the exponential function as well as the <img src="//s0.wp.com/latex.php?latex=%5Csin&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sin" title="&#92;sin" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=%5Ccos&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;cos" title="&#92;cos" class="latex" /> functions. Recall that:</p>
+<p>Exponential functions and trigonometric functions couldn&#8217;t really look much more different if they tried. But we&#8217;re going to see here that they are in fact intimately linked. In fact, we might already have guessed that there was something funny going on under the surface when we studied the Maclaurin polynomials of the exponential function as well as the \(\sin\) and \(\cos\) functions. Recall that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5Ex%5Capprox+1%2Bx%2B%5Cfrac%7Bx%5E2%7D%7B2%7D%2B%5Cfrac%7Bx%5E3%7D%7B3%21%7D%2B%5Cfrac%7Bx%5E4%7D%7B4%21%7D%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^x&#92;approx 1+x+&#92;frac{x^2}{2}+&#92;frac{x^3}{3!}+&#92;frac{x^4}{4!}+..." title="e^x&#92;approx 1+x+&#92;frac{x^2}{2}+&#92;frac{x^3}{3!}+&#92;frac{x^4}{4!}+..." class="latex" /></p>
+<p style="text-align: center;">\[e^x\approx 1+x+\frac{x^2}{2}+\frac{x^3}{3!}+\frac{x^4}{4!}+...\]</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csin+x%5Capprox+x-%5Cfrac%7Bx%5E3%7D%7B3%21%7D%2B%5Cfrac%7Bx%5E5%7D%7B5%21%7D-%5Cfrac%7Bx%5E7%7D%7B7%21%7D%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sin x&#92;approx x-&#92;frac{x^3}{3!}+&#92;frac{x^5}{5!}-&#92;frac{x^7}{7!}+..." title="&#92;sin x&#92;approx x-&#92;frac{x^3}{3!}+&#92;frac{x^5}{5!}-&#92;frac{x^7}{7!}+..." class="latex" /></p>
+<p style="text-align: center;">\[\sin x\approx x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+...\]</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Ccos+x%5Capprox+1-%5Cfrac%7Bx%5E2%7D%7B2%21%7D%2B%5Cfrac%7Bx%5E4%7D%7B4%21%7D-%5Cfrac%7Bx%5E6%7D%7B6%21%7D%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;cos x&#92;approx 1-&#92;frac{x^2}{2!}+&#92;frac{x^4}{4!}-&#92;frac{x^6}{6!}+..." title="&#92;cos x&#92;approx 1-&#92;frac{x^2}{2!}+&#92;frac{x^4}{4!}-&#92;frac{x^6}{6!}+..." class="latex" /></p>
+<p style="text-align: center;">\[\cos x\approx 1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+...\]</p>
 <p>&nbsp;</p>
 <p>They are not the same, of course, but there are some similar patterns happening above.</p>
 <p>&nbsp;</p>
-<p>Now let&#8217;s ask about taking the exponential not of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> but of <img src="//s0.wp.com/latex.php?latex=i+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="i x" title="i x" class="latex" />, for <img src="//s0.wp.com/latex.php?latex=x%5Cin+%7B%5Cmathbb+R%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x&#92;in {&#92;mathbb R}" title="x&#92;in {&#92;mathbb R}" class="latex" />. ie <img src="//s0.wp.com/latex.php?latex=e%5E%7Bix%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{ix}" title="e^{ix}" class="latex" />. Well, so far we don&#8217;t know how to take the exponential of a complex number, but we do know how to multiply them together. Let&#8217;s see what happens when we use the Maclaurin polynomial and plug in <img src="//s0.wp.com/latex.php?latex=ix&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="ix" title="ix" class="latex" />:</p>
+<p>Now let&#8217;s ask about taking the exponential not of \(x\) but of \(i x\), for \(x\in {\mathbb R}\). ie \(e^{ix}\). Well, so far we don&#8217;t know how to take the exponential of a complex number, but we do know how to multiply them together. Let&#8217;s see what happens when we use the Maclaurin polynomial and plug in \(ix\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7Bix%7D%5Capprox+1%2B%7B%28ix%29%7D%2B%5Cfrac%7B%7B%28ix%29%7D%5E2%7D%7B2%7D%2B%5Cfrac%7B%7B%28ix%29%7D%5E3%7D%7B3%21%7D%2B%5Cfrac%7B%7B%28ix%29%7D%5E4%7D%7B4%21%7D%2B%5Cfrac%7B%7B%28ix%29%7D%5E5%7D%7B5%21%7D%2B%5Cfrac%7B%7B%28ix%29%7D%5E6%7D%7B6%21%7D%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{ix}&#92;approx 1+{(ix)}+&#92;frac{{(ix)}^2}{2}+&#92;frac{{(ix)}^3}{3!}+&#92;frac{{(ix)}^4}{4!}+&#92;frac{{(ix)}^5}{5!}+&#92;frac{{(ix)}^6}{6!}+..." title="e^{ix}&#92;approx 1+{(ix)}+&#92;frac{{(ix)}^2}{2}+&#92;frac{{(ix)}^3}{3!}+&#92;frac{{(ix)}^4}{4!}+&#92;frac{{(ix)}^5}{5!}+&#92;frac{{(ix)}^6}{6!}+..." class="latex" /></p>
+<p style="text-align: center;">\[e^{ix}\approx 1+{(ix)}+\frac{{(ix)}^2}{2}+\frac{{(ix)}^3}{3!}+\frac{{(ix)}^4}{4!}+\frac{{(ix)}^5}{5!}+\frac{{(ix)}^6}{6!}+...\]</p>
 <p>&nbsp;</p>
-<p>well, we know that if we have two complex numbers <img src="//s0.wp.com/latex.php?latex=z&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z" title="z" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=w&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="w" title="w" class="latex" /> we can write: <img src="//s0.wp.com/latex.php?latex=%28zw%29%5Em&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(zw)^m" title="(zw)^m" class="latex" /> as <img src="//s0.wp.com/latex.php?latex=z%5Em+w%5Em&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z^m w^m" title="z^m w^m" class="latex" />. Thus, a term of the form <img src="//s0.wp.com/latex.php?latex=%28ix%29%5Em%3Di%5Em+x%5Em&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(ix)^m=i^m x^m" title="(ix)^m=i^m x^m" class="latex" />, but <img src="//s0.wp.com/latex.php?latex=i%5Em&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="i^m" title="i^m" class="latex" /> for integer <img src="//s0.wp.com/latex.php?latex=m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="m" title="m" class="latex" /> takes on one of only four values: <img src="//s0.wp.com/latex.php?latex=i%2C-1%2C-i%2C+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="i,-1,-i, 1" title="i,-1,-i, 1" class="latex" />. For the terms above we find that we have:</p>
+<p>well, we know that if we have two complex numbers \(z\) and \(w\) we can write: \((zw)^m\) as \(z^m w^m\). Thus, a term of the form \((ix)^m=i^m x^m\), but \(i^m\) for integer \(m\) takes on one of only four values: \(i,-1,-i, 1\). For the terms above we find that we have:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7Bix%7D%5Capprox+1%2B%7Bix%7D%2B%5Cfrac%7B-x%5E2%7D%7B2%7D%2B%5Cfrac%7B-ix%5E3%7D%7B3%21%7D%2B%5Cfrac%7Bx%5E4%7D%7B4%21%7D%2B%5Cfrac%7Bix%5E5%7D%7B5%21%7D%2B%5Cfrac%7B-x%5E6%7D%7B6%21%7D%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{ix}&#92;approx 1+{ix}+&#92;frac{-x^2}{2}+&#92;frac{-ix^3}{3!}+&#92;frac{x^4}{4!}+&#92;frac{ix^5}{5!}+&#92;frac{-x^6}{6!}+..." title="e^{ix}&#92;approx 1+{ix}+&#92;frac{-x^2}{2}+&#92;frac{-ix^3}{3!}+&#92;frac{x^4}{4!}+&#92;frac{ix^5}{5!}+&#92;frac{-x^6}{6!}+..." class="latex" /></p>
+<p style="text-align: center;">\[e^{ix}\approx 1+{ix}+\frac{-x^2}{2}+\frac{-ix^3}{3!}+\frac{x^4}{4!}+\frac{ix^5}{5!}+\frac{-x^6}{6!}+...\]</p>
 <p>&nbsp;</p>
-<p>ok, now let&#8217;s separate this into terms with <img src="//s0.wp.com/latex.php?latex=i&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="i" title="i" class="latex" /> and those without:</p>
+<p>ok, now let&#8217;s separate this into terms with \(i\) and those without:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7Bix%7D%5Capprox+%281%2B%5Cfrac%7B-x%5E2%7D%7B2%7D%2B%5Cfrac%7Bx%5E4%7D%7B4%21%7D%2B%5Cfrac%7B-x%5E6%7D%7B6%21%7D%2B...%29%2Bi%28x%2B%5Cfrac%7B-x%5E3%7D%7B3%21%7D%2B%5Cfrac%7Bx%5E5%7D%7B5%21%7D%2B...%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{ix}&#92;approx (1+&#92;frac{-x^2}{2}+&#92;frac{x^4}{4!}+&#92;frac{-x^6}{6!}+...)+i(x+&#92;frac{-x^3}{3!}+&#92;frac{x^5}{5!}+...)" title="e^{ix}&#92;approx (1+&#92;frac{-x^2}{2}+&#92;frac{x^4}{4!}+&#92;frac{-x^6}{6!}+...)+i(x+&#92;frac{-x^3}{3!}+&#92;frac{x^5}{5!}+...)" class="latex" /></p>
+<p style="text-align: center;">\[e^{ix}\approx (1+\frac{-x^2}{2}+\frac{x^4}{4!}+\frac{-x^6}{6!}+...)+i(x+\frac{-x^3}{3!}+\frac{x^5}{5!}+...)\]</p>
 <p>&nbsp;</p>
-<p>Well, this is interesting. You can see that the patterns in the brackets are reminiscent of the Maclaurin polynomials for <img src="//s0.wp.com/latex.php?latex=%5Ccos&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;cos" title="&#92;cos" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=%5Csin&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sin" title="&#92;sin" class="latex" />. Indeed you can show, given the general expressions we wrote down before:</p>
+<p>Well, this is interesting. You can see that the patterns in the brackets are reminiscent of the Maclaurin polynomials for \(\cos\) and \(\sin\). Indeed you can show, given the general expressions we wrote down before:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5Ex%3D%5Csum_%7Bk%3D0%7D%5En+%5Cfrac%7Bx%5Ek%7D%7Bk%21%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^x=&#92;sum_{k=0}^n &#92;frac{x^k}{k!}" title="e^x=&#92;sum_{k=0}^n &#92;frac{x^k}{k!}" class="latex" /></p>
+<p style="text-align: center;">\[e^x=\sum_{k=0}^n \frac{x^k}{k!}\]</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csin+x%3D%5Csum_%7Bk%3D0%7D%5En+%28-1%29%5Ek%5Cfrac%7Bx%5E%7B%282k%2B1%29%7D%7D%7B%282k%2B1%29%21%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sin x=&#92;sum_{k=0}^n (-1)^k&#92;frac{x^{(2k+1)}}{(2k+1)!}" title="&#92;sin x=&#92;sum_{k=0}^n (-1)^k&#92;frac{x^{(2k+1)}}{(2k+1)!}" class="latex" /></p>
+<p style="text-align: center;">\[\sin x=\sum_{k=0}^n (-1)^k\frac{x^{(2k+1)}}{(2k+1)!}\]</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Ccos+x%3D%5Csum_%7Bk%3D0%7D%5En+%28-1%29%5Ek%5Cfrac%7Bx%5E%7B%282k%29%7D%7D%7B%282k%29%21%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;cos x=&#92;sum_{k=0}^n (-1)^k&#92;frac{x^{(2k)}}{(2k)!}" title="&#92;cos x=&#92;sum_{k=0}^n (-1)^k&#92;frac{x^{(2k)}}{(2k)!}" class="latex" /></p>
+<p style="text-align: center;">\[\cos x=\sum_{k=0}^n (-1)^k\frac{x^{(2k)}}{(2k)!}\]</p>
 <p>&nbsp;</p>
 <p>That in fact we can show that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7Bix%7D%3D%5Ccos+x%2Bi%5Csin+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{ix}=&#92;cos x+i&#92;sin x" title="e^{ix}=&#92;cos x+i&#92;sin x" class="latex" /></p>
+<p style="text-align: center;">\[e^{ix}=\cos x+i\sin x\]</p>
 <p>&nbsp;</p>
-<p>But this is great. This means that if we have an imaginary number of the form <img src="//s0.wp.com/latex.php?latex=i+b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="i b" title="i b" class="latex" /> we can now exponentiate it, and amazingly it comes out as a complex number with argument <img src="//s0.wp.com/latex.php?latex=b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b" title="b" class="latex" /> and modulus 1. ie:</p>
+<p>But this is great. This means that if we have an imaginary number of the form \(i b\) we can now exponentiate it, and amazingly it comes out as a complex number with argument \(b\) and modulus 1. ie:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7B2.5i%7D%3D%5Ccos+2.5%2Bi%5Csin+2.5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{2.5i}=&#92;cos 2.5+i&#92;sin 2.5" title="e^{2.5i}=&#92;cos 2.5+i&#92;sin 2.5" class="latex" /></p>
+<p style="text-align: center;">\[e^{2.5i}=\cos 2.5+i\sin 2.5\]</p>
 <p>&nbsp;</p>
-<p>How about if we have a number which isn&#8217;t just imaginary, but is itself complex. ie. how about if we want to find the exponential of a number of the form <img src="//s0.wp.com/latex.php?latex=a%2Bbi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a+bi" title="a+bi" class="latex" />. Well, this can be calculated as:</p>
+<p>How about if we have a number which isn&#8217;t just imaginary, but is itself complex. ie. how about if we want to find the exponential of a number of the form \(a+bi\). Well, this can be calculated as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7Ba%2Bbi%7D%3De%5Eae%5E%7Bbi%7D%3De%5Ea%28%5Ccos+b%2Bi%5Csin+b%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{a+bi}=e^ae^{bi}=e^a(&#92;cos b+i&#92;sin b)" title="e^{a+bi}=e^ae^{bi}=e^a(&#92;cos b+i&#92;sin b)" class="latex" /></p>
+<p style="text-align: center;">\[e^{a+bi}=e^ae^{bi}=e^a(\cos b+i\sin b)\]</p>
 <p>&nbsp;</p>
-<p>This means that for real <img src="//s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a" title="a" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b" title="b" class="latex" />: <img src="//s0.wp.com/latex.php?latex=%7Ce%5E%7Ba%2Bbi%7D%7C%3De%5Ea&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="|e^{a+bi}|=e^a" title="|e^{a+bi}|=e^a" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=arg%28e%5E%7Ba%2Bbi%7D%29%3Db&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="arg(e^{a+bi})=b" title="arg(e^{a+bi})=b" class="latex" />. Actually we have to be a bit more careful, because we know that the argument of a complex number is only fixed, modulo factors of <img src="//s0.wp.com/latex.php?latex=2%5Cpi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2&#92;pi" title="2&#92;pi" class="latex" />. So really</p>
+<p>This means that for real \(a\) and \(b\): \(|e^{a+bi}|=e^a\) and \(arg(e^{a+bi})=b\). Actually we have to be a bit more careful, because we know that the argument of a complex number is only fixed, modulo factors of \(2\pi\). So really</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=arg%28e%5E%7Ba%2Bbi%7D%29%3D%5C%7Bb%2B2%5Cpi+n%3B+n%5Cin+%7B%5Cmathbb+Z%7D%5C%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="arg(e^{a+bi})=&#92;{b+2&#92;pi n; n&#92;in {&#92;mathbb Z}&#92;}" title="arg(e^{a+bi})=&#92;{b+2&#92;pi n; n&#92;in {&#92;mathbb Z}&#92;}" class="latex" /></p>
+<p style="text-align: center;">\[arg(e^{a+bi})=\{b+2\pi n; n\in {\mathbb Z}\}\]</p>
 <p>&nbsp;</p>
 <p>All of a sudden de Moivre&#8217;s theorem looks a lot more natural. Now, if we write:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%28%5Ccos%5Ctheta%2Bi%5Csin%5Ctheta%29%5En%3D%5Ccos+%28n%5Ctheta%29%2Bi%5Csin+%28n%5Ctheta%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(&#92;cos&#92;theta+i&#92;sin&#92;theta)^n=&#92;cos (n&#92;theta)+i&#92;sin (n&#92;theta)" title="(&#92;cos&#92;theta+i&#92;sin&#92;theta)^n=&#92;cos (n&#92;theta)+i&#92;sin (n&#92;theta)" class="latex" /></p>
+<p style="text-align: center;">\[(\cos\theta+i\sin\theta)^n=\cos (n\theta)+i\sin (n\theta)\]</p>
 <p>&nbsp;</p>
 <p>in its exponential form, then we simply have:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cleft%28e%5E%7Bi%5Ctheta%7D%5Cright%29%5En%3De%5E%7Bin%5Ctheta%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;left(e^{i&#92;theta}&#92;right)^n=e^{in&#92;theta}" title="&#92;left(e^{i&#92;theta}&#92;right)^n=e^{in&#92;theta}" class="latex" /></p>
+<p style="text-align: center;">\[\left(e^{i\theta}\right)^n=e^{in\theta}\]</p>
 <p>&nbsp;</p>
 <p>which is a lot less surprising than de Moivre&#8217;s theorem, but is exactly the same statement, now that we know how exponentials of complex numbers are given in terms of trigonetric functions.</p>
 <p>&nbsp;</p>

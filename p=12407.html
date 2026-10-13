@@ -21,11 +21,11 @@
 
 		<meta property="og:title" content="Mathematical induction"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=12407.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=12407.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="One of the concepts that most students seem to struggle with the most in the first year maths course is that of mathematical induction. It feels abstract, yet when you have to prove a concrete statement, it feels like all the assumptions, and cases you look at shouldn&#39;t have any real impact on the thing"/>
 
-					<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+					<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 				<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -74,7 +74,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=12407.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=12407.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-3e7' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D12407.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D12407&.html#038;format=xml" />
@@ -224,7 +224,8 @@ padding: 10px;
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-12407 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar no-mobile-totop layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -298,65 +299,65 @@ padding: 10px;
 <p>&#8220;As long as your ladder has a step S(n), we hereby guarantee that it will have a step S(n+1), for any integers n&#8221;.</p>
 <p>That sound promising, but what if our ladder had no steps at all? They wouldn&#8217;t have lied in the statement, though they would have sold us a terrible ladder!</p>
 <p>We go and check the ladder for a first step, and on inspection we see that indeed there is an S(1). Now, they told us that if there was an S(n) for any integer n, then there will be an S(n+1). Well, that&#8217;s great, because we can use that information to see that there must be an S(2), because there was an S(1). We can also use their guarantee to know that there must be an S(3) because there was S(2). In fact we can see that we can use their statement to prove that the ladder must have an infinite number of steps on it. Looks like we got a pretty good deal on our ladder.</p>
-<p>So, this is all very silly, but this is precisely the process of mathematical induction. We want to prove that a statement holds true for a certain set of integers (for instance, we want a statement S(n) to be true for all integers <img src="//s0.wp.com/latex.php?latex=n%5Cge+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 1" title="n&#92;ge 1" class="latex" />). All we need to do is to show that it&#8217;s true for a base case (ie. the first integer in our set of cases for which we want to show that it&#8217;s true), and we need to show that as long as S(n) is true for some n, it will always be true for S(n+1).</p>
+<p>So, this is all very silly, but this is precisely the process of mathematical induction. We want to prove that a statement holds true for a certain set of integers (for instance, we want a statement S(n) to be true for all integers \(n\ge 1\)). All we need to do is to show that it&#8217;s true for a base case (ie. the first integer in our set of cases for which we want to show that it&#8217;s true), and we need to show that as long as S(n) is true for some n, it will always be true for S(n+1).</p>
 <p>Let&#8217;s try a really simple example. I&#8217;m actually going to go through one of the tutorial questions, but I think that a lot can be learnt from going through it in really good detail.</p>
 <p>The statement that we want to prove is:</p>
 <p>The sum of odd numbers:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1%2B3%2B5%2B...%282n-1%29%3Dn%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+3+5+...(2n-1)=n^2" title="1+3+5+...(2n-1)=n^2" class="latex" /> for all <img src="//s0.wp.com/latex.php?latex=n%5Cge+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 1" title="n&#92;ge 1" class="latex" /></p>
+<p style="text-align: center;">\(1+3+5+...(2n-1)=n^2\) for all \(n\ge 1\)</p>
 <p>&nbsp;</p>
 <p>Well, let&#8217;s think about the naive way of doing it (this is NOT mathematical induction). Let&#8217;s check it for each integer&#8230;</p>
 <p>&nbsp;</p>
-<p>For n=1: <img src="//s0.wp.com/latex.php?latex=1%3D1%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1=1^2" title="1=1^2" class="latex" />, yup, that sounds about right</p>
+<p>For n=1: \(1=1^2\), yup, that sounds about right</p>
 <p>&nbsp;</p>
-<p>For n=2: <img src="//s0.wp.com/latex.php?latex=1%2B3%3D2%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+3=2^2" title="1+3=2^2" class="latex" />, yup, we&#8217;re still happy.</p>
+<p>For n=2: \(1+3=2^2\), yup, we&#8217;re still happy.</p>
 <p>&nbsp;</p>
-<p>For n=3: <img src="//s0.wp.com/latex.php?latex=1%2B3%2B5%3D3%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+3+5=3^2" title="1+3+5=3^2" class="latex" />, intriguing &#8211; might not have guessed it, but it looks good&#8230;</p>
+<p>For n=3: \(1+3+5=3^2\), intriguing &#8211; might not have guessed it, but it looks good&#8230;</p>
 <p>&nbsp;</p>
-<p>For n=4: <img src="//s0.wp.com/latex.php?latex=1%2B3%2B5%2B7%3D4%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+3+5+7=4^2" title="1+3+5+7=4^2" class="latex" />, ok, still good.</p>
+<p>For n=4: \(1+3+5+7=4^2\), ok, still good.</p>
 <p>&nbsp;</p>
-<p>So the question is, do we have to keep going, or are we happy now that this is true for all <img src="//s0.wp.com/latex.php?latex=n%5Cge+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 1" title="n&#92;ge 1" class="latex" />? Well, we are being mathematicians now, and so this is definitely not a proof. It could be that for n=5 this fails, and even if we checked n=5, we couldn&#8217;t be sure that for n=17, or 325, or 82750284952 it didn&#8217;t suddenly stop working. It seems unlikely, but we don&#8217;t want to be pretty sure of something, we want to be completely sure of it.</p>
+<p>So the question is, do we have to keep going, or are we happy now that this is true for all \(n\ge 1\)? Well, we are being mathematicians now, and so this is definitely not a proof. It could be that for n=5 this fails, and even if we checked n=5, we couldn&#8217;t be sure that for n=17, or 325, or 82750284952 it didn&#8217;t suddenly stop working. It seems unlikely, but we don&#8217;t want to be pretty sure of something, we want to be completely sure of it.</p>
 <p>&nbsp;</p>
 <p>So, we now turn to mathematical induction. Indeed we have already seen that the base case, which is n=1 works.</p>
 <p>&nbsp;</p>
-<p>Let&#8217;s go back to the ladder situation. The company told us that so long as the <img src="//s0.wp.com/latex.php?latex=n%5E%7Bth%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n^{th}" title="n^{th}" class="latex" /> step is there, they can guarantee that the <img src="//s0.wp.com/latex.php?latex=%28n%2B1%29%5E%7Bth%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(n+1)^{th}" title="(n+1)^{th}" class="latex" /> will be there too. Can we make such a statement about the mathematical formulation above? Let&#8217;s see if we can somehow prove that if the case for some n holds, then it must also hold for n+1. We&#8217;re going to do a bit of a strange thing now.</p>
+<p>Let&#8217;s go back to the ladder situation. The company told us that so long as the \(n^{th}\) step is there, they can guarantee that the \((n+1)^{th}\) will be there too. Can we make such a statement about the mathematical formulation above? Let&#8217;s see if we can somehow prove that if the case for some n holds, then it must also hold for n+1. We&#8217;re going to do a bit of a strange thing now.</p>
 <p>&nbsp;</p>
 <p>Let&#8217;s assume that it holds for some n. Therefore, we are going to assume that for some integer n, the statement</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1%2B3%2B5%2B...%282n-1%29%3Dn%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+3+5+...(2n-1)=n^2" title="1+3+5+...(2n-1)=n^2" class="latex" /></p>
+<p style="text-align: center;">\[1+3+5+...(2n-1)=n^2\]</p>
 <p>&nbsp;</p>
-<p>is true. Note that we haven&#8217;t assumed that this is true for all <img src="//s0.wp.com/latex.php?latex=n%5Cge+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 1" title="n&#92;ge 1" class="latex" />. That&#8217;s what we are trying to prove. We just assume that it is true for some (unspecified) n. This is the most abstract thing to understand in mathematical induction. The idea of assuming that it holds for some, unspecified n. Now, can we prove the statement for n+1, using the above assumption? The thing that we are trying to prove is now:</p>
+<p>is true. Note that we haven&#8217;t assumed that this is true for all \(n\ge 1\). That&#8217;s what we are trying to prove. We just assume that it is true for some (unspecified) n. This is the most abstract thing to understand in mathematical induction. The idea of assuming that it holds for some, unspecified n. Now, can we prove the statement for n+1, using the above assumption? The thing that we are trying to prove is now:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1%2B3%2B5%2B...%282n-1%29%2B%282%28n%2B1%29-1%29%3D%28n%2B1%29%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+3+5+...(2n-1)+(2(n+1)-1)=(n+1)^2" title="1+3+5+...(2n-1)+(2(n+1)-1)=(n+1)^2" class="latex" /></p>
+<p style="text-align: center;">\[1+3+5+...(2n-1)+(2(n+1)-1)=(n+1)^2\]</p>
 <p>&nbsp;</p>
 <p>Make sure that you understand why this is the statement for n+1. Let&#8217;s look at the left hand side:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1%2B3%2B5%2B...%282n-1%29%2B%282%28n%2B1%29-1%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+3+5+...(2n-1)+(2(n+1)-1)" title="1+3+5+...(2n-1)+(2(n+1)-1)" class="latex" /></p>
+<p style="text-align: center;">\[1+3+5+...(2n-1)+(2(n+1)-1)\]</p>
 <p>&nbsp;</p>
-<p>Note that we assumed just a moment ago that <img src="//s0.wp.com/latex.php?latex=1%2B3%2B5%2B...%282n-1%29%3Dn%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+3+5+...(2n-1)=n^2" title="1+3+5+...(2n-1)=n^2" class="latex" />. So let&#8217;s use this. We can see that the first terms of the expression above are exactly this so we can replace them:</p>
+<p>Note that we assumed just a moment ago that \(1+3+5+...(2n-1)=n^2\). So let&#8217;s use this. We can see that the first terms of the expression above are exactly this so we can replace them:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1%2B3%2B5%2B...%282n-1%29%2B%282%28n%2B1%29-1%29%3Dn%5E2%2B%282%28n%2B1%29-1%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+3+5+...(2n-1)+(2(n+1)-1)=n^2+(2(n+1)-1)" title="1+3+5+...(2n-1)+(2(n+1)-1)=n^2+(2(n+1)-1)" class="latex" /></p>
+<p style="text-align: center;">\[1+3+5+...(2n-1)+(2(n+1)-1)=n^2+(2(n+1)-1)\]</p>
 <p>&nbsp;</p>
 <p>Now let&#8217;s reshuffle this:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=n%5E2%2B%282%28n%2B1%29-1%29%3Dn%5E2%2B2n%2B1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n^2+(2(n+1)-1)=n^2+2n+1" title="n^2+(2(n+1)-1)=n^2+2n+1" class="latex" /></p>
+<p style="text-align: center;">\[n^2+(2(n+1)-1)=n^2+2n+1\]</p>
 <p>&nbsp;</p>
-<p>But hang on a minute, this, on the right is just <img src="//s0.wp.com/latex.php?latex=%28n%2B1%29%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(n+1)^2" title="(n+1)^2" class="latex" />. So we have now shown that indeed</p>
+<p>But hang on a minute, this, on the right is just \((n+1)^2\). So we have now shown that indeed</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1%2B3%2B5%2B...%282n-1%29%2B%282%28n%2B1%29-1%29%3D+%28n%2B1%29%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1+3+5+...(2n-1)+(2(n+1)-1)= (n+1)^2" title="1+3+5+...(2n-1)+(2(n+1)-1)= (n+1)^2" class="latex" /></p>
+<p style="text-align: center;">\[1+3+5+...(2n-1)+(2(n+1)-1)= (n+1)^2\]</p>
 <p>&nbsp;</p>
 <p>That was what we were trying to prove. We have therefore proved that if the statement holds for some n, then it will also hold for n+1.</p>
 <p>&nbsp;</p>
 <p>But is this enough? Well, just with the above line, we have only proved that IF it holds for some n, then it also holds for n+1. However, we earlier proved that it does hold for n=1. Therefore, by the above reasoning, it must hold for n=2. And if it holds for n=2 it must hold for n=3. If it holds for n=3, by the above reasoning it must hold for n=4. Now we can see that as long as the base case holds (and we did indeed proved that it does), then it will hold for all subsequent integers.</p>
 <p>&nbsp;</p>
-<p>Thus, by the principle of mathematical induction we have proved that the statement holds true for all integers <img src="//s0.wp.com/latex.php?latex=n%5Cge+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 1" title="n&#92;ge 1" class="latex" />.</p>
+<p>Thus, by the principle of mathematical induction we have proved that the statement holds true for all integers \(n\ge 1\).</p>
 <p>&nbsp;</p>
 <p>The steps of mathematical induction are always the same.</p>
 <ol>
 <li>Prove that the statement holds true for the base case (ie. the lowest integer about which the statement is being asserted).</li>
 <li>Assume that the statement holds true for some n (the some here is very important &#8211; it does not mean all n, and it does not mean a specific n &#8211; it just means some arbitrary, unspecified n. I think that this is the most abstract part of proof by induction, but the most important).</li>
 <li>Use the assumption made in part 2. to show that if that holds true, the statement will also be true for the statement n+1. This is the inductive step.</li>
-<li>You are done. As long as the statement about n being true leads to the statement about n+1 being true, and the statement for the base case holds true, then you have proved it for all integers <img src="//s0.wp.com/latex.php?latex=n%5Cge+b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge b" title="n&#92;ge b" class="latex" /> where b was the base case.</li>
+<li>You are done. As long as the statement about n being true leads to the statement about n+1 being true, and the statement for the base case holds true, then you have proved it for all integers \(n\ge b\) where b was the base case.</li>
 </ol>
 <p>Now go back to the tutorial questions and see if you can prove them all.</p>
 <p>&nbsp;</p>

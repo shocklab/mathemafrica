@@ -34,7 +34,7 @@
 
 		<meta property="og:title" content="UCT MAM1000 lecture notes part 20 - part i - Monday 17th August"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=11181.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=11181.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="The beginnings of Taylor polynomials and approximations
 
@@ -46,7 +46,7 @@ We&#39;ll start off with some of the discussion we had in class today about trea
 
 We know that $latex (x+y)^5=\sum_{r=0}^5{_5C_r} x^r y^{5-r}$. We can then see that if we have a function like $latex (1+x)^5$ we can simply replace the"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.25"}};
 			!function(e,n,t){var a;function i(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d"),i=String.fromCharCode;return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(i(55356,56806,55356,56826),0,0),3e3<t.toDataURL().length):"diversity"===e?(a.fillText(i(55356,57221),0,0),t=a.getImageData(16,16,1,1).data,a.fillText(i(55356,57221,55356,57343),0,0),(t=a.getImageData(16,16,1,1).data)[0],t[1],t[2],t[3],!0):("simple"===e?a.fillText(i(55357,56835),0,0):a.fillText(i(55356,57135),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function o(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:i("simple"),flag:i("flag"),unicode8:i("unicode8"),diversity:i("diversity")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag&&t.supports.unicode8&&t.supports.diversity||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?o(a.concatemoji):a.wpemoji&&a.twemoji&&(o(a.twemoji),o(a.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -95,7 +95,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.25" />
-<link rel="canonical" href="p=11181.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=11181.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-2Ul' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11181.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11181&.html#038;format=xml" />
@@ -182,7 +182,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-11181 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -257,71 +258,71 @@ img.emoji {
 <p>&nbsp;</p>
 <p>We&#8217;ll start off with some of the discussion we had in class today about treating the binomial expansion as a way to approximate a function.</p>
 <p>&nbsp;</p>
-<p>We know that <img src="//s0.wp.com/latex.php?latex=%28x%2By%29%5E5%3D%5Csum_%7Br%3D0%7D%5E5%7B_5C_r%7D+x%5Er+y%5E%7B5-r%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(x+y)^5=&#92;sum_{r=0}^5{_5C_r} x^r y^{5-r}" title="(x+y)^5=&#92;sum_{r=0}^5{_5C_r} x^r y^{5-r}" class="latex" />. We can then see that if we have a function like <img src="//s0.wp.com/latex.php?latex=%281%2Bx%29%5E5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(1+x)^5" title="(1+x)^5" class="latex" /> we can simply replace the <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> in the above expression by 1 and we get (writing out the sum explicitly):</p>
+<p>We know that \((x+y)^5=\sum_{r=0}^5{_5C_r} x^r y^{5-r}\). We can then see that if we have a function like \((1+x)^5\) we can simply replace the \(y\) in the above expression by 1 and we get (writing out the sum explicitly):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%281%2Bx%29%5E5%3D1%2B5x%2B10+x%5E2%2B10x%5E3%2B5+x%5E4%2Bx%5E5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(1+x)^5=1+5x+10 x^2+10x^3+5 x^4+x^5" title="(1+x)^5=1+5x+10 x^2+10x^3+5 x^4+x^5" class="latex" /></p>
+<p style="text-align: center;">\[(1+x)^5=1+5x+10 x^2+10x^3+5 x^4+x^5\]</p>
 <p>&nbsp;</p>
 <p>If you can&#8217;t remember these binomial coefficients offhand, just write out the first 6 lines of Pascal&#8217;s triangle and read them off.</p>
-<p>ok, so what if I asked you to give me an approximate value for <img src="//s0.wp.com/latex.php?latex=%281%2B0.01%29%5E5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(1+0.01)^5" title="(1+0.01)^5" class="latex" />. This isn&#8217;t so easy because you&#8217;ll have to multiply 1.01 by itself five times. How about if we use the polynomial form from the binomial expansion? Well, we can see that this is:</p>
+<p>ok, so what if I asked you to give me an approximate value for \((1+0.01)^5\). This isn&#8217;t so easy because you&#8217;ll have to multiply 1.01 by itself five times. How about if we use the polynomial form from the binomial expansion? Well, we can see that this is:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%281%2B0.01%29%5E5%3D1%2B5%280.01%29%2B10+%280.01%29%5E2%2B10%280.01%29%5E3%2B5+%280.01%29%5E4%2B%280.01%29%5E5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(1+0.01)^5=1+5(0.01)+10 (0.01)^2+10(0.01)^3+5 (0.01)^4+(0.01)^5" title="(1+0.01)^5=1+5(0.01)+10 (0.01)^2+10(0.01)^3+5 (0.01)^4+(0.01)^5" class="latex" /></p>
+<p style="text-align: center;">\[(1+0.01)^5=1+5(0.01)+10 (0.01)^2+10(0.01)^3+5 (0.01)^4+(0.01)^5\]</p>
 <p>&nbsp;</p>
-<p>But we can also see that each term gets smaller and smaller. The last term is really tiny compared to the first. How about we just take the first two terms? Indeed <img src="//s0.wp.com/latex.php?latex=%281%2B0.01%29%5E5%3D1.05101&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(1+0.01)^5=1.05101" title="(1+0.01)^5=1.05101" class="latex" />, and taking the first two terms we get 1.05. This is then a pretty good approximation to the question. If you included the next term then you&#8217;d get something even more accurate, but maybe we are happy with just 2 decimal places of accuracy.</p>
+<p>But we can also see that each term gets smaller and smaller. The last term is really tiny compared to the first. How about we just take the first two terms? Indeed \((1+0.01)^5=1.05101\), and taking the first two terms we get 1.05. This is then a pretty good approximation to the question. If you included the next term then you&#8217;d get something even more accurate, but maybe we are happy with just 2 decimal places of accuracy.</p>
 <p>&nbsp;</p>
-<p>ok, so we can see that we can approximate the function <img src="//s0.wp.com/latex.php?latex=%281%2Bx%29%5E5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(1+x)^5" title="(1+x)^5" class="latex" /> by a few terms in the polynomial as long as <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> is small. In order to do this though we had to know the binomial expansion. If we had <img src="//s0.wp.com/latex.php?latex=%281%2Bx%29%5E%7B5.2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(1+x)^{5.2}" title="(1+x)^{5.2}" class="latex" /> we wouldn&#8217;t be in luck because the binomial coefficients are only defined for non-negative integers. <img src="//s0.wp.com/latex.php?latex=5.2%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="5.2!" title="5.2!" class="latex" /> doesn&#8217;t make sense.</p>
+<p>ok, so we can see that we can approximate the function \((1+x)^5\) by a few terms in the polynomial as long as \(x\) is small. In order to do this though we had to know the binomial expansion. If we had \((1+x)^{5.2}\) we wouldn&#8217;t be in luck because the binomial coefficients are only defined for non-negative integers. \(5.2!\) doesn&#8217;t make sense.</p>
 <p>&nbsp;</p>
 <p>Can we derive the expression for the binomial expansion in a way which can generalise? We&#8217;re actually going to use calculus for this.</p>
 <p>&nbsp;</p>
 <p>Let&#8217;s say that we know that the function can be written as a polynomial, but we don&#8217;t know what the coefficients of the polynomial are. Can we figure them out in any way other than using combinatorics (which will not work when we have non-integer powers)?</p>
 <p>Well, let&#8217;s presume that we have:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%281%2Bx%29%5E5%3Da_0%2Ba_1+x%2Ba_2+x%5E2%2Ba_3+x%5E3%2Ba_4+x%5E4%2Ba_5+x%5E5%2Ba_6+x%5E6%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(1+x)^5=a_0+a_1 x+a_2 x^2+a_3 x^3+a_4 x^4+a_5 x^5+a_6 x^6+..." title="(1+x)^5=a_0+a_1 x+a_2 x^2+a_3 x^3+a_4 x^4+a_5 x^5+a_6 x^6+..." class="latex" /></p>
+<p style="text-align: center;">\[(1+x)^5=a_0+a_1 x+a_2 x^2+a_3 x^3+a_4 x^4+a_5 x^5+a_6 x^6+...\]</p>
 <p>&nbsp;</p>
-<p>where the $a_i$ are the coefficients that we&#8217;re going to try and calculate. Well, the first thing we can do is to say what happens when we fix <img src="//s0.wp.com/latex.php?latex=x%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=0" title="x=0" class="latex" /> on both sides of the above equation. We are going to get:</p>
+<p>where the $a_i$ are the coefficients that we&#8217;re going to try and calculate. Well, the first thing we can do is to say what happens when we fix \(x=0\) on both sides of the above equation. We are going to get:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1%3Da_0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1=a_0" title="1=a_0" class="latex" /></p>
+<p style="text-align: center;">\[1=a_0\]</p>
 <p>&nbsp;</p>
-<p>Well, that&#8217;s great! We&#8217;ve just found out what <img src="//s0.wp.com/latex.php?latex=a_0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_0" title="a_0" class="latex" /> must be! So we have:</p>
+<p>Well, that&#8217;s great! We&#8217;ve just found out what \(a_0\) must be! So we have:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%281%2Bx%29%5E5%3D1%2Ba_1+x%2Ba_2+x%5E2%2Ba_3+x%5E3%2Ba_4+x%5E4%2Ba_5+x%5E5%2Ba_6+x%5E6%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(1+x)^5=1+a_1 x+a_2 x^2+a_3 x^3+a_4 x^4+a_5 x^5+a_6 x^6+..." title="(1+x)^5=1+a_1 x+a_2 x^2+a_3 x^3+a_4 x^4+a_5 x^5+a_6 x^6+..." class="latex" /></p>
+<p style="text-align: center;">\[(1+x)^5=1+a_1 x+a_2 x^2+a_3 x^3+a_4 x^4+a_5 x^5+a_6 x^6+...\]</p>
 <p>&nbsp;</p>
-<p>What if we now take a derivative of both sides of this with respect to <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />?</p>
+<p>What if we now take a derivative of both sides of this with respect to \(x\)?</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=5%281%2Bx%29%5E4%3Da_1%2B2+a_2+x%2B3a_3+x%5E2%2B4+a_4+x%5E3%2B5a_5+x%5E4%2B6a_6+x%5E5%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="5(1+x)^4=a_1+2 a_2 x+3a_3 x^2+4 a_4 x^3+5a_5 x^4+6a_6 x^5+..." title="5(1+x)^4=a_1+2 a_2 x+3a_3 x^2+4 a_4 x^3+5a_5 x^4+6a_6 x^5+..." class="latex" /></p>
+<p style="text-align: center;">\[5(1+x)^4=a_1+2 a_2 x+3a_3 x^2+4 a_4 x^3+5a_5 x^4+6a_6 x^5+...\]</p>
 <p>&nbsp;</p>
-<p>Now let&#8217;s set <img src="//s0.wp.com/latex.php?latex=x%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=0" title="x=0" class="latex" /> again:</p>
+<p>Now let&#8217;s set \(x=0\) again:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=5%281%2B0%29%5E4%3Da_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="5(1+0)^4=a_1" title="5(1+0)^4=a_1" class="latex" /></p>
+<p style="text-align: center;">\[5(1+0)^4=a_1\]</p>
 <p>&nbsp;</p>
-<p>So we know what <img src="//s0.wp.com/latex.php?latex=a_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_1" title="a_1" class="latex" /> is, ie 5. Now let&#8217;s repeat. Take another derivative:</p>
+<p>So we know what \(a_1\) is, ie 5. Now let&#8217;s repeat. Take another derivative:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=5%5Ctimes+4%281%2Bx%29%5E3%3D2+a_2%2B3%5Ctimes+2+a_3+x%2B4%5Ctimes+3+a_4+x%5E2%2B5%5Ctimes+4a_5+x%5E3%2B6%5Ctimes+5a_6+x%5E4%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="5&#92;times 4(1+x)^3=2 a_2+3&#92;times 2 a_3 x+4&#92;times 3 a_4 x^2+5&#92;times 4a_5 x^3+6&#92;times 5a_6 x^4+..." title="5&#92;times 4(1+x)^3=2 a_2+3&#92;times 2 a_3 x+4&#92;times 3 a_4 x^2+5&#92;times 4a_5 x^3+6&#92;times 5a_6 x^4+..." class="latex" /></p>
+<p style="text-align: center;">\[5\times 4(1+x)^3=2 a_2+3\times 2 a_3 x+4\times 3 a_4 x^2+5\times 4a_5 x^3+6\times 5a_6 x^4+...\]</p>
 <p>&nbsp;</p>
-<p>and setting <img src="//s0.wp.com/latex.php?latex=x%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=0" title="x=0" class="latex" /> will give us: <img src="//s0.wp.com/latex.php?latex=20%3D2+a_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="20=2 a_2" title="20=2 a_2" class="latex" />, so <img src="//s0.wp.com/latex.php?latex=a_2%3D10&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_2=10" title="a_2=10" class="latex" />. Do this again and we get:</p>
+<p>and setting \(x=0\) will give us: \(20=2 a_2\), so \(a_2=10\). Do this again and we get:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=5%5Ctimes+4%5Ctimes+3%281%2Bx%29%5E2%3D3%5Ctimes+2+a_3%2B4%5Ctimes+3%5Ctimes+2+a_4+x%2B5%5Ctimes+4%5Ctimes+3+a_5+x%5E2%2B6%5Ctimes+5%5Ctimes+4a_6+x%5E3%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="5&#92;times 4&#92;times 3(1+x)^2=3&#92;times 2 a_3+4&#92;times 3&#92;times 2 a_4 x+5&#92;times 4&#92;times 3 a_5 x^2+6&#92;times 5&#92;times 4a_6 x^3+..." title="5&#92;times 4&#92;times 3(1+x)^2=3&#92;times 2 a_3+4&#92;times 3&#92;times 2 a_4 x+5&#92;times 4&#92;times 3 a_5 x^2+6&#92;times 5&#92;times 4a_6 x^3+..." class="latex" /></p>
+<p style="text-align: center;">\[5\times 4\times 3(1+x)^2=3\times 2 a_3+4\times 3\times 2 a_4 x+5\times 4\times 3 a_5 x^2+6\times 5\times 4a_6 x^3+...\]</p>
 <p>&nbsp;</p>
-<p>which gives us <img src="//s0.wp.com/latex.php?latex=60%3D6+a_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="60=6 a_3" title="60=6 a_3" class="latex" />. Note that this is <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B5%21%7D%7B2%21%7D%3D3%21+a_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{5!}{2!}=3! a_3" title="&#92;frac{5!}{2!}=3! a_3" class="latex" />. Again, take another derivative:</p>
+<p>which gives us \(60=6 a_3\). Note that this is \(\frac{5!}{2!}=3! a_3\). Again, take another derivative:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=5%5Ctimes+4%5Ctimes+3%5Ctimes+2%281%2Bx%29%3D4%5Ctimes+3%5Ctimes+2+a_4%2B5%5Ctimes+4%5Ctimes+3%5Ctimes+2+a_5+x%2B6%5Ctimes+5%5Ctimes+4%5Ctimes+3+a_6+x%5E2%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="5&#92;times 4&#92;times 3&#92;times 2(1+x)=4&#92;times 3&#92;times 2 a_4+5&#92;times 4&#92;times 3&#92;times 2 a_5 x+6&#92;times 5&#92;times 4&#92;times 3 a_6 x^2+..." title="5&#92;times 4&#92;times 3&#92;times 2(1+x)=4&#92;times 3&#92;times 2 a_4+5&#92;times 4&#92;times 3&#92;times 2 a_5 x+6&#92;times 5&#92;times 4&#92;times 3 a_6 x^2+..." class="latex" /></p>
+<p style="text-align: center;">\[5\times 4\times 3\times 2(1+x)=4\times 3\times 2 a_4+5\times 4\times 3\times 2 a_5 x+6\times 5\times 4\times 3 a_6 x^2+...\]</p>
 <p>&nbsp;</p>
-<p>which gives <img src="//s0.wp.com/latex.php?latex=120%3D24+a_4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="120=24 a_4" title="120=24 a_4" class="latex" />. Note that this is <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B5%21%7D%7B1%21%7D%3D4%21+a_4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{5!}{1!}=4! a_4" title="&#92;frac{5!}{1!}=4! a_4" class="latex" />&#8230;and again&#8230;</p>
+<p>which gives \(120=24 a_4\). Note that this is \(\frac{5!}{1!}=4! a_4\)&#8230;and again&#8230;</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=5%5Ctimes+4%5Ctimes+3%5Ctimes+2%3D5%5Ctimes+4%5Ctimes+3%5Ctimes+2+a_5%2B6%5Ctimes+5%5Ctimes+4%5Ctimes+3+%5Ctimes+2+a_6+x%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="5&#92;times 4&#92;times 3&#92;times 2=5&#92;times 4&#92;times 3&#92;times 2 a_5+6&#92;times 5&#92;times 4&#92;times 3 &#92;times 2 a_6 x+..." title="5&#92;times 4&#92;times 3&#92;times 2=5&#92;times 4&#92;times 3&#92;times 2 a_5+6&#92;times 5&#92;times 4&#92;times 3 &#92;times 2 a_6 x+..." class="latex" /></p>
+<p style="text-align: center;">\[5\times 4\times 3\times 2=5\times 4\times 3\times 2 a_5+6\times 5\times 4\times 3 \times 2 a_6 x+...\]</p>
 <p>&nbsp;</p>
-<p>which gives <img src="//s0.wp.com/latex.php?latex=120%3D120+a_5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="120=120 a_5" title="120=120 a_5" class="latex" />&#8230;and again:</p>
+<p>which gives \(120=120 a_5\)&#8230;and again:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=0%3D6%5Ctimes+5%5Ctimes+4%5Ctimes+3+%5Ctimes+2+a_6%2B...&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="0=6&#92;times 5&#92;times 4&#92;times 3 &#92;times 2 a_6+..." title="0=6&#92;times 5&#92;times 4&#92;times 3 &#92;times 2 a_6+..." class="latex" /></p>
+<p style="text-align: center;">\[0=6\times 5\times 4\times 3 \times 2 a_6+...\]</p>
 <p>&nbsp;</p>
-<p>which gives <img src="//s0.wp.com/latex.php?latex=0%3Da_6&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="0=a_6" title="0=a_6" class="latex" />. And if we carried on with higher <img src="//s0.wp.com/latex.php?latex=a_i&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_i" title="a_i" class="latex" /> we would find that they were all zero.</p>
+<p>which gives \(0=a_6\). And if we carried on with higher \(a_i\) we would find that they were all zero.</p>
 <p>&nbsp;</p>
-<p>So this is interesting. We now have that <img src="//s0.wp.com/latex.php?latex=%28a_0%2Ca_1%2Ca_2%2Ca_3%2Ca_4%2Ca_5%2Ca_6%2C...%29%3D%281%2C5%2C10%2C10%2C5%2C1%2C0%2C...%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(a_0,a_1,a_2,a_3,a_4,a_5,a_6,...)=(1,5,10,10,5,1,0,...)" title="(a_0,a_1,a_2,a_3,a_4,a_5,a_6,...)=(1,5,10,10,5,1,0,...)" class="latex" /> which were the binomial coefficients we came up with before! In fact, looking above, we can see that we had expressions like:</p>
+<p>So this is interesting. We now have that \((a_0,a_1,a_2,a_3,a_4,a_5,a_6,...)=(1,5,10,10,5,1,0,...)\) which were the binomial coefficients we came up with before! In fact, looking above, we can see that we had expressions like:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B5%21%7D%7B2%21%7D%3D3%21+a_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{5!}{2!}=3! a_3" title="&#92;frac{5!}{2!}=3! a_3" class="latex" /></p>
+<p style="text-align: center;">\[\frac{5!}{2!}=3! a_3\]</p>
 <p>&nbsp;</p>
-<p>which is the same as saying: <img src="//s0.wp.com/latex.php?latex=a_3%3D%5Cfrac%7B5%21%7D%7B2%213%21%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_3=&#92;frac{5!}{2!3!}" title="a_3=&#92;frac{5!}{2!3!}" class="latex" /> which is precisely the form of the binomial coefficient we know and love&#8230;ok, it&#8217;s the form of the binomial coefficient we know.</p>
+<p>which is the same as saying: \(a_3=\frac{5!}{2!3!}\) which is precisely the form of the binomial coefficient we know and love&#8230;ok, it&#8217;s the form of the binomial coefficient we know.</p>
 <p>&nbsp;</p>
-<p>So, we&#8217;ve derived the expansion for <img src="//s0.wp.com/latex.php?latex=%281%2Bx%29%5E5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(1+x)^5" title="(1+x)^5" class="latex" /> using calculus, and not combinatorics. We happened to note that the coefficients could be written as factorials, but we didn&#8217;t use it in the derivation of the coefficients. Can we somehow generalise this to cases which are not simply binomial expressions. In the next section we are going to see that we can do precisely this.</p>
+<p>So, we&#8217;ve derived the expansion for \((1+x)^5\) using calculus, and not combinatorics. We happened to note that the coefficients could be written as factorials, but we didn&#8217;t use it in the derivation of the coefficients. Can we somehow generalise this to cases which are not simply binomial expressions. In the next section we are going to see that we can do precisely this.</p>
 <table class="rw-rating-table rw-ltr rw-left"><tr><td><nobr>How clear is this post?</nobr></td><td><div class="rw-left"><div class="rw-ui-container rw-class-blog-post rw-urid-111820"></div></div></td></tr></table><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-11181" class="share-twitter sd-button share-icon no-text" href="p=11181&amp;share=twitter.html" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-11181" class="share-facebook sd-button share-icon no-text" href="p=11181&amp;share=facebook.html" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-11181" class="share-google-plus-1 sd-button share-icon no-text" href="p=11181&amp;share=google-plus-1.html" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon no-text" href="p=11181.html#print" target="_blank" title="Click to print"><span></span><span class="sharing-screen-reader-text">Click to print (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>							</div>
 
 							<div class="fusion-meta-info"><div class="fusion-meta-info-wrapper">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>

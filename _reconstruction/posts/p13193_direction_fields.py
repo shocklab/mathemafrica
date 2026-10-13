@@ -10,9 +10,9 @@ lines as sitting at y = +-1.6 and a 0.5 grid lands on 1.5. And the lattice is
 aligned on zero, or the row of vertical lines at y = 0 that tanr2 boxes would
 not exist at all.
 
-One editorial call: the post says "Along the y-axis we have vertical lines",
-but the reason it gives is that tan(y) = 0 when y = 0, which is the x-axis.
-tanr2 boxes y = 0, following the explanation rather than the wording.
+The post said "Along the y-axis we have vertical lines", but the reason it
+gives is that tan(y) = 0 when y = 0, which is the x-axis. tanr2 boxes y = 0,
+and the post's wording was corrected to "x-axis" on 2026-10-13.
 """
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

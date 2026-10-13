@@ -34,11 +34,11 @@
 
 		<meta property="og:title" content="UCT MAM1000 lecture notes part 45 – 3D geometry and vectors part viii"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=11604.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=11604.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="We will discuss mostly three dimensions here, but what we have will be applicable to any number of dimensions (greater than or equal to 1). We want to be able to describe a straight line - a one dimensional object, infinitely long in both directions. We will see that vectors give us a perfect language"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/09/line.gif?fit=360%2C409"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/09/line.gif?fit=360%2C409"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.25"}};
 			!function(e,n,t){var a;function i(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d"),i=String.fromCharCode;return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(i(55356,56806,55356,56826),0,0),3e3<t.toDataURL().length):"diversity"===e?(a.fillText(i(55356,57221),0,0),t=a.getImageData(16,16,1,1).data,a.fillText(i(55356,57221,55356,57343),0,0),(t=a.getImageData(16,16,1,1).data)[0],t[1],t[2],t[3],!0):("simple"===e?a.fillText(i(55357,56835),0,0):a.fillText(i(55356,57135),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function o(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:i("simple"),flag:i("flag"),unicode8:i("unicode8"),diversity:i("diversity")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag&&t.supports.unicode8&&t.supports.diversity||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?o(a.concatemoji):a.wpemoji&&a.twemoji&&(o(a.twemoji),o(a.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -87,7 +87,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.25" />
-<link rel="canonical" href="p=11604.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=11604.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-31a' />
 <meta name='robots' content='noindex,follow' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11604.html" />
@@ -175,7 +175,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-11604 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -260,43 +261,43 @@ img.emoji {
 <p>Remember that in three dimensions, a line can be defined by the intersection of two planes as in the intersection of the blue and the green planes defining the red line:</p>
 <p><a href="wp-content/uploads/2015/09/int.png"><img class="aligncenter wp-image-11605" src="wp-content/uploads/2015/09/int.png?resize=385%2C315" alt="int" srcset="wp-content/uploads/2015/09/int.png?resize=300%2C246 300w, wp-content/uploads/2015/09/int.png?fit=750%2C614 750w" sizes="(max-width: 385px) 100vw, 385px" data-recalc-dims="1" /></a></p>
 <p>Each plane is specified by a single equation, and thus a line is specified by two equations (one for each plane). Here we will see that sometimes you just need one equation to specify a line, if you are using vectors, and sometimes it will seem that you need three equations, if you are using a parametric equation.</p>
-<p>Let&#8217;s take a line, and specify some point on it. Let&#8217;s call that point the point <img src="//s0.wp.com/latex.php?latex=P%28x_0%2Cy_0%2Cz_0%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P(x_0,y_0,z_0)" title="P(x_0,y_0,z_0)" class="latex" />. We can define a vector which goes from the origin to that point, and it will have components: <img src="//s0.wp.com/latex.php?latex=%5Cvec%7Bx%7D%3D%5Cleft%3Cx_0%2Cy_0%2Cz_0%5Cright%3E&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;vec{x}=&#92;left&lt;x_0,y_0,z_0&#92;right&gt;" title="&#92;vec{x}=&#92;left&lt;x_0,y_0,z_0&#92;right&gt;" class="latex" />. We will also specify some vector which is pointing in a direction parallel to the line. Let&#8217;s call this <img src="//s0.wp.com/latex.php?latex=%5Cvec%7Bv%7D%3D%5Cleft%3Cv_1%2Cv_2%2Cv_3%5Cright%3E&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;vec{v}=&#92;left&lt;v_1,v_2,v_3&#92;right&gt;" title="&#92;vec{v}=&#92;left&lt;v_1,v_2,v_3&#92;right&gt;" class="latex" />.</p>
-<p>We can see thus that if we go along the vector <img src="//s0.wp.com/latex.php?latex=%5Cvec%7Bx%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;vec{x}" title="&#92;vec{x}" class="latex" /> from the origin, and then go any multiple of <img src="//s0.wp.com/latex.php?latex=%5Cvec%7Bv%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;vec{v}" title="&#92;vec{v}" class="latex" /> we will be taken to some point on the line. In fact let&#8217;s think about where the vector:</p>
+<p>Let&#8217;s take a line, and specify some point on it. Let&#8217;s call that point the point \(P(x_0,y_0,z_0)\). We can define a vector which goes from the origin to that point, and it will have components: \(\vec{x}=\left&lt;x_0,y_0,z_0\right&gt;\). We will also specify some vector which is pointing in a direction parallel to the line. Let&#8217;s call this \(\vec{v}=\left&lt;v_1,v_2,v_3\right&gt;\).</p>
+<p>We can see thus that if we go along the vector \(\vec{x}\) from the origin, and then go any multiple of \(\vec{v}\) we will be taken to some point on the line. In fact let&#8217;s think about where the vector:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cvec%7Bx%7D%2Bt%5Cvec%7Bv%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;vec{x}+t&#92;vec{v}" title="&#92;vec{x}+t&#92;vec{v}" class="latex" /></p>
+<p style="text-align: center;">\[\vec{x}+t\vec{v}\]</p>
 <p>&nbsp;</p>
-<p>will take us to if we start from the origin, and allow <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" /> to vary. We can plot this in the following animation. Here, the black arrow is an arrow which points to some place on the line (ie. a single point that we&#8217;ve specified). The green line is a vector which is parallel to the line, and the blue dot which you see moving is the position of the point given by going from the origin to the point <img src="//s0.wp.com/latex.php?latex=%5Cvec%7Bx%7D%2Bt%5Cvec%7Bv%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;vec{x}+t&#92;vec{v}" title="&#92;vec{x}+t&#92;vec{v}" class="latex" /> for varying <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" />. We can see that it takes us along the line, as we would hope.<br />
+<p>will take us to if we start from the origin, and allow \(t\) to vary. We can plot this in the following animation. Here, the black arrow is an arrow which points to some place on the line (ie. a single point that we&#8217;ve specified). The green line is a vector which is parallel to the line, and the blue dot which you see moving is the position of the point given by going from the origin to the point \(\vec{x}+t\vec{v}\) for varying \(t\). We can see that it takes us along the line, as we would hope.<br />
 <a href="wp-content/uploads/2015/09/line.gif"><img class="aligncenter size-full wp-image-11608" src="wp-content/uploads/2015/09/line.gif?resize=360%2C409" alt="line" data-recalc-dims="1" /></a></p>
-<p>We can also ask about the position of the point for various values of <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" />. Of course because we&#8217;re starting from the origin, the value of the components of the vector is precisely the position of the point. So, the coordinates of the point on the line for a given <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" /> are:</p>
+<p>We can also ask about the position of the point for various values of \(t\). Of course because we&#8217;re starting from the origin, the value of the components of the vector is precisely the position of the point. So, the coordinates of the point on the line for a given \(t\) are:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%28x%2Cy%2Cz%29%3D%28x_0%2Btv_1%2Cy_0%2Btv_2%2Cz_0%2Btv_3%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(x,y,z)=(x_0+tv_1,y_0+tv_2,z_0+tv_3)" title="(x,y,z)=(x_0+tv_1,y_0+tv_2,z_0+tv_3)" class="latex" /></p>
+<p style="text-align: center;">\[(x,y,z)=(x_0+tv_1,y_0+tv_2,z_0+tv_3)\]</p>
 <p>&nbsp;</p>
-<p>The parameter <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" /> can take us to any point on the line. Note that two things about this equation for the coordinates are not unique. We could have chosen any point on the line to be our starting position, and we could have chosen any non-zero multiple of <img src="//s0.wp.com/latex.php?latex=%5Cvec%7Bv%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;vec{v}" title="&#92;vec{v}" class="latex" /> to be the vector parallel to the line.</p>
+<p>The parameter \(t\) can take us to any point on the line. Note that two things about this equation for the coordinates are not unique. We could have chosen any point on the line to be our starting position, and we could have chosen any non-zero multiple of \(\vec{v}\) to be the vector parallel to the line.</p>
 <p>We can take the above equation and write it down as three equations for the three coordinates:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=x%3Dx_0%2Bt+v_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=x_0+t v_1" title="x=x_0+t v_1" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=y%3Dy_0%2Bt+v_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y=y_0+t v_2" title="y=y_0+t v_2" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=z%3Dz_0%2Bt+v_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z=z_0+t v_3" title="z=z_0+t v_3" class="latex" /></p>
+<p style="text-align: center;">\(x=x_0+t v_1\)<br />
+\(y=y_0+t v_2\)<br />
+\(z=z_0+t v_3\)</p>
 <p>&nbsp;</p>
-<p>Hang on, but didn&#8217;t we say that a line was specified by 2 equations, and we seem to have 3? Well, in fact what we have are three equations which are dependent on a parameter. We can actually cancel the parameter <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" /> in the above to get:</p>
+<p>Hang on, but didn&#8217;t we say that a line was specified by 2 equations, and we seem to have 3? Well, in fact what we have are three equations which are dependent on a parameter. We can actually cancel the parameter \(t\) in the above to get:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=t%3D%5Cfrac%7Bx-x_0%7D%7Bv_1%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t=&#92;frac{x-x_0}{v_1}" title="t=&#92;frac{x-x_0}{v_1}" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=t%3D%5Cfrac%7By-y_0%7D%7Bv_2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t=&#92;frac{y-y_0}{v_2}" title="t=&#92;frac{y-y_0}{v_2}" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=t%3D%5Cfrac%7Bz-z_0%7D%7Bv_3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t=&#92;frac{z-z_0}{v_3}" title="t=&#92;frac{z-z_0}{v_3}" class="latex" /></p>
+<p style="text-align: center;">\(t=\frac{x-x_0}{v_1}\)<br />
+\(t=\frac{y-y_0}{v_2}\)<br />
+\(t=\frac{z-z_0}{v_3}\)</p>
 <p>&nbsp;</p>
-<p>(though you have to be careful if any of the components of <img src="//s0.wp.com/latex.php?latex=%5Cvec%7Bv%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;vec{v}" title="&#92;vec{v}" class="latex" /> are zero &#8211; this simply means that that coordinate will remain unchanged as <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" /> changes, and thus you can&#8217;t solve that component equation for <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" />.). But if all of these equal the same thing, then that are all the same, and thus:</p>
+<p>(though you have to be careful if any of the components of \(\vec{v}\) are zero &#8211; this simply means that that coordinate will remain unchanged as \(t\) changes, and thus you can&#8217;t solve that component equation for \(t\).). But if all of these equal the same thing, then that are all the same, and thus:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bx-x_0%7D%7Bv_1%7D%3D%5Cfrac%7By-y_0%7D%7Bv_2%7D%3D%5Cfrac%7Bz-z_0%7D%7Bv_3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{x-x_0}{v_1}=&#92;frac{y-y_0}{v_2}=&#92;frac{z-z_0}{v_3}" title="&#92;frac{x-x_0}{v_1}=&#92;frac{y-y_0}{v_2}=&#92;frac{z-z_0}{v_3}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{x-x_0}{v_1}=\frac{y-y_0}{v_2}=\frac{z-z_0}{v_3}\]</p>
 <p>&nbsp;</p>
 <p>But this is really two equations, written in a strange form. This is:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bx-x_0%7D%7Bv_1%7D%3D%5Cfrac%7By-y_0%7D%7Bv_2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{x-x_0}{v_1}=&#92;frac{y-y_0}{v_2}" title="&#92;frac{x-x_0}{v_1}=&#92;frac{y-y_0}{v_2}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{x-x_0}{v_1}=\frac{y-y_0}{v_2}\]</p>
 <p>&nbsp;</p>
 <p>and</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7By-y_0%7D%7Bv_2%7D%3D%5Cfrac%7Bz-z_0%7D%7Bv_3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{y-y_0}{v_2}=&#92;frac{z-z_0}{v_3}" title="&#92;frac{y-y_0}{v_2}=&#92;frac{z-z_0}{v_3}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{y-y_0}{v_2}=\frac{z-z_0}{v_3}\]</p>
 <p>&nbsp;</p>
-<p>Naively there is a third equation with the first and last expressions being equated, but that doesn&#8217;t give you any new information. If I tell you that <img src="//s0.wp.com/latex.php?latex=a%3Db&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a=b" title="a=b" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=b%3Dc&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b=c" title="b=c" class="latex" /> then I don&#8217;t teach you anything new if I also tell you that <img src="//s0.wp.com/latex.php?latex=a%3Dc&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a=c" title="a=c" class="latex" />.</p>
+<p>Naively there is a third equation with the first and last expressions being equated, but that doesn&#8217;t give you any new information. If I tell you that \(a=b\) and \(b=c\) then I don&#8217;t teach you anything new if I also tell you that \(a=c\).</p>
 <p>So the vector equation really is equivalent to two equations which each correspond to the equation for a plane. We said that the vector equation wasn&#8217;t unique, but this makes sense because the line itself could be specified by an infinite number of different planes that intersect at the same line.</p>
 <p>Play around with different initial points, and parallel vectors and see what you get.</p>
 <table class="rw-rating-table rw-ltr rw-left"><tr><td><nobr>How clear is this post?</nobr></td><td><div class="rw-left"><div class="rw-ui-container rw-class-blog-post rw-urid-116050" data-img="wp-content/uploads/2015/09/line.gif"></div></div></td></tr></table><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-11604" class="share-twitter sd-button share-icon no-text" href="p=11604&amp;share=twitter.html" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-11604" class="share-facebook sd-button share-icon no-text" href="p=11604&amp;share=facebook.html" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-11604" class="share-google-plus-1 sd-button share-icon no-text" href="p=11604&amp;share=google-plus-1.html" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon no-text" href="p=11604.html#print" target="_blank" title="Click to print"><span></span><span class="sharing-screen-reader-text">Click to print (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>							</div>

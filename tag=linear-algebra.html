@@ -161,7 +161,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive tag tag-linear-algebra tag-90 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -328,15 +329,15 @@ To solve a system of linear equations:</p>
 <p>Solving a system of linear equations is not technically difficult: just eliminate the variables in a systematic fashion. When there are only two or three variables, this is easy to manage. But for a bigger system, things can quickly get confusing. We need to develop a systematic method.</p>
 <p>The first thing to notice is that the names of the variables don&#8217;t matter. Consider, for example, the two systems</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cbegin%7Barray%7D%7Bcc%7D++x+%2B+y+%26%3D3%5C%5C++2x-y+%26%3D+4++%5Cend%7Barray%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;begin{array}{cc}  x + y &amp;=3&#92;&#92;  2x-y &amp;= 4  &#92;end{array} " title="&#92;begin{array}{cc}  x + y &amp;=3&#92;&#92;  2x-y &amp;= 4  &#92;end{array} " class="latex" /></p>
+<p style="text-align: center;">\[\begin{array}{cc}  x + y &amp;=3\\  2x-y &amp;= 4  \end{array}\]</p>
 <p>&nbsp;</p>
 <p>and</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cbegin%7Barray%7D%7Bcc%7D++u+%2B+v+%26%3D3%5C%5C++2u-v+%26%3D+4++%5Cend%7Barray%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;begin{array}{cc}  u + v &amp;=3&#92;&#92;  2u-v &amp;= 4  &#92;end{array}" title="&#92;begin{array}{cc}  u + v &amp;=3&#92;&#92;  2u-v &amp;= 4  &#92;end{array}" class="latex" /></p>
+<p style="text-align: center;">\[\begin{array}{cc}  u + v &amp;=3\\  2u-v &amp;= 4  \end{array}\]</p>
 <p>&nbsp;</p>
-<p>It&#8217;s clear that if we ignore the names of the variables &#8212; <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> versus <img src="//s0.wp.com/latex.php?latex=u&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u" title="u" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=v&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="v" title="v" class="latex" /> &#8212; these two systems are the same. The reason we can tell that they&#8217;re the same is because the {\em coefficients} of the variables are the same and the numbers on the right hand side are the same. These are really the only things about a system of linear equations that matter, and so what we can do is strip the system down to its bare bones and rewrite it like this:</p>
+<p>It&#8217;s clear that if we ignore the names of the variables &#8212; \(x\) and \(y\) versus \(u\) and \(v\) &#8212; these two systems are the same. The reason we can tell that they&#8217;re the same is because the {\em coefficients} of the variables are the same and the numbers on the right hand side are the same. These are really the only things about a system of linear equations that matter, and so what we can do is strip the system down to its bare bones and rewrite it like this:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cleft%28++%5Cbegin%7Barray%7D%7Bcc%7Cc%7D++1%261%263%5C%5C++2%26-1%264++%5Cend%7Barray%7D++%5Cright%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;left(  &#92;begin{array}{cc|c}  1&amp;1&amp;3&#92;&#92;  2&amp;-1&amp;4  &#92;end{array}  &#92;right)" title="&#92;left(  &#92;begin{array}{cc|c}  1&amp;1&amp;3&#92;&#92;  2&amp;-1&amp;4  &#92;end{array}  &#92;right)" class="latex" /></p>
+<p style="text-align: center;">\[\left(  \begin{array}{cc|c}  1&amp;1&amp;3\\  2&amp;-1&amp;4  \end{array}  \right)\]</p>
 <p>&nbsp;</p>
 <p>This is an <em>augmented coefficient matrix</em> (in general, a rectangular array of numbers, like the above, is called a <em>matrix</em>; a matrix with an additional vertical line, which plays the same role as the equals signs in the original equations, is <em>augmented</em>).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	

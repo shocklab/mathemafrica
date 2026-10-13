@@ -161,7 +161,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive paged author author-jonathan author-3 paged-3 author-paged-3 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -326,18 +327,18 @@ img.emoji {
 <p>We have now said that rather than taking pesky limits of Riemann sums to calculate areas under curves (ie. definite integrals), all we need is to find an antiderivative of the function that we are looking at.</p>
 <p>As a reminder, to calculate the definite integral of a continuous function, we have:</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cint_a%5Eb+f%28x%29dx%3DF%28b%29-F%28a%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_a^b f(x)dx=F(b)-F(a)" title="&#92;int_a^b f(x)dx=F(b)-F(a)" class="latex" /></p>
+<p>\[\int_a^b f(x)dx=F(b)-F(a)\]</p>
 <p>&nbsp;</p>
-<p>where <img src="//s0.wp.com/latex.php?latex=F&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F" title="F" class="latex" /> is any antiderivative of <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" /></p>
-<p>Remember that to calculate the area under the curve of <img src="//s0.wp.com/latex.php?latex=f%28x%29%3Dx%5E4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)=x^4" title="f(x)=x^4" class="latex" /> from, let&#8217;s say 2 to 5, we had to write:</p>
+<p>where \(F\) is any antiderivative of \(f\)</p>
+<p>Remember that to calculate the area under the curve of \(f(x)=x^4\) from, let&#8217;s say 2 to 5, we had to write:</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cint_2%5E5+x%5E4+dx%3D%5Clim_%7Bn%5Crightarrow+%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En+f%28x_i%29%5CDelta+x%3D%5Clim_%7Bn%5Crightarrow+%5Cinfty%7D+f%5Cleft%282%2B%5Cfrac%7B3i%7D%7Bn%7D%5Cright%29%5Cfrac%7B3%7D%7Bn%7D%3D%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Cfrac%7B3%7D%7Bn%7D%5Cleft%282%2B%5Cfrac%7B3i%7D%7Bn%7D%5Cright%29%5E4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_2^5 x^4 dx=&#92;lim_{n&#92;rightarrow &#92;infty}&#92;sum_{i=1}^n f(x_i)&#92;Delta x=&#92;lim_{n&#92;rightarrow &#92;infty} f&#92;left(2+&#92;frac{3i}{n}&#92;right)&#92;frac{3}{n}=&#92;lim_{n&#92;rightarrow&#92;infty}&#92;frac{3}{n}&#92;left(2+&#92;frac{3i}{n}&#92;right)^4" title="&#92;int_2^5 x^4 dx=&#92;lim_{n&#92;rightarrow &#92;infty}&#92;sum_{i=1}^n f(x_i)&#92;Delta x=&#92;lim_{n&#92;rightarrow &#92;infty} f&#92;left(2+&#92;frac{3i}{n}&#92;right)&#92;frac{3}{n}=&#92;lim_{n&#92;rightarrow&#92;infty}&#92;frac{3}{n}&#92;left(2+&#92;frac{3i}{n}&#92;right)^4" class="latex" /></p>
+<p>\[\int_2^5 x^4 dx=\lim_{n\rightarrow \infty}\sum_{i=1}^n f(x_i)\Delta x=\lim_{n\rightarrow \infty} f\left(2+\frac{3i}{n}\right)\frac{3}{n}=\lim_{n\rightarrow\infty}\frac{3}{n}\left(2+\frac{3i}{n}\right)^4\]</p>
 <p>&nbsp;</p>
 <p>And at that point we had barely even started because we still had to actually evaluate this sum, which is a hell of a calculation&#8230;then we have to calculate the limit. What a pain.</p>
 <p>&nbsp;</p>
-<p>Now, we are told that all we have to do is to find any antiderivative of <img src="//s0.wp.com/latex.php?latex=f%28x%29%3Dx%5E4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)=x^4" title="f(x)=x^4" class="latex" /> and we are basically done.</p>
+<p>Now, we are told that all we have to do is to find any antiderivative of \(f(x)=x^4\) and we are basically done.</p>
 <p>&nbsp;</p>
-<p>Can we find a function which, when we take its derivative gives us <img src="//s0.wp.com/latex.php?latex=x%5E4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^4" title="x^4" class="latex" />?&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>Can we find a function which, when we take its derivative gives us \(x^4\)?&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -347,11 +348,11 @@ img.emoji {
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=15177.html">The Fundamental Theory of Calculus part 2 (part i)</a></h2><div class="fusion-post-content-container"><p>OK, now we come onto the part of the FTC that you are going to use most. We are finally going to show the direct link between the definite integral and the antiderivative. I know that you&#8217;ve been holding your breaths until this moment. Get ready to breath a sign of relief:</p>
 <p><strong>The Fundamental Theorem of Calculus, Part 2 (also known as the Evaluation Theorem)</strong></p>
-<p>If <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" /> is continuous on <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" /> then</p>
+<p>If \(f\) is continuous on \([a,b]\) then</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cint_a%5Eb+f%28x%29+dx%3DF%28b%29-F%28a%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_a^b f(x) dx=F(b)-F(a)" title="&#92;int_a^b f(x) dx=F(b)-F(a)" class="latex" /></p>
+<p>\[\int_a^b f(x) dx=F(b)-F(a)\]</p>
 <p>&nbsp;</p>
-<p>where <img src="//s0.wp.com/latex.php?latex=F&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F" title="F" class="latex" /> is any antiderivative of <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" />. Ie any function such that <img src="//s0.wp.com/latex.php?latex=F%27%3Df&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F&#039;=f" title="F&#039;=f" class="latex" />.</p>
+<p>where \(F\) is any antiderivative of \(f\). Ie any function such that \(F'=f\).</p>
 <p>&#8212;&#8212;&#8212;&#8212;-</p>
 <p>&nbsp;</p>
 <p>This means that, very excitingly, now to calculate the area under the curve of a continuous function we no longer have to do any ghastly Riemann sums. We just have to find an antiderivative!</p>
@@ -360,9 +361,9 @@ img.emoji {
 <p>&nbsp;</p>
 <p>We&#8217;ll define:</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=g%28x%29%3D%5Cint_a%5Ex+f%28t%29dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x)=&#92;int_a^x f(t)dt" title="g(x)=&#92;int_a^x f(t)dt" class="latex" /></p>
+<p>\[g(x)=\int_a^x f(t)dt\]</p>
 <p>&nbsp;</p>
-<p>and we know from the FTC part 1 how to take derivatives of this. It&#8217;s just <img src="//s0.wp.com/latex.php?latex=g%27%28x%29%3Df%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g&#039;(x)=f(x)" title="g&#039;(x)=f(x)" class="latex" />. This says that <img src="//s0.wp.com/latex.php?latex=g&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g" title="g" class="latex" /> is an antiderivative of <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" />.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>and we know from the FTC part 1 how to take derivatives of this. It&#8217;s just \(g'(x)=f(x)\). This says that \(g\) is an antiderivative of \(f\).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -372,23 +373,23 @@ img.emoji {
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=15170.html">The Fundamental Theorem of Calculus part 1 (part iii)</a></h2><div class="fusion-post-content-container"><p>So, we are now ready to prove the FTC part 1. We&#8217;re going to follow the proof in Stewart and add in some discussion as we go along to motivate what we are doing. What we are going to prove is that:</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%7D%7Bdx%7D+%5Cint_a%5Ex+f%28t%29+dt%3Df%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d}{dx} &#92;int_a^x f(t) dt=f(x)" title="&#92;frac{d}{dx} &#92;int_a^x f(t) dt=f(x)" class="latex" /></p>
+<p>\[\frac{d}{dx} \int_a^x f(t) dt=f(x)\]</p>
 <p>&nbsp;</p>
-<p>for <img src="//s0.wp.com/latex.php?latex=x%5Cin+%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x&#92;in [a,b]" title="x&#92;in [a,b]" class="latex" /> when <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" /> is continuous on <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" />.</p>
+<p>for \(x\in [a,b]\) when \(f\) is continuous on \([a,b]\).</p>
 <p>&nbsp;</p>
 <p>Proof:</p>
 <p>&nbsp;</p>
-<p>we define <img src="//s0.wp.com/latex.php?latex=g%28x%29%3D%5Cint_a%5Ex+f%28t%29dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x)=&#92;int_a^x f(t)dt" title="g(x)=&#92;int_a^x f(t)dt" class="latex" /> and we want to find the derivative of <img src="//s0.wp.com/latex.php?latex=g&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g" title="g" class="latex" />. We will do this by using the fundamental definition of the derivative, so let&#8217;s look at calculating this function at <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=x%2Bh&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x+h" title="x+h" class="latex" /> &#8211; ie. how much does it change when we change <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> by a little bit?</p>
+<p>we define \(g(x)=\int_a^x f(t)dt\) and we want to find the derivative of \(g\). We will do this by using the fundamental definition of the derivative, so let&#8217;s look at calculating this function at \(x\) and \(x+h\) &#8211; ie. how much does it change when we change \(x\) by a little bit?</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=g%28x%2Bh%29-g%28x%29%3D%5Cint_a%5E%7Bx%2Bh%7Df%28t%29+dt-%5Cint_a%5Ex+f%28t%29+dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x+h)-g(x)=&#92;int_a^{x+h}f(t) dt-&#92;int_a^x f(t) dt" title="g(x+h)-g(x)=&#92;int_a^{x+h}f(t) dt-&#92;int_a^x f(t) dt" class="latex" /></p>
+<p>\[g(x+h)-g(x)=\int_a^{x+h}f(t) dt-\int_a^x f(t) dt\]</p>
 <p>&nbsp;</p>
 <p>But remember that the definite integral is just the area, so this difference is the area between a and x+h minus the area between a and x. Which is just the area between x and x+h. Using the properties of integrals, we can write this formally as:</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=g%28x%2Bh%29-g%28x%29%3D%5Cint_a%5E%7Bx%2Bh%7Df%28t%29+dt-%5Cint_a%5Ex+f%28t%29+dt%3D%5Cleft%28%5Cint_a%5E%7Bx%7Df%28t%29%2B%5Cint_x%5E%7Bx%2Bh%7Df%28t%29%5Cright%29-%5Cint_a%5E%7Bx%7Df%28t%29%3D%5Cint_x%5E%7Bx%2Bh%7Df%28t%29dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x+h)-g(x)=&#92;int_a^{x+h}f(t) dt-&#92;int_a^x f(t) dt=&#92;left(&#92;int_a^{x}f(t)+&#92;int_x^{x+h}f(t)&#92;right)-&#92;int_a^{x}f(t)=&#92;int_x^{x+h}f(t)dt" title="g(x+h)-g(x)=&#92;int_a^{x+h}f(t) dt-&#92;int_a^x f(t) dt=&#92;left(&#92;int_a^{x}f(t)+&#92;int_x^{x+h}f(t)&#92;right)-&#92;int_a^{x}f(t)=&#92;int_x^{x+h}f(t)dt" class="latex" /></p>
+<p>\[g(x+h)-g(x)=\int_a^{x+h}f(t) dt-\int_a^x f(t) dt=\left(\int_a^{x}f(t)+\int_x^{x+h}f(t)\right)-\int_a^{x}f(t)=\int_x^{x+h}f(t)dt\]</p>
 <p>&nbsp;</p>
-<p>and we can write, for <img src="//s0.wp.com/latex.php?latex=h%5Cne+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="h&#92;ne 0" title="h&#92;ne 0" class="latex" />:</p>
+<p>and we can write, for \(h\ne 0\):</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bg%28x%2Bh%29-g%28x%29%7D%7Bh%7D%3D%5Cfrac%7B1%7D%7Bh%7D%5Cint_x%5E%7Bx%2Bh%7Df%28t%29dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{g(x+h)-g(x)}{h}=&#92;frac{1}{h}&#92;int_x^{x+h}f(t)dt" title="&#92;frac{g(x+h)-g(x)}{h}=&#92;frac{1}{h}&#92;int_x^{x+h}f(t)dt" class="latex" /></p>
+<p>\[\frac{g(x+h)-g(x)}{h}=\frac{1}{h}\int_x^{x+h}f(t)dt\]</p>
 <p>&nbsp;</p>
 <p>Restated, we can think of this as the area between x and x+h divided by h.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
@@ -401,17 +402,17 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=15151.html">The Fundamental Theorem of Calculus part 1 (part ii)</a></h2><div class="fusion-post-content-container"><p>OK, so up to now we can&#8217;t actually use the FTC (Fundamental Theorem of Calculus) to calculate any areas. That will come from the FTC part 2.</p>
 <p>For now, let&#8217;s take some examples and see what the FTC is saying. I&#8217;ll restate it here:</p>
 <p><strong>The Fundamental Theorem of Calculus, part 1</strong></p>
-<p>If <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" /> is continuous on <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" /> then the function <img src="//s0.wp.com/latex.php?latex=g&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g" title="g" class="latex" /> defined by:</p>
-<p><img src="//s0.wp.com/latex.php?latex=g%28x%29%3D%5Cint_a%5Ex+f%28t%29+dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x)=&#92;int_a^x f(t) dt" title="g(x)=&#92;int_a^x f(t) dt" class="latex" />,     for <img src="//s0.wp.com/latex.php?latex=a%5Cle+x%5Cle+b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a&#92;le x&#92;le b" title="a&#92;le x&#92;le b" class="latex" /></p>
-<p>is continuous on <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" /> and differentiable on <img src="//s0.wp.com/latex.php?latex=%28a%2Cb%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(a,b)" title="(a,b)" class="latex" />, and <img src="//s0.wp.com/latex.php?latex=g%27%28x%29%3Df%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g&#039;(x)=f(x)" title="g&#039;(x)=f(x)" class="latex" />.</p>
+<p>If \(f\) is continuous on \([a,b]\) then the function \(g\) defined by:</p>
+<p>\(g(x)=\int_a^x f(t) dt\),     for \(a\le x\le b\)</p>
+<p>is continuous on \([a,b]\) and differentiable on \((a,b)\), and \(g'(x)=f(x)\).</p>
 <p>&#8212;&#8212;</p>
-<p>Let&#8217;s look at some examples. We&#8217;re going to take an example that we can calculate using a Riemann sum. Let&#8217;s choose <img src="//s0.wp.com/latex.php?latex=f%28x%29%3Dx%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)=x^2" title="f(x)=x^2" class="latex" />.</p>
-<p>If we integrate this from <img src="//s0.wp.com/latex.php?latex=0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="0" title="0" class="latex" /> to some point <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> &#8211; ie. calculate the area under the curve, we get:</p>
+<p>Let&#8217;s look at some examples. We&#8217;re going to take an example that we can calculate using a Riemann sum. Let&#8217;s choose \(f(x)=x^2\).</p>
+<p>If we integrate this from \(0\) to some point \(x\) &#8211; ie. calculate the area under the curve, we get:</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5Ex+t%5E2+dt%3D%5Cfrac%7Bx%5E3%7D%7B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^x t^2 dt=&#92;frac{x^3}{3}" title="&#92;int_0^x t^2 dt=&#92;frac{x^3}{3}" class="latex" />.</p>
+<p>\(\int_0^x t^2 dt=\frac{x^3}{3}\).</p>
 <p>&nbsp;</p>
 <p>Make sure that you can indeed get this by calculating the Riemann sum.</p>
-<p>So, what does the FTC part 1 tell us? It says that if we take the derivative of this area, with respect to the upper limit, <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />, then we get back <img src="//s0.wp.com/latex.php?latex=f%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)" title="f(x)" class="latex" />.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>So, what does the FTC part 1 tell us? It says that if we take the derivative of this area, with respect to the upper limit, \(x\), then we get back \(f(x)\).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">

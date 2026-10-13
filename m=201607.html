@@ -162,7 +162,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive date fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -271,11 +272,11 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=13122.html">An integral expression for n!</a></h2><div class="fusion-post-content-container"><p>I gave a challenge question at the end of class a week or so ago. Here I will give the solution and show that it gives us something rather strange and surprisingly useful.</p>
 <p>I wrote down the following, and asked you to prove it:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+t%5EN+dt%3DN%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-t} t^N dt=N!" title="&#92;int_0^&#92;infty e^{-t} t^N dt=N!" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-t} t^N dt=N!\]</p>
 <p>&nbsp;</p>
-<p>For <img src="//s0.wp.com/latex.php?latex=N%5Cge+0%2C+N%5Cin+%5Cmathbb%7BZ%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="N&#92;ge 0, N&#92;in &#92;mathbb{Z}" title="N&#92;ge 0, N&#92;in &#92;mathbb{Z}" class="latex" />. Now, N! can be thought of as the number of different orderings of pulling N objects out of a bag (without replacement) when they are all different. If you have N things in a bag, then there are N possible things that you can pull out first. There are then N-1 ways of pulling out the next object, N-2 ways of pulling out the next, etc. and finally, when you&#8217;ve pulled out N-1 objects there&#8217;s only a single possibility of pulling out the last. So:</p>
+<p>For \(N\ge 0, N\in \mathbb{Z}\). Now, N! can be thought of as the number of different orderings of pulling N objects out of a bag (without replacement) when they are all different. If you have N things in a bag, then there are N possible things that you can pull out first. There are then N-1 ways of pulling out the next object, N-2 ways of pulling out the next, etc. and finally, when you&#8217;ve pulled out N-1 objects there&#8217;s only a single possibility of pulling out the last. So:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=N%21%3DN%28N-1%29%28N-2%29%28N-3%29...3.2.1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="N!=N(N-1)(N-2)(N-3)...3.2.1" title="N!=N(N-1)(N-2)(N-3)...3.2.1" class="latex" /></p>
+<p style="text-align: center;">\[N!=N(N-1)(N-2)(N-3)...3.2.1\]</p>
 <p>&nbsp;</p>
 <p>And the number of ways of pulling no objects out of a bag is 1, because you just don&#8217;t pull anything out.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
@@ -288,15 +289,15 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=13119.html">A general formula for partial fractions</a></h2><div class="fusion-post-content-container"><p>Out of the blue I wrote down a rather confusing mass of indices and summations on the board a few days ago. Writing this down at the last minute was perhaps a bad idea, but I wanted to show what the general form for expanding a fraction into partial fractions was. Here I&#8217;m just motivating it a little more. It&#8217;s not something that you will need to use, but it&#8217;s often good to write things down in as general a form as you can.</p>
 <p>Let&#8217;s say that we have an expression of the form:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7BP%28x%29%7D%7B%28x%2B3%29%28x-2%29%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{P(x)}{(x+3)(x-2)^2}" title="&#92;frac{P(x)}{(x+3)(x-2)^2}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{P(x)}{(x+3)(x-2)^2}\]</p>
 <p>&nbsp;</p>
 <p>Where P(x) is some polynomial of degree less than 3 (because the denominator is degree 3). We can write this as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7BA%7D%7Bx%2B3%7D%2B%5Cfrac%7BB%7D%7B%28x-2%29%5E2%7D%2B%5Cfrac%7BC%7D%7Bx-2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{A}{x+3}+&#92;frac{B}{(x-2)^2}+&#92;frac{C}{x-2}" title="&#92;frac{A}{x+3}+&#92;frac{B}{(x-2)^2}+&#92;frac{C}{x-2}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{A}{x+3}+\frac{B}{(x-2)^2}+\frac{C}{x-2}\]</p>
 <p>&nbsp;</p>
 <p>To find A,  B and C, you cross-multiply, and then match coefficients of powers of x with those in P(x).  If you have an irreducible quadratic in the denominator you will have terms of the form:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7BAx%2BB%7D%7Bax%5E2%2Bbx%2Bc%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{Ax+B}{ax^2+bx+c}" title="&#92;frac{Ax+B}{ax^2+bx+c}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{Ax+B}{ax^2+bx+c}\]</p>
 <p>&nbsp;</p>
 <p>in your partial fraction, and of course if it&#8217;s an irreducible quadratic to an integer power greater than one, you will have multiple terms, just as you do for the (x-2) expression in the example above.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	

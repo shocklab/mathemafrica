@@ -19,10 +19,11 @@ p=15343, problem 4:
 p=11480, MAM1000 part 36:
   flow             the flow for the post's worked example, y' - y/2 = 4 sin(3t),
                    whose general solution it gives as
-                   -(8/37)(6 cos 3t - sin 3t) + c e^{t/2}. That sign is wrong:
+                   -(8/37)(6 cos 3t - sin 3t) + c e^{t/2}. That sign was wrong:
                    substituting it gives 140 sin(3t)/37 + 48 cos(3t)/37 rather
                    than 4 sin(3t). The correct particular solution has a plus
-                   on the sine, and that is what is drawn.
+                   on the sine, which is what is drawn, and the post was
+                   corrected to it on 2026-10-13.
 
 p=16082, the Res-Net-NODE narrative:
   Screenshot-119   "an example of this kind of structure ... a single residual

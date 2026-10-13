@@ -161,7 +161,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive tag tag-induction tag-106 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -226,16 +227,16 @@ img.emoji {
 	
 	<div id="posts-container" class="fusion-blog-layout-large fusion-blog-pagination fusion-blog-archive fusion-clearfix" data-pages="1"><div id="post-14764" class="fusion-post-large post fusion-clearfix post-14764 type-post status-publish format-standard hentry category-courses category-first-year category-mam1000 category-uncategorized category-undergraduate tag-induction tag-mam1000">
 
-<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=14764.html">Prove that for every positive integer n, 9^n – 8n -1 is divisible by 64.</a></h2><div class="fusion-post-content-container"><p>Prove that for every positive integer <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" />, <img src="//s0.wp.com/latex.php?latex=9%5En-8n-1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="9^n-8n-1" title="9^n-8n-1" class="latex" /> is divisible by 64.</p>
-<p>This question screams proof by induction, so we start with the base case, which in this case is <img src="//s0.wp.com/latex.php?latex=n%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n=1" title="n=1" class="latex" />:</p>
-<p><img src="//s0.wp.com/latex.php?latex=9%5E1-8-1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="9^1-8-1" title="9^1-8-1" class="latex" /> which is indeed divisible by 64.</p>
-<p>Now, let&#8217;s assume that it holds true for some positive integer <img src="//s0.wp.com/latex.php?latex=n%3Dk&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n=k" title="n=k" class="latex" />. ie:</p>
-<p><img src="//s0.wp.com/latex.php?latex=9%5Ek-8k-1%3D64p&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="9^k-8k-1=64p" title="9^k-8k-1=64p" class="latex" /> for <img src="//s0.wp.com/latex.php?latex=p%5Cin%5Cmathbb%7BZ%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="p&#92;in&#92;mathbb{Z}" title="p&#92;in&#92;mathbb{Z}" class="latex" />.</p>
-<p>Now let&#8217;s see how we can use this to prove that the statement holds true for <img src="//s0.wp.com/latex.php?latex=n%3Dk%2B1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n=k+1" title="n=k+1" class="latex" />. For <img src="//s0.wp.com/latex.php?latex=n%3Dk%2B1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n=k+1" title="n=k+1" class="latex" /> we have:</p>
-<p><img src="//s0.wp.com/latex.php?latex=9%5E%28k%2B1%29-8%28k%2B1%29-1%3D9%289%5Ek%29-8k-8-1%3D9%289%5Ek-8k-1%29%2B64k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="9^(k+1)-8(k+1)-1=9(9^k)-8k-8-1=9(9^k-8k-1)+64k" title="9^(k+1)-8(k+1)-1=9(9^k)-8k-8-1=9(9^k-8k-1)+64k" class="latex" /></p>
+<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=14764.html">Prove that for every positive integer n, 9^n – 8n -1 is divisible by 64.</a></h2><div class="fusion-post-content-container"><p>Prove that for every positive integer \(n\), \(9^n-8n-1\) is divisible by 64.</p>
+<p>This question screams proof by induction, so we start with the base case, which in this case is \(n=1\):</p>
+<p>\(9^1-8-1\) which is indeed divisible by 64.</p>
+<p>Now, let&#8217;s assume that it holds true for some positive integer \(n=k\). ie:</p>
+<p>\(9^k-8k-1=64p\) for \(p\in\mathbb{Z}\).</p>
+<p>Now let&#8217;s see how we can use this to prove that the statement holds true for \(n=k+1\). For \(n=k+1\) we have:</p>
+<p>\[9^(k+1)-8(k+1)-1=9(9^k)-8k-8-1=9(9^k-8k-1)+64k\]</p>
 <p>where we have manipulated the expression to contain the left hand side of the inductive hypothesis. Thereby, plugging in the inductive hypothesis, we get:</p>
-<p><img src="//s0.wp.com/latex.php?latex=9%5E%28k%2B1%29-8%28k%2B1%29-1%3D9%289%5Ek%29-8k-8-1%3D9%2864p%29%2B64k%3D64%289p%2Bk%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="9^(k+1)-8(k+1)-1=9(9^k)-8k-8-1=9(64p)+64k=64(9p+k)" title="9^(k+1)-8(k+1)-1=9(9^k)-8k-8-1=9(64p)+64k=64(9p+k)" class="latex" /></p>
-<p>but clearly <img src="//s0.wp.com/latex.php?latex=9p%2Bk&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="9p+k" title="9p+k" class="latex" /> is an integer, so this is divisible by 64 and thus the statement holds true for <img src="//s0.wp.com/latex.php?latex=n%3Dk%2B1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n=k+1" title="n=k+1" class="latex" />, thus it holds true for all positive integers <img src="//s0.wp.com/latex.php?latex=k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k" title="k" class="latex" /></p>
+<p>\[9^(k+1)-8(k+1)-1=9(9^k)-8k-8-1=9(64p)+64k=64(9p+k)\]</p>
+<p>but clearly \(9p+k\) is an integer, so this is divisible by 64 and thus the statement holds true for \(n=k+1\), thus it holds true for all positive integers \(k\)</p>
 <table class="rw-rating-table rw-ltr rw-left"><tr><td><nobr>How clear is this post?</nobr></td><td><div class="rw-left"><div class="rw-ui-container rw-class-blog-post rw-urid-147650"></div></div></td></tr></table>&hellip;</div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
@@ -246,17 +247,17 @@ img.emoji {
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=12464.html">Mathematical induction with an inequality</a></h2><div class="fusion-post-content-container"><p>In the tutorial sessions it was clear that one question in particular was causing problems. This is an induction proof with an inequality. The one which we will look at is the inequality:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5En%3En%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^n&gt;n^3" title="2^n&gt;n^3" class="latex" /> for <img src="//s0.wp.com/latex.php?latex=n%5Cge+10&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 10" title="n&#92;ge 10" class="latex" /></p>
+<p style="text-align: center;">\(2^n&gt;n^3\) for \(n\ge 10\)</p>
 <p>&nbsp;</p>
 <p>I am going to talk you through it in more detail than would be needed for the formal proof but I want to give some intuition along the way.</p>
 <p>&nbsp;</p>
 <p>So, we start off, as always with the base case. The base case is always the first integer for which the statement is claimed to be true. In this case it is for n=10. Let&#8217;s check for n=10. Is it true that?</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7B10%7D%3E10%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{10}&gt;10^3" title="2^{10}&gt;10^3" class="latex" /> ?</p>
+<p style="text-align: center;">\(2^{10}&gt;10^3\) ?</p>
 <p>&nbsp;</p>
 <p>Well this is:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1024%3E1000&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1024&gt;1000" title="1024&gt;1000" class="latex" /></p>
+<p style="text-align: center;">\[1024&gt;1000\]</p>
 <p>&nbsp;</p>
 <p>and so we should be happy with that. We&#8217;ve proved the base case. Note that you do not then need to check for n=11, or n=12. I have seen many students check a base case for n=1, and then also check for n=2 and n=3.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
@@ -277,7 +278,7 @@ img.emoji {
 	
 <span>March 6th, 2016</span><span class="fusion-inline-sep">|</span><a href="cat=120.html" rel="category">Courses</a>, <a href="cat=122.html" rel="category">First year</a>, <a href="cat=123.html" rel="category">MAM1000</a>, <a href="cat=121.html" rel="category">Undergraduate</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="p=12407.html#comments">6 Comments</a></span></div><div class="fusion-alignright"><a href="p=12407.html" class="fusion-read-more">Read More</a></div></div></div><div id="post-11706" class="fusion-post-large post fusion-clearfix post-11706 type-post status-publish format-standard hentry category-english category-level-intermediate-2 tag-fibonacci tag-induction">
 
-<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11706.html">Fibonacci and induction</a></h2><div class="fusion-post-content-container"><p>The Fibonacci numbers <img src="//s0.wp.com/latex.php?latex=F_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_n" title="F_n" class="latex" /> are defined by: <img src="//s0.wp.com/latex.php?latex=F_1+%3D+F_2+%3D+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_1 = F_2 = 1" title="F_1 = F_2 = 1" class="latex" />, <img src="//s0.wp.com/latex.php?latex=F_%7Bn%2B2%7D+%3D+F_%7Bn%2B1%7D+%2B+F_n+%5Ctextrm%7B+for+%7D+n%5Cge+1.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{n+2} = F_{n+1} + F_n &#92;textrm{ for } n&#92;ge 1." title="F_{n+2} = F_{n+1} + F_n &#92;textrm{ for } n&#92;ge 1." class="latex" /></p>
+<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11706.html">Fibonacci and induction</a></h2><div class="fusion-post-content-container"><p>The Fibonacci numbers \(F_n\) are defined by: \(F_1 = F_2 = 1\), \(F_{n+2} = F_{n+1} + F_n \textrm{ for } n\ge 1.\)</p>
 <p>&nbsp;</p>
 <p>The numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, &#8230;</p>
 <p>&nbsp;</p>
@@ -289,21 +290,21 @@ img.emoji {
 <p>&nbsp;</p>
 <p><strong>Proof</strong></p>
 <p>&nbsp;</p>
-<p>We note first that <img src="//s0.wp.com/latex.php?latex=F_5+%3D+5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_5 = 5" title="F_5 = 5" class="latex" /> is certainly divisible by 5, as are <img src="//s0.wp.com/latex.php?latex=F_%7B10%7D+%3D+55&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{10} = 55" title="F_{10} = 55" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=F_%7B15%7D+%3D+610.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{15} = 610." title="F_{15} = 610." class="latex" /> How can we be sure that the pattern continues?</p>
+<p>We note first that \(F_5 = 5\) is certainly divisible by 5, as are \(F_{10} = 55\) and \(F_{15} = 610.\) How can we be sure that the pattern continues?</p>
 <p>&nbsp;</p>
-<p>We shall show that: IF the statement &#8220;<img src="//s0.wp.com/latex.php?latex=F_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_n" title="F_n" class="latex" /> is divisible by 5&#8243; is true for some natural number <img src="//s0.wp.com/latex.php?latex=m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="m" title="m" class="latex" />, THEN the statement is also true for the natural number <img src="//s0.wp.com/latex.php?latex=m%2B5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="m+5" title="m+5" class="latex" />.</p>
+<p>We shall show that: IF the statement &#8220;\(F_n\) is divisible by 5&#8243; is true for some natural number \(m\), THEN the statement is also true for the natural number \(m+5\).</p>
 <p>&nbsp;</p>
 <p>Now</p>
 <p>&nbsp;</p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=F_%7Bm%2B5%7D+%3D+F_%7Bm%2B4%7D+%2B+F_%7Bm%2B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{m+5} = F_{m+4} + F_{m+3}" title="F_{m+5} = F_{m+4} + F_{m+3}" class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+%28F_%7Bm%2B3%7D+%2B+F_%7Bm%2B2%7D%29+%2B+F_%7Bm%2B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= (F_{m+3} + F_{m+2}) + F_{m+3}" title="= (F_{m+3} + F_{m+2}) + F_{m+3}" class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+2F_%7Bm%2B3%7D+%2B+F_%7Bm%2B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 2F_{m+3} + F_{m+2}" title="= 2F_{m+3} + F_{m+2}" class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+2%28F_%7Bm%2B2%7D+%2B+F_%7Bm%2B1%7D%29+%2B+%28F_%7Bm%2B1%7D+%2B+F_m%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 2(F_{m+2} + F_{m+1}) + (F_{m+1} + F_m) " title="= 2(F_{m+2} + F_{m+1}) + (F_{m+1} + F_m) " class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+2F_%7Bm%2B2%7D+%2B+3F_%7Bm%2B1%7D+%2B+F_m+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 2F_{m+2} + 3F_{m+1} + F_m " title="= 2F_{m+2} + 3F_{m+1} + F_m " class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+2%28F_%7Bm%2B1%7D+%2B+F_m%29+%2B3F_%7Bm%2B1%7D+%2B+F_m+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 2(F_{m+1} + F_m) +3F_{m+1} + F_m " title="= 2(F_{m+1} + F_m) +3F_{m+1} + F_m " class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+5F_%7Bm%2B1%7D+%2B+3F_m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 5F_{m+1} + 3F_m" title="= 5F_{m+1} + 3F_m" class="latex" />.</p>
+<p style="text-align: left;">\[F_{m+5} = F_{m+4} + F_{m+3}\]</p>
+<p style="text-align: left;">\[= (F_{m+3} + F_{m+2}) + F_{m+3}\]</p>
+<p style="text-align: left;">\[= 2F_{m+3} + F_{m+2}\]</p>
+<p style="text-align: left;">\[= 2(F_{m+2} + F_{m+1}) + (F_{m+1} + F_m)\]</p>
+<p style="text-align: left;">\[= 2F_{m+2} + 3F_{m+1} + F_m\]</p>
+<p style="text-align: left;">\[= 2(F_{m+1} + F_m) +3F_{m+1} + F_m\]</p>
+<p style="text-align: left;">\(= 5F_{m+1} + 3F_m\).</p>
 <p>&nbsp;</p>
-<p>Since we know that <img src="//s0.wp.com/latex.php?latex=F_m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_m" title="F_m" class="latex" /> is divisible by 5, it is now clear that <img src="//s0.wp.com/latex.php?latex=F_%7Bm%2B5%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{m+5}" title="F_{m+5}" class="latex" /> is also divisible by 5.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>Since we know that \(F_m\) is divisible by 5, it is now clear that \(F_{m+5}\) is also divisible by 5.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">

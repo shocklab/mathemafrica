@@ -34,7 +34,7 @@
 
 		<meta property="og:title" content="p-values (part 2) : p-Hacking Why drinking red wine is not the same as exercising"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=15773.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=15773.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="What is p-hacking?
 
@@ -42,7 +42,7 @@ You might have heard about a reproducibility problem with scientific studies. Or
 
 Part of the reason that you might have heard about these things is p-hacking: &#39;torturing the data until it confesses&#39;. The"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -91,7 +91,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=15773.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=15773.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-46p' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D15773.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D15773&.html#038;format=xml" />
@@ -178,7 +178,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-15773 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -261,13 +262,13 @@ img.emoji {
 <li>testing multiple hypotheses at once</li>
 <li>excluding observations from the analysis because they are &#8216;outliers&#8217; or are &#8216;non-representative&#8217;</li>
 </ul>
-<p>Testing multiple hypothesis is probably the most interesting way that this is done. If we test a single hypothesis with a false positive rate of <img src="//s0.wp.com/latex.php?latex=%5Calpha+%3D+0.05&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;alpha = 0.05" title="&#92;alpha = 0.05" class="latex" /> (i.e. we want to look for p&lt;0.05) then it is reasonable to expect that about 5% of the time we will get a false positive.</p>
+<p>Testing multiple hypothesis is probably the most interesting way that this is done. If we test a single hypothesis with a false positive rate of \(\alpha = 0.05\) (i.e. we want to look for p&lt;0.05) then it is reasonable to expect that about 5% of the time we will get a false positive.</p>
 <p>If we test 12 <em>independent</em> hypotheses at the same time, however, then the probability of a false positive increases to:</p>
-<p><img src="//s0.wp.com/latex.php?latex=P%28%5Ctext%7Bat+least+1+false+positive%7D%29+%3D+1+-+P%28%5Ctext%7BNo+false+positives%7D%29+%3D+1+-+0.95%5E%7B12%7D+%3D+0.46&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P(&#92;text{at least 1 false positive}) = 1 - P(&#92;text{No false positives}) = 1 - 0.95^{12} = 0.46" title="P(&#92;text{at least 1 false positive}) = 1 - P(&#92;text{No false positives}) = 1 - 0.95^{12} = 0.46" class="latex" /></p>
+<p>\[P(\text{at least 1 false positive}) = 1 - P(\text{No false positives}) = 1 - 0.95^{12} = 0.46\]</p>
 <p>So about half the time.</p>
 <p><strong>An example of finding significant results in random noise</strong></p>
 <p>To illustrate this I decided to run a few tests. I wanted to look for relationships between 12 outcomes (read y-values) and 5 observations of some predictive variable that will be our x-values. These numbers were 0,1,2,3,4 (to make plots more simple and the trends really easy to spot, but they could have been anything and we shall see why shortly). I then populated the values of these 12 measurements to some standard normal random samples (we can take the measurements as normalised).</p>
-<p>Between the multiple hypothesis being tested I managed to get significant (p&lt;0.05) results for the relationship between the number of pigeons encountered and <img src="//s0.wp.com/latex.php?latex=y_0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y_0" title="y_0" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=y_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y_3" title="y_3" class="latex" />  of 0.032 and 0.016 respectively.</p>
+<p>Between the multiple hypothesis being tested I managed to get significant (p&lt;0.05) results for the relationship between the number of pigeons encountered and \(y_0\) and \(y_3\)  of 0.032 and 0.016 respectively.</p>
 <p><a href="wp-content/uploads/2019/09/p_hacking_plot_use.png" rel="attachment wp-att-15796"><img class="alignnone size-medium wp-image-15796" src="wp-content/uploads/2019/09/p_hacking_plot_use.png?resize=300%2C291" alt="p_hacking_plot_use" srcset="wp-content/uploads/2019/09/p_hacking_plot_use.png?resize=200%2C194 200w, wp-content/uploads/2019/09/p_hacking_plot_use.png?resize=300%2C291 300w, wp-content/uploads/2019/09/p_hacking_plot_use.png?resize=400%2C388 400w, wp-content/uploads/2019/09/p_hacking_plot_use.png?resize=600%2C583 600w, wp-content/uploads/2019/09/p_hacking_plot_use.png?resize=768%2C746 768w, wp-content/uploads/2019/09/p_hacking_plot_use.png?resize=800%2C777 800w, wp-content/uploads/2019/09/p_hacking_plot_use.png?fit=861%2C836 861w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

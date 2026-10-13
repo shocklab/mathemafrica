@@ -161,7 +161,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive paged category category-level-intermediate-2 category-40 paged-2 category-paged-2 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -282,11 +283,11 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=13122.html">An integral expression for n!</a></h2><div class="fusion-post-content-container"><p>I gave a challenge question at the end of class a week or so ago. Here I will give the solution and show that it gives us something rather strange and surprisingly useful.</p>
 <p>I wrote down the following, and asked you to prove it:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+t%5EN+dt%3DN%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-t} t^N dt=N!" title="&#92;int_0^&#92;infty e^{-t} t^N dt=N!" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-t} t^N dt=N!\]</p>
 <p>&nbsp;</p>
-<p>For <img src="//s0.wp.com/latex.php?latex=N%5Cge+0%2C+N%5Cin+%5Cmathbb%7BZ%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="N&#92;ge 0, N&#92;in &#92;mathbb{Z}" title="N&#92;ge 0, N&#92;in &#92;mathbb{Z}" class="latex" />. Now, N! can be thought of as the number of different orderings of pulling N objects out of a bag (without replacement) when they are all different. If you have N things in a bag, then there are N possible things that you can pull out first. There are then N-1 ways of pulling out the next object, N-2 ways of pulling out the next, etc. and finally, when you&#8217;ve pulled out N-1 objects there&#8217;s only a single possibility of pulling out the last. So:</p>
+<p>For \(N\ge 0, N\in \mathbb{Z}\). Now, N! can be thought of as the number of different orderings of pulling N objects out of a bag (without replacement) when they are all different. If you have N things in a bag, then there are N possible things that you can pull out first. There are then N-1 ways of pulling out the next object, N-2 ways of pulling out the next, etc. and finally, when you&#8217;ve pulled out N-1 objects there&#8217;s only a single possibility of pulling out the last. So:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=N%21%3DN%28N-1%29%28N-2%29%28N-3%29...3.2.1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="N!=N(N-1)(N-2)(N-3)...3.2.1" title="N!=N(N-1)(N-2)(N-3)...3.2.1" class="latex" /></p>
+<p style="text-align: center;">\[N!=N(N-1)(N-2)(N-3)...3.2.1\]</p>
 <p>&nbsp;</p>
 <p>And the number of ways of pulling no objects out of a bag is 1, because you just don&#8217;t pull anything out.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
@@ -304,9 +305,9 @@ img.emoji {
 	
 <span>July 21st, 2016</span><span class="fusion-inline-sep">|</span><a href="cat=120.html" rel="category">Courses</a>, <a href="cat=40.html" rel="category">Level: intermediate</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="p=13089.html#comments">2 Comments</a></span></div><div class="fusion-alignright"><a href="p=13089.html" class="fusion-read-more">Read More</a></div></div></div><div id="post-12942" class="fusion-post-large post fusion-clearfix post-12942 type-post status-publish format-standard hentry category-level-intermediate-2 category-uncategorized tag-analysis tag-convergence tag-number-theory tag-primes tag-series">
 
-<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=12942.html">On Convergent Sequences and Prime Numbers</a></h2><div class="fusion-post-content-container"><p style="text-align: left">Ever since Euclid first proved that there are infinitely many prime numbers, mathematicians have found ever more creative ways to prove the same result, and also various stronger theorems that imply it. <a href="https://en.wikipedia.org/wiki/Dirichlet's_theorem_on_arithmetic_progressions" target="_blank">Dirichlet&#8217;s Theorem</a>, for example, states that if<img src="//s0.wp.com/latex.php?latex=m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="m" title="m" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> are relatively prime integers, then there are infinitely many prime numbers of the form <img src="//s0.wp.com/latex.php?latex=mk+%2B+n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="mk + n" title="mk + n" class="latex" /> for some integer <img src="//s0.wp.com/latex.php?latex=k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k" title="k" class="latex" />. It is also known that the <a href="https://en.wikipedia.org/wiki/Divergence_of_the_sum_of_the_reciprocals_of_the_primes" target="_blank">sum of the reciprocals of the prime numbers diverges</a>, that the sum</p>
-<p style="text-align: center"><img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Csum_%7B%5Csubstack%7Bp+%5Cleq+n+%5C%5C+p+%5Ctext%7B+prime%7D%7D%7D+%5Cfrac%7B1%7D%7Bp%7D+%5Csim+%5Clog%28%5Clog%28n%29%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle &#92;sum_{&#92;substack{p &#92;leq n &#92;&#92; p &#92;text{ prime}}} &#92;frac{1}{p} &#92;sim &#92;log(&#92;log(n))" title="&#92;displaystyle &#92;sum_{&#92;substack{p &#92;leq n &#92;&#92; p &#92;text{ prime}}} &#92;frac{1}{p} &#92;sim &#92;log(&#92;log(n))" class="latex" /></p>
-<p style="text-align: left">and that the number of prime numbers less than <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> is asymptotically equal to <img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cfrac%7Bn%7D%7B%5Clog%28n%29%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle &#92;frac{n}{&#92;log(n)}" title="&#92;displaystyle &#92;frac{n}{&#92;log(n)}" class="latex" />. In this blog post, we will continue this proud tradition by proving that there are infinitely many prime numbers which have your phone number somewhere in their digits, and which simultaneously have a prime number of digits.</p>
+<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=12942.html">On Convergent Sequences and Prime Numbers</a></h2><div class="fusion-post-content-container"><p style="text-align: left">Ever since Euclid first proved that there are infinitely many prime numbers, mathematicians have found ever more creative ways to prove the same result, and also various stronger theorems that imply it. <a href="https://en.wikipedia.org/wiki/Dirichlet's_theorem_on_arithmetic_progressions" target="_blank">Dirichlet&#8217;s Theorem</a>, for example, states that if\(m\) and \(n\) are relatively prime integers, then there are infinitely many prime numbers of the form \(mk + n\) for some integer \(k\). It is also known that the <a href="https://en.wikipedia.org/wiki/Divergence_of_the_sum_of_the_reciprocals_of_the_primes" target="_blank">sum of the reciprocals of the prime numbers diverges</a>, that the sum</p>
+<p style="text-align: center">\[\displaystyle \sum_{\substack{p \leq n \\ p \text{ prime}}} \frac{1}{p} \sim \log(\log(n))\]</p>
+<p style="text-align: left">and that the number of prime numbers less than \(n\) is asymptotically equal to \(\displaystyle \frac{n}{\log(n)}\). In this blog post, we will continue this proud tradition by proving that there are infinitely many prime numbers which have your phone number somewhere in their digits, and which simultaneously have a prime number of digits.</p>
 <p style="text-align: left">To do so, we will look at the convergence of two different sums: that of the reciprocals of the primes with a prime number of digits, and that of the reciprocals of the natural numbers which do not contain your phone number amongst their digits.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=12.html" title="Posts by Dylan Nelson" rel="author">Dylan Nelson</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
@@ -316,9 +317,9 @@ img.emoji {
 <span>May 22nd, 2016</span><span class="fusion-inline-sep">|</span><a href="cat=40.html" rel="category">Level: intermediate</a>, <a href="cat=1.html" rel="category">Uncategorized</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="p=12942.html#comments">2 Comments</a></span></div><div class="fusion-alignright"><a href="p=12942.html" class="fusion-read-more">Read More</a></div></div></div><div id="post-12431" class="fusion-post-large post fusion-clearfix post-12431 type-post status-publish format-standard hentry category-english category-level-intermediate-2 category-uncategorized">
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=12431.html">Welcome to Reproducing Kernel Hilbert Space</a></h2><div class="fusion-post-content-container">In a series of posts I hope to introduce Mathemafrica readers to some useful data analysis methods which rely on operations in a little back-water of Hilbert space, namely Reproducing Kernel Hilbert Space (or RKHS).
-<p>We&#8217;ll start with the &#8220;classic&#8221; example. Consider the data plotted in figure 1. Each data point has 3 &#8220;properties&#8221;: an <img src="//s0.wp.com/latex.php?latex=x_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_1" title="x_1" class="latex" /> coordinate, an <img src="//s0.wp.com/latex.php?latex=x_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_2" title="x_2" class="latex" /> coordinate and a colour (red or blue). Suppose we want to be able to separate all data points into two groups: red points and blue points. Furthermore, we want to be able to do this <em>linearly</em>, i.e. we want to be able to draw a line (or plane or hyperplane) such that all points on one side are blue, all points on the other are red. This is called linear classification.</p>
+<p>We&#8217;ll start with the &#8220;classic&#8221; example. Consider the data plotted in figure 1. Each data point has 3 &#8220;properties&#8221;: an \(x_1\) coordinate, an \(x_2\) coordinate and a colour (red or blue). Suppose we want to be able to separate all data points into two groups: red points and blue points. Furthermore, we want to be able to do this <em>linearly</em>, i.e. we want to be able to draw a line (or plane or hyperplane) such that all points on one side are blue, all points on the other are red. This is called linear classification.</p>
 <div id="attachment_12511" style="width: 494px" class="wp-caption aligncenter"><a href="wp-content/uploads/2016/03/fig01.png" rel="attachment wp-att-12511"><img class="size-full wp-image-12511" src="wp-content/uploads/2016/03/fig01.png?resize=484%2C504" alt="Figure 1: A scatter of data with three properties: an x_1 coordinate, an x_2 coordinate and a colour." srcset="wp-content/uploads/2016/03/fig01.png?resize=288%2C300 288w, wp-content/uploads/2016/03/fig01.png?fit=484%2C504 484w" sizes="(max-width: 484px) 100vw, 484px" data-recalc-dims="1" /></a><p class="wp-caption-text">Figure 1: A scatter of data with three properties: an x_1 coordinate, an x_2 coordinate and a colour.</p></div>
-<p>Suppose for each data point we generate a <em>representation</em> of the data point <img src="//s0.wp.com/latex.php?latex=%5Cphi%28x%29%3D%5Bx_1%2C+x_2%2C+x_1x_2%5D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;phi(x)=[x_1, x_2, x_1x_2] " title="&#92;phi(x)=[x_1, x_2, x_1x_2] " class="latex" />.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=30.html" title="Posts by Alex Antrobus" rel="author">Alex Antrobus</a></span></span><span class="fusion-inline-sep">|</span>
+<p>Suppose for each data point we generate a <em>representation</em> of the data point \(\phi(x)=[x_1, x_2, x_1x_2]\).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=30.html" title="Posts by Alex Antrobus" rel="author">Alex Antrobus</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -367,39 +368,39 @@ img.emoji {
 </li>
 																																																																										</ul>
 	</div>
-<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11718.html">Fibonacci and the Golden Ratio</a></h2><div class="fusion-post-content-container"><p>The Fibonacci numbers <img src="//s0.wp.com/latex.php?latex=1%2C+%5C+1%2C+%5C+2%2C%5C+3%2C+%5C+5%2C%5C+8%2C+13%2C%5C+21%2C%5C+34%2C+%5C+55%2C%5C+89%2C%5C+144%2C+%5C+%5Ccdots&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1, &#92; 1, &#92; 2,&#92; 3, &#92; 5,&#92; 8, 13,&#92; 21,&#92; 34, &#92; 55,&#92; 89,&#92; 144, &#92; &#92;cdots" title="1, &#92; 1, &#92; 2,&#92; 3, &#92; 5,&#92; 8, 13,&#92; 21,&#92; 34, &#92; 55,&#92; 89,&#92; 144, &#92; &#92;cdots" class="latex" /> are defined by the recurrence relation</p>
+<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11718.html">Fibonacci and the Golden Ratio</a></h2><div class="fusion-post-content-container"><p>The Fibonacci numbers \(1, \ 1, \ 2,\ 3, \ 5,\ 8, 13,\ 21,\ 34, \ 55,\ 89,\ 144, \ \cdots\) are defined by the recurrence relation</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=F_1+%3D+F_2+%3D+1%2C+%5C+F_%7Bn%2B2%7D+%3D+F_%7Bn%2B1%7D+%2B+F_n+%5C+%5Ctextrm%7B+for+%7D+n+%5Cge+1.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_1 = F_2 = 1, &#92; F_{n+2} = F_{n+1} + F_n &#92; &#92;textrm{ for } n &#92;ge 1." title="F_1 = F_2 = 1, &#92; F_{n+2} = F_{n+1} + F_n &#92; &#92;textrm{ for } n &#92;ge 1." class="latex" /></p>
+<p>\[F_1 = F_2 = 1, \ F_{n+2} = F_{n+1} + F_n \ \textrm{ for } n \ge 1.\]</p>
 <p>&nbsp;</p>
-<p>Consider now the ratios <img src="//s0.wp.com/latex.php?latex=%5Cdfrac%7BF_%7Bn%2B1%7D%7D%7BF_n%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;dfrac{F_{n+1}}{F_n}" title="&#92;dfrac{F_{n+1}}{F_n}" class="latex" />:</p>
+<p>Consider now the ratios \(\dfrac{F_{n+1}}{F_n}\):</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cdfrac+11%2C+%5C+%5Cdfrac+21%2C+%5C+%5Cdfrac+32%2C+%5C+%5Cdfrac+53%2C+%5C+%5Cdfrac+85%2C+%5C+%5Cdfrac+%7B13%7D8%2C+%5Cdfrac+%7B21%7D%7B13%7D%2C+%5C+%5Cdfrac+%7B21%7D%7B13%7D%2C+%5C+%5Cdfrac+%7B34%7D%7B21%7D%2C+%5Cdfrac+%7B55%7D%7B34%7D%2C+%5Cdfrac+%7B89%7D%7B55%7D%2C+%5C+%5Cdfrac+%7B144%7D%7B89%7D%2C+%5C+%5Ccdots+%5C+.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;dfrac 11, &#92; &#92;dfrac 21, &#92; &#92;dfrac 32, &#92; &#92;dfrac 53, &#92; &#92;dfrac 85, &#92; &#92;dfrac {13}8, &#92;dfrac {21}{13}, &#92; &#92;dfrac {21}{13}, &#92; &#92;dfrac {34}{21}, &#92;dfrac {55}{34}, &#92;dfrac {89}{55}, &#92; &#92;dfrac {144}{89}, &#92; &#92;cdots &#92; ." title="&#92;dfrac 11, &#92; &#92;dfrac 21, &#92; &#92;dfrac 32, &#92; &#92;dfrac 53, &#92; &#92;dfrac 85, &#92; &#92;dfrac {13}8, &#92;dfrac {21}{13}, &#92; &#92;dfrac {21}{13}, &#92; &#92;dfrac {34}{21}, &#92;dfrac {55}{34}, &#92;dfrac {89}{55}, &#92; &#92;dfrac {144}{89}, &#92; &#92;cdots &#92; ." class="latex" /></p>
+<p>\[\dfrac 11, \ \dfrac 21, \ \dfrac 32, \ \dfrac 53, \ \dfrac 85, \ \dfrac {13}8, \dfrac {21}{13}, \ \dfrac {21}{13}, \ \dfrac {34}{21}, \dfrac {55}{34}, \dfrac {89}{55}, \ \dfrac {144}{89}, \ \cdots \ .\]</p>
 <p>&nbsp;</p>
 <p>The sequence of fractions appears to rise and fall alternately. This observation can be confirmed by reference to the equation</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=F_%7Bn%2B1%7D%5E2+-+F_nF_%7Bn%2B2%7D+%3D+%28-1%29%5En&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{n+1}^2 - F_nF_{n+2} = (-1)^n" title="F_{n+1}^2 - F_nF_{n+2} = (-1)^n" class="latex" /></p>
+<p>\[F_{n+1}^2 - F_nF_{n+2} = (-1)^n\]</p>
 <p>&nbsp;</p>
-<p>which, when divided by <img src="//s0.wp.com/latex.php?latex=F_%7Bn%2B1%7DF_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{n+1}F_n" title="F_{n+1}F_n" class="latex" /> gives</p>
+<p>which, when divided by \(F_{n+1}F_n\) gives</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cdfrac%7BF_%7Bn%2B1%7D%7D%7BF_n%7D+-+%5Cdfrac+%7BF_%7Bn%2B2%7D%7D%7BF_%7Bn%2B1%7D%7D+%3D+%5Cdfrac+%7B%28-1%29%5En%7D%7BF_%7Bn%2B1%7DF_n+%7D+%5C+%2C+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;dfrac{F_{n+1}}{F_n} - &#92;dfrac {F_{n+2}}{F_{n+1}} = &#92;dfrac {(-1)^n}{F_{n+1}F_n } &#92; , " title="&#92;dfrac{F_{n+1}}{F_n} - &#92;dfrac {F_{n+2}}{F_{n+1}} = &#92;dfrac {(-1)^n}{F_{n+1}F_n } &#92; , " class="latex" /></p>
+<p>\[\dfrac{F_{n+1}}{F_n} - \dfrac {F_{n+2}}{F_{n+1}} = \dfrac {(-1)^n}{F_{n+1}F_n } \ ,\]</p>
 <p>&nbsp;</p>
 <p>showing that the difference between successive terms in the sequence of ratios is alternately positive and negative.</p>
 <p>Calculating the first few terms suggest that successive ratios converge to 1.618 &#8230; . This may be established by using Binet&#8217;s formula (see the previous post):</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=F_n+%3D+%5Cdfrac+1%7B%5Csqrt+5%7D%5CBig%28%5CBig%28%5Cdfrac%7B1%2B%5Csqrt+5%7D2+%5CBig%29%5En+-+%5CBig%28%5Cdfrac%7B1-%5Csqrt+5%7D2+%5CBig%29%5En%5CBig%29+%5C+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_n = &#92;dfrac 1{&#92;sqrt 5}&#92;Big(&#92;Big(&#92;dfrac{1+&#92;sqrt 5}2 &#92;Big)^n - &#92;Big(&#92;dfrac{1-&#92;sqrt 5}2 &#92;Big)^n&#92;Big) &#92; " title="F_n = &#92;dfrac 1{&#92;sqrt 5}&#92;Big(&#92;Big(&#92;dfrac{1+&#92;sqrt 5}2 &#92;Big)^n - &#92;Big(&#92;dfrac{1-&#92;sqrt 5}2 &#92;Big)^n&#92;Big) &#92; " class="latex" /></p>
+<p>\[F_n = \dfrac 1{\sqrt 5}\Big(\Big(\dfrac{1+\sqrt 5}2 \Big)^n - \Big(\dfrac{1-\sqrt 5}2 \Big)^n\Big) \\]</p>
 <p>&nbsp;</p>
 <p>from which we have</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cdfrac+%7BF_%7Bn%2B1%7D%7D%7BF_n%7D+%3D+%5Cdfrac+%7B%5CBig%28%5Cdfrac%7B1%2B%5Csqrt+5%7D2+%5CBig%29%5E%7Bn%2B1%7D+-+%5CBig%28%5Cdfrac%7B1-%5Csqrt+5%7D2+%5CBig%29%5E%7Bn%2B1%7D%7D+%7B%5CBig%28%5Cdfrac%7B1%2B%5Csqrt+5%7D2+%5CBig%29%5En+-+%5CBig%28%5Cdfrac%7B1-%5Csqrt+5%7D2+%5CBig%29%5En%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;dfrac {F_{n+1}}{F_n} = &#92;dfrac {&#92;Big(&#92;dfrac{1+&#92;sqrt 5}2 &#92;Big)^{n+1} - &#92;Big(&#92;dfrac{1-&#92;sqrt 5}2 &#92;Big)^{n+1}} {&#92;Big(&#92;dfrac{1+&#92;sqrt 5}2 &#92;Big)^n - &#92;Big(&#92;dfrac{1-&#92;sqrt 5}2 &#92;Big)^n}" title="&#92;dfrac {F_{n+1}}{F_n} = &#92;dfrac {&#92;Big(&#92;dfrac{1+&#92;sqrt 5}2 &#92;Big)^{n+1} - &#92;Big(&#92;dfrac{1-&#92;sqrt 5}2 &#92;Big)^{n+1}} {&#92;Big(&#92;dfrac{1+&#92;sqrt 5}2 &#92;Big)^n - &#92;Big(&#92;dfrac{1-&#92;sqrt 5}2 &#92;Big)^n}" class="latex" /></p>
+<p>\[\dfrac {F_{n+1}}{F_n} = \dfrac {\Big(\dfrac{1+\sqrt 5}2 \Big)^{n+1} - \Big(\dfrac{1-\sqrt 5}2 \Big)^{n+1}} {\Big(\dfrac{1+\sqrt 5}2 \Big)^n - \Big(\dfrac{1-\sqrt 5}2 \Big)^n}\]</p>
 <p>&nbsp;</p>
 <p>Now look at the second terms in the numerator and denominator.</p>
 <p>Since</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=-1%3C+%5Cdfrac%7B1-%5Csqrt+5%7D2+%3C+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-1&lt; &#92;dfrac{1-&#92;sqrt 5}2 &lt; 1" title="-1&lt; &#92;dfrac{1-&#92;sqrt 5}2 &lt; 1" class="latex" />,</p>
+<p>\(-1&lt; \dfrac{1-\sqrt 5}2 &lt; 1\),</p>
 <p>&nbsp;</p>
-<p>these terms tend to zero as <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> tends to infinity, so are insignificant in comparison with the first terms. It follows that</p>
+<p>these terms tend to zero as \(n\) tends to infinity, so are insignificant in comparison with the first terms. It follows that</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cfrac+%7BF_%7Bn%2B1%7D%7D%7BF_n%7D+%5Crightarrow+%5Cfrac%7B1%2B%5Csqrt+5%7D2+%5C+%5C+-+%5C+%5C+%5Ctextrm%7Bthe+Golden+Ratio%7D.+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac {F_{n+1}}{F_n} &#92;rightarrow &#92;frac{1+&#92;sqrt 5}2 &#92; &#92; - &#92; &#92; &#92;textrm{the Golden Ratio}. " title="&#92;frac {F_{n+1}}{F_n} &#92;rightarrow &#92;frac{1+&#92;sqrt 5}2 &#92; &#92; - &#92; &#92; &#92;textrm{the Golden Ratio}. " class="latex" /></p>
+<p>\[\frac {F_{n+1}}{F_n} \rightarrow \frac{1+\sqrt 5}2 \ \ - \ \ \textrm{the Golden Ratio}.\]</p>
 <p><a href="wp-content/uploads/2015/10/Untitled.png"><img class="aligncenter size-full wp-image-11719" src="wp-content/uploads/2015/10/Untitled.png?resize=694%2C737" alt="Untitled" srcset="wp-content/uploads/2015/10/Untitled.png?resize=282%2C300 282w, wp-content/uploads/2015/10/Untitled.png?fit=694%2C737 694w" sizes="(max-width: 694px) 100vw, 694px" data-recalc-dims="1" /></a>Check out the link between the golden spiral and the Fibonacci sequence <a href="https://en.wikipedia.org/wiki/Golden_spiral">here</a>.</p>
 <p>&#8212;&#8212;&#8212;&#8212;</p>
 <p>Originally by John Webb</p>
@@ -411,21 +412,21 @@ img.emoji {
 	
 <span>October 20th, 2015</span><span class="fusion-inline-sep">|</span><a href="cat=19.html" rel="category">English</a>, <a href="cat=40.html" rel="category">Level: intermediate</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="p=11718.html#comments">2 Comments</a></span></div><div class="fusion-alignright"><a href="p=11718.html" class="fusion-read-more">Read More</a></div></div></div><div id="post-11712" class="fusion-post-large post fusion-clearfix post-11712 type-post status-publish format-standard hentry category-english category-level-intermediate-2 category-uncategorized tag-binet tag-fibonacci">
 
-<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11712.html">Fibonacci and Binet</a></h2><div class="fusion-post-content-container"><p>The Fibonacci numbers <img src="//s0.wp.com/latex.php?latex=1%2C+%5C+1%2C+%5C+2%2C%5C+3%2C+%5C+5%2C%5C+8%2C+13%2C%5C+21%2C%5C+34%2C+%5C+55%2C%5C+89%2C%5C+144%2C+%5C+%5Ccdots&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1, &#92; 1, &#92; 2,&#92; 3, &#92; 5,&#92; 8, 13,&#92; 21,&#92; 34, &#92; 55,&#92; 89,&#92; 144, &#92; &#92;cdots" title="1, &#92; 1, &#92; 2,&#92; 3, &#92; 5,&#92; 8, 13,&#92; 21,&#92; 34, &#92; 55,&#92; 89,&#92; 144, &#92; &#92;cdots" class="latex" /></p>
+<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11712.html">Fibonacci and Binet</a></h2><div class="fusion-post-content-container"><p>The Fibonacci numbers \(1, \ 1, \ 2,\ 3, \ 5,\ 8, 13,\ 21,\ 34, \ 55,\ 89,\ 144, \ \cdots\)</p>
 <p>are defined by a recurrence relation</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=F_1+%3D+F_2+%3D+1%2C+%5C+F_%7Bn%2B2%7D+%3D+F_%7Bn%2B1%7D+%2B+F_n+%5C+%5Ctextrm%7B+for+%7D+n+%5Cge+1.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_1 = F_2 = 1, &#92; F_{n+2} = F_{n+1} + F_n &#92; &#92;textrm{ for } n &#92;ge 1." title="F_1 = F_2 = 1, &#92; F_{n+2} = F_{n+1} + F_n &#92; &#92;textrm{ for } n &#92;ge 1." class="latex" /></p>
+<p>\[F_1 = F_2 = 1, \ F_{n+2} = F_{n+1} + F_n \ \textrm{ for } n \ge 1.\]</p>
 <p>&nbsp;</p>
-<p>This definition allows one to find any Fibonacci number, but for large values of <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> it would be time-consuming to compute <img src="//s0.wp.com/latex.php?latex=F_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_n" title="F_n" class="latex" /> this way. Worse, any error of calculating a term would be repeated and magnified in every subsequent term. So a natural question to ask is whether there is a simple formula, in terms of <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" />, which enables one to calculate <img src="//s0.wp.com/latex.php?latex=F_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_n" title="F_n" class="latex" /> without having to find all the earlier Fibonacci numbers.</p>
+<p>This definition allows one to find any Fibonacci number, but for large values of \(n\) it would be time-consuming to compute \(F_n\) this way. Worse, any error of calculating a term would be repeated and magnified in every subsequent term. So a natural question to ask is whether there is a simple formula, in terms of \(n\), which enables one to calculate \(F_n\) without having to find all the earlier Fibonacci numbers.</p>
 <p>In 1843 the French mathematician Jacques Philippe Marie Binet announced that he had found a Fibonacci Formula. Although it was later revealed that other mathematicians, including Leonhard Euler and Abraham de Moivre, had worked out the same formula a hundred years earlier, the formula is today still labelled <em>Binet&#8217;s Formula</em>.</p>
-<p>Deriving the Binet&#8217;s formula starts with a simple little quadratic equation <img src="//s0.wp.com/latex.php?latex=x%5E2+%3D+x+%2B+1.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2 = x + 1." title="x^2 = x + 1." class="latex" /></p>
+<p>Deriving the Binet&#8217;s formula starts with a simple little quadratic equation \(x^2 = x + 1.\)</p>
 <p>&nbsp;</p>
-<p>Multiplying the equation by successive powers of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />, and simplifying at each step, gives</p>
+<p>Multiplying the equation by successive powers of \(x\), and simplifying at each step, gives</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=x%5E3+%3D+x%28x%5E2%29+%3D+x%28x%2B1%29+%3D+x%5E2+%2B+x+%3D+%28x%2B1%29+%2B+x+%3D+2x+%2B+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^3 = x(x^2) = x(x+1) = x^2 + x = (x+1) + x = 2x + 1" title="x^3 = x(x^2) = x(x+1) = x^2 + x = (x+1) + x = 2x + 1" class="latex" /></p>
-<p><img src="//s0.wp.com/latex.php?latex=x%5E4+%3D+x%28x%5E3%29+%3D+x%282x%2B1%29+%3D+2x%5E2+%2B+x+%3D+2%28x%2B1%29+%2B+x+%3D+3x%2B2+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^4 = x(x^3) = x(2x+1) = 2x^2 + x = 2(x+1) + x = 3x+2 " title="x^4 = x(x^3) = x(2x+1) = 2x^2 + x = 2(x+1) + x = 3x+2 " class="latex" /></p>
-<p><img src="//s0.wp.com/latex.php?latex=x%5E5+%3D+x%28x%5E4%29+%3D+x%283x%2B2%29+%3D+3x%5E2+%2B+2x+%3D+3%28x%2B1%29+%2B+2x+%3D+5x+%2B+3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^5 = x(x^4) = x(3x+2) = 3x^2 + 2x = 3(x+1) + 2x = 5x + 3" title="x^5 = x(x^4) = x(3x+2) = 3x^2 + 2x = 3(x+1) + 2x = 5x + 3" class="latex" /></p>
-<p><img src="//s0.wp.com/latex.php?latex=x%5E6+%3D+x%28x%5E5%29+%3D+x%285x%2B3%29+%3D+5x%5E2+%2B+3x+%3D+5%28x%2B1%29+%2B+3x+%3D+8x+%2B+5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^6 = x(x^5) = x(5x+3) = 5x^2 + 3x = 5(x+1) + 3x = 8x + 5" title="x^6 = x(x^5) = x(5x+3) = 5x^2 + 3x = 5(x+1) + 3x = 8x + 5" class="latex" /></p>
+<p>\[x^3 = x(x^2) = x(x+1) = x^2 + x = (x+1) + x = 2x + 1\]</p>
+<p>\[x^4 = x(x^3) = x(2x+1) = 2x^2 + x = 2(x+1) + x = 3x+2\]</p>
+<p>\[x^5 = x(x^4) = x(3x+2) = 3x^2 + 2x = 3(x+1) + 2x = 5x + 3\]</p>
+<p>\[x^6 = x(x^5) = x(5x+3) = 5x^2 + 3x = 5(x+1) + 3x = 8x + 5\]</p>
 <p>&nbsp;</p>
 <p>and so on.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
@@ -435,7 +436,7 @@ img.emoji {
 	
 <span>October 19th, 2015</span><span class="fusion-inline-sep">|</span><a href="cat=19.html" rel="category">English</a>, <a href="cat=40.html" rel="category">Level: intermediate</a>, <a href="cat=1.html" rel="category">Uncategorized</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="p=11712.html#comments">2 Comments</a></span></div><div class="fusion-alignright"><a href="p=11712.html" class="fusion-read-more">Read More</a></div></div></div><div id="post-11706" class="fusion-post-large post fusion-clearfix post-11706 type-post status-publish format-standard hentry category-english category-level-intermediate-2 tag-fibonacci tag-induction">
 
-<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11706.html">Fibonacci and induction</a></h2><div class="fusion-post-content-container"><p>The Fibonacci numbers <img src="//s0.wp.com/latex.php?latex=F_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_n" title="F_n" class="latex" /> are defined by: <img src="//s0.wp.com/latex.php?latex=F_1+%3D+F_2+%3D+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_1 = F_2 = 1" title="F_1 = F_2 = 1" class="latex" />, <img src="//s0.wp.com/latex.php?latex=F_%7Bn%2B2%7D+%3D+F_%7Bn%2B1%7D+%2B+F_n+%5Ctextrm%7B+for+%7D+n%5Cge+1.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{n+2} = F_{n+1} + F_n &#92;textrm{ for } n&#92;ge 1." title="F_{n+2} = F_{n+1} + F_n &#92;textrm{ for } n&#92;ge 1." class="latex" /></p>
+<div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11706.html">Fibonacci and induction</a></h2><div class="fusion-post-content-container"><p>The Fibonacci numbers \(F_n\) are defined by: \(F_1 = F_2 = 1\), \(F_{n+2} = F_{n+1} + F_n \textrm{ for } n\ge 1.\)</p>
 <p>&nbsp;</p>
 <p>The numbers are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, &#8230;</p>
 <p>&nbsp;</p>
@@ -447,21 +448,21 @@ img.emoji {
 <p>&nbsp;</p>
 <p><strong>Proof</strong></p>
 <p>&nbsp;</p>
-<p>We note first that <img src="//s0.wp.com/latex.php?latex=F_5+%3D+5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_5 = 5" title="F_5 = 5" class="latex" /> is certainly divisible by 5, as are <img src="//s0.wp.com/latex.php?latex=F_%7B10%7D+%3D+55&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{10} = 55" title="F_{10} = 55" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=F_%7B15%7D+%3D+610.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{15} = 610." title="F_{15} = 610." class="latex" /> How can we be sure that the pattern continues?</p>
+<p>We note first that \(F_5 = 5\) is certainly divisible by 5, as are \(F_{10} = 55\) and \(F_{15} = 610.\) How can we be sure that the pattern continues?</p>
 <p>&nbsp;</p>
-<p>We shall show that: IF the statement &#8220;<img src="//s0.wp.com/latex.php?latex=F_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_n" title="F_n" class="latex" /> is divisible by 5&#8243; is true for some natural number <img src="//s0.wp.com/latex.php?latex=m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="m" title="m" class="latex" />, THEN the statement is also true for the natural number <img src="//s0.wp.com/latex.php?latex=m%2B5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="m+5" title="m+5" class="latex" />.</p>
+<p>We shall show that: IF the statement &#8220;\(F_n\) is divisible by 5&#8243; is true for some natural number \(m\), THEN the statement is also true for the natural number \(m+5\).</p>
 <p>&nbsp;</p>
 <p>Now</p>
 <p>&nbsp;</p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=F_%7Bm%2B5%7D+%3D+F_%7Bm%2B4%7D+%2B+F_%7Bm%2B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{m+5} = F_{m+4} + F_{m+3}" title="F_{m+5} = F_{m+4} + F_{m+3}" class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+%28F_%7Bm%2B3%7D+%2B+F_%7Bm%2B2%7D%29+%2B+F_%7Bm%2B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= (F_{m+3} + F_{m+2}) + F_{m+3}" title="= (F_{m+3} + F_{m+2}) + F_{m+3}" class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+2F_%7Bm%2B3%7D+%2B+F_%7Bm%2B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 2F_{m+3} + F_{m+2}" title="= 2F_{m+3} + F_{m+2}" class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+2%28F_%7Bm%2B2%7D+%2B+F_%7Bm%2B1%7D%29+%2B+%28F_%7Bm%2B1%7D+%2B+F_m%29+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 2(F_{m+2} + F_{m+1}) + (F_{m+1} + F_m) " title="= 2(F_{m+2} + F_{m+1}) + (F_{m+1} + F_m) " class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+2F_%7Bm%2B2%7D+%2B+3F_%7Bm%2B1%7D+%2B+F_m+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 2F_{m+2} + 3F_{m+1} + F_m " title="= 2F_{m+2} + 3F_{m+1} + F_m " class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+2%28F_%7Bm%2B1%7D+%2B+F_m%29+%2B3F_%7Bm%2B1%7D+%2B+F_m+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 2(F_{m+1} + F_m) +3F_{m+1} + F_m " title="= 2(F_{m+1} + F_m) +3F_{m+1} + F_m " class="latex" /></p>
-<p style="text-align: left;"><img src="//s0.wp.com/latex.php?latex=%3D+5F_%7Bm%2B1%7D+%2B+3F_m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="= 5F_{m+1} + 3F_m" title="= 5F_{m+1} + 3F_m" class="latex" />.</p>
+<p style="text-align: left;">\[F_{m+5} = F_{m+4} + F_{m+3}\]</p>
+<p style="text-align: left;">\[= (F_{m+3} + F_{m+2}) + F_{m+3}\]</p>
+<p style="text-align: left;">\[= 2F_{m+3} + F_{m+2}\]</p>
+<p style="text-align: left;">\[= 2(F_{m+2} + F_{m+1}) + (F_{m+1} + F_m)\]</p>
+<p style="text-align: left;">\[= 2F_{m+2} + 3F_{m+1} + F_m\]</p>
+<p style="text-align: left;">\[= 2(F_{m+1} + F_m) +3F_{m+1} + F_m\]</p>
+<p style="text-align: left;">\(= 5F_{m+1} + 3F_m\).</p>
 <p>&nbsp;</p>
-<p>Since we know that <img src="//s0.wp.com/latex.php?latex=F_m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_m" title="F_m" class="latex" /> is divisible by 5, it is now clear that <img src="//s0.wp.com/latex.php?latex=F_%7Bm%2B5%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F_{m+5}" title="F_{m+5}" class="latex" /> is also divisible by 5.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>Since we know that \(F_m\) is divisible by 5, it is now clear that \(F_{m+5}\) is also divisible by 5.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -512,19 +513,19 @@ img.emoji {
 	</div>
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11688.html">How Pringles are made (or alternatively hyperbolic paraboloids)</a></h2><div class="fusion-post-content-container"><p>We are currently looking at functions of 2 variables and their graphs. Today we looked at cross-sections through a couple of different surfaces to try and figure out what they looked like in three dimensions. We did this by looking at slices in different directions and then worked out how they all fitted together. In the following animation I have taken horizontal slices of the function:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=f%28x%2Cy%29%3Dx%5E2-y%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x,y)=x^2-y^2" title="f(x,y)=x^2-y^2" class="latex" /></p>
+<p style="text-align: center;">\[f(x,y)=x^2-y^2\]</p>
 <p>&nbsp;</p>
-<p>Remember the graph of this is the set of points <img src="//s0.wp.com/latex.php?latex=%5C%7B%28x%2Cy%2Cz%29%5Cin%7B%5Cmathbb+R%7D%5E3%7Cz%3Df%28x%2Cy%29+and+%28x%2Cy%29%5Cin+D%5C%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;{(x,y,z)&#92;in{&#92;mathbb R}^3|z=f(x,y) and (x,y)&#92;in D&#92;}" title="&#92;{(x,y,z)&#92;in{&#92;mathbb R}^3|z=f(x,y) and (x,y)&#92;in D&#92;}" class="latex" /></p>
+<p>Remember the graph of this is the set of points \(\{(x,y,z)\in{\mathbb R}^3|z=f(x,y) and (x,y)\in D\}\)</p>
 <p>&nbsp;</p>
 <p>We can take horizontal slices of the surface by fixing the z-value and seeing how x and y are constrained. For instance, let&#8217;s fix the z-value to 0. Then we have:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=0%3Dx%5E2-y%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="0=x^2-y^2" title="0=x^2-y^2" class="latex" /></p>
+<p style="text-align: center;">\[0=x^2-y^2\]</p>
 <p>&nbsp;</p>
-<p>This actually gives us two functions in the <img src="//s0.wp.com/latex.php?latex=xy&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="xy" title="xy" class="latex" />-plane: <img src="//s0.wp.com/latex.php?latex=y%3D%5Cpm+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y=&#92;pm x" title="y=&#92;pm x" class="latex" />. This of course is just given by two lines of gradient +1 and -1 which pass through the origin in the <img src="//s0.wp.com/latex.php?latex=xy&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="xy" title="xy" class="latex" />-plane. In three dimensions then, if we slice through our surface at <img src="//s0.wp.com/latex.php?latex=z%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z=0" title="z=0" class="latex" /> we should find these two lines which look like:</p>
+<p>This actually gives us two functions in the \(xy\)-plane: \(y=\pm x\). This of course is just given by two lines of gradient +1 and -1 which pass through the origin in the \(xy\)-plane. In three dimensions then, if we slice through our surface at \(z=0\) we should find these two lines which look like:</p>
 <p>&nbsp;</p>
 <p><img class="aligncenter size-full wp-image-11691" src="wp-content/uploads/2015/10/p0.png?resize=750%2C485" alt="p0" srcset="wp-content/uploads/2015/10/p0.png?resize=300%2C194 300w, wp-content/uploads/2015/10/p0.png?fit=750%2C485 750w" sizes="(max-width: 750px) 100vw, 750px" data-recalc-dims="1" /></p>
 <p>&nbsp;</p>
-<p>How about at <img src="//s0.wp.com/latex.php?latex=z%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z=1" title="z=1" class="latex" />?&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>How about at \(z=1\)?&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">

@@ -34,7 +34,7 @@
 
 		<meta property="og:title" content="PDE: Physics, Math and Common Sense. Part I: Conservation Law"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=14586.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=14586.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="Source: CFDIinside blog
 
@@ -44,7 +44,7 @@ The course of Partial differential equations (PDEs) usually is a tough one. Ther
 
 	PDE course combines the knowledge from calculus, algebra, ordinary differential equations (ODEs), complex analysis and functional analysis."/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -92,7 +92,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=14586.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=14586.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-3Ng' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D14586.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D14586&.html#038;format=xml" />
@@ -179,7 +179,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-14586 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -266,66 +267,46 @@ Source: <a href="http://cfdinside.blogspot.co.za/2015/12/the-what-question-of-cf
 <p><span id="more-14586"></span></p>
 <p><strong>TO PDE OR NOT TO PDE: THE ORIGIN OF PDES</strong></p>
 <p>The reader may recall that development of the ODEs field was prompted by the need to solve mechanical problems. Newton&#8217;s second law lands itself quite naturally to the initial value problem for an ODE:</p>
-<p align="right">
-<img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+m%5Cddot%7Bx%7D+%3D+F%28x%2C%5Cdot%7Bx%7D%29%2C%5Cquad+x%280%29%3Dx_0%2C%5Cquad+%5Cdot%7Bx%7D%280%29%3Dv_0%2C%5Chfill.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle m&#92;ddot{x} = F(x,&#92;dot{x}),&#92;quad x(0)=x_0,&#92;quad &#92;dot{x}(0)=v_0,&#92;hfill." title="&#92;displaystyle m&#92;ddot{x} = F(x,&#92;dot{x}),&#92;quad x(0)=x_0,&#92;quad &#92;dot{x}(0)=v_0,&#92;hfill." class="latex" />
-</p>
+<p align="right">\[\displaystyle m\ddot{x} = F(x,\dot{x}),\quad x(0)=x_0,\quad \dot{x}(0)=v_0,.\]</p>
 <p>where the dot means the derivative with respect to time.</p>
 <p align="center">
 <a href="wp-content/uploads/2018/05/force-on-particle.png" rel="attachment wp-att-14600"><img src="wp-content/uploads/2018/05/force-on-particle.png?resize=300%2C74" alt="force-on-particle" class="alignnone size-medium wp-image-14600" srcset="wp-content/uploads/2018/05/force-on-particle.png?resize=200%2C49 200w, wp-content/uploads/2018/05/force-on-particle.png?resize=300%2C74 300w, wp-content/uploads/2018/05/force-on-particle.png?resize=400%2C98 400w, wp-content/uploads/2018/05/force-on-particle.png?resize=600%2C147 600w, wp-content/uploads/2018/05/force-on-particle.png?resize=768%2C188 768w, wp-content/uploads/2018/05/force-on-particle.png?resize=800%2C196 800w, wp-content/uploads/2018/05/force-on-particle.png?resize=1024%2C251 1024w, wp-content/uploads/2018/05/force-on-particle.png?resize=1200%2C294 1200w, wp-content/uploads/2018/05/force-on-particle.png?fit=1901%2C466 1901w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a>
 </p>
 <p>Newton&#8217;s second law has slightly more generalized form known as <em>conservation of momentum</em>: the momentum of the closed system is conserved. So, in the Newton&#8217;s law on the left hand side (LHS) we see the rate of change of the momentum, which in the closed system is supposed to be zero, and on the right hand side (RHS) is an external force. There are a few physical quantities that are known to be conserved: mass, energy and momentum. A peculiar one is entropy: it actually grows in the closed system, but this is another story. For our further discussion, momentum is not an intuitive quantity to work with. Energy offers an easier alternative since most of the time by &#8220;energy&#8221; we would mean &#8220;internal energy&#8221; which is almost always is interchangeable with &#8220;temperature&#8221;, and &#8220;temperature&#8221; is something that is quite easy to feel.</p>
-<p>Conservation of energy <img src="//s0.wp.com/latex.php?latex=E&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="E" title="E" class="latex" /> of a point can be expressed as</p>
-<p align="right">
-<img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cdot%7BE%7D%3D0%5Chfill.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle &#92;dot{E}=0&#92;hfill." title="&#92;displaystyle &#92;dot{E}=0&#92;hfill." class="latex" />
-</p>
+<p>Conservation of energy \(E\) of a point can be expressed as</p>
+<p align="right">\[\displaystyle \dot{E}=0.\]</p>
 <p>unless there are some external sources. The above equation is written for one point only. Its extension for multiple points is trivial:</p>
-<p align="right">
-<img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cdot%7BE%7D_i%3D0%2C%5Cquad+i%3D1%2C%5Cdots%2CN%5Chfill.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle &#92;dot{E}_i=0,&#92;quad i=1,&#92;dots,N&#92;hfill." title="&#92;displaystyle &#92;dot{E}_i=0,&#92;quad i=1,&#92;dots,N&#92;hfill." class="latex" />
-</p>
-<p>Yet another extension is to allow for the <em>continuum</em> of points. In this case the conservation holds for some aggregation of particles. Let <img src="//s0.wp.com/latex.php?latex=u%5E%2A%28t%2C%5Cxi%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u^*(t,&#92;xi)" title="u^*(t,&#92;xi)" class="latex" /> be energy density of a continuous medium with continuous parameter <img src="//s0.wp.com/latex.php?latex=%5Cxi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;xi" title="&#92;xi" class="latex" /> somehow identifying individual particles. For example, <img src="//s0.wp.com/latex.php?latex=%5Cxi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;xi" title="&#92;xi" class="latex" /> can denote the initial position of an individual particle.</p>
+<p align="right">\[\displaystyle \dot{E}_i=0,\quad i=1,\dots,N.\]</p>
+<p>Yet another extension is to allow for the <em>continuum</em> of points. In this case the conservation holds for some aggregation of particles. Let \(u^*(t,\xi)\) be energy density of a continuous medium with continuous parameter \(\xi\) somehow identifying individual particles. For example, \(\xi\) can denote the initial position of an individual particle.</p>
 <p align="center">
 <a href="wp-content/uploads/2018/05/continuum-moving.png" rel="attachment wp-att-14601"><img src="wp-content/uploads/2018/05/continuum-moving.png?resize=297%2C300" alt="continuum-moving" class="alignnone size-medium wp-image-14601" srcset="wp-content/uploads/2018/05/continuum-moving.png?resize=200%2C202 200w, wp-content/uploads/2018/05/continuum-moving.png?resize=297%2C300 297w, wp-content/uploads/2018/05/continuum-moving.png?resize=600%2C605 600w, wp-content/uploads/2018/05/continuum-moving.png?fit=698%2C704 698w" sizes="(max-width: 297px) 100vw, 297px" data-recalc-dims="1" /></a>
 </p>
-<p>Conservation of energy for the same aggregation of particles of mass <img src="//s0.wp.com/latex.php?latex=M&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="M" title="M" class="latex" /> is expressed as</p>
-<p align="right">
-<img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cfrac%7Bd%7D%7Bdt%7D%5Cint_M+u%5E%2A%5C%2Cdm+%3D+%5Cint_M+%5Cdot%7Bu%7D%5E%2A%5C%2Cdm+%3D+%5Cint_V%5Crho%5Cdot%7Bu%7D%5E%2A%5C%2CdV+%3D+0%2C%5Chfill.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle &#92;frac{d}{dt}&#92;int_M u^*&#92;,dm = &#92;int_M &#92;dot{u}^*&#92;,dm = &#92;int_V&#92;rho&#92;dot{u}^*&#92;,dV = 0,&#92;hfill." title="&#92;displaystyle &#92;frac{d}{dt}&#92;int_M u^*&#92;,dm = &#92;int_M &#92;dot{u}^*&#92;,dm = &#92;int_V&#92;rho&#92;dot{u}^*&#92;,dV = 0,&#92;hfill." class="latex" />
-</p>
-<p>where <img src="//s0.wp.com/latex.php?latex=%5Crho&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;rho" title="&#92;rho" class="latex" /> is mass density. Since this equation must hold for any particle aggregation, it follows that</p>
-<p align="right">
-<img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cdot%7Bu%7D%5E%2A%28t%2C%5Cxi%29+%3D+%5Cleft%28%5Cfrac%7Bdu%5E%2A%7D%7Bdt%7D%5Cright%29_%7B%5Cxi%7D+%3D+0.%5Chfill%281%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle &#92;dot{u}^*(t,&#92;xi) = &#92;left(&#92;frac{du^*}{dt}&#92;right)_{&#92;xi} = 0.&#92;hfill(1)" title="&#92;displaystyle &#92;dot{u}^*(t,&#92;xi) = &#92;left(&#92;frac{du^*}{dt}&#92;right)_{&#92;xi} = 0.&#92;hfill(1)" class="latex" />
-</p>
-<p>The derivative is understood as taken with respect to time with constant <img src="//s0.wp.com/latex.php?latex=%5Cxi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;xi" title="&#92;xi" class="latex" />. This derivative is known as full or individual and it is customary to use full derivative symbol for it. Here and later the star is used to denote the function that tracks an individual physical particle, this is so called <em>Lagrangian view</em>.</p>
+<p>Conservation of energy for the same aggregation of particles of mass \(M\) is expressed as</p>
+<p align="right">\[\displaystyle \frac{d}{dt}\int_M u^*\,dm = \int_M \dot{u}^*\,dm = \int_V\rho\dot{u}^*\,dV = 0,.\]</p>
+<p>where \(\rho\) is mass density. Since this equation must hold for any particle aggregation, it follows that</p>
+<p align="right">\[\displaystyle \dot{u}^*(t,\xi) = \left(\frac{du^*}{dt}\right)_{\xi} = 0.\qquad(1)\]</p>
+<p>The derivative is understood as taken with respect to time with constant \(\xi\). This derivative is known as full or individual and it is customary to use full derivative symbol for it. Here and later the star is used to denote the function that tracks an individual physical particle, this is so called <em>Lagrangian view</em>.</p>
 <p>Lagrangian view, however, is not convenient in practice. Consider, for example, a river or a canal. We are far more likely to be interested in, say, temperature of water <em>in a particular place</em>. But there are multiple particles passing through the place, bringing different energies and, thus, temperatures with them. What we want is called <em>Eulerian view</em>. There is a way to write down the conservation equation directly in Eulerian form, but it is instructive to see how we can transform Lagrangian form into Eulerian.</p>
-<p>Let <img src="//s0.wp.com/latex.php?latex=x%5E%2A%28t%2C%5Cxi%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^*(t,&#92;xi)" title="x^*(t,&#92;xi)" class="latex" /> be the trajectories of particles (remember, there is the whole continuum of them) with the parameter <img src="//s0.wp.com/latex.php?latex=%5Cxi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;xi" title="&#92;xi" class="latex" /> being the initial position of a particle, <img src="//s0.wp.com/latex.php?latex=x%5E%2A%280%2C%5Cxi%29%3D%5Cxi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^*(0,&#92;xi)=&#92;xi" title="x^*(0,&#92;xi)=&#92;xi" class="latex" />. Let&#8217;s assume for a moment that particles do not collide. Mathematically it means that the trajectories can be inverted to find initial particle position <img src="//s0.wp.com/latex.php?latex=%5Cxi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;xi" title="&#92;xi" class="latex" /> that happen to be found at time <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" /> in the position <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />,</p>
-<p align="right">
-<img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cxi%3D%5Cxi%5E%2A%28t%2Cx%29.%5Chfill%282%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle &#92;xi=&#92;xi^*(t,x).&#92;hfill(2)" title="&#92;displaystyle &#92;xi=&#92;xi^*(t,x).&#92;hfill(2)" class="latex" />
-</p>
-<p>We will leave the case of colliding trajectories for a moment, but we shall see later that there are physical processes that have this kind of behavior. Let&#8217;s substitute the above expression to the energy density function, <img src="//s0.wp.com/latex.php?latex=u%28t%2Cx%29+%3D+u%5E%2A%5Cleft%28t%2C%5Cxi%5E%2A%28t%2Cx%29%5Cright%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u(t,x) = u^*&#92;left(t,&#92;xi^*(t,x)&#92;right)" title="u(t,x) = u^*&#92;left(t,&#92;xi^*(t,x)&#92;right)" class="latex" />. The question becomes <em>how to express the energy conservation law in terms of function <img src="//s0.wp.com/latex.php?latex=u%28t%2Cx%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u(t,x)" title="u(t,x)" class="latex" /> </em>.</p>
-<p>If function <img src="//s0.wp.com/latex.php?latex=u%28t%2Cx%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u(t,x)" title="u(t,x)" class="latex" /> describes the energy density at space point <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> and time <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" />, substitution of the trajectory <img src="//s0.wp.com/latex.php?latex=x%5E%2A%28t%2C%5Cxi%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^*(t,&#92;xi)" title="x^*(t,&#92;xi)" class="latex" /> in place of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> would result in the energy density of the particle <img src="//s0.wp.com/latex.php?latex=%5Cxi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;xi" title="&#92;xi" class="latex" />, i.e.</p>
-<p align="right">
-<img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+u%5Cleft%28t%2Cx%5E%2A%28t%2C%5Cxi%29%5Cright%29+%3D+u%5E%2A%28t%2C%5Cxi%29%5Chfill.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle u&#92;left(t,x^*(t,&#92;xi)&#92;right) = u^*(t,&#92;xi)&#92;hfill." title="&#92;displaystyle u&#92;left(t,x^*(t,&#92;xi)&#92;right) = u^*(t,&#92;xi)&#92;hfill." class="latex" />
-</p>
+<p>Let \(x^*(t,\xi)\) be the trajectories of particles (remember, there is the whole continuum of them) with the parameter \(\xi\) being the initial position of a particle, \(x^*(0,\xi)=\xi\). Let&#8217;s assume for a moment that particles do not collide. Mathematically it means that the trajectories can be inverted to find initial particle position \(\xi\) that happen to be found at time \(t\) in the position \(x\),</p>
+<p align="right">\[\displaystyle \xi=\xi^*(t,x).\qquad(2)\]</p>
+<p>We will leave the case of colliding trajectories for a moment, but we shall see later that there are physical processes that have this kind of behavior. Let&#8217;s substitute the above expression to the energy density function, \(u(t,x) = u^*\left(t,\xi^*(t,x)\right)\). The question becomes <em>how to express the energy conservation law in terms of function \(u(t,x)\) </em>.</p>
+<p>If function \(u(t,x)\) describes the energy density at space point \(x\) and time \(t\), substitution of the trajectory \(x^*(t,\xi)\) in place of \(x\) would result in the energy density of the particle \(\xi\), i.e.</p>
+<p align="right">\[\displaystyle u\left(t,x^*(t,\xi)\right) = u^*(t,\xi).\]</p>
 <p>and for this function the conservation law is given by equation&nbsp;(1)</p>
-<p align="right">
-<img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cdot%7Bu%7D%5E%2A%28t%2C%5Cxi%29+%3D+%5Cpartial_t+u+%2B+%5Cpartial_x+u%5C%2C+%5Cdot%7Bx%7D%5E%2A+%3D+0.%5Chfill.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle &#92;dot{u}^*(t,&#92;xi) = &#92;partial_t u + &#92;partial_x u&#92;, &#92;dot{x}^* = 0.&#92;hfill." title="&#92;displaystyle &#92;dot{u}^*(t,&#92;xi) = &#92;partial_t u + &#92;partial_x u&#92;, &#92;dot{x}^* = 0.&#92;hfill." class="latex" />
-</p>
-<p>The expression <img src="//s0.wp.com/latex.php?latex=%5Cdot%7Bx%7D%5E%2A&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;dot{x}^*" title="&#92;dot{x}^*" class="latex" /> denotes the velocity of the particle <img src="//s0.wp.com/latex.php?latex=%5Cxi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;xi" title="&#92;xi" class="latex" />, <img src="//s0.wp.com/latex.php?latex=v%5E%2A%28t%2C%5Cxi%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="v^*(t,&#92;xi)" title="v^*(t,&#92;xi)" class="latex" />. Using the inverse of trajectories&nbsp;(2), it can be transformed into Eulerian velocity field</p>
-<p align="right">
-<img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+v%28t%2Cx%29+%3D+v%5E%2A%5Cleft%28t%2C%5Cxi%5E%2A%28t%2Cx%29%5Cright%29.%5Chfill.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle v(t,x) = v^*&#92;left(t,&#92;xi^*(t,x)&#92;right).&#92;hfill." title="&#92;displaystyle v(t,x) = v^*&#92;left(t,&#92;xi^*(t,x)&#92;right).&#92;hfill." class="latex" />
-</p>
+<p align="right">\[\displaystyle \dot{u}^*(t,\xi) = \partial_t u + \partial_x u\, \dot{x}^* = 0..\]</p>
+<p>The expression \(\dot{x}^*\) denotes the velocity of the particle \(\xi\), \(v^*(t,\xi)\). Using the inverse of trajectories&nbsp;(2), it can be transformed into Eulerian velocity field</p>
+<p align="right">\[\displaystyle v(t,x) = v^*\left(t,\xi^*(t,x)\right)..\]</p>
 <p>This produces, finally, <em>conservation law in Eulerian coordinates</em>:</p>
-<p align="right">
-<img src="//s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cpartial_t+u+%2B+v%5C%2C+%5Cpartial_x+u+%3D+0.+%5Chfill%283%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;displaystyle &#92;partial_t u + v&#92;, &#92;partial_x u = 0. &#92;hfill(3)" title="&#92;displaystyle &#92;partial_t u + v&#92;, &#92;partial_x u = 0. &#92;hfill(3)" class="latex" />
-</p>
+<p align="right">\[\displaystyle \partial_t u + v\, \partial_x u = 0. \qquad(3)\]</p>
 <p>While you catching your breath, let&#8217;s note a few things about this equation:</p>
 <ul>
-<li>In place of <img src="//s0.wp.com/latex.php?latex=u&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u" title="u" class="latex" /> can be any <em>intensive</em> thermodynamic quantity: momentum density, angular momentum density or even the density of entropy, except the source term must be added to RHS. However, the above procedure will not work for mass density! The problem is that conservation of mass in Lagrangian view has a non-trivial form and it is easier to derive it in Eulerian coordinates straight away.</li>
-<li>The equation for the conservation of mass has a slightly different form: <img src="//s0.wp.com/latex.php?latex=%5Cpartial_t+%5Crho+%2B+%5Cpartial_x%28v%5Crho%29+%3D+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;partial_t &#92;rho + &#92;partial_x(v&#92;rho) = 0" title="&#92;partial_t &#92;rho + &#92;partial_x(v&#92;rho) = 0" class="latex" />. A more universal equation is <img src="//s0.wp.com/latex.php?latex=%5Cpartial_t%28%5Crho+u%29+%2B+%5Cpartial_x%28v%5Crho+u%29+%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;partial_t(&#92;rho u) + &#92;partial_x(v&#92;rho u) =0" title="&#92;partial_t(&#92;rho u) + &#92;partial_x(v&#92;rho u) =0" class="latex" /> which is valid for <img src="//s0.wp.com/latex.php?latex=u%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u=1" title="u=1" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=u&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u" title="u" class="latex" /> being an energy or momentum density.
+<li>In place of \(u\) can be any <em>intensive</em> thermodynamic quantity: momentum density, angular momentum density or even the density of entropy, except the source term must be added to RHS. However, the above procedure will not work for mass density! The problem is that conservation of mass in Lagrangian view has a non-trivial form and it is easier to derive it in Eulerian coordinates straight away.</li>
+<li>The equation for the conservation of mass has a slightly different form: \(\partial_t \rho + \partial_x(v\rho) = 0\). A more universal equation is \(\partial_t(\rho u) + \partial_x(v\rho u) =0\) which is valid for \(u=1\) and \(u\) being an energy or momentum density.
 <li>If there are energy sources or sinks, a function expressing them is added to RHS of equation&nbsp;(3). For example, there can be chemical reactions taking place in the medium, heating it up.</li>
 <li>In more general case, the transfer of energy may occur by other means, not only convection. For example, via heat conduction. This case is taken care by introducing a special case source/sink term to RHS.</li>
-<li>Continuity equation is trivially generalized to multidimensional form: <img src="//s0.wp.com/latex.php?latex=%5Cpartial_t+u+%2B+v%5Ccdot%5Cnabla+u%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;partial_t u + v&#92;cdot&#92;nabla u=0" title="&#92;partial_t u + v&#92;cdot&#92;nabla u=0" class="latex" />.</li>
+<li>Continuity equation is trivially generalized to multidimensional form: \(\partial_t u + v\cdot\nabla u=0\).</li>
 <li>Finally, for simplicity we will equate energy density and temperature. This is always can be done if the mechanical energy is negligible and heat capacity is constant.</li>
-<li>If the medium density <img src="//s0.wp.com/latex.php?latex=%5Crho&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;rho" title="&#92;rho" class="latex" /> is constant: uniform and incompressible, the conservation equation equivalently is written as <img src="//s0.wp.com/latex.php?latex=%5Cpartial_t+u+%2B+%5Cpartial_x+%28vu%29+%3D+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;partial_t u + &#92;partial_x (vu) = 0" title="&#92;partial_t u + &#92;partial_x (vu) = 0" class="latex" />. It just happens that this form is more convenient when further dealing with the equation.</li>
+<li>If the medium density \(\rho\) is constant: uniform and incompressible, the conservation equation equivalently is written as \(\partial_t u + \partial_x (vu) = 0\). It just happens that this form is more convenient when further dealing with the equation.</li>
 </ul>
 <p>So, we have come up with the PDE in our attempt to describe a physical law. The kind of equation that we have so far is <em> first order linear equation</em>. By including additional effects, such as heat conduction (or diffusion for mass) or chemical reactions, we can transform this equation to second order and make it quasi-linear or even non-linear. However, let&#8217;s pause on the first-order equations as they are quite interesting. One of their most interesting and bizarre property is the propagation of discontinuities. And this will be the focus of the next post.</p>
 <table class="rw-rating-table rw-ltr rw-left"><tr><td><nobr>How clear is this post?</nobr></td><td><div class="rw-left"><div class="rw-ui-container rw-class-blog-post rw-urid-145870" data-img="wp-content/uploads/2018/05/wing-flow-300x200.jpg"></div></div></td></tr></table>							</div>

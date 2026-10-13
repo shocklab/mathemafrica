@@ -34,7 +34,7 @@
 
 		<meta property="og:title" content="Automatic Differentiation"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=15808.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=15808.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="Much of this content is based on lecture slides from slides from Professor David Barber at University College London: resources relating to this can be found at: www.cs.ucl.ac.uk/staff/D.Barber/brml
 
@@ -42,7 +42,7 @@ What is Autodiff?
 
 Autodiff, or Automatic Differentiation, is a method of determining the exact derivative of a function with respect to its inputs. It is widely used in machine learning-"/>
 
-									<meta property="og:image" content="wp-content/uploads/2019/10/Comp_graph.png?fit=408%2C960"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2019/10/Comp_graph.png?fit=408%2C960"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -91,7 +91,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=15808.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=15808.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-46Y' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D15808.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D15808&.html#038;format=xml" />
@@ -178,7 +178,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-15808 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -263,9 +264,9 @@ img.emoji {
 <p><strong>What is Autodiff?</strong></p>
 <p>Autodiff, or Automatic Differentiation, is a method of determining the exact derivative of a function with respect to its inputs. It is widely used in machine learning- in this post I will give an overview of what autodiff is and why it is a useful tool.</p>
 <p>The above is not a very helpful definition, so we can compare autodiff first to <em>symbolic differentiation</em> and <em>numerical approximations </em>before going into how it works.</p>
-<p>Symbolic differentiation is what we do when we calculate derivatives when we do it by hand, i.e. given a function <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" />, we find a new function <img src="//s0.wp.com/latex.php?latex=f%27&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f&#039;" title="f&#039;" class="latex" />. This is really good when we want to know how functions behave across all inputs. For example if we had <img src="//s0.wp.com/latex.php?latex=f%28x%29+%3D+x%5E2+%2B+3x+%2B+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x) = x^2 + 3x + 1" title="f(x) = x^2 + 3x + 1" class="latex" /> we can find the derivative as <img src="//s0.wp.com/latex.php?latex=f%27%28x%29+%3D+2x+%2B+3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f&#039;(x) = 2x + 3" title="f&#039;(x) = 2x + 3" class="latex" /> and then we can find the derivative of the function for all values of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />. For example, for <img src="//s0.wp.com/latex.php?latex=x%3D2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=2" title="x=2" class="latex" /> we have <img src="//s0.wp.com/latex.php?latex=f%27%28x%29+%3D+7&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f&#039;(x) = 7" title="f&#039;(x) = 7" class="latex" />.</p>
-<p>Numerical approximations can come from the definition of the derivative: normally we take the limit as <img src="//s0.wp.com/latex.php?latex=%5Cdelta+%5Crightarrow+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;delta &#92;rightarrow 0" title="&#92;delta &#92;rightarrow 0" class="latex" /> for the strict definition, for the numerical approximation we just take a small <img src="//s0.wp.com/latex.php?latex=%5Cdelta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;delta" title="&#92;delta" class="latex" /> and calculate the approximation as follows:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f%27%28x%29+%5Capprox+%5Cfrac%7Bf%28x%2B%5Cdelta%29+-+f%28x%29%7D%7B%5Cdelta%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f&#039;(x) &#92;approx &#92;frac{f(x+&#92;delta) - f(x)}{&#92;delta}" title="f&#039;(x) &#92;approx &#92;frac{f(x+&#92;delta) - f(x)}{&#92;delta}" class="latex" />,</p>
+<p>Symbolic differentiation is what we do when we calculate derivatives when we do it by hand, i.e. given a function \(f\), we find a new function \(f'\). This is really good when we want to know how functions behave across all inputs. For example if we had \(f(x) = x^2 + 3x + 1\) we can find the derivative as \(f'(x) = 2x + 3\) and then we can find the derivative of the function for all values of \(x\). For example, for \(x=2\) we have \(f'(x) = 7\).</p>
+<p>Numerical approximations can come from the definition of the derivative: normally we take the limit as \(\delta \rightarrow 0\) for the strict definition, for the numerical approximation we just take a small \(\delta\) and calculate the approximation as follows:</p>
+<p>\(f'(x) \approx \frac{f(x+\delta) - f(x)}{\delta}\),</p>
 <p>for using the same example as above with $\delta = 0.01$ we have $f'(x) \approx \frac{11.0701-11}{0.01} = 7.01$. This is pretty close!</p>
 <p>We use autodiff instead of these two options because:</p>
 <ul>
@@ -285,28 +286,28 @@ img.emoji {
 <p>&nbsp;</p>
 <p><a href="wp-content/uploads/2019/10/Comp_graph.png" rel="attachment wp-att-15948"><img class="alignnone size-medium wp-image-15948" src="wp-content/uploads/2019/10/Comp_graph.png?resize=128%2C300" alt="Comp_graph" srcset="wp-content/uploads/2019/10/Comp_graph.png?resize=128%2C300 128w, wp-content/uploads/2019/10/Comp_graph.png?fit=408%2C960 408w" sizes="(max-width: 128px) 100vw, 128px" data-recalc-dims="1" /></a></p>
 <p>The above computational tree represents a nested function, starting with three inputs, let us define the function as follows:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f_3%28f_2%28f_1%28x_1%2Cx_2%2Cx_3%29%29%29+%3D+%5Csin%28%5Ccos%28x_1+%2B+x_2%29%29%5E2+%2B+x_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f_3(f_2(f_1(x_1,x_2,x_3))) = &#92;sin(&#92;cos(x_1 + x_2))^2 + x_3" title="f_3(f_2(f_1(x_1,x_2,x_3))) = &#92;sin(&#92;cos(x_1 + x_2))^2 + x_3" class="latex" /></p>
-<p>For forward-mode autodiff: if we want to find <img src="//s0.wp.com/latex.php?latex=d_%7Bx_2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="d_{x_2}" title="d_{x_2}" class="latex" />, the derivative of <img src="//s0.wp.com/latex.php?latex=f_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f_3" title="f_3" class="latex" /> with respect to <img src="//s0.wp.com/latex.php?latex=x_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_2" title="x_2" class="latex" />, we start at <img src="//s0.wp.com/latex.php?latex=f_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f_1" title="f_1" class="latex" /> and step through the tree as follows:</p>
+<p>\[f_3(f_2(f_1(x_1,x_2,x_3))) = \sin(\cos(x_1 + x_2))^2 + x_3\]</p>
+<p>For forward-mode autodiff: if we want to find \(d_{x_2}\), the derivative of \(f_3\) with respect to \(x_2\), we start at \(f_1\) and step through the tree as follows:</p>
 <ul>
-<li><img src="//s0.wp.com/latex.php?latex=d_%7Bx_2%7D+%3D+%5Cfrac%7B%5Cpartial+f_1%7D%7B%5Cpartial+x_2%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="d_{x_2} = &#92;frac{&#92;partial f_1}{&#92;partial x_2} " title="d_{x_2} = &#92;frac{&#92;partial f_1}{&#92;partial x_2} " class="latex" /></li>
-<li><img src="//s0.wp.com/latex.php?latex=d_%7Bx_2%7D+%3D+d_%7Bx_2%7D+%5Ctimes+%5Cfrac%7B%5Cpartial+f_2%7D%7B%5Cpartial+f_1%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="d_{x_2} = d_{x_2} &#92;times &#92;frac{&#92;partial f_2}{&#92;partial f_1} " title="d_{x_2} = d_{x_2} &#92;times &#92;frac{&#92;partial f_2}{&#92;partial f_1} " class="latex" /></li>
-<li><img src="//s0.wp.com/latex.php?latex=d_%7Bx_2%7D+%3D+d_%7Bx_2%7D+%5Ctimes+%5Cfrac%7B%5Cpartial+f_3%7D%7B%5Cpartial+f_2%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="d_{x_2} = d_{x_2} &#92;times &#92;frac{&#92;partial f_3}{&#92;partial f_2} " title="d_{x_2} = d_{x_2} &#92;times &#92;frac{&#92;partial f_3}{&#92;partial f_2} " class="latex" /></li>
+<li>\(d_{x_2} = \frac{\partial f_1}{\partial x_2}\)</li>
+<li>\(d_{x_2} = d_{x_2} \times \frac{\partial f_2}{\partial f_1}\)</li>
+<li>\(d_{x_2} = d_{x_2} \times \frac{\partial f_3}{\partial f_2}\)</li>
 </ul>
-<p>and then we are done. This is clearly the same answer as given by the Chain Rule. To find the values for <img src="//s0.wp.com/latex.php?latex=x_1+%5Ctext%7B+and+%7D+x_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_1 &#92;text{ and } x_3" title="x_1 &#92;text{ and } x_3" class="latex" /> we would do the corresponding calculations for those two inputs.</p>
-<p>In the case where <img src="//s0.wp.com/latex.php?latex=x_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_2" title="x_2" class="latex" /> is an input to functions that are not nested (as shown below) we will sum the partial derivatives of the functions with respect to the input.</p>
+<p>and then we are done. This is clearly the same answer as given by the Chain Rule. To find the values for \(x_1 \text{ and } x_3\) we would do the corresponding calculations for those two inputs.</p>
+<p>In the case where \(x_2\) is an input to functions that are not nested (as shown below) we will sum the partial derivatives of the functions with respect to the input.</p>
 <p><a href="wp-content/uploads/2019/10/comp_graph_2.png" rel="attachment wp-att-15950"><img class="alignnone size-medium wp-image-15950" src="wp-content/uploads/2019/10/comp_graph_2.png?resize=177%2C300" alt="comp_graph_2" srcset="wp-content/uploads/2019/10/comp_graph_2.png?resize=177%2C300 177w, wp-content/uploads/2019/10/comp_graph_2.png?resize=200%2C339 200w, wp-content/uploads/2019/10/comp_graph_2.png?resize=400%2C678 400w, wp-content/uploads/2019/10/comp_graph_2.png?fit=402%2C681 402w" sizes="(max-width: 177px) 100vw, 177px" data-recalc-dims="1" /></a></p>
 <ul>
-<li><img src="//s0.wp.com/latex.php?latex=d_%7Bx_2%7D+%3D+%5Cfrac%7B%5Cpartial+f_1%7D%7B%5Cpartial+x_2%7D+%2B+%5Cfrac%7B%5Cpartial+f_2%7D%7B%5Cpartial+x_2%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="d_{x_2} = &#92;frac{&#92;partial f_1}{&#92;partial x_2} + &#92;frac{&#92;partial f_2}{&#92;partial x_2} " title="d_{x_2} = &#92;frac{&#92;partial f_1}{&#92;partial x_2} + &#92;frac{&#92;partial f_2}{&#92;partial x_2} " class="latex" /></li>
-<li><img src="//s0.wp.com/latex.php?latex=d_%7Bx_2%7D+%3D+%C2%A0d_%7Bx_2%7D+%5Ctimes%28+%5Cfrac%7B%5Cpartial+f_3%7D%7B%5Cpartial+f_2%7D+%2B+%5Cfrac%7B%5Cpartial+f_3%7D%7B%5Cpartial+f_1%7D+%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="d_{x_2} =  d_{x_2} &#92;times( &#92;frac{&#92;partial f_3}{&#92;partial f_2} + &#92;frac{&#92;partial f_3}{&#92;partial f_1} )" title="d_{x_2} =  d_{x_2} &#92;times( &#92;frac{&#92;partial f_3}{&#92;partial f_2} + &#92;frac{&#92;partial f_3}{&#92;partial f_1} )" class="latex" /></li>
+<li>\(d_{x_2} = \frac{\partial f_1}{\partial x_2} + \frac{\partial f_2}{\partial x_2}\)</li>
+<li>\(d_{x_2} =  d_{x_2} \times( \frac{\partial f_3}{\partial f_2} + \frac{\partial f_3}{\partial f_1} )\)</li>
 </ul>
-<p>Reverse differentiation follows the exact same process, except backwards. The reason why this is a good idea can be seen when we look at  the first computation graph. If we want the derivative of <img src="//s0.wp.com/latex.php?latex=f_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f_3" title="f_3" class="latex" /> with respect to <img src="//s0.wp.com/latex.php?latex=x_1%2C+x_2+%5Ctext%7B+and+%7D+x_3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_1, x_2 &#92;text{ and } x_3" title="x_1, x_2 &#92;text{ and } x_3" class="latex" />, starting from the top of the graph each time would result in some redundant calculations. The reason for this is that in all three cases we would need <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B%5Cpartial+f_3%7D%7B%5Cpartial+f_2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{&#92;partial f_3}{&#92;partial f_2}" title="&#92;frac{&#92;partial f_3}{&#92;partial f_2}" class="latex" /> and<em> </em><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B%5Cpartial+f_2%7D%7B%5Cpartial+f_1%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{&#92;partial f_2}{&#92;partial f_1}" title="&#92;frac{&#92;partial f_2}{&#92;partial f_1}" class="latex" />, therefore using forward mode autodiff would result in calculating these two partial derivatives three times each, instead of once each for reverse mode autodiff. In this case it is 4 extra calculations, which does not seem like a big deal, but if we had, say, 500, inputs into <img src="//s0.wp.com/latex.php?latex=f_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f_1" title="f_1" class="latex" />, it might slow things down considerably.</p>
+<p>Reverse differentiation follows the exact same process, except backwards. The reason why this is a good idea can be seen when we look at  the first computation graph. If we want the derivative of \(f_3\) with respect to \(x_1, x_2 \text{ and } x_3\), starting from the top of the graph each time would result in some redundant calculations. The reason for this is that in all three cases we would need \(\frac{\partial f_3}{\partial f_2}\) and<em> </em>\(\frac{\partial f_2}{\partial f_1}\), therefore using forward mode autodiff would result in calculating these two partial derivatives three times each, instead of once each for reverse mode autodiff. In this case it is 4 extra calculations, which does not seem like a big deal, but if we had, say, 500, inputs into \(f_1\), it might slow things down considerably.</p>
 <p>So starting from the bottom of the graph and working upwards, we can get all three derivatives doing fewer calculations. We can find the derivatives as follows:</p>
 <ul>
-<li><img src="//s0.wp.com/latex.php?latex=t_%7Bf_3%7D+%3D+%5Cfrac%7B%5Cpartial+f_3%7D%7B%5Cpartial+f_2%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t_{f_3} = &#92;frac{&#92;partial f_3}{&#92;partial f_2} " title="t_{f_3} = &#92;frac{&#92;partial f_3}{&#92;partial f_2} " class="latex" /></li>
-<li><img src="//s0.wp.com/latex.php?latex=t_%7Bf_2%7D+%3D+t_%7Bf_3%7D+%5Ctimes+%5Cfrac%7B%5Cpartial+f_2%7D%7B%5Cpartial+f_1%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t_{f_2} = t_{f_3} &#92;times &#92;frac{&#92;partial f_2}{&#92;partial f_1} " title="t_{f_2} = t_{f_3} &#92;times &#92;frac{&#92;partial f_2}{&#92;partial f_1} " class="latex" /></li>
-<li><img src="//s0.wp.com/latex.php?latex=t_%7Bx_1%7D+%3D+t_%7Bf_2%7D+%5Ctimes+%5Cfrac%7B%5Cpartial+f_1%7D%7B%5Cpartial+x_1%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t_{x_1} = t_{f_2} &#92;times &#92;frac{&#92;partial f_1}{&#92;partial x_1}" title="t_{x_1} = t_{f_2} &#92;times &#92;frac{&#92;partial f_1}{&#92;partial x_1}" class="latex" /></li>
-<li><img src="//s0.wp.com/latex.php?latex=t_%7Bx_2%7D+%3D+t_%7Bf_2%7D+%5Ctimes+%5Cfrac%7B%5Cpartial+f_1%7D%7B%5Cpartial+x_2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t_{x_2} = t_{f_2} &#92;times &#92;frac{&#92;partial f_1}{&#92;partial x_2}" title="t_{x_2} = t_{f_2} &#92;times &#92;frac{&#92;partial f_1}{&#92;partial x_2}" class="latex" /></li>
-<li><img src="//s0.wp.com/latex.php?latex=t_%7Bx_3%7D+%3D+t_%7Bf_2%7D+%5Ctimes+%5Cfrac%7B%5Cpartial+f_1%7D%7B%5Cpartial+x_3%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t_{x_3} = t_{f_2} &#92;times &#92;frac{&#92;partial f_1}{&#92;partial x_3} " title="t_{x_3} = t_{f_2} &#92;times &#92;frac{&#92;partial f_1}{&#92;partial x_3} " class="latex" /></li>
+<li>\(t_{f_3} = \frac{\partial f_3}{\partial f_2}\)</li>
+<li>\(t_{f_2} = t_{f_3} \times \frac{\partial f_2}{\partial f_1}\)</li>
+<li>\(t_{x_1} = t_{f_2} \times \frac{\partial f_1}{\partial x_1}\)</li>
+<li>\(t_{x_2} = t_{f_2} \times \frac{\partial f_1}{\partial x_2}\)</li>
+<li>\(t_{x_3} = t_{f_2} \times \frac{\partial f_1}{\partial x_3}\)</li>
 </ul>
 <p>At the cost of some additional memory, reverse mode autodiff gives a faster, more efficient way of calculating exact derivatives of more complex computational routines.</p>
 <p><b>Applications</b></p>

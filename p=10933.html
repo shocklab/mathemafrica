@@ -34,11 +34,11 @@
 
 		<meta property="og:title" content="UCT MAM1000 lecture notes part 8"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=10933.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=10933.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="Last time we looked at integrals which weren&#39;t proper integrals because the limits of integration were infinite (either on one side, or both). This was one of the constraints we had on a well defined Riemann sum. The other constraint we had was that there were no infinite discontinuities in the integrand. Here we will"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.27"}};
 			!function(e,n,t){var a;function i(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d"),i=String.fromCharCode;return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(i(55356,56806,55356,56826),0,0),3e3<t.toDataURL().length):"diversity"===e?(a.fillText(i(55356,57221),0,0),t=a.getImageData(16,16,1,1).data,a.fillText(i(55356,57221,55356,57343),0,0),(t=a.getImageData(16,16,1,1).data)[0],t[1],t[2],t[3],!0):("simple"===e?a.fillText(i(55357,56835),0,0):a.fillText(i(55356,57135),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function o(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:i("simple"),flag:i("flag"),unicode8:i("unicode8"),diversity:i("diversity")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag&&t.supports.unicode8&&t.supports.diversity||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?o(a.concatemoji):a.wpemoji&&a.twemoji&&(o(a.twemoji),o(a.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -87,7 +87,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.27" />
-<link rel="canonical" href="p=10933.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=10933.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-2Ql' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D10933.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D10933&.html#038;format=xml" />
@@ -174,7 +174,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-10933 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -249,122 +250,122 @@ img.emoji {
 <p>&nbsp;</p>
 <p><strong>Improper Integrals of the second kind: Infinite discontinuities in the integrand</strong></p>
 <p>&nbsp;</p>
-<p>We have seen what happens when we integrate <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> from <img src="//s0.wp.com/latex.php?latex=%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;infty" title="&#92;infty" class="latex" /> or to <img src="//s0.wp.com/latex.php?latex=-%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-&#92;infty" title="-&#92;infty" class="latex" />. Sometimes it gives a convergent value and we can find the integral, sometimes the improper integral does not converge and it gives us an answer of <img src="//s0.wp.com/latex.php?latex=%5Cpm%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pm&#92;infty" title="&#92;pm&#92;infty" class="latex" />. Indeed sometimes it doesn&#8217;t blow up, but it just doesn&#8217;t converge &#8211; as in the integral of <img src="//s0.wp.com/latex.php?latex=%5Ccos+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;cos x" title="&#92;cos x" class="latex" /> over an infinite range.</p>
+<p>We have seen what happens when we integrate \(x\) from \(\infty\) or to \(-\infty\). Sometimes it gives a convergent value and we can find the integral, sometimes the improper integral does not converge and it gives us an answer of \(\pm\infty\). Indeed sometimes it doesn&#8217;t blow up, but it just doesn&#8217;t converge &#8211; as in the integral of \(\cos x\) over an infinite range.</p>
 <p>&nbsp;</p>
 <p>Now we are going to look at what happens if the function itself has an infinite discontinuity in it and we want to integrate over this region, or include it at one of the limits of integration. The formal definition of this can be found in Stewart page 418. Here we will look at the examples and examine what is happening.</p>
-<p>The function <img src="//s0.wp.com/latex.php?latex=f%28x%29%3D%5Cfrac%7B1%7D%7B%5Csqrt%7Bx-4%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)=&#92;frac{1}{&#92;sqrt{x-4}}" title="f(x)=&#92;frac{1}{&#92;sqrt{x-4}}" class="latex" /> is continuous on the interval <img src="//s0.wp.com/latex.php?latex=%284%2C%5Cinfty%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(4,&#92;infty)" title="(4,&#92;infty)" class="latex" /> and looks like:</p>
+<p>The function \(f(x)=\frac{1}{\sqrt{x-4}}\) is continuous on the interval \((4,\infty)\) and looks like:</p>
 <p><a href="wp-content/uploads/2015/07/sqrtxm4.png"><img class="aligncenter size-full wp-image-10934" src="wp-content/uploads/2015/07/sqrtxm4.png?resize=360%2C241" alt="sqrtxm4" srcset="wp-content/uploads/2015/07/sqrtxm4.png?resize=300%2C201 300w, wp-content/uploads/2015/07/sqrtxm4.png?fit=360%2C241 360w" sizes="(max-width: 360px) 100vw, 360px" data-recalc-dims="1" /></a></p>
-<p>If we are trying to integrate this from <img src="//s0.wp.com/latex.php?latex=x%3D4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=4" title="x=4" class="latex" /> then clearly we will be including the infinite discontinuity at <img src="//s0.wp.com/latex.php?latex=x%3D4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=4" title="x=4" class="latex" />.  We can define this integral however as a limit. Let&#8217;s see what happens when we do this:</p>
+<p>If we are trying to integrate this from \(x=4\) then clearly we will be including the infinite discontinuity at \(x=4\).  We can define this integral however as a limit. Let&#8217;s see what happens when we do this:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_4%5E%7B10%7D%5Cfrac%7B1%7D%7B%5Csqrt%7Bx-4%7D%7Ddx%3D%5Clim_%7Bt%5Crightarrow+4%5E%2B%7D%5Cint_t%5E%7B10%7D%5Cfrac%7B1%7D%7B%5Csqrt%7Bx-4%7D%7Ddx%3D%5Clim_%7Bt%5Crightarrow+4%5E%2B%7D%5Cleft.2%5Csqrt%7Bx-4%7D%5Cright%7C_t%5E%7B10%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_4^{10}&#92;frac{1}{&#92;sqrt{x-4}}dx=&#92;lim_{t&#92;rightarrow 4^+}&#92;int_t^{10}&#92;frac{1}{&#92;sqrt{x-4}}dx=&#92;lim_{t&#92;rightarrow 4^+}&#92;left.2&#92;sqrt{x-4}&#92;right|_t^{10}" title="&#92;int_4^{10}&#92;frac{1}{&#92;sqrt{x-4}}dx=&#92;lim_{t&#92;rightarrow 4^+}&#92;int_t^{10}&#92;frac{1}{&#92;sqrt{x-4}}dx=&#92;lim_{t&#92;rightarrow 4^+}&#92;left.2&#92;sqrt{x-4}&#92;right|_t^{10}" class="latex" /></p>
+<p style="text-align: center;">\[\int_4^{10}\frac{1}{\sqrt{x-4}}dx=\lim_{t\rightarrow 4^+}\int_t^{10}\frac{1}{\sqrt{x-4}}dx=\lim_{t\rightarrow 4^+}\left.2\sqrt{x-4}\right|_t^{10}\]</p>
 <p>&nbsp;</p>
 <p>but, just as in the cases of some of the infinite integrating regions that we saw last time, we can take this limit and it will give us a convergent quantity:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bt%5Crightarrow+4%5E%2B%7D%5Cleft.2%5Csqrt%7Bx-4%7D%5Cright%7C_t%5E%7B10%7D%3D2%5Cleft%28%5Csqrt%7B10-4%7D-%5Csqrt%7B4-4%7D%5Cright%29%3D2%5Csqrt%7B6%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{t&#92;rightarrow 4^+}&#92;left.2&#92;sqrt{x-4}&#92;right|_t^{10}=2&#92;left(&#92;sqrt{10-4}-&#92;sqrt{4-4}&#92;right)=2&#92;sqrt{6}" title="&#92;lim_{t&#92;rightarrow 4^+}&#92;left.2&#92;sqrt{x-4}&#92;right|_t^{10}=2&#92;left(&#92;sqrt{10-4}-&#92;sqrt{4-4}&#92;right)=2&#92;sqrt{6}" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{t\rightarrow 4^+}\left.2\sqrt{x-4}\right|_t^{10}=2\left(\sqrt{10-4}-\sqrt{4-4}\right)=2\sqrt{6}\]</p>
 <p>&nbsp;</p>
 <p><strong>A logarithmic divergence</strong></p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E1%5Cln+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^1&#92;ln x dx" title="&#92;int_0^1&#92;ln x dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^1\ln x dx\]</p>
 <p>&nbsp;</p>
-<p>This diverges at <img src="//s0.wp.com/latex.php?latex=x%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=0" title="x=0" class="latex" /> and so we can define the improper integral as:</p>
+<p>This diverges at \(x=0\) and so we can define the improper integral as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E1%5Cln+x+dx%3D%5Clim_%7Bt%5Crightarrow+0%5E%7B%2B%7D%7D%5Cint_t%5E1%5Cln+x+dx%3D%5Clim_%7Bt%5Crightarrow+0%5E%7B%2B%7D%7D+-t%5Cln+t-1%2Bt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^1&#92;ln x dx=&#92;lim_{t&#92;rightarrow 0^{+}}&#92;int_t^1&#92;ln x dx=&#92;lim_{t&#92;rightarrow 0^{+}} -t&#92;ln t-1+t" title="&#92;int_0^1&#92;ln x dx=&#92;lim_{t&#92;rightarrow 0^{+}}&#92;int_t^1&#92;ln x dx=&#92;lim_{t&#92;rightarrow 0^{+}} -t&#92;ln t-1+t" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^1\ln x dx=\lim_{t\rightarrow 0^{+}}\int_t^1\ln x dx=\lim_{t\rightarrow 0^{+}} -t\ln t-1+t\]</p>
 <p>&nbsp;</p>
-<p>Clearly the last terms converge, but how about <img src="//s0.wp.com/latex.php?latex=t%5Cln+t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t&#92;ln t" title="t&#92;ln t" class="latex" />. We know that <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" /> goes to zero and <img src="//s0.wp.com/latex.php?latex=%5Cln+t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln t" title="&#92;ln t" class="latex" /> goes to <img src="//s0.wp.com/latex.php?latex=-%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-&#92;infty" title="-&#92;infty" class="latex" /> so we have to be careful about this. We can invoke L&#8217;Hospital&#8217;s rule again:</p>
+<p>Clearly the last terms converge, but how about \(t\ln t\). We know that \(t\) goes to zero and \(\ln t\) goes to \(-\infty\) so we have to be careful about this. We can invoke L&#8217;Hospital&#8217;s rule again:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bt%5Crightarrow+0%5E%7B%2B%7D%7D+t%5Cln+t%3D%5Clim_%7Bt%5Crightarrow+0%5E%7B%2B%7D%7D%5Cfrac%7B%5Cln+t%7D%7Bt%5E%7B-1%7D%7D%3D%5Clim_%7Bt%5Crightarrow+0%5E%7B%2B%7D%7D%5Cfrac%7B%5Cfrac%7B1%7D%7Bt%7D%7D%7B%5Cfrac%7B-1%7D%7Bt%5E2%7D%7D%3D%5Clim_%7Bt%5Crightarrow+0%5E%7B%2B%7D%7D%28-t%29%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{t&#92;rightarrow 0^{+}} t&#92;ln t=&#92;lim_{t&#92;rightarrow 0^{+}}&#92;frac{&#92;ln t}{t^{-1}}=&#92;lim_{t&#92;rightarrow 0^{+}}&#92;frac{&#92;frac{1}{t}}{&#92;frac{-1}{t^2}}=&#92;lim_{t&#92;rightarrow 0^{+}}(-t)=0" title="&#92;lim_{t&#92;rightarrow 0^{+}} t&#92;ln t=&#92;lim_{t&#92;rightarrow 0^{+}}&#92;frac{&#92;ln t}{t^{-1}}=&#92;lim_{t&#92;rightarrow 0^{+}}&#92;frac{&#92;frac{1}{t}}{&#92;frac{-1}{t^2}}=&#92;lim_{t&#92;rightarrow 0^{+}}(-t)=0" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{t\rightarrow 0^{+}} t\ln t=\lim_{t\rightarrow 0^{+}}\frac{\ln t}{t^{-1}}=\lim_{t\rightarrow 0^{+}}\frac{\frac{1}{t}}{\frac{-1}{t^2}}=\lim_{t\rightarrow 0^{+}}(-t)=0\]</p>
 <p>&nbsp;</p>
 <p>So the total answer is:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E1%5Cln+x+dx%3D-1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^1&#92;ln x dx=-1" title="&#92;int_0^1&#92;ln x dx=-1" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^1\ln x dx=-1\]</p>
 <p>&nbsp;</p>
 <p><strong>A non-convergent example</strong></p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E1%5Cfrac%7B1%7D%7Bx%5E2%7D+dx%3D%5Clim_%7Bt%5Crightarrow+0%5E%2B%7D%5Cint_t%5E1%5Cfrac%7B1%7D%7Bx%5E2%7D%3D%5Clim_%7Bt%5Crightarrow+0%5E%2B%7D%5Cleft.%5Cfrac%7B-1%7D%7Bx%7D%5Cright%7C_t%5E1%3D%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^1&#92;frac{1}{x^2} dx=&#92;lim_{t&#92;rightarrow 0^+}&#92;int_t^1&#92;frac{1}{x^2}=&#92;lim_{t&#92;rightarrow 0^+}&#92;left.&#92;frac{-1}{x}&#92;right|_t^1=&#92;infty" title="&#92;int_0^1&#92;frac{1}{x^2} dx=&#92;lim_{t&#92;rightarrow 0^+}&#92;int_t^1&#92;frac{1}{x^2}=&#92;lim_{t&#92;rightarrow 0^+}&#92;left.&#92;frac{-1}{x}&#92;right|_t^1=&#92;infty" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^1\frac{1}{x^2} dx=\lim_{t\rightarrow 0^+}\int_t^1\frac{1}{x^2}=\lim_{t\rightarrow 0^+}\left.\frac{-1}{x}\right|_t^1=\infty\]</p>
 <p>&nbsp;</p>
 <p>The limit does not converge.</p>
 <p><strong>When a part of an integral is divergent, the whole thing is divergent</strong></p>
 <p>For the time being, if we have an integral where any part of it is divergent, then it is said to be divergent as a whole. For instance:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-1%7D%5E1%5Cfrac%7B1%7D%7Bx%5E2%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-1}^1&#92;frac{1}{x^2}dx" title="&#92;int_{-1}^1&#92;frac{1}{x^2}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_{-1}^1\frac{1}{x^2}dx\]</p>
 <p>&nbsp;</p>
 <p>can be split up as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-1%7D%5E1%5Cfrac%7B1%7D%7Bx%5E2%7Ddx%3D%5Clim_%7Bt%5Crightarrow+0%5E-%7D%5Cint_%7B-1%7D%5Et%5Cfrac%7B1%7D%7Bx%5E2%7Ddx%2B%5Clim_%7Bt%5Crightarrow+0%5E%2B%7D%5Cint_%7Bt%7D%5E1%5Cfrac%7B1%7D%7Bx%5E2%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-1}^1&#92;frac{1}{x^2}dx=&#92;lim_{t&#92;rightarrow 0^-}&#92;int_{-1}^t&#92;frac{1}{x^2}dx+&#92;lim_{t&#92;rightarrow 0^+}&#92;int_{t}^1&#92;frac{1}{x^2}dx" title="&#92;int_{-1}^1&#92;frac{1}{x^2}dx=&#92;lim_{t&#92;rightarrow 0^-}&#92;int_{-1}^t&#92;frac{1}{x^2}dx+&#92;lim_{t&#92;rightarrow 0^+}&#92;int_{t}^1&#92;frac{1}{x^2}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_{-1}^1\frac{1}{x^2}dx=\lim_{t\rightarrow 0^-}\int_{-1}^t\frac{1}{x^2}dx+\lim_{t\rightarrow 0^+}\int_{t}^1\frac{1}{x^2}dx\]</p>
 <p>&nbsp;</p>
 <p>As the first term in this expression diverges, so the whole thing is said to be divergent.</p>
-<p><span style="color: #ff0000;"><strong>Watch out for examples when neither of the limits have a problem, but the problem is somewhere in the range <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" /></strong></span></p>
+<p><span style="color: #ff0000;"><strong>Watch out for examples when neither of the limits have a problem, but the problem is somewhere in the range \([a,b]\)</strong></span></p>
 <p><strong>The Comparison Theorem</strong></p>
-<p>For two continuous functions, <img src="//s0.wp.com/latex.php?latex=f%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)" title="f(x)" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=g%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x)" title="g(x)" class="latex" />, if <img src="//s0.wp.com/latex.php?latex=f%28x%29%5Cge+g%28x%29%5Cge+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)&#92;ge g(x)&#92;ge 0" title="f(x)&#92;ge g(x)&#92;ge 0" class="latex" /> for <img src="//s0.wp.com/latex.php?latex=x%5Cge+a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x&#92;ge a" title="x&#92;ge a" class="latex" /> then:</p>
+<p>For two continuous functions, \(f(x)\) and \(g(x)\), if \(f(x)\ge g(x)\ge 0\) for \(x\ge a\) then:</p>
 <ol>
-<li>If <img src="//s0.wp.com/latex.php?latex=%5Cint_a%5E%5Cinfty+f%28x%29+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_a^&#92;infty f(x) dx" title="&#92;int_a^&#92;infty f(x) dx" class="latex" /> is convergent, then so it <img src="//s0.wp.com/latex.php?latex=%5Cint_a%5E%5Cinfty+g%28x%29+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_a^&#92;infty g(x) dx" title="&#92;int_a^&#92;infty g(x) dx" class="latex" />.</li>
-<li>If <img src="//s0.wp.com/latex.php?latex=%5Cint_a%5E%5Cinfty+g%28x%29+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_a^&#92;infty g(x) dx" title="&#92;int_a^&#92;infty g(x) dx" class="latex" /> is divergent, then so is <img src="//s0.wp.com/latex.php?latex=%5Cint_a%5E%5Cinfty+f%28x%29+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_a^&#92;infty f(x) dx" title="&#92;int_a^&#92;infty f(x) dx" class="latex" />.</li>
+<li>If \(\int_a^\infty f(x) dx\) is convergent, then so it \(\int_a^\infty g(x) dx\).</li>
+<li>If \(\int_a^\infty g(x) dx\) is divergent, then so is \(\int_a^\infty f(x) dx\).</li>
 </ol>
 <p>Let&#8217;s look at an example:</p>
 <p>&nbsp;</p>
 <p>If we have the integral:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-x%5E2%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-x^2}dx" title="&#92;int_0^&#92;infty e^{-x^2}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-x^2}dx\]</p>
 <p>&nbsp;</p>
 <p>We may not know how to do this integral. However, we can still say something about whether it converges or diverges. We use a trick for this and split the integral into two regions:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-x%5E2%7Ddx%3D%5Cint_0%5E1+e%5E%7B-x%5E2%7Ddx%2B%5Cint_1%5E%5Cinfty+e%5E%7B-x%5E2%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-x^2}dx=&#92;int_0^1 e^{-x^2}dx+&#92;int_1^&#92;infty e^{-x^2}dx" title="&#92;int_0^&#92;infty e^{-x^2}dx=&#92;int_0^1 e^{-x^2}dx+&#92;int_1^&#92;infty e^{-x^2}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-x^2}dx=\int_0^1 e^{-x^2}dx+\int_1^\infty e^{-x^2}dx\]</p>
 <p>&nbsp;</p>
-<p>Certainly the first part is finite because it is continuous and the limits are finite. The question is whether the second part is finite. The reason that we split the integral up like this is because there is a simple function which is always greater than <img src="//s0.wp.com/latex.php?latex=e%5E%7B-x%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-x^2}" title="e^{-x^2}" class="latex" /> between 1 and <img src="//s0.wp.com/latex.php?latex=%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;infty" title="&#92;infty" class="latex" /> (but not between 0 and 1 which is why we made the split).</p>
-<p>Here, the graphs of <img src="//s0.wp.com/latex.php?latex=e%5E%7B-x%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-x}" title="e^{-x}" class="latex" /> in red and <img src="//s0.wp.com/latex.php?latex=e%5E%7B-x%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-x^2}" title="e^{-x^2}" class="latex" /> in blue:</p>
+<p>Certainly the first part is finite because it is continuous and the limits are finite. The question is whether the second part is finite. The reason that we split the integral up like this is because there is a simple function which is always greater than \(e^{-x^2}\) between 1 and \(\infty\) (but not between 0 and 1 which is why we made the split).</p>
+<p>Here, the graphs of \(e^{-x}\) in red and \(e^{-x^2}\) in blue:</p>
 <p>&nbsp;</p>
 <p><a href="wp-content/uploads/2015/07/comp.png"><img class="aligncenter size-full wp-image-10942" src="wp-content/uploads/2015/07/comp.png?resize=360%2C233" alt="comp" srcset="wp-content/uploads/2015/07/comp.png?resize=300%2C194 300w, wp-content/uploads/2015/07/comp.png?fit=360%2C233 360w" sizes="(max-width: 360px) 100vw, 360px" data-recalc-dims="1" /></a></p>
 <p>&nbsp;</p>
 <p>We can show that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=e%5E%7B-x%7D%5Cge+e%5E%7B-x%5E2%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-x}&#92;ge e^{-x^2} " title="e^{-x}&#92;ge e^{-x^2} " class="latex" /></p>
+<p style="text-align: center;">\[e^{-x}\ge e^{-x^2}\]</p>
 <p>&nbsp;</p>
-<p>for <img src="//s0.wp.com/latex.php?latex=x%5Cge+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x&#92;ge 1" title="x&#92;ge 1" class="latex" />. Thus, if the area under the red curve is finite, then the area under the blue curve is finite. However, if the area under the red curve is infinite, we can&#8217;t say anything about the area under the blue curve. We can now ask whether the integral:</p>
+<p>for \(x\ge 1\). Thus, if the area under the red curve is finite, then the area under the blue curve is finite. However, if the area under the red curve is infinite, we can&#8217;t say anything about the area under the blue curve. We can now ask whether the integral:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_1%5E%5Cinfty+e%5E%7B-x%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_1^&#92;infty e^{-x}dx" title="&#92;int_1^&#92;infty e^{-x}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_1^\infty e^{-x}dx\]</p>
 <p>&nbsp;</p>
-<p>converges, and indeed we can show with the methods that we&#8217;ve learnt above, that it does. Thus, we can use the comparison theorem and say that because <img src="//s0.wp.com/latex.php?latex=e%5E%7B-x%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-x}" title="e^{-x}" class="latex" /> is always greater than or equal to <img src="//s0.wp.com/latex.php?latex=e%5E%7B-x%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-x^2}" title="e^{-x^2}" class="latex" /> in the region between 1 and <img src="//s0.wp.com/latex.php?latex=%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;infty" title="&#92;infty" class="latex" /> and that the integral over the former converges, that the integral over <img src="//s0.wp.com/latex.php?latex=e%5E%7B-x%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-x^2}" title="e^{-x^2}" class="latex" /> must also converge.</p>
+<p>converges, and indeed we can show with the methods that we&#8217;ve learnt above, that it does. Thus, we can use the comparison theorem and say that because \(e^{-x}\) is always greater than or equal to \(e^{-x^2}\) in the region between 1 and \(\infty\) and that the integral over the former converges, that the integral over \(e^{-x^2}\) must also converge.</p>
 <p>Let&#8217;s look at some more examples:</p>
 <p>Let&#8217;s look at the integral:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_2%5E%5Cinfty%5Cfrac%7B%5Ccos%5E2+x%7D%7Bx%5E2%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_2^&#92;infty&#92;frac{&#92;cos^2 x}{x^2}dx" title="&#92;int_2^&#92;infty&#92;frac{&#92;cos^2 x}{x^2}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_2^\infty\frac{\cos^2 x}{x^2}dx\]</p>
 <p>&nbsp;</p>
-<p>This integral is actually not possible to write down in terms of elementary functions, but we can still say whether or not it converges. Because <img src="//s0.wp.com/latex.php?latex=%5Ccos%5E2x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;cos^2x" title="&#92;cos^2x" class="latex" /> is bounded between 0 and 1, we know that:</p>
+<p>This integral is actually not possible to write down in terms of elementary functions, but we can still say whether or not it converges. Because \(\cos^2x\) is bounded between 0 and 1, we know that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7Bx%5E2%7D%5Cge%5Cfrac%7B%5Ccos%5E2x%7D%7Bx%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{x^2}&#92;ge&#92;frac{&#92;cos^2x}{x^2}" title="&#92;frac{1}{x^2}&#92;ge&#92;frac{&#92;cos^2x}{x^2}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{1}{x^2}\ge\frac{\cos^2x}{x^2}\]</p>
 <p>&nbsp;</p>
-<p>So if we can show that the integral over the larger function converges, then the smaller function must also converge. Indeed we know that <img src="//s0.wp.com/latex.php?latex=%5Cint_2%5E%5Cinfty%5Cfrac%7B1%7D%7Bx%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_2^&#92;infty&#92;frac{1}{x^2}" title="&#92;int_2^&#92;infty&#92;frac{1}{x^2}" class="latex" /> converges, and so the original integral also converges.</p>
+<p>So if we can show that the integral over the larger function converges, then the smaller function must also converge. Indeed we know that \(\int_2^\infty\frac{1}{x^2}\) converges, and so the original integral also converges.</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_3%5E%5Cinfty%5Cfrac%7B1%7D%7Bx-e%5E%7B-x%7D%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_3^&#92;infty&#92;frac{1}{x-e^{-x}}dx" title="&#92;int_3^&#92;infty&#92;frac{1}{x-e^{-x}}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_3^\infty\frac{1}{x-e^{-x}}dx\]</p>
 <p>&nbsp;</p>
-<p>The trick is to look at the behaviour of the function in the large <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> limit. On the bottom we have <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=e%5E%7B-x%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-x}" title="e^{-x}" class="latex" />. As <img src="//s0.wp.com/latex.php?latex=x%5Crightarrow+%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x&#92;rightarrow &#92;infty" title="x&#92;rightarrow &#92;infty" class="latex" />, <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> goes large and <img src="//s0.wp.com/latex.php?latex=e%5E%7B-x%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-x}" title="e^{-x}" class="latex" /> goes to zero so we can see that in the large <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> limit:</p>
+<p>The trick is to look at the behaviour of the function in the large \(x\) limit. On the bottom we have \(x\) and \(e^{-x}\). As \(x\rightarrow \infty\), \(x\) goes large and \(e^{-x}\) goes to zero so we can see that in the large \(x\) limit:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bx%5Crightarrow%5Cinfty%7D%5Cfrac%7B1%7D%7Bx-e%5E%7B-x%7D%7D%5Csim+%5Cfrac%7B1%7D%7Bx%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{x&#92;rightarrow&#92;infty}&#92;frac{1}{x-e^{-x}}&#92;sim &#92;frac{1}{x}" title="&#92;lim_{x&#92;rightarrow&#92;infty}&#92;frac{1}{x-e^{-x}}&#92;sim &#92;frac{1}{x}" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{x\rightarrow\infty}\frac{1}{x-e^{-x}}\sim \frac{1}{x}\]</p>
 <p>&nbsp;</p>
-<p>Let&#8217;s use this as the comparison. Indeed between 3 and <img src="//s0.wp.com/latex.php?latex=%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;infty" title="&#92;infty" class="latex" />:</p>
+<p>Let&#8217;s use this as the comparison. Indeed between 3 and \(\infty\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7Bx-e%5E%7B-x%7D%7D%3E%5Cfrac%7B1%7D%7Bx%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{x-e^{-x}}&gt;&#92;frac{1}{x}" title="&#92;frac{1}{x-e^{-x}}&gt;&#92;frac{1}{x}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{1}{x-e^{-x}}&gt;\frac{1}{x}\]</p>
 <p>&nbsp;</p>
 <p>and the integral:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_3%5E%5Cinfty+%5Cfrac%7B1%7D%7Bx%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_3^&#92;infty &#92;frac{1}{x}dx" title="&#92;int_3^&#92;infty &#92;frac{1}{x}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_3^\infty \frac{1}{x}dx\]</p>
 <p>&nbsp;</p>
 <p>diverges. Because this integral is less than the original integral, we can say that, by the comparison theorem, the original integral also diverges.</p>
 <p>Let&#8217;s look at a similar looking example:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_3%5E%5Cinfty%5Cfrac%7B1%7D%7Bx%2Be%5Ex%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_3^&#92;infty&#92;frac{1}{x+e^x}dx" title="&#92;int_3^&#92;infty&#92;frac{1}{x+e^x}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_3^\infty\frac{1}{x+e^x}dx\]</p>
 <p>&nbsp;</p>
-<p>However, in this case, as <img src="//s0.wp.com/latex.php?latex=x%5Crightarrow%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x&#92;rightarrow&#92;infty" title="x&#92;rightarrow&#92;infty" class="latex" /> the part in the denominator is dominated by <img src="//s0.wp.com/latex.php?latex=e%5Ex&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^x" title="e^x" class="latex" /> and so:</p>
+<p>However, in this case, as \(x\rightarrow\infty\) the part in the denominator is dominated by \(e^x\) and so:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bx%5Crightarrow%5Cinfty%7D%5Cfrac%7B1%7D%7Bx%2Be%5E%7Bx%7D%7D%5Csim+%5Cfrac%7B1%7D%7Be%5Ex%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{x&#92;rightarrow&#92;infty}&#92;frac{1}{x+e^{x}}&#92;sim &#92;frac{1}{e^x}" title="&#92;lim_{x&#92;rightarrow&#92;infty}&#92;frac{1}{x+e^{x}}&#92;sim &#92;frac{1}{e^x}" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{x\rightarrow\infty}\frac{1}{x+e^{x}}\sim \frac{1}{e^x}\]</p>
 <p>&nbsp;</p>
 <p>Let&#8217;s use this as the comparison. We know that, in the region of interest:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7Bx%2Be%5E%7Bx%7D%7D%3C%5Cfrac%7B1%7D%7Be%5Ex%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{x+e^{x}}&lt;&#92;frac{1}{e^x}" title="&#92;frac{1}{x+e^{x}}&lt;&#92;frac{1}{e^x}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{1}{x+e^{x}}&lt;\frac{1}{e^x}\]</p>
 <p>&nbsp;</p>
 <p>and</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_3%5E%5Cinfty+%5Cfrac%7B1%7D%7Be%5Ex%7Ddx%3De%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_3^&#92;infty &#92;frac{1}{e^x}dx=e^3" title="&#92;int_3^&#92;infty &#92;frac{1}{e^x}dx=e^3" class="latex" /></p>
+<p style="text-align: center;">\[\int_3^\infty \frac{1}{e^x}dx=e^3\]</p>
 <p>&nbsp;</p>
 <p>so this converges and because this integral is certainly greater than the original integral, by the comparison theorem, the original integral also converges.</p>
 <table class="rw-rating-table rw-ltr rw-left"><tr><td><nobr>How clear is this post?</nobr></td><td><div class="rw-left"><div class="rw-ui-container rw-class-blog-post rw-urid-109340" data-img="wp-content/uploads/2015/07/sqrtxm4.png"></div></div></td></tr></table><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-10933" class="share-twitter sd-button share-icon no-text" href="p=10933&amp;share=twitter.html" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-10933" class="share-facebook sd-button share-icon no-text" href="p=10933&amp;share=facebook.html" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-10933" class="share-google-plus-1 sd-button share-icon no-text" href="p=10933&amp;share=google-plus-1.html" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon no-text" href="p=10933.html#print" target="_blank" title="Click to print"><span></span><span class="sharing-screen-reader-text">Click to print (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>							</div>

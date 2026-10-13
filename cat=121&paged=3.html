@@ -161,7 +161,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive paged category category-undergraduate category-121 paged-3 category-paged-3 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -228,23 +229,23 @@ img.emoji {
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=14657.html">Fundamental theorem of calculus example</a></h2><div class="fusion-post-content-container"><p>We did an example today in class which I wanted to go through again here. The question was to calculate</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%7D%7Bdx%7D%5Cint_a%5E%7Bx%5E4%7D%5Csec+t+dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d}{dx}&#92;int_a^{x^4}&#92;sec t dt" title="&#92;frac{d}{dx}&#92;int_a^{x^4}&#92;sec t dt" class="latex" /></p>
+<p style="text-align: center;">\[\frac{d}{dx}\int_a^{x^4}\sec t dt\]</p>
 <p>&nbsp;</p>
-<p><strong>We spot the pattern immediately that it&#8217;s an FTC part 1 type question</strong>, but it&#8217;s not quite there yet. In the FTC part 1, the upper limit of the integral is just <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />, and not <img src="//s0.wp.com/latex.php?latex=x%5E4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^4" title="x^4" class="latex" />. A question that we would be able to answer is:</p>
+<p><strong>We spot the pattern immediately that it&#8217;s an FTC part 1 type question</strong>, but it&#8217;s not quite there yet. In the FTC part 1, the upper limit of the integral is just \(x\), and not \(x^4\). A question that we would be able to answer is:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%7D%7Bdx%7D%5Cint_a%5E%7Bx%7D%5Csec+t+dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d}{dx}&#92;int_a^{x}&#92;sec t dt" title="&#92;frac{d}{dx}&#92;int_a^{x}&#92;sec t dt" class="latex" /></p>
+<p style="text-align: center;">\[\frac{d}{dx}\int_a^{x}\sec t dt\]</p>
 <p>&nbsp;</p>
-<p>This would just be <img src="//s0.wp.com/latex.php?latex=%5Csec+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sec x" title="&#92;sec x" class="latex" />. Or, of course, we can show that <strong>in exactly the same way:</strong></p>
+<p>This would just be \(\sec x\). Or, of course, we can show that <strong>in exactly the same way:</strong></p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%7D%7Bdu%7D%5Cint_a%5E%7Bu%7D%5Csec+t+dt%3D%5Csec+u&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d}{du}&#92;int_a^{u}&#92;sec t dt=&#92;sec u" title="&#92;frac{d}{du}&#92;int_a^{u}&#92;sec t dt=&#92;sec u" class="latex" /></p>
+<p style="text-align: center;">\[\frac{d}{du}\int_a^{u}\sec t dt=\sec u\]</p>
 <p>&nbsp;</p>
-<p>That&#8217;s just changing the names of the variables, which is fine, right? But that&#8217;s not quite the question. So, <strong>how can we convert from <img src="//s0.wp.com/latex.php?latex=x%5E4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^4" title="x^4" class="latex" /> to <img src="//s0.wp.com/latex.php?latex=u&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u" title="u" class="latex" /></strong>? Well, how about a substitution? How about letting <img src="//s0.wp.com/latex.php?latex=x%5E4%3Du&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^4=u" title="x^4=u" class="latex" /> and seeing what happens. This is actually just a chain rule. It&#8217;s like if I asked you to calculate:</p>
+<p>That&#8217;s just changing the names of the variables, which is fine, right? But that&#8217;s not quite the question. So, <strong>how can we convert from \(x^4\) to \(u\)</strong>? Well, how about a substitution? How about letting \(x^4=u\) and seeing what happens. This is actually just a chain rule. It&#8217;s like if I asked you to calculate:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%7D%7Bdx%7D+g%28x%5E4%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d}{dx} g(x^4)" title="&#92;frac{d}{dx} g(x^4)" class="latex" />.</p>
+<p style="text-align: center;">\(\frac{d}{dx} g(x^4)\).</p>
 <p>&nbsp;</p>
-<p>You would just say: Let <img src="//s0.wp.com/latex.php?latex=x%5E4%3Du&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^4=u" title="x^4=u" class="latex" /> and then we have:</p>
+<p>You would just say: Let \(x^4=u\) and then we have:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%7D%7Bdx%7D+g%28x%5E4%29%3D%5Cfrac%7Bdu%7D%7Bdx%7D%5Cfrac%7Bd%7D%7Bdu%7Dg%28u%29%3D4x%5E3+g%27%28u%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d}{dx} g(x^4)=&#92;frac{du}{dx}&#92;frac{d}{du}g(u)=4x^3 g&#039;(u)" title="&#92;frac{d}{dx} g(x^4)=&#92;frac{du}{dx}&#92;frac{d}{du}g(u)=4x^3 g&#039;(u)" class="latex" />.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p style="text-align: center;">\(\frac{d}{dx} g(x^4)=\frac{du}{dx}\frac{d}{du}g(u)=4x^3 g'(u)\).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -290,7 +291,7 @@ img.emoji {
 <p>&nbsp;</p>
 <p>The same thing, where the slices are squares.<a href="wp-content/uploads/2017/09/movie4.gif" rel="attachment wp-att-13674"><img class="aligncenter  wp-image-13674" src="wp-content/uploads/2017/09/movie4.gif?resize=504%2C561" alt="movie4" srcset="wp-content/uploads/2017/09/movie4.gif?resize=200%2C223 200w, wp-content/uploads/2017/09/movie4.gif?resize=270%2C300 270w, wp-content/uploads/2017/09/movie4.gif?resize=400%2C445 400w, wp-content/uploads/2017/09/movie4.gif?resize=600%2C668 600w, wp-content/uploads/2017/09/movie4.gif?resize=768%2C855 768w, wp-content/uploads/2017/09/movie4.gif?resize=800%2C890 800w, wp-content/uploads/2017/09/movie4.gif?resize=920%2C1024 920w, wp-content/uploads/2017/09/movie4.gif?fit=1000%2C1113 1000w" sizes="(max-width: 504px) 100vw, 504px" data-recalc-dims="1" /></a></p>
 <p>&nbsp;</p>
-<p>And here is the region in the (x,y) plane between <img src="//s0.wp.com/latex.php?latex=y%3D%5Csqrt%7Bx%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y=&#92;sqrt{x}" title="y=&#92;sqrt{x}" class="latex" />, the x-axis and the line x=1. rotated about the y-axis. Here a thin shell is drawn in the volume, then pulled out. Then it is replaced, then the volume is filled with shells, and each of them is pulled out of the volume vertically. This is to give you an idea about how to visualise the method of cylindrical shells.</p>
+<p>And here is the region in the (x,y) plane between \(y=\sqrt{x}\), the x-axis and the line x=1. rotated about the y-axis. Here a thin shell is drawn in the volume, then pulled out. Then it is replaced, then the volume is filled with shells, and each of them is pulled out of the volume vertically. This is to give you an idea about how to visualise the method of cylindrical shells.</p>
 <p>&nbsp;</p>
 <p><a href="wp-content/uploads/2017/09/movie5.gif" rel="attachment wp-att-13672"><img class="aligncenter  wp-image-13672" src="wp-content/uploads/2017/09/movie5.gif?resize=634%2C647" alt="movie5" data-recalc-dims="1" /></a></p>
 <table class="rw-rating-table rw-ltr rw-left"><tr><td><nobr>How clear is this post?</nobr></td><td><div class="rw-left"><div class="rw-ui-container rw-class-blog-post rw-urid-136720" data-img="wp-content/uploads/2017/09/movie3-1-920x1024.gif"></div></div></td></tr></table>&hellip;</div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
@@ -378,8 +379,8 @@ img.emoji {
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=13590.html">Introduction to trigonometric substitution</a></h2><div class="fusion-post-content-container"><p>I have decided to start writing some posts here, and this is my first post. I would like to introduce trig substitution by presenting an example that you have seen before. Trig substitution is one of the techniques of integration, it&#8217;s like u substitution, except that you use a trig function only.</p>
 <p>Let&#8217;s get into the example already!</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-1%7D%5E%7B1%7D+%5Csqrt%7B1-x%5E2%7D+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-1}^{1} &#92;sqrt{1-x^2} dx" title="&#92;int_{-1}^{1} &#92;sqrt{1-x^2} dx" class="latex" /></p>
-<p>If you equate the integrand to y (and get <img src="//s0.wp.com/latex.php?latex=x%5E2%2By%5E2%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2+y^2=1" title="x^2+y^2=1" class="latex" />, <img src="//s0.wp.com/latex.php?latex=y%5Cgeq+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y&#92;geq 0" title="y&#92;geq 0" class="latex" />), you should be able to see that this is the area of the upper half of a unit circle. The answer to this definite integral is therefore the area of the upper half of the unit circle (yes, the definite integral of f(x) from a to b gives you the net area between f(x) and the x-axis from x=a to x=b), is <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B%5Cpi%7D%7B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{&#92;pi}{2}" title="&#92;frac{&#92;pi}{2}" class="latex" />.</p>
+<p>\[\int_{-1}^{1} \sqrt{1-x^2} dx\]</p>
+<p>If you equate the integrand to y (and get \(x^2+y^2=1\), \(y\geq 0\)), you should be able to see that this is the area of the upper half of a unit circle. The answer to this definite integral is therefore the area of the upper half of the unit circle (yes, the definite integral of f(x) from a to b gives you the net area between f(x) and the x-axis from x=a to x=b), is \(\frac{\pi}{2}\).</p>
 <p>We relied on the geometrical interpretation of the integral to solve the definite integral, but can we also show this algebraically?&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=66.html" title="Posts by Mashudu Mokhithi" rel="author">Mashudu Mokhithi</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
@@ -392,21 +393,21 @@ img.emoji {
 <p>&nbsp;</p>
 <p>Let&#8217;s look at the example:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En%5Cleft%289%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%5E2-8%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%2B7%5Cright%29%5Cfrac%7B13%7D%7Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2-8&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)+7&#92;right)&#92;frac{13}{n}" title="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2-8&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)+7&#92;right)&#92;frac{13}{n}" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{n\rightarrow\infty}\sum_{i=1}^n\left(9\left(4+(i-1)\frac{6}{n}\right)^2-8\left(4+(i-1)\frac{6}{n}\right)+7\right)\frac{13}{n}\]</p>
 <p>&nbsp;</p>
 <p>There are many ways to tackle such a question but let&#8217;s take one particular path. Let&#8217;s start by the fact that when the limit is defined, the limit of a sum is the sum of the limits. We can split up our expression into 3, which looks like:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En9%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%5E2%5Cfrac%7B13%7D%7Bn%7D-%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En%5Cleft%288%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%5Cright%29%5Cfrac%7B13%7D%7Bn%7D%2B%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En7%5Cfrac%7B13%7D%7Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{13}{n}-&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(8&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)&#92;right)&#92;frac{13}{n}+&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n7&#92;frac{13}{n}" title="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{13}{n}-&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(8&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)&#92;right)&#92;frac{13}{n}+&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n7&#92;frac{13}{n}" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{n\rightarrow\infty}\sum_{i=1}^n9\left(4+(i-1)\frac{6}{n}\right)^2\frac{13}{n}-\lim_{n\rightarrow\infty}\sum_{i=1}^n\left(8\left(4+(i-1)\frac{6}{n}\right)\right)\frac{13}{n}+\lim_{n\rightarrow\infty}\sum_{i=1}^n7\frac{13}{n}\]</p>
 <p>&nbsp;</p>
 <p>Let&#8217;s tackle each of these separately. Let&#8217;s look at the first term:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En9%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%5E2%5Cfrac%7B13%7D%7Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{13}{n}" title="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{13}{n}" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{n\rightarrow\infty}\sum_{i=1}^n9\left(4+(i-1)\frac{6}{n}\right)^2\frac{13}{n}\]</p>
 <p>&nbsp;</p>
 <p>Well, we can take the factor of 13 outside the front of the whole thing to start with, along with the factor of 9, and this will give</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=13%5Ctimes+9%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%5E2%5Cfrac%7B1%7D%7Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="13&#92;times 9&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{1}{n}" title="13&#92;times 9&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{1}{n}" class="latex" /></p>
+<p style="text-align: center;">\[13\times 9\lim_{n\rightarrow\infty}\sum_{i=1}^n\left(4+(i-1)\frac{6}{n}\right)^2\frac{1}{n}\]</p>
 <p>&nbsp;</p>
-<p>We see here that we have a sum of terms, and a factor which looks like <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{n}" title="&#92;frac{1}{n}" class="latex" /> in each term.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>We see here that we have a sum of terms, and a factor which looks like \(\frac{1}{n}\) in each term.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -417,22 +418,22 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=13557.html">Some sum identities</a></h2><div class="fusion-post-content-container"><p>During tutorials last week, a number of students asked how to understand identities that are used in the calculation of various Riemann sums and their limits.</p>
 <p>These identities are:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+1%3Dn&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n 1=n" title="&#92;sum_{i=1}^n 1=n" class="latex" /></p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+i%3D%5Cfrac%7Bn%28n%2B1%29%7D%7B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n i=&#92;frac{n(n+1)}{2}" title="&#92;sum_{i=1}^n i=&#92;frac{n(n+1)}{2}" class="latex" /></p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+i%5E2%3D%5Cfrac%7Bn%28n%2B1%29%282n%2B1%29%7D%7B6%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n i^2=&#92;frac{n(n+1)(2n+1)}{6}" title="&#92;sum_{i=1}^n i^2=&#92;frac{n(n+1)(2n+1)}{6}" class="latex" /></p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+i%5E3%3D%5Cleft%28%5Cfrac%7Bn%28n%2B1%29%7D%7B2%7D%5Cright%29%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n i^3=&#92;left(&#92;frac{n(n+1)}{2}&#92;right)^2" title="&#92;sum_{i=1}^n i^3=&#92;left(&#92;frac{n(n+1)}{2}&#92;right)^2" class="latex" /></p>
+<p style="text-align: center;">\[\sum_{i=1}^n 1=n\]</p>
+<p style="text-align: center;">\[\sum_{i=1}^n i=\frac{n(n+1)}{2}\]</p>
+<p style="text-align: center;">\[\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}\]</p>
+<p style="text-align: center;">\[\sum_{i=1}^n i^3=\left(\frac{n(n+1)}{2}\right)^2\]</p>
 <p>&nbsp;</p>
 <p>Let&#8217;s go through these one by one. We must first remember what the sigma notation means. If we have:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+f%28i%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n f(i)" title="&#92;sum_{i=1}^n f(i)" class="latex" /></p>
+<p style="text-align: center;">\[\sum_{i=1}^n f(i)\]</p>
 <p>&nbsp;</p>
 <p>It means the sum of terms of the forms f(i) for i starting with 1 and going up to i=n. Sometimes n will actually be an integer, and sometimes it will be left arbitrary. So, the above sum can be written as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+f%28i%29%3Df%281%29%2Bf%282%29%2Bf%283%29%2Bf%284%29%2B....%2Bf%28n-2%29%2Bf%28n-1%29%2Bf%28n%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n f(i)=f(1)+f(2)+f(3)+f(4)+....+f(n-2)+f(n-1)+f(n)" title="&#92;sum_{i=1}^n f(i)=f(1)+f(2)+f(3)+f(4)+....+f(n-2)+f(n-1)+f(n)" class="latex" /></p>
+<p style="text-align: center;">\[\sum_{i=1}^n f(i)=f(1)+f(2)+f(3)+f(4)+....+f(n-2)+f(n-1)+f(n)\]</p>
 <p>&nbsp;</p>
 <p>We haven&#8217;t specified what f is, but that&#8217;s because this statement is general and applies for any time of function of i. In the first of the identities above, the function is simply f(i)=1, which isn&#8217;t a very interesting function, but it still is one. It says, whatever i we put in, output 1. So this sum can be written as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+1%3D1%2B1%2B1%2B1%2B....%2B1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n 1=1+1+1+1+....+1" title="&#92;sum_{i=1}^n 1=1+1+1+1+....+1" class="latex" /></p>
+<p style="text-align: center;">\[\sum_{i=1}^n 1=1+1+1+1+....+1\]</p>
 <p>&nbsp;</p>
 <p>Where there are n terms.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	

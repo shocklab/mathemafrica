@@ -34,11 +34,11 @@
 
 		<meta property="og:title" content="How much does a Dougie weigh on Jupiter?"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=12064.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=12064.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="I spent an evening with old friends just after Christmas. One of their sons is fascinated by Space, and always has great questions for me about it. This year he asked how much he would weigh on Jupiter. I admitted that I didn&#39;t know the answer, but that a) It wasn&#39;t a single number, as"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.33"}};
 			!function(e,n,t){var a;function i(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d"),i=String.fromCharCode;return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(i(55356,56806,55356,56826),0,0),3e3<t.toDataURL().length):"diversity"===e?(a.fillText(i(55356,57221),0,0),t=a.getImageData(16,16,1,1).data,a.fillText(i(55356,57221,55356,57343),0,0),(t=a.getImageData(16,16,1,1).data)[0],t[1],t[2],t[3],!0):("simple"===e?a.fillText(i(55357,56835),0,0):a.fillText(i(55356,57135),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function o(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:i("simple"),flag:i("flag"),unicode8:i("unicode8"),diversity:i("diversity")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag&&t.supports.unicode8&&t.supports.diversity||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?o(a.concatemoji):a.wpemoji&&a.twemoji&&(o(a.twemoji),o(a.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -87,7 +87,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.33" />
-<link rel="canonical" href="p=12064.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=12064.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-38A' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D12064.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D12064&.html#038;format=xml" />
@@ -174,7 +174,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-12064 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -257,7 +258,7 @@ img.emoji {
 <p>&nbsp;</p>
 <p>We can make sure that the image data is all in integer values with:</p>
 <p>&nbsp;</p>
-<p><strong><img src="//s0.wp.com/latex.php?latex=data+%3D+Round%5BImageData%5Bimage%5D%2C1%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="data = Round[ImageData&lt;li class=&quot;fusion-carousel-item&quot;&gt;&lt;div class=&quot;fusion-carousel-item-wrapper&quot;&gt;&lt;div class=&quot;fusion-image-wrapper&quot;&gt;&lt;img src=&quot;&quot; width=&quot;&quot; height=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;,1]" title="data = Round[ImageData&lt;li class=&quot;fusion-carousel-item&quot;&gt;&lt;div class=&quot;fusion-carousel-item-wrapper&quot;&gt;&lt;div class=&quot;fusion-image-wrapper&quot;&gt;&lt;img src=&quot;&quot; width=&quot;&quot; height=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;,1]" class="latex" /></strong></p>
+<p><strong>\(data = Round[ImageData[image],1]\)</strong></p>
 <p>&nbsp;</p>
 <p>And then perform a transformation of the numbers sending all values {0,0,0} to 1 and everything else to 0. This produces a negative of the image.</p>
 <p>&nbsp;</p>
@@ -319,24 +320,24 @@ Then we get the top curve, by taking only the tops of each line (as the lines ar
 <p><strong>Plot[{upperfunc[x], lowerfunc[x]}, {x, 0, radiusofjupiter}, PlotRange -&gt; All]</strong></p>
 <p>&nbsp;</p>
 <p><a href="wp-content/uploads/2016/01/finallines.png"><img class="aligncenter wp-image-12069" src="wp-content/uploads/2016/01/finallines.png?resize=682%2C403" alt="finallines" srcset="wp-content/uploads/2016/01/finallines.png?resize=300%2C177 300w, wp-content/uploads/2016/01/finallines.png?fit=1000%2C591 1000w" sizes="(max-width: 682px) 100vw, 682px" data-recalc-dims="1" /></a>Comparing this with the original picture, we see that it&#8217;s not perfect, but it&#8217;s also not bad. We only want a rough estimate and this will certainly be good enough.</p>
-<p>The two density curves (called upper and lower) can be used to work out the mass inside a given radius of Jupiter. We simply need to multiply the density at a given radius by the surface area of a shell at that radius multiplied by <img src="//s0.wp.com/latex.php?latex=dr&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="dr" title="dr" class="latex" /> and then add up all these thin shells:</p>
+<p>The two density curves (called upper and lower) can be used to work out the mass inside a given radius of Jupiter. We simply need to multiply the density at a given radius by the surface area of a shell at that radius multiplied by \(dr\) and then add up all these thin shells:</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=mass_%7Br_%7Bupto%7D%7D%3D%5Cint_0%5E%7Br_%7Bupto%7D%7D+4+%5Cpi+r%5E2+density%5Br%5D+dr&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="mass_{r_{upto}}=&#92;int_0^{r_{upto}} 4 &#92;pi r^2 density[r] dr" title="mass_{r_{upto}}=&#92;int_0^{r_{upto}} 4 &#92;pi r^2 density[r] dr" class="latex" /></p>
+<p>\[mass_{r_{upto}}=\int_0^{r_{upto}} 4 \pi r^2 density[r] dr\]</p>
 <p>&nbsp;</p>
-<p><strong>masstoRupper[rupto_] := NIntegrate[4 \[Pi] r^2 upperfunc[r], {r, 0, rupto}, Method -&gt; {Automatic, &#8220;SymbolicProcessing&#8221; -&gt; 0}]</strong></p>
-<p><strong>masstoRlower[rupto_] := NIntegrate[4 \[Pi] r^2 lowerfunc[r], {r, 0, rupto}, Method -&gt; {Automatic, &#8220;SymbolicProcessing&#8221; -&gt; 0}]</strong></p>
+<p class="tex2jax_ignore"><strong>masstoRupper[rupto_] := NIntegrate[4 \[Pi] r^2 upperfunc[r], {r, 0, rupto}, Method -&gt; {Automatic, &#8220;SymbolicProcessing&#8221; -&gt; 0}]</strong></p>
+<p class="tex2jax_ignore"><strong>masstoRlower[rupto_] := NIntegrate[4 \[Pi] r^2 lowerfunc[r], {r, 0, rupto}, Method -&gt; {Automatic, &#8220;SymbolicProcessing&#8221; -&gt; 0}]</strong></p>
 <p>&nbsp;</p>
 <p>Checking that this gives roughly the right answer we can integrate all the way to the radius of Jupiter:</p>
 <p>&nbsp;</p>
 <p><strong>masstoRlower[radiusofjupiter]</strong><br />
 <strong>masstoRupper[radiusofjupiter]</strong></p>
 <p>&nbsp;</p>
-<p>These give roughly <img src="//s0.wp.com/latex.php?latex=1.8%5Ctimes+10%5E%7B27%7Dkg&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1.8&#92;times 10^{27}kg" title="1.8&#92;times 10^{27}kg" class="latex" /> which is pretty close to the mass of Jupiter, so we are along the right lines.</p>
+<p>These give roughly \(1.8\times 10^{27}kg\) which is pretty close to the mass of Jupiter, so we are along the right lines.</p>
 <p>Now we want to be able to calculate the weight of somebody on Jupiter at a given radius. Their weight is a function only of the mass held within that radius, so we use Newton&#8217;s inverse square law, with Newton&#8217;s constant, and divide by 10 to convert (roughly) between Newtons and kilograms:</p>
 <p>&nbsp;</p>
 <p><strong>massofDougie=30</strong></p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=Force%3D%5Cfrac%7BGMm%7D%7Br%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Force=&#92;frac{GMm}{r^2}" title="Force=&#92;frac{GMm}{r^2}" class="latex" /></p>
+<p>\[Force=\frac{GMm}{r^2}\]</p>
 <p>&nbsp;</p>
 <p><strong>weightlower[R_] := 6.64 10^-11 (masstoRlower[R] massofDougie)/(R^2 10)</strong><br />
 <strong> weightupper[R_] := 6.64 10^-11 (masstoRupper[R] massofDougie)/(R^2 10)</strong></p>

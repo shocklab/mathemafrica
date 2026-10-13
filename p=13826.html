@@ -34,7 +34,7 @@
 
 		<meta property="og:title" content="Graph Theory, Numberphile and Mathematica"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=13826.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=13826.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="Edit: I made a mistake with some of the language here. A comment from a true graph theorist:
 
@@ -46,7 +46,7 @@ Thus, I have edited below accordingly.
 
 There was a nice video up on Numberphile about a problem which could easily"/>
 
-									<meta property="og:image" content="wp-content/uploads/2018/01/graph15.jpg?fit=722%2C163"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2018/01/graph15.jpg?fit=722%2C163"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.33"}};
 			!function(e,n,t){var a;function i(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d"),i=String.fromCharCode;return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(i(55356,56806,55356,56826),0,0),3e3<t.toDataURL().length):"diversity"===e?(a.fillText(i(55356,57221),0,0),t=a.getImageData(16,16,1,1).data,a.fillText(i(55356,57221,55356,57343),0,0),(t=a.getImageData(16,16,1,1).data)[0],t[1],t[2],t[3],!0):("simple"===e?a.fillText(i(55357,56835),0,0):a.fillText(i(55356,57135),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function o(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:i("simple"),flag:i("flag"),unicode8:i("unicode8"),diversity:i("diversity")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag&&t.supports.unicode8&&t.supports.diversity||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?o(a.concatemoji):a.wpemoji&&a.twemoji&&(o(a.twemoji),o(a.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -95,7 +95,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.33" />
-<link rel="canonical" href="p=13826.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=13826.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-3B0' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D13826.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D13826&.html#038;format=xml" />
@@ -182,7 +182,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-13826 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -283,8 +284,8 @@ img.emoji {
 <p>Is that it? Well, it turns out that you can continue going and you will find that the next number for which you can form the Hamiltonian path is 23, then 24 you can&#8217;t, then 25 you can and in fact it seems that as you add more and more numbers, you always can.</p>
 <p><strong>The fundamental question is: Is there a Traceable graph (see the edit at the beginning) for all numbers above 25?</strong> However, this has only been tested up to around 300 (according to the video) (Finding Hamiltonian paths is an NP complete problem). I wanted to see if we could do better than that, so I wrote a piece of Mathematica code to see what we could do. First, I will show the code, then we&#8217;ll talk through it:</p>
 <p><a href="wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png" rel="attachment wp-att-13832"><img class="aligncenter size-large wp-image-13832" src="wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png?resize=1024%2C295" alt="Screenshot 2018-01-15 12.27.45" srcset="wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png?resize=200%2C58 200w, wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png?resize=300%2C86 300w, wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png?resize=400%2C115 400w, wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png?resize=600%2C173 600w, wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png?resize=768%2C221 768w, wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png?resize=800%2C230 800w, wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png?resize=1024%2C295 1024w, wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png?resize=1200%2C346 1200w, wp-content/uploads/2018/01/Screenshot-2018-01-15-12.27.45.png?fit=1410%2C406 1410w" sizes="(max-width: 1024px) 100vw, 1024px" data-recalc-dims="1" /></a>OK, what do we have here? Well, let&#8217;s start in the middle and work out. The one input into the module is a variable <strong>upto</strong> which is simply the last integer in the sequence that we want to test (ie. 18 in the last graph we showed above).</p>
-<p>The first thing is to define a table of values of <img src="//s0.wp.com/latex.php?latex=%5Csqrt%7Bm%2Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sqrt{m+n}" title="&#92;sqrt{m+n}" class="latex" /> where m and n run from 1 to upto. In fact it&#8217;s not this value we want, but we want to know whether this value is an integer, ie. whether m+n is itself a square number. We do this using the command <strong>IntegerQ</strong>, which outputs True if it&#8217;s an integer, and false if it&#8217;s not.</p>
-<p>We are interested in the positions in the table where True occurs &#8211; ie. there will be a True at position {2,7} in the table as <img src="//s0.wp.com/latex.php?latex=%5Csqrt%7B2%2B7%7D%3D3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sqrt{2+7}=3" title="&#92;sqrt{2+7}=3" class="latex" /> which is an integer, and therefore this will give True. Thus:</p>
+<p>The first thing is to define a table of values of \(\sqrt{m+n}\) where m and n run from 1 to upto. In fact it&#8217;s not this value we want, but we want to know whether this value is an integer, ie. whether m+n is itself a square number. We do this using the command <strong>IntegerQ</strong>, which outputs True if it&#8217;s an integer, and false if it&#8217;s not.</p>
+<p>We are interested in the positions in the table where True occurs &#8211; ie. there will be a True at position {2,7} in the table as \(\sqrt{2+7}=3\) which is an integer, and therefore this will give True. Thus:</p>
 <p>&nbsp;</p>
 <p style="text-align: center;"><strong>Position[Table[IntegerQ[\sqrt{m+n}],{m,upto},{n,upto}],True]</strong></p>
 <p>&nbsp;</p>

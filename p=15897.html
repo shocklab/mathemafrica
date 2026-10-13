@@ -34,7 +34,7 @@
 
 		<meta property="og:title" content="The (Central) Cauchy distribution"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=15897.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=15897.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="The core of this post comes from Mathematical Statistics and Data Analysis by John A. Rice which is a useful resource for subjects such as UCT&#39;s STA2004F.
 
@@ -42,7 +42,7 @@ Introduction
 
 The Cauchy distribution has a number of interesting properties and is considered a pathological (badly behaved) distribution. What is interesting about it is that it is a distribution that we can"/>
 
-									<meta property="og:image" content="wp-content/uploads/2019/09/zGTLU.png?fit=344%2C354"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -91,7 +91,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=15897.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=15897.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-48p' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D15897.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D15897&.html#038;format=xml" />
@@ -178,7 +178,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-15897 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -265,40 +266,40 @@ img.emoji {
 <p>Like the normal- and t-distributions, the standard form is centred on, and symmetric about 0. But unlike these distributions, it is known for its very heavy (fat) tails. Whereas you are unlikely to see values that are significantly larger or smaller than 0 coming from a normal distribution, this is just not the case when it comes to the Cauchy distribution.</p>
 <p><strong>Building a Cauchy distribution</strong></p>
 <p><em>Ratio of standard normals</em></p>
-<p>If <img src="//s0.wp.com/latex.php?latex=X_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X_1" title="X_1" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=X_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X_2" title="X_2" class="latex" /> are independent Standard Normal variables and <img src="//s0.wp.com/latex.php?latex=Y+%3D+%5Cfrac%7B+X_1%7D%7BX_2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Y = &#92;frac{ X_1}{X_2}" title="Y = &#92;frac{ X_1}{X_2}" class="latex" /></p>
-<p>To find the the distribution of <img src="//s0.wp.com/latex.php?latex=Y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Y" title="Y" class="latex" /> we will use the method of transforming the old variables to find the joint pdf of new ones. First we will need the joint distribution of <img src="//s0.wp.com/latex.php?latex=%28X_1%2CX_2%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(X_1,X_2)" title="(X_1,X_2)" class="latex" />. This can be found quite easily as the distributions are independent, which means that we have:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f_%7BX_1%2CX_2%7D%28x_1%2Cx_2%29+%3D%C2%A0f_%7BX_1%7D%28x_1%29f_%7BX_2%7D%28x_2%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2)" title="f_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2)" class="latex" /></p>
+<p>If \(X_1\) and \(X_2\) are independent Standard Normal variables and \(Y = \frac{ X_1}{X_2}\)</p>
+<p>To find the the distribution of \(Y\) we will use the method of transforming the old variables to find the joint pdf of new ones. First we will need the joint distribution of \((X_1,X_2)\). This can be found quite easily as the distributions are independent, which means that we have:</p>
+<p>\[f_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2)\]</p>
 <p>Since both of these are standard normal we have:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f_%7BX_1%2CX_2%7D%28x_1%2Cx_2%29+%3D%C2%A0f_%7BX_1%7D%28x_1%29f_%7BX_2%7D%28x_2%29+%3D+%5Csqrt%7B%5Cfrac%7B1%7D%7B2%5Cpi%7D%7D%5Csqrt%7B%5Cfrac%7B1%7D%7B2%5Cpi%7D%7De%5E%7B-%5Cfrac%7Bx%5E2_1%7D%7B2%7D%7De%5E%7B-%5Cfrac%7Bx%5E2_2%7D%7B2%7D%7D+%3D+%5Cfrac%7Be%5E%7B%5Cfrac%7Bx%5E2_1+%2B+x%5E2_2%7D%7B2%7D%7D%7D%7B2%5Cpi%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2) = &#92;sqrt{&#92;frac{1}{2&#92;pi}}&#92;sqrt{&#92;frac{1}{2&#92;pi}}e^{-&#92;frac{x^2_1}{2}}e^{-&#92;frac{x^2_2}{2}} = &#92;frac{e^{&#92;frac{x^2_1 + x^2_2}{2}}}{2&#92;pi}" title="f_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2) = &#92;sqrt{&#92;frac{1}{2&#92;pi}}&#92;sqrt{&#92;frac{1}{2&#92;pi}}e^{-&#92;frac{x^2_1}{2}}e^{-&#92;frac{x^2_2}{2}} = &#92;frac{e^{&#92;frac{x^2_1 + x^2_2}{2}}}{2&#92;pi}" class="latex" /></p>
-<p>with <img src="//s0.wp.com/latex.php?latex=-%5Cinfty+%3C+X_1%2CX2+%3C+%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-&#92;infty &lt; X_1,X2 &lt; &#92;infty" title="-&#92;infty &lt; X_1,X2 &lt; &#92;infty" class="latex" />.</p>
-<p>We can then define the transformations of the variables as follows. We already have our first variable, the variable of interest <img src="//s0.wp.com/latex.php?latex=Y+%3D+%5Cfrac%7B+X_1%7D%7BX_2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Y = &#92;frac{ X_1}{X_2}" title="Y = &#92;frac{ X_1}{X_2}" class="latex" /> but we will need two new variables to use this method. We introduce the dummy variable <img src="//s0.wp.com/latex.php?latex=Z+%3D+X_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Z = X_2" title="Z = X_2" class="latex" />.</p>
-<p>The next step is to find the inverses of these, i.e. we now need to find <img src="//s0.wp.com/latex.php?latex=Y%2CZ&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Y,Z" title="Y,Z" class="latex" /> in terms of <img src="//s0.wp.com/latex.php?latex=X_1%2C+X_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X_1, X_2" title="X_1, X_2" class="latex" />. This is fairly simple to do and we can find them as:</p>
-<p><img src="//s0.wp.com/latex.php?latex=X_1+%3D+YZ&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X_1 = YZ" title="X_1 = YZ" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=X_2%3D+Z&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="X_2= Z" title="X_2= Z" class="latex" /></p>
-<p>with Jacobian, <img src="//s0.wp.com/latex.php?latex=J+%3D++++%5Cdet++++%5Cleft+%5B+%7B%5Cbegin%7Barray%7D%7Bc%7D++++Y%2C+Z+%C2%A0%5C%5C++++0%2C1+%C2%A0%5C%5C++++%5Cend%7Barray%7D+%7D+%5Cright%5D++++&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="J =    &#92;det    &#92;left [ {&#92;begin{array}{c}    Y, Z  &#92;&#92;    0,1  &#92;&#92;    &#92;end{array} } &#92;right]    " title="J =    &#92;det    &#92;left [ {&#92;begin{array}{c}    Y, Z  &#92;&#92;    0,1  &#92;&#92;    &#92;end{array} } &#92;right]    " class="latex" /></p>
-<p>Which reduces to <img src="//s0.wp.com/latex.php?latex=%7CZ%7C&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="|Z|" title="|Z|" class="latex" /></p>
+<p>\[f_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2) = \sqrt{\frac{1}{2\pi}}\sqrt{\frac{1}{2\pi}}e^{-\frac{x^2_1}{2}}e^{-\frac{x^2_2}{2}} = \frac{e^{\frac{x^2_1 + x^2_2}{2}}}{2\pi}\]</p>
+<p>with \(-\infty &lt; X_1,X2 &lt; \infty\).</p>
+<p>We can then define the transformations of the variables as follows. We already have our first variable, the variable of interest \(Y = \frac{ X_1}{X_2}\) but we will need two new variables to use this method. We introduce the dummy variable \(Z = X_2\).</p>
+<p>The next step is to find the inverses of these, i.e. we now need to find \(Y,Z\) in terms of \(X_1, X_2\). This is fairly simple to do and we can find them as:</p>
+<p>\(X_1 = YZ\) and \(X_2= Z\)</p>
+<p>with Jacobian, \(J =    \det    \left [ {\begin{array}{c}    Y, Z  \\    0,1  \\    \end{array} } \right]\)</p>
+<p>Which reduces to \(|Z|\)</p>
 <p>then we have:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f_Y%28y%29+%3D+%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D+%5Cfrac%7B%7Cz%7C%7D%7B2+%5Cpi%7D+e%5E%7B-z%5E2%2F2%7D+e%5E%7B-z%5E2y%5E2%2F2%7D+dz&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f_Y(y) = &#92;int_{-&#92;infty}^{&#92;infty} &#92;frac{|z|}{2 &#92;pi} e^{-z^2/2} e^{-z^2y^2/2} dz" title="f_Y(y) = &#92;int_{-&#92;infty}^{&#92;infty} &#92;frac{|z|}{2 &#92;pi} e^{-z^2/2} e^{-z^2y^2/2} dz" class="latex" /></p>
+<p>\[f_Y(y) = \int_{-\infty}^{\infty} \frac{|z|}{2 \pi} e^{-z^2/2} e^{-z^2y^2/2} dz\]</p>
 <p>We may then use symmetry of this distribution about 0 (which comes from the absolute value and squaring operations) to re-write this as:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f_Y%28y%29+%3D+%5Cint_%7B0%7D%5E%7B%5Cinfty%7D+%5Cfrac%7Bz%7D%7B2+%5Cpi%7D+e%5E%7B-z%5E2%2F2%7D+e%5E%7B-z%5E2y%5E2%2F2%7D+dz&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f_Y(y) = &#92;int_{0}^{&#92;infty} &#92;frac{z}{2 &#92;pi} e^{-z^2/2} e^{-z^2y^2/2} dz" title="f_Y(y) = &#92;int_{0}^{&#92;infty} &#92;frac{z}{2 &#92;pi} e^{-z^2/2} e^{-z^2y^2/2} dz" class="latex" /></p>
-<p>From here, we first integrate by making a <img src="//s0.wp.com/latex.php?latex=u&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u" title="u" class="latex" /> substitution and then by recognising the form of the Exponential  (or Gamma) distribution.</p>
-<p>Let <img src="//s0.wp.com/latex.php?latex=u+%3Dz%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u =z^2" title="u =z^2" class="latex" /> then <img src="//s0.wp.com/latex.php?latex=du+%3D+2zdz&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="du = 2zdz" title="du = 2zdz" class="latex" /> and</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B0%7D%5E%7B%5Cinfty%7D+%5Cfrac%7Bz%7D%7B2+%5Cpi%7D+e%5E%7B-z%5E2%2F2%7D+e%5E%7B-z%5E2y%5E2%2F2%7D+dz%3D%C2%A0%5Cfrac%7B1%7D%7B2+%5Cpi%7D+%5Cint_%7B0%7D%5E%7B%5Cinfty%7D+e%5E%7B-u%281%2By%5E2%29%2F2%7Ddu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{0}^{&#92;infty} &#92;frac{z}{2 &#92;pi} e^{-z^2/2} e^{-z^2y^2/2} dz= &#92;frac{1}{2 &#92;pi} &#92;int_{0}^{&#92;infty} e^{-u(1+y^2)/2}du" title="&#92;int_{0}^{&#92;infty} &#92;frac{z}{2 &#92;pi} e^{-z^2/2} e^{-z^2y^2/2} dz= &#92;frac{1}{2 &#92;pi} &#92;int_{0}^{&#92;infty} e^{-u(1+y^2)/2}du" class="latex" /></p>
-<p>Noting that <img src="//s0.wp.com/latex.php?latex=y_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y_2" title="y_2" class="latex" /> is constant with respect to <img src="//s0.wp.com/latex.php?latex=u&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u" title="u" class="latex" /> and that</p>
-<p><img src="//s0.wp.com/latex.php?latex=%C2%A0%5Cint_%7B0%7D%5E%7B%5Cinfty%7D+e%5E%7B-%5Clambda+x%7Ddx+%3D+%5Cfrac%7B1%7D%7B%5Clambda%7D%C2%A0+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt=" &#92;int_{0}^{&#92;infty} e^{-&#92;lambda x}dx = &#92;frac{1}{&#92;lambda}  " title=" &#92;int_{0}^{&#92;infty} e^{-&#92;lambda x}dx = &#92;frac{1}{&#92;lambda}  " class="latex" /> we can let <img src="//s0.wp.com/latex.php?latex=%5Clambda+%3D%C2%A0%281%2By%5E2%29%2F2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lambda = (1+y^2)/2" title="&#92;lambda = (1+y^2)/2" class="latex" /></p>
+<p>\[f_Y(y) = \int_{0}^{\infty} \frac{z}{2 \pi} e^{-z^2/2} e^{-z^2y^2/2} dz\]</p>
+<p>From here, we first integrate by making a \(u\) substitution and then by recognising the form of the Exponential  (or Gamma) distribution.</p>
+<p>Let \(u =z^2\) then \(du = 2zdz\) and</p>
+<p>\[\int_{0}^{\infty} \frac{z}{2 \pi} e^{-z^2/2} e^{-z^2y^2/2} dz= \frac{1}{2 \pi} \int_{0}^{\infty} e^{-u(1+y^2)/2}du\]</p>
+<p>Noting that \(y_2\) is constant with respect to \(u\) and that</p>
+<p>\(\int_{0}^{\infty} e^{-\lambda x}dx = \frac{1}{\lambda}\) we can let \(\lambda = (1+y^2)/2\)</p>
 <p>and get:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f_Y%28y%29+%3D%5Cfrac%7B1%7D%7B2+%5Cpi%7D+%5Cint_%7B0%7D%5E%7B%5Cinfty%7D+e%5E%7B-%5Cfrac%7Bu%281%2By%5E2%29%7D%7B2%7D%7Ddu+%3D+%5Cfrac%7B1%7D%7B%5Cpi+%281%2By%5E2%29%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f_Y(y) =&#92;frac{1}{2 &#92;pi} &#92;int_{0}^{&#92;infty} e^{-&#92;frac{u(1+y^2)}{2}}du = &#92;frac{1}{&#92;pi (1+y^2)}" title="f_Y(y) =&#92;frac{1}{2 &#92;pi} &#92;int_{0}^{&#92;infty} e^{-&#92;frac{u(1+y^2)}{2}}du = &#92;frac{1}{&#92;pi (1+y^2)}" class="latex" /> for <img src="//s0.wp.com/latex.php?latex=-%5Cinfty+%3C+y+%3C+%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-&#92;infty &lt; y &lt; &#92;infty" title="-&#92;infty &lt; y &lt; &#92;infty" class="latex" />.</p>
+<p>\(f_Y(y) =\frac{1}{2 \pi} \int_{0}^{\infty} e^{-\frac{u(1+y^2)}{2}}du = \frac{1}{\pi (1+y^2)}\) for \(-\infty &lt; y &lt; \infty\).</p>
 <p>which is the pdf of a Cauchy random variable.</p>
 <p><em>From the t-distribution</em></p>
 <p>The Cauchy distribution can also be thought of a Student&#8217;s t distribution with 1 degree of freedom. To show this, we consider the pdf of a t-distribution:</p>
-<p><img src="//s0.wp.com/latex.php?latex=f%28t%29+%3D+%5Cfrac%7B%5CGamma%28%28%5Cnu%2B1%29%2F2%29%7D%7B%5Csqrt%7B%5Cnu+%5Cpi%7D+%5CGamma%28%5Cfrac%7B%5Cnu%7D%7B2%7D%29%7D+%28+1+%2B+%5Cfrac%7Bt%5E2%7D%7B%5Cnu%7D%29%5E%7B-%5Cfrac%7B1%7D%7B2%7D%28%5Cnu%2B1%29%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(t) = &#92;frac{&#92;Gamma((&#92;nu+1)/2)}{&#92;sqrt{&#92;nu &#92;pi} &#92;Gamma(&#92;frac{&#92;nu}{2})} ( 1 + &#92;frac{t^2}{&#92;nu})^{-&#92;frac{1}{2}(&#92;nu+1)} " title="f(t) = &#92;frac{&#92;Gamma((&#92;nu+1)/2)}{&#92;sqrt{&#92;nu &#92;pi} &#92;Gamma(&#92;frac{&#92;nu}{2})} ( 1 + &#92;frac{t^2}{&#92;nu})^{-&#92;frac{1}{2}(&#92;nu+1)} " class="latex" /> where <img src="//s0.wp.com/latex.php?latex=%5Cnu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;nu" title="&#92;nu" class="latex" /> is the degrees of freedom and <img src="//s0.wp.com/latex.php?latex=%5CGamma&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Gamma" title="&#92;Gamma" class="latex" /> is the gamma function.</p>
-<p>When we set <img src="//s0.wp.com/latex.php?latex=%5Cnu%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;nu=1" title="&#92;nu=1" class="latex" /> and note that <img src="//s0.wp.com/latex.php?latex=%5CGamma%28%5Cfrac%7B1%7D%7B2%7D%29+%3D+%5Cpi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Gamma(&#92;frac{1}{2}) = &#92;pi" title="&#92;Gamma(&#92;frac{1}{2}) = &#92;pi" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=%5CGamma%281%29+%3D+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Gamma(1) = 1" title="&#92;Gamma(1) = 1" class="latex" /> we recover the Cauchy density function.</p>
+<p>\(f(t) = \frac{\Gamma((\nu+1)/2)}{\sqrt{\nu \pi} \Gamma(\frac{\nu}{2})} ( 1 + \frac{t^2}{\nu})^{-\frac{1}{2}(\nu+1)}\) where \(\nu\) is the degrees of freedom and \(\Gamma\) is the gamma function.</p>
+<p>When we set \(\nu=1\) and note that \(\Gamma(\frac{1}{2}) = \pi\) and \(\Gamma(1) = 1\) we recover the Cauchy density function.</p>
 <p>This makes sense if we think of the t-distribution as a ratio of a standard normal and the square root of a chi-squared distribution divided by its degrees of freedom. If the degrees of freedom is 1 then the denominator of this ratio is a standard normal. This is exactly what we had above.</p>
 <p>Intuitively if we think about the t-distribution as the distribution of a standardised sample mean and the mean is calculated from only 2 observations (giving a single degree of freedom) then the distribution of the standardised sample mean is Cauchy. We shall see shortly that the moments of the Cauchy distribution are not defined. This is an intuitive reason to collect a lot of data- if we have a very small sample, the distribution of the standardised sample mean behaves badly and we cannot do good inference on it.</p>
 <p><strong>Moments</strong></p>
 <p>The Cauchy distribution is notable because the integer moments are not defined.</p>
 <p>This is a particular problem if we want to apply the central limit theorem, which requires a finite mean and variance.</p>
 <p>We might expect the mean to be 0, because the distribution is symmetric and centred on 0, but this intuition is incorrect. This can be seen by considering the integral:</p>
-<p><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%C2%A0%5Cfrac%7B%7Cx%7C%7D%7B%281%2Bx%5E2%29%7D+dx+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-&#92;infty}^{&#92;infty} &#92;frac{|x|}{(1+x^2)} dx " title="&#92;int_{-&#92;infty}^{&#92;infty} &#92;frac{|x|}{(1+x^2)} dx " class="latex" /> which diverges. This means that the density in the tails decreases slowly enough that the probability of extreme values is still reasonably high. As a result the expectation, and by extension, higher order moments, are not defined. It is in this sense that the distribution is pathological and quite interesting.</p>
+<p>\(\int_{-\infty}^{\infty} \frac{|x|}{(1+x^2)} dx\) which diverges. This means that the density in the tails decreases slowly enough that the probability of extreme values is still reasonably high. As a result the expectation, and by extension, higher order moments, are not defined. It is in this sense that the distribution is pathological and quite interesting.</p>
 <p>&nbsp;</p>
 <p>*The (general) Cauchy distribution can also be thought of as the distribution of the x-co-ordinate of a ray from a given point drawn at a uniformly distributed angle.</p>
 <p>&nbsp;</p>

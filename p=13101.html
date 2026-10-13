@@ -32,11 +32,11 @@
 
 		<meta property="og:title" content="Where did that substitution come from?"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=13101.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=13101.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="If you want to understand maths, you really have to do it. I recommend going through these examples and using the substitutions given here as hints. Get a blank piece of paper, put your notes away and try to do these examples and see if you get the same answers as in class. If you"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -84,7 +84,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=13101.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=13101.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-3pj' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D13101.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D13101&.html#038;format=xml" />
@@ -243,7 +243,8 @@ padding: 10px;
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-13101 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -319,36 +320,36 @@ padding: 10px;
 <p>I&#8217;ve been teaching integration by substitution, including by trig substitutions over the last few days, and a frequent question which a newbie substituter will ask is &#8220;how did you know to make that substitution?&#8221;. It&#8217;s a very reasonable question, and one that takes practice to build the correct intuition, but I&#8217;ll do my best to give some motivation now as to why we made some of the substitutions we made. We won&#8217;t solve the integrals, but we will motivate here why we make particular choices for substitutions.</p>
 <p>&nbsp;</p>
 <ol>
-<li><img src="//s0.wp.com/latex.php?latex=%5Cint%5Csqrt%7Ba%5E2-x%5E2%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int&#92;sqrt{a^2-x^2}dx" title="&#92;int&#92;sqrt{a^2-x^2}dx" class="latex" /></li>
+<li>\(\int\sqrt{a^2-x^2}dx\)</li>
 </ol>
 <p>&nbsp;</p>
-<p>We can see here that we have something that looks like <img src="//s0.wp.com/latex.php?latex=1-x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1-x^2" title="1-x^2" class="latex" />. Whenever we see this we should be reminded of our favourite trig identity <img src="//s0.wp.com/latex.php?latex=%5Csin%5E2%5Ctheta%2B%5Ccos%5E2%5Ctheta%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sin^2&#92;theta+&#92;cos^2&#92;theta=1" title="&#92;sin^2&#92;theta+&#92;cos^2&#92;theta=1" class="latex" />. You should be thinking about this identity when you go to sleep at night, and it should be the first thing in your mind when you wake up in the morning. It is a beautiful identity because it tells us about the perfection of the circle.</p>
-<p>ok, so whenever you see something related to <img src="//s0.wp.com/latex.php?latex=1-x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1-x^2" title="1-x^2" class="latex" /> in an integral, you can think of converting your <img src="//s0.wp.com/latex.php?latex=x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2" title="x^2" class="latex" /> into a <img src="//s0.wp.com/latex.php?latex=%5Csin%5E2%5Ctheta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sin^2&#92;theta" title="&#92;sin^2&#92;theta" class="latex" />. In the integral above, there&#8217;s a pesky a, so we can simply let <img src="//s0.wp.com/latex.php?latex=x%3Da%5Csin%5Ctheta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=a&#92;sin&#92;theta" title="x=a&#92;sin&#92;theta" class="latex" /> and then we can pull the a out of the square root (so long as it&#8217;s positive).</p>
-<p>So, in this case making this substitution (and remembering to convert the dx to <img src="//s0.wp.com/latex.php?latex=a%5Ccos%5Ctheta+d%5Ctheta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a&#92;cos&#92;theta d&#92;theta" title="a&#92;cos&#92;theta d&#92;theta" class="latex" />) we will end up with a factor of <img src="//s0.wp.com/latex.php?latex=%5Ccos%5E2%5Ctheta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;cos^2&#92;theta" title="&#92;cos^2&#92;theta" class="latex" /> which we then can solve using the double angle formula.</p>
+<p>We can see here that we have something that looks like \(1-x^2\). Whenever we see this we should be reminded of our favourite trig identity \(\sin^2\theta+\cos^2\theta=1\). You should be thinking about this identity when you go to sleep at night, and it should be the first thing in your mind when you wake up in the morning. It is a beautiful identity because it tells us about the perfection of the circle.</p>
+<p>ok, so whenever you see something related to \(1-x^2\) in an integral, you can think of converting your \(x^2\) into a \(\sin^2\theta\). In the integral above, there&#8217;s a pesky a, so we can simply let \(x=a\sin\theta\) and then we can pull the a out of the square root (so long as it&#8217;s positive).</p>
+<p>So, in this case making this substitution (and remembering to convert the dx to \(a\cos\theta d\theta\)) we will end up with a factor of \(\cos^2\theta\) which we then can solve using the double angle formula.</p>
 <p>&nbsp;</p>
 <ol start="2">
-<li><img src="//s0.wp.com/latex.php?latex=%5Cint%5Cfrac%7B1%7D%7B%5Csqrt%7B1-x%5E2%7D%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int&#92;frac{1}{&#92;sqrt{1-x^2}}dx" title="&#92;int&#92;frac{1}{&#92;sqrt{1-x^2}}dx" class="latex" /></li>
+<li>\(\int\frac{1}{\sqrt{1-x^2}}dx\)</li>
 </ol>
 <p>&nbsp;</p>
-<p>The same goes for this case. It won&#8217;t always work, but it&#8217;s worth a shot whenever you see a <img src="//s0.wp.com/latex.php?latex=%5Csqrt%7B1-x%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sqrt{1-x^2}" title="&#92;sqrt{1-x^2}" class="latex" /> floating around.</p>
+<p>The same goes for this case. It won&#8217;t always work, but it&#8217;s worth a shot whenever you see a \(\sqrt{1-x^2}\) floating around.</p>
 <p>&nbsp;</p>
 <ol start="3">
-<li><img src="//s0.wp.com/latex.php?latex=%5Cint+%5Cfrac%7B%5Csqrt%7Bx%5E2-1%7D%7D%7Bx%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int &#92;frac{&#92;sqrt{x^2-1}}{x}dx" title="&#92;int &#92;frac{&#92;sqrt{x^2-1}}{x}dx" class="latex" /></li>
+<li>\(\int \frac{\sqrt{x^2-1}}{x}dx\)</li>
 </ol>
 <p>&nbsp;</p>
-<p>This is a little different as it&#8217;s not quite <img src="//s0.wp.com/latex.php?latex=%5Csqrt%7B1-x%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sqrt{1-x^2}" title="&#92;sqrt{1-x^2}" class="latex" />. Here, we can pull the x in the denominator inside the square root (so long as x is positive), and end up with:</p>
+<p>This is a little different as it&#8217;s not quite \(\sqrt{1-x^2}\). Here, we can pull the x in the denominator inside the square root (so long as x is positive), and end up with:</p>
 <p>&nbsp;</p>
 <ol start="4">
-<li><img src="//s0.wp.com/latex.php?latex=%5Cint+%5Csqrt%7B1-%5Cfrac%7B1%7D%7Bx%5E2%7D%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int &#92;sqrt{1-&#92;frac{1}{x^2}}dx" title="&#92;int &#92;sqrt{1-&#92;frac{1}{x^2}}dx" class="latex" />.</li>
+<li>\(\int \sqrt{1-\frac{1}{x^2}}dx\).</li>
 </ol>
 <p>&nbsp;</p>
-<p>Now, if we want to use our normal trig identity we can put in <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7Bx%7D%3D%5Csin%5Ctheta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{x}=&#92;sin&#92;theta" title="&#92;frac{1}{x}=&#92;sin&#92;theta" class="latex" /> or <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7Bx%7D%3D%5Ccos%5Ctheta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{x}=&#92;cos&#92;theta" title="&#92;frac{1}{x}=&#92;cos&#92;theta" class="latex" />. It actually doesn&#8217;t matter which, but because we might be a bit more comfortable with taking derivatives of <img src="//s0.wp.com/latex.php?latex=%5Csec%5Ctheta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sec&#92;theta" title="&#92;sec&#92;theta" class="latex" />, we can choose  <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7Bx%7D%3D%5Ccos%5Ctheta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{x}=&#92;cos&#92;theta" title="&#92;frac{1}{x}=&#92;cos&#92;theta" class="latex" /> and see what happens. The whole thing will appear to get more complicated for a while, but it will sort itself out in the end.</p>
+<p>Now, if we want to use our normal trig identity we can put in \(\frac{1}{x}=\sin\theta\) or \(\frac{1}{x}=\cos\theta\). It actually doesn&#8217;t matter which, but because we might be a bit more comfortable with taking derivatives of \(\sec\theta\), we can choose  \(\frac{1}{x}=\cos\theta\) and see what happens. The whole thing will appear to get more complicated for a while, but it will sort itself out in the end.</p>
 <p>&nbsp;</p>
 <ol start="5">
-<li><img src="//s0.wp.com/latex.php?latex=%5Cint%5Cfrac%7Bx%7D%7B1-x%5E4%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int&#92;frac{x}{1-x^4}dx" title="&#92;int&#92;frac{x}{1-x^4}dx" class="latex" /></li>
+<li>\(\int\frac{x}{1-x^4}dx\)</li>
 </ol>
 <p>&nbsp;</p>
-<p>This was the example that most people in class found most complicated. This time we don&#8217;t see any <img src="//s0.wp.com/latex.php?latex=%5Csqrt%7B1-x%5E2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sqrt{1-x^2}" title="&#92;sqrt{1-x^2}" class="latex" /> floating around, but we do have a factor of <img src="//s0.wp.com/latex.php?latex=1-x%5E4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1-x^4" title="1-x^4" class="latex" />. In fact there are some other ways to solve this, but we can think about trying to use the fact that <img src="//s0.wp.com/latex.php?latex=%5Csin%5E2x%2B%5Ccos%5E2x%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sin^2x+&#92;cos^2x=1" title="&#92;sin^2x+&#92;cos^2x=1" class="latex" /> again. If we let <img src="//s0.wp.com/latex.php?latex=x%5E2%3D%5Csin%5Ctheta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2=&#92;sin&#92;theta" title="x^2=&#92;sin&#92;theta" class="latex" /> then we can see that a) we will get something quite nice and simple in the denominator, but also that the factor of <img src="//s0.wp.com/latex.php?latex=x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x dx" title="x dx" class="latex" /> in the numerator is related to our new variable, as in our choice of substitution: <img src="//s0.wp.com/latex.php?latex=2x+dx%3D%5Ccos%5Ctheta%C2%A0+d%5Ctheta&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2x dx=&#92;cos&#92;theta  d&#92;theta" title="2x dx=&#92;cos&#92;theta  d&#92;theta" class="latex" />. This will mean that we&#8217;ll have some cancellations which make things easier in the end.</p>
+<p>This was the example that most people in class found most complicated. This time we don&#8217;t see any \(\sqrt{1-x^2}\) floating around, but we do have a factor of \(1-x^4\). In fact there are some other ways to solve this, but we can think about trying to use the fact that \(\sin^2x+\cos^2x=1\) again. If we let \(x^2=\sin\theta\) then we can see that a) we will get something quite nice and simple in the denominator, but also that the factor of \(x dx\) in the numerator is related to our new variable, as in our choice of substitution: \(2x dx=\cos\theta  d\theta\). This will mean that we&#8217;ll have some cancellations which make things easier in the end.</p>
 <p>The rest is algebra (and a trig integral which we did yesterday.)</p>
 <p>You see, there aren&#8217;t actually many tricks to all of this. It&#8217;s just about seeing whether there&#8217;s something which will give us a simple form when we make a choice of trig substitution. All of the other steps are a matter of building intuition and letting your senses of mathematical simplicity and pattern recognition guide you. Maths is mostly about recognising patterns.</p>
 <p>&nbsp;</p>

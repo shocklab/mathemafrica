@@ -160,7 +160,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive date fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -226,9 +227,9 @@ img.emoji {
 	<div id="posts-container" class="fusion-blog-layout-large fusion-blog-pagination fusion-blog-archive fusion-clearfix" data-pages="2"><div id="post-12431" class="fusion-post-large post fusion-clearfix post-12431 type-post status-publish format-standard hentry category-english category-level-intermediate-2 category-uncategorized">
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=12431.html">Welcome to Reproducing Kernel Hilbert Space</a></h2><div class="fusion-post-content-container">In a series of posts I hope to introduce Mathemafrica readers to some useful data analysis methods which rely on operations in a little back-water of Hilbert space, namely Reproducing Kernel Hilbert Space (or RKHS).
-<p>We&#8217;ll start with the &#8220;classic&#8221; example. Consider the data plotted in figure 1. Each data point has 3 &#8220;properties&#8221;: an <img src="//s0.wp.com/latex.php?latex=x_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_1" title="x_1" class="latex" /> coordinate, an <img src="//s0.wp.com/latex.php?latex=x_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_2" title="x_2" class="latex" /> coordinate and a colour (red or blue). Suppose we want to be able to separate all data points into two groups: red points and blue points. Furthermore, we want to be able to do this <em>linearly</em>, i.e. we want to be able to draw a line (or plane or hyperplane) such that all points on one side are blue, all points on the other are red. This is called linear classification.</p>
+<p>We&#8217;ll start with the &#8220;classic&#8221; example. Consider the data plotted in figure 1. Each data point has 3 &#8220;properties&#8221;: an \(x_1\) coordinate, an \(x_2\) coordinate and a colour (red or blue). Suppose we want to be able to separate all data points into two groups: red points and blue points. Furthermore, we want to be able to do this <em>linearly</em>, i.e. we want to be able to draw a line (or plane or hyperplane) such that all points on one side are blue, all points on the other are red. This is called linear classification.</p>
 <div id="attachment_12511" style="width: 494px" class="wp-caption aligncenter"><a href="wp-content/uploads/2016/03/fig01.png" rel="attachment wp-att-12511"><img class="size-full wp-image-12511" src="wp-content/uploads/2016/03/fig01.png?resize=484%2C504" alt="Figure 1: A scatter of data with three properties: an x_1 coordinate, an x_2 coordinate and a colour." srcset="wp-content/uploads/2016/03/fig01.png?resize=288%2C300 288w, wp-content/uploads/2016/03/fig01.png?fit=484%2C504 484w" sizes="(max-width: 484px) 100vw, 484px" data-recalc-dims="1" /></a><p class="wp-caption-text">Figure 1: A scatter of data with three properties: an x_1 coordinate, an x_2 coordinate and a colour.</p></div>
-<p>Suppose for each data point we generate a <em>representation</em> of the data point <img src="//s0.wp.com/latex.php?latex=%5Cphi%28x%29%3D%5Bx_1%2C+x_2%2C+x_1x_2%5D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;phi(x)=[x_1, x_2, x_1x_2] " title="&#92;phi(x)=[x_1, x_2, x_1x_2] " class="latex" />.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=30.html" title="Posts by Alex Antrobus" rel="author">Alex Antrobus</a></span></span><span class="fusion-inline-sep">|</span>
+<p>Suppose for each data point we generate a <em>representation</em> of the data point \(\phi(x)=[x_1, x_2, x_1x_2]\).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=30.html" title="Posts by Alex Antrobus" rel="author">Alex Antrobus</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -238,23 +239,23 @@ img.emoji {
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=12816.html">Chain Rule.</a></h2><div class="fusion-post-content-container"><p><strong>Definition:</strong></p>
 <p>The chain rule is a method for differentiating a function of a function, or differentiating composite functions.</p>
-<p>Consider the expression <img src="//s0.wp.com/latex.php?latex=y+%3D+sin%28x%5E2%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y = sin(x^2)" title="y = sin(x^2)" class="latex" />. We notice that this is not a normal sine function. It has an <img src="//s0.wp.com/latex.php?latex=x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2" title="x^2" class="latex" /> as argument for the sine function. Therefore, we can consider the <img src="//s0.wp.com/latex.php?latex=x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2" title="x^2" class="latex" /> in the sine function as a whole different function. This can be broken into two functions, <img src="//s0.wp.com/latex.php?latex=f%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)" title="f(x)" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=g%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x)" title="g(x)" class="latex" />.</p>
-<p>If we consider <img src="//s0.wp.com/latex.php?latex=f%28x%29+%3D+%C2%A0sin%28x%29%3B+g%28x%29+%3D+x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x) =  sin(x); g(x) = x^2" title="f(x) =  sin(x); g(x) = x^2" class="latex" />, we can write <img src="//s0.wp.com/latex.php?latex=y+%3D+f%28g%28x%29%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y = f(g(x))" title="y = f(g(x))" class="latex" />.</p>
-<p>In order to differentiate a composite function, <img src="//s0.wp.com/latex.php?latex=y+%3D+f%28g%28x%29%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y = f(g(x))" title="y = f(g(x))" class="latex" />, i.e; to find <img src="//s0.wp.com/latex.php?latex=y%27&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y&#039;" title="y&#039;" class="latex" />, we let</p>
-<p style="text-align: center"><img src="//s0.wp.com/latex.php?latex=u+%3D+g%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u = g(x)" title="u = g(x)" class="latex" />  and  <img src="//s0.wp.com/latex.php?latex=y+%3D+f%28u%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y = f(u)" title="y = f(u)" class="latex" /></p>
-<p style="text-align: left">What this implies is that whatever <img src="//s0.wp.com/latex.php?latex=g%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x)" title="g(x)" class="latex" /> is, <strong>u</strong> will be equal to that. Then, the process of differentiating is to find</p>
+<p>Consider the expression \(y = sin(x^2)\). We notice that this is not a normal sine function. It has an \(x^2\) as argument for the sine function. Therefore, we can consider the \(x^2\) in the sine function as a whole different function. This can be broken into two functions, \(f(x)\) and \(g(x)\).</p>
+<p>If we consider \(f(x) =  sin(x); g(x) = x^2\), we can write \(y = f(g(x))\).</p>
+<p>In order to differentiate a composite function, \(y = f(g(x))\), i.e; to find \(y'\), we let</p>
+<p style="text-align: center">\(u = g(x)\)  and  \(y = f(u)\)</p>
+<p style="text-align: left">What this implies is that whatever \(g(x)\) is, <strong>u</strong> will be equal to that. Then, the process of differentiating is to find</p>
 <ul>
-<li style="text-align: left"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdu%7D%7Bdx%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{du}{dx}" title="&#92;frac{du}{dx}" class="latex" /> (as <strong>u</strong> will be a function of <strong>x</strong>).</li>
-<li style="text-align: left"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdu%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dy}{du}" title="&#92;frac{dy}{du}" class="latex" /></li>
+<li style="text-align: left">\(\frac{du}{dx}\) (as <strong>u</strong> will be a function of <strong>x</strong>).</li>
+<li style="text-align: left">\(\frac{dy}{du}\)</li>
 </ul>
 <p>Finally, we can write,</p>
-<p style="text-align: center"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdx%7D+%3D+%5Cfrac%7Bdy%7D%7Bdu%7D+%5Ccdot+%5Cfrac%7Bdu%7D%7Bdx%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dy}{dx} = &#92;frac{dy}{du} &#92;cdot &#92;frac{du}{dx}" title="&#92;frac{dy}{dx} = &#92;frac{dy}{du} &#92;cdot &#92;frac{du}{dx}" class="latex" /></p>
-<p style="text-align: left">Back to our example, <img src="//s0.wp.com/latex.php?latex=y+%3D+sin%28x%5E2%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y = sin(x^2)" title="y = sin(x^2)" class="latex" />; remember that <img src="//s0.wp.com/latex.php?latex=f%28x%29+%3D+sin%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x) = sin(x)" title="f(x) = sin(x)" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=g%28x%29+%3D+x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x) = x^2" title="g(x) = x^2" class="latex" />. We let</p>
-<p style="text-align: center"><img src="//s0.wp.com/latex.php?latex=u+%3D+%C2%A0x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u =  x^2" title="u =  x^2" class="latex" />  and  <img src="//s0.wp.com/latex.php?latex=y+%3D+f%28u%29+%3D+sin%28u%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y = f(u) = sin(u)" title="y = f(u) = sin(u)" class="latex" /></p>
-<p style="text-align: left">Therefore,  <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdu%7D%7Bdx%7D+%3D+2x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{du}{dx} = 2x" title="&#92;frac{du}{dx} = 2x" class="latex" /> and  <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdu%7D+%3D+cos%28u%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dy}{du} = cos(u)" title="&#92;frac{dy}{du} = cos(u)" class="latex" /></p>
-<p style="text-align: left">This leaves us with  <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdx%7D+%3D+cos%28u%29+%5Ccdot+2x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dy}{dx} = cos(u) &#92;cdot 2x" title="&#92;frac{dy}{dx} = cos(u) &#92;cdot 2x" class="latex" />. We can simplify the equation by writing</p>
-<p style="text-align: center"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdx%7D+%3D+2xcos%28x%5E2%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dy}{dx} = 2xcos(x^2)" title="&#92;frac{dy}{dx} = 2xcos(x^2)" class="latex" /></p>
-<p style="text-align: left">Note that the <strong>u</strong> in the cosine function is replaced with <img src="//s0.wp.com/latex.php?latex=x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2" title="x^2" class="latex" />.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=50.html" title="Posts by Azhar Rohiman" rel="author">Azhar Rohiman</a></span></span><span class="fusion-inline-sep">|</span>
+<p style="text-align: center">\[\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}\]</p>
+<p style="text-align: left">Back to our example, \(y = sin(x^2)\); remember that \(f(x) = sin(x)\) and \(g(x) = x^2\). We let</p>
+<p style="text-align: center">\(u =  x^2\)  and  \(y = f(u) = sin(u)\)</p>
+<p style="text-align: left">Therefore,  \(\frac{du}{dx} = 2x\) and  \(\frac{dy}{du} = cos(u)\)</p>
+<p style="text-align: left">This leaves us with  \(\frac{dy}{dx} = cos(u) \cdot 2x\). We can simplify the equation by writing</p>
+<p style="text-align: center">\[\frac{dy}{dx} = 2xcos(x^2)\]</p>
+<p style="text-align: left">Note that the <strong>u</strong> in the cosine function is replaced with \(x^2\).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=50.html" title="Posts by Azhar Rohiman" rel="author">Azhar Rohiman</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -302,15 +303,15 @@ boring testing each string of lights to see if they are still working.&hellip;</
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=12790.html">Logical implications and the structure of if and only if statements</a></h2><div class="fusion-post-content-container"><p>We had a homework assignment a couple of weeks back. It was looking at mathematics in a very different way from how many had seen it before, and it caused a lot of confusion. I would like to try and add some clarity to what we were doing. My thought was, rather than going through the questions themselves, I would like to add annotations to the proof itself. Let&#8217;s see how this works. The proof that you were given is in black, the annotations are in blue, and after I&#8217;ve been through the proof, I will expand on it in a simplified form.</p>
 <p>&nbsp;</p>
-<p><strong>Theorem: </strong>The function f is differentiable at x=a if and only if there is a constant m and a function E of x, defined for all <img src="//s0.wp.com/latex.php?latex=x+%5Cnot+%3D+a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x &#92;not = a" title="x &#92;not = a" class="latex" />, such that</p>
+<p><strong>Theorem: </strong>The function f is differentiable at x=a if and only if there is a constant m and a function E of x, defined for all \(x \not = a\), such that</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=f%28x%29%3Df%28a%29%2Bm%28x-a%29%2BE%28x%29%28x-a%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)=f(a)+m(x-a)+E(x)(x-a)" title="f(x)=f(a)+m(x-a)+E(x)(x-a)" class="latex" /> for all <img src="//s0.wp.com/latex.php?latex=x+%5Cnot+%3D+a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x &#92;not = a" title="x &#92;not = a" class="latex" />      &#8211; (eq 1)</p>
+<p style="text-align: center;">\(f(x)=f(a)+m(x-a)+E(x)(x-a)\) for all \(x \not = a\)      &#8211; (eq 1)</p>
 <p>&nbsp;</p>
 <p>and,</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim%5Climits_%7Bx%5Cto+a%7DE%28x%29%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim&#92;limits_{x&#92;to a}E(x)=0" title="&#92;lim&#92;limits_{x&#92;to a}E(x)=0" class="latex" />.</p>
+<p style="text-align: center;">\(\lim\limits_{x\to a}E(x)=0\).</p>
 <p>&nbsp;</p>
-<p>(If both these conditions are satisfied, then <img src="//s0.wp.com/latex.php?latex=f%27%28a%29%3Dm&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f&#039;(a)=m" title="f&#039;(a)=m" class="latex" />.)</p>
+<p>(If both these conditions are satisfied, then \(f'(a)=m\).)</p>
 <p>&nbsp;</p>
 <p><span style="color: #0000ff;">What we are doing here is giving another definition of differentiability (at a particular point, a).</span>&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	

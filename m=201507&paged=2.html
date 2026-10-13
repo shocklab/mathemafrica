@@ -160,7 +160,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive date paged paged-2 date-paged-2 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -230,19 +231,19 @@ img.emoji {
 <p><strong>Definite integrals using integration by parts</strong></p>
 <p>Let&#8217;s look at the following integral:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%7B%5Cfrac%7B%5Cpi%7D%7B2%7D%7D+x%5E2+%5Csin+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^{&#92;frac{&#92;pi}{2}} x^2 &#92;sin x dx" title="&#92;int_0^{&#92;frac{&#92;pi}{2}} x^2 &#92;sin x dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^{\frac{\pi}{2}} x^2 \sin x dx\]</p>
 <p>&nbsp;</p>
-<p>Where as usual we see that the <img src="//s0.wp.com/latex.php?latex=x%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2" title="x^2" class="latex" /> term becomes simpler if we differentiate it and so we choose:</p>
+<p>Where as usual we see that the \(x^2\) term becomes simpler if we differentiate it and so we choose:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=u%3Dx%5E2%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+dv%3D%5Csin+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u=x^2,&#92;,&#92;,&#92;,&#92;,&#92;, dv=&#92;sin x dx" title="u=x^2,&#92;,&#92;,&#92;,&#92;,&#92;, dv=&#92;sin x dx" class="latex" /></p>
+<p style="text-align: center;">\[u=x^2,\,\,\,\,\, dv=\sin x dx\]</p>
 <p>&nbsp;</p>
 <p>Thus</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=du%3D2x+dx%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C+v%3D-%5Ccos+x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="du=2x dx,&#92;,&#92;,&#92;,&#92;,&#92;, v=-&#92;cos x" title="du=2x dx,&#92;,&#92;,&#92;,&#92;,&#92;, v=-&#92;cos x" class="latex" /></p>
+<p style="text-align: center;">\[du=2x dx,\,\,\,\,\, v=-\cos x\]</p>
 <p>&nbsp;</p>
 <p>Using the normal integration parts algorithm we will get the following, and note that now we need to evaluate the result at the limits of integration:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cleft.-x%5E2+%5Ccos+x%5Cright%7C_0%5E%7B%5Cfrac%7B%5Cpi%7D%7B2%7D%7D%2B+%5Cint_0%5E%7B%5Cfrac%7B%5Cpi%7D%7B2%7D%7D+2x+%5Ccos+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;left.-x^2 &#92;cos x&#92;right|_0^{&#92;frac{&#92;pi}{2}}+ &#92;int_0^{&#92;frac{&#92;pi}{2}} 2x &#92;cos x dx" title="&#92;left.-x^2 &#92;cos x&#92;right|_0^{&#92;frac{&#92;pi}{2}}+ &#92;int_0^{&#92;frac{&#92;pi}{2}} 2x &#92;cos x dx" class="latex" /></p>
+<p style="text-align: center;">\[\left.-x^2 \cos x\right|_0^{\frac{\pi}{2}}+ \int_0^{\frac{\pi}{2}} 2x \cos x dx\]</p>
 <p>&nbsp;</p>
 <p>We can&#8217;t quite solve this last integral directly so we integrate by parts again. However, we note that the first term in this expression actually evaluates to zero when we plug in both limits, so we are left with just the integral term.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
@@ -255,9 +256,9 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=10803.html">UCT MAM1000 lecture notes part 2</a></h2><div class="fusion-post-content-container"><p>Before getting onto the maths proper today I wanted to discuss why you should care about any of this stuff. Who cares whether you can integrate a given function or not? There are many reasons as to why you might care, but I think it&#8217;s nice to take an example from either end of the reasoning spectrum.</p>
 <p>The first reason is that within many different sciences, the way we describe the world is by differential equations, which we will come on to in the coming weeks. Differential equations are like algebraic equations (that you&#8217;ve been studying for years) but they include derivatives. An example is something like:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdf%28x%29%7D%7Bdx%7D%2Bx%5E2%2Bf%28x%29%3D2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{df(x)}{dx}+x^2+f(x)=2" title="&#92;frac{df(x)}{dx}+x^2+f(x)=2" class="latex" /></p>
+<p style="text-align: center;">\[\frac{df(x)}{dx}+x^2+f(x)=2\]</p>
 <p>&nbsp;</p>
-<p>Here you are not being asked to solve for a variable and work out what constant it equals, you are being asked to solve for a function to see how it varies over <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />.</p>
+<p>Here you are not being asked to solve for a variable and work out what constant it equals, you are being asked to solve for a function to see how it varies over \(x\).</p>
 <p>Such equations are the way we model the world, in just about every field from physics, to sociology and from actuarial sciences to epidemiology.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
@@ -281,29 +282,29 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=10788.html">UCT MAM1000 lecture notes 1 (part iii) – integration by parts</a></h2><div class="fusion-post-content-container"><p>Here we are going to come up with our second method for solving integrals which we can&#8217;t solve by inspection (noting that they are the antiderivative of some function which we know well).</p>
 <p>We know the product rule for differentiation:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd+%28f%28x%29g%28x%29%29%7D%7Bdx%7D%3Df%27%28x%29g%28x%29%2Bf%28x%29g%27%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d (f(x)g(x))}{dx}=f&#039;(x)g(x)+f(x)g&#039;(x)" title="&#92;frac{d (f(x)g(x))}{dx}=f&#039;(x)g(x)+f(x)g&#039;(x)" class="latex" /></p>
+<p style="text-align: center;">\[\frac{d (f(x)g(x))}{dx}=f'(x)g(x)+f(x)g'(x)\]</p>
 <p>&nbsp;</p>
 <p>Integrating it gives us:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=f%28x%29g%28x%29%2Bc%3D%5Cint+f%27%28x%29g%28x%29dx%2B%5Cint+f%28x%29g%27%28x%29dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)g(x)+c=&#92;int f&#039;(x)g(x)dx+&#92;int f(x)g&#039;(x)dx" title="f(x)g(x)+c=&#92;int f&#039;(x)g(x)dx+&#92;int f(x)g&#039;(x)dx" class="latex" /></p>
+<p style="text-align: center;">\[f(x)g(x)+c=\int f'(x)g(x)dx+\int f(x)g'(x)dx\]</p>
 <p>We can then rearrange this to give:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+f%28x%29g%27%28x%29dx%3Df%28x%29g%28x%29-%5Cint+f%27%28x%29g%28x%29dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int f(x)g&#039;(x)dx=f(x)g(x)-&#92;int f&#039;(x)g(x)dx" title="&#92;int f(x)g&#039;(x)dx=f(x)g(x)-&#92;int f&#039;(x)g(x)dx" class="latex" /></p>
+<p style="text-align: center;">\[\int f(x)g'(x)dx=f(x)g(x)-\int f'(x)g(x)dx\]</p>
 <p>&nbsp;</p>
-<p>We have dropped the <img src="//s0.wp.com/latex.php?latex=c&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="c" title="c" class="latex" /> because this will come also from doing the second integral.</p>
+<p>We have dropped the \(c\) because this will come also from doing the second integral.</p>
 <p><em>This is also sometimes written in an alternative form:</em></p>
-<p>Let <img src="//s0.wp.com/latex.php?latex=f%28x%29%3Du&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)=u" title="f(x)=u" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=g%28x%29%3Dv&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(x)=v" title="g(x)=v" class="latex" />. Sometimes we will keep the functional dependence explicit, and sometimes we won&#8217;t &#8211; it is up to you to follow what things are functions of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> and what are constants. You will get more and more familiar with it over time.</p>
+<p>Let \(f(x)=u\) and \(g(x)=v\). Sometimes we will keep the functional dependence explicit, and sometimes we won&#8217;t &#8211; it is up to you to follow what things are functions of \(x\) and what are constants. You will get more and more familiar with it over time.</p>
 <p>Now we can write:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=f%27%28x%29%3D%5Cfrac%7Bdu%7D%7Bdx%7D%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2C%5C%2Cg%27%28x%29%3D%5Cfrac%7Bdv%7D%7Bdx%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f&#039;(x)=&#92;frac{du}{dx}&#92;,&#92;,&#92;,&#92;,&#92;,&#92;,&#92;,&#92;,g&#039;(x)=&#92;frac{dv}{dx}" title="f&#039;(x)=&#92;frac{du}{dx}&#92;,&#92;,&#92;,&#92;,&#92;,&#92;,&#92;,&#92;,g&#039;(x)=&#92;frac{dv}{dx}" class="latex" /></p>
+<p style="text-align: center;">\[f'(x)=\frac{du}{dx}\,\,\,\,\,\,\,\,g'(x)=\frac{dv}{dx}\]</p>
 <p>&nbsp;</p>
 <p>Now put this into the equation above for integration by parts.</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+u+%5Cfrac%7Bdv%7D%7Bdx%7D+dx%3Duv-%5Cint+v+%5Cfrac%7Bdu%7D%7Bdx%7D+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int u &#92;frac{dv}{dx} dx=uv-&#92;int v &#92;frac{du}{dx} dx" title="&#92;int u &#92;frac{dv}{dx} dx=uv-&#92;int v &#92;frac{du}{dx} dx" class="latex" /></p>
+<p style="text-align: center;">\[\int u \frac{dv}{dx} dx=uv-\int v \frac{du}{dx} dx\]</p>
 <p>&nbsp;</p>
-<p>cancelling the factors of <img src="//s0.wp.com/latex.php?latex=dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="dx" title="dx" class="latex" />:</p>
+<p>cancelling the factors of \(dx\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+u+dv%3Duv-%5Cint+v+du&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int u dv=uv-&#92;int v du" title="&#92;int u dv=uv-&#92;int v du" class="latex" /></p>
+<p style="text-align: center;">\[\int u dv=uv-\int v du\]</p>
 <p>&nbsp;</p>
-<p>(Actually the idea of cancelling the factors of <img src="//s0.wp.com/latex.php?latex=dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="dx" title="dx" class="latex" /> is rather sloppy, but here it goes through ok).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>(Actually the idea of cancelling the factors of \(dx\) is rather sloppy, but here it goes through ok).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -313,15 +314,15 @@ img.emoji {
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=10779.html">UCT MAM1000 lecture notes 1 (part ii) &#8211; integration by substitution &#8211; review.</a></h2><div class="fusion-post-content-container"><p>This is just a quick reminder. If you find <strong>any</strong> of this confusing, there is a very important trick for making it easier &#8211; <span style="color: #ff0000;">practice, practice, practice!</span> It doesn&#8217;t take years to master this, it takes a few hours every week for a few weeks. You will become more and more familiar with the techniques and learn intuitively to know which technique to use in which situation.<br />
 Let&#8217;s start with the very basics.</p>
-<p>If <img src="//s0.wp.com/latex.php?latex=F%28x%29%3Dx%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F(x)=x^2" title="F(x)=x^2" class="latex" />, what is its derivative? ie. how do we find a function <img src="//s0.wp.com/latex.php?latex=f%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)" title="f(x)" class="latex" /> such that:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=f%28x%29%3D%5Cfrac%7Bd+%28F%28x%29%29%7D%7Bdx%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)=&#92;frac{d (F(x))}{dx}" title="f(x)=&#92;frac{d (F(x))}{dx}" class="latex" /></p>
+<p>If \(F(x)=x^2\), what is its derivative? ie. how do we find a function \(f(x)\) such that:</p>
+<p style="text-align: center;">\[f(x)=\frac{d (F(x))}{dx}\]</p>
 <p>&nbsp;</p>
-<p>The answer of course is <img src="//s0.wp.com/latex.php?latex=f%28x%29%3D2x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)=2x" title="f(x)=2x" class="latex" />. We use our normal differentiation rules which you should now be very familiar with. How about if I told you that there was some function <img src="//s0.wp.com/latex.php?latex=F%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F(x)" title="F(x)" class="latex" /> whose derivative was <img src="//s0.wp.com/latex.php?latex=2x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2x" title="2x" class="latex" /> &#8211; ie. we reversed the question:</p>
-<p>What is a function whose gradient at a point <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> is <img src="//s0.wp.com/latex.php?latex=2x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2x" title="2x" class="latex" />?</p>
-<p>How do you find what <img src="//s0.wp.com/latex.php?latex=F%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F(x)" title="F(x)" class="latex" /> is? We are trying to solve the equation</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2x%3D%5Cfrac%7Bd+F%28x%29%7D%7Bdx%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2x=&#92;frac{d F(x)}{dx}" title="2x=&#92;frac{d F(x)}{dx}" class="latex" /></p>
+<p>The answer of course is \(f(x)=2x\). We use our normal differentiation rules which you should now be very familiar with. How about if I told you that there was some function \(F(x)\) whose derivative was \(2x\) &#8211; ie. we reversed the question:</p>
+<p>What is a function whose gradient at a point \(x\) is \(2x\)?</p>
+<p>How do you find what \(F(x)\) is? We are trying to solve the equation</p>
+<p style="text-align: center;">\[2x=\frac{d F(x)}{dx}\]</p>
 <p>&nbsp;</p>
-<p>for <img src="//s0.wp.com/latex.php?latex=F%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="F(x)" title="F(x)" class="latex" />.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>for \(F(x)\).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">

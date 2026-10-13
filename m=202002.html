@@ -160,7 +160,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive date fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -228,7 +229,7 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=15998.html">The Objective Function</a></h2><div class="fusion-post-content-container"><p>In both Supervised and Unsupervised machine learning, most algorithms are centered around minimising (or, equivalently) maximising some objective function. This function is supposed to somehow represent what the model knows/can get right. Normally, as one would expect, the objective function does not always reflect exactly what we want.</p>
 <p>The objective function presents 2 main problems: 1. how do we minimise it (the answer to this is up for debate and there is lots of interesting research about efficient optimisation of non-convex functions and 2) assuming we can minimise it perfectly, is it the correct thing to be minimising?</p>
 <p>It is point 2 which is the focus of this post.</p>
-<p>Let&#8217;s take the example of square-loss-linear-regression.<em> </em>To do so we train a linear regression model with a square loss <img src="//s0.wp.com/latex.php?latex=%5Cmathcal%7BL%7D%28%5Cmathbf%7Bw%7D%29%3D%5Csum_i+%28y_i+-+%5Cmathbf%7Bw%7D%5ETx_i%29%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;mathcal{L}(&#92;mathbf{w})=&#92;sum_i (y_i - &#92;mathbf{w}^Tx_i)^2" title="&#92;mathcal{L}(&#92;mathbf{w})=&#92;sum_i (y_i - &#92;mathbf{w}^Tx_i)^2" class="latex" />. (Where we are taking the inner product of learned weights with a vector of features for each observation to predict the outcome).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=81.html" title="Posts by Dean Bunce" rel="author">Dean Bunce</a></span></span><span class="fusion-inline-sep">|</span>
+<p>Let&#8217;s take the example of square-loss-linear-regression.<em> </em>To do so we train a linear regression model with a square loss \(\mathcal{L}(\mathbf{w})=\sum_i (y_i - \mathbf{w}^Tx_i)^2\). (Where we are taking the inner product of learned weights with a vector of features for each observation to predict the outcome).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=81.html" title="Posts by Dean Bunce" rel="author">Dean Bunce</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -242,7 +243,7 @@ img.emoji {
 <ul>
 <li>Squaring the circle: With only a compass and a straight edge, draw a square with the same area as that of a given circle.</li>
 <li>Doubling the cube: With only a compass and a straight edge, draw the edge of a cube with volume twice that of a cube whose edge is given.</li>
-<li>Constructing regular polygons: Given a compass and a straight edge, construct a regular n-gon in a given circle for <img src="//s0.wp.com/latex.php?latex=n%5Cge+3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 3" title="n&#92;ge 3" class="latex" />.</li>
+<li>Constructing regular polygons: Given a compass and a straight edge, construct a regular n-gon in a given circle for \(n\ge 3\).</li>
 <li>Trisecting an angle: Given a compass and a straight edge, and a given angle, construct an angle that is one third of the original.</li></ul>&hellip;</div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	

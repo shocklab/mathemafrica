@@ -160,7 +160,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive date paged paged-2 date-paged-2 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -295,7 +296,7 @@ img.emoji {
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11523.html">UCT MAM1000 lecture notes part 40 &#8211; 3D geometry and vectors part iii</a></h2><div class="fusion-post-content-container"><p><strong>The scalar, or dot product</strong></p>
 <p>&nbsp;</p>
-<p>We have seen now how to add together vectors and how to multiply them by scalars, but we haven&#8217;t seen how to multiply two vectors together. In fact it&#8217;s not all that obvious what it means to multiply two vectors together. A vector has a magnitude and a direction, how do you multiply directions? The answer is that there are two different ways to multiply together vectors. The first way which we will explore now is the scalar, or dot product. This will take two vectors and the product of them using this rule will give us a scalar. We definitely want something that is linear in both of the magnitudes of the vectors. That is to say that we want some way of multiplying together vectors so that when we double the magnitude of one of the vectors, we double the product. We will express the scalar or dot product of two vectors as: <img src="//s0.wp.com/latex.php?latex=%5Cvec%7Bv%7D.%5Cvec%7Bw%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;vec{v}.&#92;vec{w}" title="&#92;vec{v}.&#92;vec{w}" class="latex" />.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>We have seen now how to add together vectors and how to multiply them by scalars, but we haven&#8217;t seen how to multiply two vectors together. In fact it&#8217;s not all that obvious what it means to multiply two vectors together. A vector has a magnitude and a direction, how do you multiply directions? The answer is that there are two different ways to multiply together vectors. The first way which we will explore now is the scalar, or dot product. This will take two vectors and the product of them using this rule will give us a scalar. We definitely want something that is linear in both of the magnitudes of the vectors. That is to say that we want some way of multiplying together vectors so that when we double the magnitude of one of the vectors, we double the product. We will express the scalar or dot product of two vectors as: \(\vec{v}.\vec{w}\).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -307,7 +308,7 @@ img.emoji {
 <p>&nbsp;</p>
 <p>Vectors are quantities which have both magnitude (ie. size) and direction. The most common examples of these are velocity ($3ms^{-1}$ to the right) and force (10 Newtons pointing vertically down). The easiest way to describe such a quantity is an arrow, where the magnitude gives the length and the direction is given by, well, the direction of the arrow. The important point about this is that the position of the vector itself doesn&#8217;t matter. In the figure below we place the same arrow in several different places and they are all the same vector.</p>
 <div id="attachment_11517" style="width: 684px" class="wp-caption aligncenter"><a href="wp-content/uploads/2015/09/vec1.png"><img class=" wp-image-11517" src="wp-content/uploads/2015/09/vec1.png?resize=674%2C678" alt="A vector, with magnitude given by its length and direction given by the direction of the arrow, placed at different points in the plane. Note that the position of the start of the arrow is now important, just the relationship between the start and the end of the arrow." srcset="wp-content/uploads/2015/09/vec1.png?resize=298%2C300 298w, wp-content/uploads/2015/09/vec1.png?fit=913%2C919 913w" sizes="(max-width: 674px) 100vw, 674px" data-recalc-dims="1" /></a><p class="wp-caption-text">A vector, with magnitude given by its length and direction given by the direction of the arrow, placed at different points in the plane. Note that the position of the start of the arrow is now important, just the relationship between the start and the end of the arrow.</p></div>
-<p>We could define a vector by the length and the angle that it makes with the horizontal axis, but in general we define it by how much it goes in the horizontal direction and how much it goes in the vertical direction, that is, how much it goes in the <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />-direction and how much it goes in the <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" />-direction.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>We could define a vector by the length and the angle that it makes with the horizontal axis, but in general we define it by how much it goes in the horizontal direction and how much it goes in the vertical direction, that is, how much it goes in the \(x\)-direction and how much it goes in the \(y\)-direction.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -460,9 +461,9 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11488.html">UCT MAM1000 lecture notes part 37 &#8211; differential equations part vi &#8211; second order differential equations</a></h2><div class="fusion-post-content-container"><p><strong>Second Order differential equations</strong></p>
 <p>We are only going to look at a particular subset of all possible second order differential equations (that is, equations which contain at most second derivatives) but these particular equations are absolutely ubiquitous across every field of science. The particular subset we are going to look at are linear, homogenous second order differential equations with constant coefficients. These can be written in general as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%5E2y%7D%7Bdx%5E2%7D%2Bb%5Cfrac%7Bdy%7D%7Bdx%7D%2Bc+y%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d^2y}{dx^2}+b&#92;frac{dy}{dx}+c y=0" title="&#92;frac{d^2y}{dx^2}+b&#92;frac{dy}{dx}+c y=0" class="latex" /></p>
+<p style="text-align: center;">\[\frac{d^2y}{dx^2}+b\frac{dy}{dx}+c y=0\]</p>
 <p>&nbsp;</p>
-<p>It is linear because it contains at most (and in this case at least) a single power of <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> in each term. It is homogenous because there is no term which has no powers of <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> (ie. the right hand side is not a constant), and the coefficients <img src="//s0.wp.com/latex.php?latex=b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b" title="b" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=c&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="c" title="c" class="latex" /> are any real numbers (though you can extend this to having complex numbers very easily). We will see that depending on the relationship between these numbers (<img src="//s0.wp.com/latex.php?latex=b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b" title="b" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=c&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="c" title="c" class="latex" />) we can have very different behaviour of the equation.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>It is linear because it contains at most (and in this case at least) a single power of \(y\) in each term. It is homogenous because there is no term which has no powers of \(y\) (ie. the right hand side is not a constant), and the coefficients \(b\) and \(c\) are any real numbers (though you can extend this to having complex numbers very easily). We will see that depending on the relationship between these numbers (\(b\) and \(c\)) we can have very different behaviour of the equation.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -514,15 +515,15 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11480.html">UCT MAM1000 lecture notes part 36 &#8211; differential equations part v &#8211; first order differential equations</a></h2><div class="fusion-post-content-container"><p><strong>First order linear differential equations</strong></p>
 <p>We are now going to deal with another subset of first order differential equations which in some ways are easier than the previous and in other ways more complicated. These are linear first order differential equations. The general form of a first order linear differential equation is:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdx%7D%2BP%28x%29y%3DQ%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dy}{dx}+P(x)y=Q(x)" title="&#92;frac{dy}{dx}+P(x)y=Q(x)" class="latex" /></p>
+<p style="text-align: center;">\[\frac{dy}{dx}+P(x)y=Q(x)\]</p>
 <p>&nbsp;</p>
-<p>where <img src="//s0.wp.com/latex.php?latex=P%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P(x)" title="P(x)" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=Q%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Q(x)" title="Q(x)" class="latex" /> are any functions of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />.</p>
+<p>where \(P(x)\) and \(Q(x)\) are any functions of \(x\).</p>
 <p>&nbsp;</p>
-<p><strong>Very importantly, I&#8217;m leaving off the fact that <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> is dependent on <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> in the notation, but you should remember that this is really <img src="//s0.wp.com/latex.php?latex=y%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y(x)" title="y(x)" class="latex" /> and that is the function you are trying to solve for</strong>.</p>
+<p><strong>Very importantly, I&#8217;m leaving off the fact that \(y\) is dependent on \(x\) in the notation, but you should remember that this is really \(y(x)\) and that is the function you are trying to solve for</strong>.</p>
 <p>&nbsp;</p>
 <p>Sometimes you will be given an equation which is not obviously in this form but it can be transformed to this form. For instance:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7By%7D%5Cfrac%7Bdy%7D%7Bdx%7D%3Dx%5E2%2B%5Cfrac%7B%5Csin+x%7D%7By%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{y}&#92;frac{dy}{dx}=x^2+&#92;frac{&#92;sin x}{y}" title="&#92;frac{1}{y}&#92;frac{dy}{dx}=x^2+&#92;frac{&#92;sin x}{y}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{1}{y}\frac{dy}{dx}=x^2+\frac{\sin x}{y}\]</p>
 <p>&nbsp;</p>
 <p>This can easily be transformed into the canonical form for a linear first order DE. We are going to try and rewrite the left hand side of the equation in a form which will mean that we can solve the differential equation very easily.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
@@ -576,45 +577,45 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11471.html">UCT MAM1000 lecture notes part 35- differential equations part iv &#8211; separable differential equations</a></h2><div class="fusion-post-content-container"><p><strong>Separable differential equations</strong><br />
 In some ways these are the easiest differential equations to solve in theory, though in practice the final step (that of integrating) may be difficult or impossible. A separable differential equation is one of the form:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdx%7D%3D%5Cfrac%7Bf%28x%29%7D%7Bg%28y%29%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dy}{dx}=&#92;frac{f(x)}{g(y)}" title="&#92;frac{dy}{dx}=&#92;frac{f(x)}{g(y)}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{dy}{dx}=\frac{f(x)}{g(y)}\]</p>
 <p>&nbsp;</p>
-<p>where <img src="//s0.wp.com/latex.php?latex=f%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)" title="f(x)" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=g%28y%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(y)" title="g(y)" class="latex" /> are any functions of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> respectively. For instance:</p>
+<p>where \(f(x)\) and \(g(y)\) are any functions of \(x\) and \(y\) respectively. For instance:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdx%7D%3Dx+y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dy}{dx}=x y" title="&#92;frac{dy}{dx}=x y" class="latex" /></p>
+<p style="text-align: center;">\[\frac{dy}{dx}=x y\]</p>
 <p>&nbsp;</p>
-<p>is of this form where <img src="//s0.wp.com/latex.php?latex=f%28x%29%3Dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)=x" title="f(x)=x" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=f%28y%29%3D%5Cfrac%7B1%7D%7By%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(y)=&#92;frac{1}{y}" title="f(y)=&#92;frac{1}{y}" class="latex" />. The reason that these equations are simple in theory is because we can rearrange them to be:</p>
+<p>is of this form where \(f(x)=x\) and \(f(y)=\frac{1}{y}\). The reason that these equations are simple in theory is because we can rearrange them to be:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=g%28y%29dy%3Df%28x%29dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="g(y)dy=f(x)dx" title="g(y)dy=f(x)dx" class="latex" /></p>
+<p style="text-align: center;">\[g(y)dy=f(x)dx\]</p>
 <p>&nbsp;</p>
-<p>ie. we have all the <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> stuff on one side and all the <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> stuff on the other and then we can integrate both sides:</p>
+<p>ie. we have all the \(x\) stuff on one side and all the \(y\) stuff on the other and then we can integrate both sides:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint+g%28y%29dy%3D%5Cint+f%28x%29dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int g(y)dy=&#92;int f(x)dx" title="&#92;int g(y)dy=&#92;int f(x)dx" class="latex" /></p>
+<p style="text-align: center;">\[\int g(y)dy=\int f(x)dx\]</p>
 <p>&nbsp;</p>
-<p>and that&#8217;s it. As long as you can do the integrals, you can get a function <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> in terms of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />. let&#8217;s look at some examples:</p>
+<p>and that&#8217;s it. As long as you can do the integrals, you can get a function \(y\) in terms of \(x\). let&#8217;s look at some examples:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdx%7D%3Dx+y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dy}{dx}=x y" title="&#92;frac{dy}{dx}=x y" class="latex" /></p>
+<p style="text-align: center;">\[\frac{dy}{dx}=x y\]</p>
 <p>&nbsp;</p>
 <p>gives the following integral:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint%5Cfrac%7B1%7D%7By%7Ddy%3D%5Cint+x+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int&#92;frac{1}{y}dy=&#92;int x dx" title="&#92;int&#92;frac{1}{y}dy=&#92;int x dx" class="latex" /></p>
+<p style="text-align: center;">\[\int\frac{1}{y}dy=\int x dx\]</p>
 <p>&nbsp;</p>
 <p>and so:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cln+%7Cy%7C%2Bc_1%3D%5Cfrac%7Bx%5E2%7D%7B2%7D%2Bc_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln |y|+c_1=&#92;frac{x^2}{2}+c_2" title="&#92;ln |y|+c_1=&#92;frac{x^2}{2}+c_2" class="latex" /></p>
+<p style="text-align: center;">\[\ln |y|+c_1=\frac{x^2}{2}+c_2\]</p>
 <p>&nbsp;</p>
-<p>here we have one constant of integration from each side of the interval, but because they are just constants, we can put them into one constant and call it <img src="//s0.wp.com/latex.php?latex=c&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="c" title="c" class="latex" />:</p>
+<p>here we have one constant of integration from each side of the interval, but because they are just constants, we can put them into one constant and call it \(c\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cln+%7Cy%7C%3D%5Cfrac%7Bx%5E2%7D%7B2%7D%2Bc&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln |y|=&#92;frac{x^2}{2}+c" title="&#92;ln |y|=&#92;frac{x^2}{2}+c" class="latex" /></p>
+<p style="text-align: center;">\[\ln |y|=\frac{x^2}{2}+c\]</p>
 <p>&nbsp;</p>
 <p>we can then rearrange this to give:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%7Cy%7C%3De%5E%7B%5Cfrac%7Bx%5E2%7D%7B2%7D%2Bc%7D%3De%5Ece%5E%7B%5Cfrac%7Bx%5E2%7D%7B2%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="|y|=e^{&#92;frac{x^2}{2}+c}=e^ce^{&#92;frac{x^2}{2}}" title="|y|=e^{&#92;frac{x^2}{2}+c}=e^ce^{&#92;frac{x^2}{2}}" class="latex" /></p>
+<p style="text-align: center;">\[|y|=e^{\frac{x^2}{2}+c}=e^ce^{\frac{x^2}{2}}\]</p>
 <p>&nbsp;</p>
-<p>We can then call <img src="//s0.wp.com/latex.php?latex=e%5Ec&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^c" title="e^c" class="latex" /> just a constant, and let&#8217;s call it <img src="//s0.wp.com/latex.php?latex=y_0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y_0" title="y_0" class="latex" /> because we can see that when <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> is zero, <img src="//s0.wp.com/latex.php?latex=%7Cy%7C&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="|y|" title="|y|" class="latex" /> is just going to be given by this constant:</p>
+<p>We can then call \(e^c\) just a constant, and let&#8217;s call it \(y_0\) because we can see that when \(x\) is zero, \(|y|\) is just going to be given by this constant:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%7Cy%7C%3Dy_0e%5E%7B%5Cfrac%7Bx%5E2%7D%7B2%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="|y|=y_0e^{&#92;frac{x^2}{2}}" title="|y|=y_0e^{&#92;frac{x^2}{2}}" class="latex" /></p>
+<p style="text-align: center;">\[|y|=y_0e^{\frac{x^2}{2}}\]</p>
 <p>&nbsp;</p>
-<p>This has two solutions (one where <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> is positive, and one where it is negative), so we can choose one of them, depending on the initial condition for <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" />.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>This has two solutions (one where \(y\) is positive, and one where it is negative), so we can choose one of them, depending on the initial condition for \(y\).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -667,9 +668,9 @@ In some ways these are the easiest differential equations to solve in theory, th
 <p><strong>Direction Fields</strong></p>
 <p>Let&#8217;s take a differential equation:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdy%7D%7Bdx%7D%3Dx%2By&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dy}{dx}=x+y" title="&#92;frac{dy}{dx}=x+y" class="latex" /></p>
+<p style="text-align: center;">\[\frac{dy}{dx}=x+y\]</p>
 <p>&nbsp;</p>
-<p>Note that sometimes we will say explicitly that <img src="//s0.wp.com/latex.php?latex=y%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y(x)" title="y(x)" class="latex" /> and sometimes we will leave it implicit, because the equation has a derivative of <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> with respect to <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>Note that sometimes we will say explicitly that \(y(x)\) and sometimes we will leave it implicit, because the equation has a derivative of \(y\) with respect to \(x\).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">

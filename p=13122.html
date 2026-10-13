@@ -32,7 +32,7 @@
 
 		<meta property="og:title" content="An integral expression for n!"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=13122.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=13122.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="I gave a challenge question at the end of class a week or so ago. Here I will give the solution and show that it gives us something rather strange and surprisingly useful.
 
@@ -44,7 +44,7 @@ $latex \int_0^\infty e^{-t} t^N dt=N!$
 
 For $latex N\ge 0, N\in \mathbb{Z}$. Now,"/>
 
-									<meta property="og:image" content="wp-content/uploads/2016/07/gamma.png?fit=1000%2C650"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2016/07/gamma.png?fit=1000%2C650"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -92,7 +92,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=13122.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=13122.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-3pE' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D13122.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D13122&.html#038;format=xml" />
@@ -251,7 +251,8 @@ padding: 10px;
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-13122 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -335,56 +336,56 @@ padding: 10px;
 				<p>I gave a challenge question at the end of class a week or so ago. Here I will give the solution and show that it gives us something rather strange and surprisingly useful.</p>
 <p>I wrote down the following, and asked you to prove it:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+t%5EN+dt%3DN%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-t} t^N dt=N!" title="&#92;int_0^&#92;infty e^{-t} t^N dt=N!" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-t} t^N dt=N!\]</p>
 <p>&nbsp;</p>
-<p>For <img src="//s0.wp.com/latex.php?latex=N%5Cge+0%2C+N%5Cin+%5Cmathbb%7BZ%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="N&#92;ge 0, N&#92;in &#92;mathbb{Z}" title="N&#92;ge 0, N&#92;in &#92;mathbb{Z}" class="latex" />. Now, N! can be thought of as the number of different orderings of pulling N objects out of a bag (without replacement) when they are all different. If you have N things in a bag, then there are N possible things that you can pull out first. There are then N-1 ways of pulling out the next object, N-2 ways of pulling out the next, etc. and finally, when you&#8217;ve pulled out N-1 objects there&#8217;s only a single possibility of pulling out the last. So:</p>
+<p>For \(N\ge 0, N\in \mathbb{Z}\). Now, N! can be thought of as the number of different orderings of pulling N objects out of a bag (without replacement) when they are all different. If you have N things in a bag, then there are N possible things that you can pull out first. There are then N-1 ways of pulling out the next object, N-2 ways of pulling out the next, etc. and finally, when you&#8217;ve pulled out N-1 objects there&#8217;s only a single possibility of pulling out the last. So:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=N%21%3DN%28N-1%29%28N-2%29%28N-3%29...3.2.1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="N!=N(N-1)(N-2)(N-3)...3.2.1" title="N!=N(N-1)(N-2)(N-3)...3.2.1" class="latex" /></p>
+<p style="text-align: center;">\[N!=N(N-1)(N-2)(N-3)...3.2.1\]</p>
 <p>&nbsp;</p>
 <p>And the number of ways of pulling no objects out of a bag is 1, because you just don&#8217;t pull anything out. So, 0!=1.</p>
 <p>&nbsp;</p>
 <p>ok, so let&#8217;s see how we can prove the above integral. Well, whenever we want to prove something for an infinite sequence of integers, we should think of induction. The first step here is thus to prove that the expression holds true for the base case, which in this case is 0:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+t%5E0+dt%3D%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+dt%3D%5Cleft.-e%5E%7B-t%7D%5Cright%7C_0%5E%5Cinfty%3D0-%28-1%29%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-t} t^0 dt=&#92;int_0^&#92;infty e^{-t} dt=&#92;left.-e^{-t}&#92;right|_0^&#92;infty=0-(-1)=1" title="&#92;int_0^&#92;infty e^{-t} t^0 dt=&#92;int_0^&#92;infty e^{-t} dt=&#92;left.-e^{-t}&#92;right|_0^&#92;infty=0-(-1)=1" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-t} t^0 dt=\int_0^\infty e^{-t} dt=\left.-e^{-t}\right|_0^\infty=0-(-1)=1\]</p>
 <p>&nbsp;</p>
 <p>which is indeed =0!, so the base case holds.</p>
 <p>&nbsp;</p>
-<p>Now, let&#8217;s assume that it holds true for some integer <img src="//s0.wp.com/latex.php?latex=N%3Dk&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="N=k" title="N=k" class="latex" />. This is our inductive hypothesis:</p>
+<p>Now, let&#8217;s assume that it holds true for some integer \(N=k\). This is our inductive hypothesis:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+t%5Ek+dt%3Dk%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-t} t^k dt=k!" title="&#92;int_0^&#92;infty e^{-t} t^k dt=k!" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-t} t^k dt=k!\]</p>
 <p>&nbsp;</p>
-<p>Now, we want to check that so long as the hypothesis is true, the expression holds true for <img src="//s0.wp.com/latex.php?latex=N%3Dk%2B1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="N=k+1" title="N=k+1" class="latex" />. In trying to prove this we will be allowed to use our inductive hypothesis. So, let&#8217;s look at:</p>
+<p>Now, we want to check that so long as the hypothesis is true, the expression holds true for \(N=k+1\). In trying to prove this we will be allowed to use our inductive hypothesis. So, let&#8217;s look at:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+t%5E%7Bk%2B1%7D+dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-t} t^{k+1} dt" title="&#92;int_0^&#92;infty e^{-t} t^{k+1} dt" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-t} t^{k+1} dt\]</p>
 <p>&nbsp;</p>
-<p>We somehow want to manipulate this into a form which includes the case <img src="//s0.wp.com/latex.php?latex=N%3Dk&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="N=k" title="N=k" class="latex" /> above. To do this, we would need to reduce the power of t, from k+1 to k. We know that in general, integrating by parts can be used to do such a trick, because we will choose a part of the product in the integral to integrate, and a part to differentiate. So, let&#8217;s choose:</p>
+<p>We somehow want to manipulate this into a form which includes the case \(N=k\) above. To do this, we would need to reduce the power of t, from k+1 to k. We know that in general, integrating by parts can be used to do such a trick, because we will choose a part of the product in the integral to integrate, and a part to differentiate. So, let&#8217;s choose:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=t%5E%7Bk%2B1%7D%3Du&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t^{k+1}=u" title="t^{k+1}=u" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=e%5E%7B-t%7Ddt%3Ddv&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{-t}dt=dv" title="e^{-t}dt=dv" class="latex" /></p>
+<p style="text-align: center;">\(t^{k+1}=u\) and \(e^{-t}dt=dv\)</p>
 <p>&nbsp;</p>
 <p>This means that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=dt+%28k%2B1%29t%5Ek%3Ddu&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="dt (k+1)t^k=du" title="dt (k+1)t^k=du" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=-e%5E%7B-t%7D%3Dv&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-e^{-t}=v" title="-e^{-t}=v" class="latex" /></p>
+<p style="text-align: center;">\(dt (k+1)t^k=du\) and \(-e^{-t}=v\)</p>
 <p>&nbsp;</p>
-<p>Now we plug this into our integration by parts formula <img src="//s0.wp.com/latex.php?latex=%5Cint+u+dv%3Duv-%5Cint+v+du&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int u dv=uv-&#92;int v du" title="&#92;int u dv=uv-&#92;int v du" class="latex" /> and we get:</p>
+<p>Now we plug this into our integration by parts formula \(\int u dv=uv-\int v du\) and we get:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+t%5E%7Bk%2B1%7D+dt%3D%5Cleft.-t%5E%7Bk%2B1%7De%5E%7B-t%7D%5Cright%7C_0%5E%5Cinfty%2B%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D%28k%2B1%29t%5Ek+dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-t} t^{k+1} dt=&#92;left.-t^{k+1}e^{-t}&#92;right|_0^&#92;infty+&#92;int_0^&#92;infty e^{-t}(k+1)t^k dt" title="&#92;int_0^&#92;infty e^{-t} t^{k+1} dt=&#92;left.-t^{k+1}e^{-t}&#92;right|_0^&#92;infty+&#92;int_0^&#92;infty e^{-t}(k+1)t^k dt" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-t} t^{k+1} dt=\left.-t^{k+1}e^{-t}\right|_0^\infty+\int_0^\infty e^{-t}(k+1)t^k dt\]</p>
 <p>&nbsp;</p>
 <p>The first term vanishes when we plug in either of the limits, so we can write:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+t%5E%7Bk%2B1%7D+dt%3D%28k%2B1%29%5Cint_0%5E%5Cinfty+e%5E%7B-t%7Dt%5Ek+dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-t} t^{k+1} dt=(k+1)&#92;int_0^&#92;infty e^{-t}t^k dt" title="&#92;int_0^&#92;infty e^{-t} t^{k+1} dt=(k+1)&#92;int_0^&#92;infty e^{-t}t^k dt" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-t} t^{k+1} dt=(k+1)\int_0^\infty e^{-t}t^k dt\]</p>
 <p>&nbsp;</p>
 <p>But the last part is precisely what we had on the LHS of our inductive hypothesis, so we can simply substitute in the RHS of the inductive hypothesis, which gives:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+t%5E%7Bk%2B1%7D+dt%3D%28k%2B1%29k%21%3D%28k%2B1%29%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty e^{-t} t^{k+1} dt=(k+1)k!=(k+1)!" title="&#92;int_0^&#92;infty e^{-t} t^{k+1} dt=(k+1)k!=(k+1)!" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty e^{-t} t^{k+1} dt=(k+1)k!=(k+1)!\]</p>
 <p>&nbsp;</p>
 <p>Which is what we wanted to prove. Thus, by the principle of mathematical induction, we have proved the original statement to be true.</p>
 <p>&nbsp;</p>
 <p>So, why is this interesting? Well, one particularly interesting thing to note is that the factorial function in general is only applicable to positive integers. However, the integral expression doesn&#8217;t seem to specify integers. We can actually use the integral expression to define a function which is a bit more general than factorial, which, for positive integers is equal to our usual factorial, but is valid for all real numbers. We call this function the Gamma function and define it through a very similar integral:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5CGamma%28z%29%3D%5Cint_0%5E%5Cinfty+e%5E%7B-t%7D+t%5E%7Bz-1%7D+dt&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Gamma(z)=&#92;int_0^&#92;infty e^{-t} t^{z-1} dt" title="&#92;Gamma(z)=&#92;int_0^&#92;infty e^{-t} t^{z-1} dt" class="latex" /></p>
+<p style="text-align: center;">\[\Gamma(z)=\int_0^\infty e^{-t} t^{z-1} dt\]</p>
 <p>&nbsp;</p>
-<p>Such that <img src="//s0.wp.com/latex.php?latex=%5CGamma%28z%2B1%29%3D%28z%29%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Gamma(z+1)=(z)!" title="&#92;Gamma(z+1)=(z)!" class="latex" /> for <img src="//s0.wp.com/latex.php?latex=z%5Cge+0%2C+z%5Cin%5Cmathbb%7BZ%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z&#92;ge 0, z&#92;in&#92;mathbb{Z}" title="z&#92;ge 0, z&#92;in&#92;mathbb{Z}" class="latex" />.</p>
-<p>We can plot both <img src="//s0.wp.com/latex.php?latex=%5CGamma%28z%2B1%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;Gamma(z+1)" title="&#92;Gamma(z+1)" class="latex" /> and z! for positive integers and see that it does indeed coincide. For <img src="//s0.wp.com/latex.php?latex=z%5Cge+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z&#92;ge 0" title="z&#92;ge 0" class="latex" /> the Gamma function looks all nice and smooth, but you can see that for negative z, something very funny is going on!</p>
+<p>Such that \(\Gamma(z+1)=(z)!\) for \(z\ge 0, z\in\mathbb{Z}\).</p>
+<p>We can plot both \(\Gamma(z+1)\) and z! for positive integers and see that it does indeed coincide. For \(z\ge 0\) the Gamma function looks all nice and smooth, but you can see that for negative z, something very funny is going on!</p>
 <p><a href="wp-content/uploads/2016/07/gamma.png" rel="attachment wp-att-13124"><img class="aligncenter wp-image-13124" src="wp-content/uploads/2016/07/gamma.png?resize=728%2C473" alt="gamma" srcset="wp-content/uploads/2016/07/gamma.png?resize=200%2C130 200w, wp-content/uploads/2016/07/gamma.png?resize=300%2C195 300w, wp-content/uploads/2016/07/gamma.png?resize=400%2C260 400w, wp-content/uploads/2016/07/gamma.png?resize=600%2C390 600w, wp-content/uploads/2016/07/gamma.png?resize=768%2C499 768w, wp-content/uploads/2016/07/gamma.png?resize=800%2C520 800w, wp-content/uploads/2016/07/gamma.png?fit=1000%2C650 1000w" sizes="(max-width: 728px) 100vw, 728px" data-recalc-dims="1" /></a>In fact, the Gamma function seems to be doing something funky for negative integers only. There is a huge amount of interesting mathematics behind this, but most of it requires understanding complex numbers. Let&#8217;s see if we can discuss this later when we get onto this amazing topic!</p>
 <table class="rw-rating-table rw-ltr rw-left"><tr><td><nobr>How clear is this post?</nobr></td><td><div class="rw-left"><div class="rw-ui-container rw-class-blog-post rw-urid-131230" data-img="wp-content/uploads/2016/07/gamma.png"></div></div></td></tr></table>							</div>
 

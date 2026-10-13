@@ -161,7 +161,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive paged category category-level-intermediate-2 category-40 paged-3 category-paged-3 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -340,15 +341,15 @@ To solve a system of linear equations:</p>
 <p>Solving a system of linear equations is not technically difficult: just eliminate the variables in a systematic fashion. When there are only two or three variables, this is easy to manage. But for a bigger system, things can quickly get confusing. We need to develop a systematic method.</p>
 <p>The first thing to notice is that the names of the variables don&#8217;t matter. Consider, for example, the two systems</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cbegin%7Barray%7D%7Bcc%7D++x+%2B+y+%26%3D3%5C%5C++2x-y+%26%3D+4++%5Cend%7Barray%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;begin{array}{cc}  x + y &amp;=3&#92;&#92;  2x-y &amp;= 4  &#92;end{array} " title="&#92;begin{array}{cc}  x + y &amp;=3&#92;&#92;  2x-y &amp;= 4  &#92;end{array} " class="latex" /></p>
+<p style="text-align: center;">\[\begin{array}{cc}  x + y &amp;=3\\  2x-y &amp;= 4  \end{array}\]</p>
 <p>&nbsp;</p>
 <p>and</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cbegin%7Barray%7D%7Bcc%7D++u+%2B+v+%26%3D3%5C%5C++2u-v+%26%3D+4++%5Cend%7Barray%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;begin{array}{cc}  u + v &amp;=3&#92;&#92;  2u-v &amp;= 4  &#92;end{array}" title="&#92;begin{array}{cc}  u + v &amp;=3&#92;&#92;  2u-v &amp;= 4  &#92;end{array}" class="latex" /></p>
+<p style="text-align: center;">\[\begin{array}{cc}  u + v &amp;=3\\  2u-v &amp;= 4  \end{array}\]</p>
 <p>&nbsp;</p>
-<p>It&#8217;s clear that if we ignore the names of the variables &#8212; <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> versus <img src="//s0.wp.com/latex.php?latex=u&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u" title="u" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=v&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="v" title="v" class="latex" /> &#8212; these two systems are the same. The reason we can tell that they&#8217;re the same is because the {\em coefficients} of the variables are the same and the numbers on the right hand side are the same. These are really the only things about a system of linear equations that matter, and so what we can do is strip the system down to its bare bones and rewrite it like this:</p>
+<p>It&#8217;s clear that if we ignore the names of the variables &#8212; \(x\) and \(y\) versus \(u\) and \(v\) &#8212; these two systems are the same. The reason we can tell that they&#8217;re the same is because the {\em coefficients} of the variables are the same and the numbers on the right hand side are the same. These are really the only things about a system of linear equations that matter, and so what we can do is strip the system down to its bare bones and rewrite it like this:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cleft%28++%5Cbegin%7Barray%7D%7Bcc%7Cc%7D++1%261%263%5C%5C++2%26-1%264++%5Cend%7Barray%7D++%5Cright%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;left(  &#92;begin{array}{cc|c}  1&amp;1&amp;3&#92;&#92;  2&amp;-1&amp;4  &#92;end{array}  &#92;right)" title="&#92;left(  &#92;begin{array}{cc|c}  1&amp;1&amp;3&#92;&#92;  2&amp;-1&amp;4  &#92;end{array}  &#92;right)" class="latex" /></p>
+<p style="text-align: center;">\[\left(  \begin{array}{cc|c}  1&amp;1&amp;3\\  2&amp;-1&amp;4  \end{array}  \right)\]</p>
 <p>&nbsp;</p>
 <p>This is an <em>augmented coefficient matrix</em> (in general, a rectangular array of numbers, like the above, is called a <em>matrix</em>; a matrix with an additional vertical line, which plays the same role as the equals signs in the original equations, is <em>augmented</em>).&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
@@ -582,7 +583,7 @@ To solve a system of linear equations:</p>
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11589.html">UCT MAM1000 lecture notes: More complex numbers practice</a></h2><div class="fusion-post-content-container"><p>I&#8217;ve been asked a few times for more practice questions on complex numbers. This is where <a href="http://www.wolframalpha.com">Wolfram Alpha</a> can be your friend (like it&#8217;s not already!).</p>
 <p>I&#8217;ll just give a few examples of questions from the tut on complex numbers which you could have solved using Wolfram Alpha, and from this you will be able to set up your own questions.</p>
-<p>For instance, question 48 c) Find the roots of <img src="//s0.wp.com/latex.php?latex=z%5E5%3D1%2B%5Csqrt%283%29+I&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="z^5=1+&#92;sqrt(3) I" title="z^5=1+&#92;sqrt(3) I" class="latex" /> can be solved in Wolfram Alpha with the command:</p>
+<p>For instance, question 48 c) Find the roots of \(z^5=1+\sqrt(3) I\) can be solved in Wolfram Alpha with the command:</p>
 <p>&nbsp;</p>
 <p style="text-align: center;"><strong>Solve[z^5==1+sqrt[3]I,z]</strong></p>
 <p>&nbsp;</p>
@@ -604,7 +605,7 @@ To solve a system of linear equations:</p>
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=11583.html">UCT MAM1000 lecture notes part 43 – 3D geometry and vectors part vi</a></h2><div class="fusion-post-content-container"><p><strong>Determinants</strong></p>
 <p>The idea of determinants have been about since around the 3rd century when it first appeared in an ancient Chinese book of Mathematics called The Nine Chapters on the Mathematical Art. It was used originally to define certain properties of systems of linear equations, as we will see later in the section on linear algebra, however for now we will simply use it as a particular way to easily calculate the cross product. Let&#8217;s take a two by two array of numbers and define the determinant for this.</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cleft%7C%5Cbegin%7Barray%7D%7Bcc%7Da+%26+b+%5C%5C+c+%26+d+%5C%5C%5Cend%7Barray%7D%5Cright%7C%3Dad-bc&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;left|&#92;begin{array}{cc}a &amp; b &#92;&#92; c &amp; d &#92;&#92;&#92;end{array}&#92;right|=ad-bc" title="&#92;left|&#92;begin{array}{cc}a &amp; b &#92;&#92; c &amp; d &#92;&#92;&#92;end{array}&#92;right|=ad-bc" class="latex" /></p>
+<p style="text-align: center;">\[\left|\begin{array}{cc}a &amp; b \\ c &amp; d \\\end{array}\right|=ad-bc\]</p>
 <p>&nbsp;</p>
 <p>The vertical lines on the left and right are the sign that the we are taking a determinant. For now this is just a definition and we will work with it in what follows. Don&#8217;t worry too much about where it comes from, but we will see later where it comes from and we will see now why it is useful.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	

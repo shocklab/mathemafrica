@@ -34,7 +34,7 @@
 
 		<meta property="og:title" content="Mathematical induction with an inequality"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=12464.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=12464.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="In the tutorial sessions it was clear that one question in particular was causing problems. This is an induction proof with an inequality. The one which we will look at is the inequality:
 
@@ -44,7 +44,7 @@ $latex 2^n&gt;n^3$ for $latex n\ge 10$
 
 I am going to talk you through it in more detail than would be needed for"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -93,7 +93,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=12464.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=12464.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-3f2' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D12464.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D12464&.html#038;format=xml" />
@@ -180,7 +180,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-12464 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -253,63 +254,63 @@ img.emoji {
 			<div class="post-content">
 				<p>In the tutorial sessions it was clear that one question in particular was causing problems. This is an induction proof with an inequality. The one which we will look at is the inequality:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5En%3En%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^n&gt;n^3" title="2^n&gt;n^3" class="latex" /> for <img src="//s0.wp.com/latex.php?latex=n%5Cge+10&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 10" title="n&#92;ge 10" class="latex" /></p>
+<p style="text-align: center;">\(2^n&gt;n^3\) for \(n\ge 10\)</p>
 <p>&nbsp;</p>
 <p>I am going to talk you through it in more detail than would be needed for the formal proof but I want to give some intuition along the way.</p>
 <p>&nbsp;</p>
 <p>So, we start off, as always with the base case. The base case is always the first integer for which the statement is claimed to be true. In this case it is for n=10. Let&#8217;s check for n=10. Is it true that?</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7B10%7D%3E10%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{10}&gt;10^3" title="2^{10}&gt;10^3" class="latex" /> ?</p>
+<p style="text-align: center;">\(2^{10}&gt;10^3\) ?</p>
 <p>&nbsp;</p>
 <p>Well this is:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1024%3E1000&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1024&gt;1000" title="1024&gt;1000" class="latex" /></p>
+<p style="text-align: center;">\[1024&gt;1000\]</p>
 <p>&nbsp;</p>
 <p>and so we should be happy with that. We&#8217;ve proved the base case. Note that you do not then need to check for n=11, or n=12. I have seen many students check a base case for n=1, and then also check for n=2 and n=3. The point about induction is that once you have the base case, the inductive hypothesis, and the inductive step, that you are done &#8211; you don&#8217;t need to check any &#8216;intermediate&#8217; values.</p>
 <p>&nbsp;</p>
 <p>Ok, so what is our inductive hypothesis? It is that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5En%3En%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^n&gt;n^3" title="2^n&gt;n^3" class="latex" /></p>
+<p style="text-align: center;">\[2^n&gt;n^3\]</p>
 <p>&nbsp;</p>
-<p>For SOME <img src="//s0.wp.com/latex.php?latex=n%5Cge+10&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 10" title="n&#92;ge 10" class="latex" />. This is so important, and what I am still seeing students confused by. Here we are assuming that it holds for some n. Not all n, and not some specific value of n, but some, abstract n.</p>
+<p>For SOME \(n\ge 10\). This is so important, and what I am still seeing students confused by. Here we are assuming that it holds for some n. Not all n, and not some specific value of n, but some, abstract n.</p>
 <p>&nbsp;</p>
 <p>Now we want to use this to prove that the statement holds true for n+1. Let&#8217;s look at what we are trying to show. We want to prove that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3E%28n%2B1%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}&gt;(n+1)^3" title="2^{n+1}&gt;(n+1)^3" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}&gt;(n+1)^3\]</p>
 <p>&nbsp;</p>
 <p>We will do this by only using the left hand side, and try and show that this is indeed greater than the right hand side. With such proofs, you should manipulate one side only, to get it equal to the right hand side. If you find yourself doing things to both sides then you may end up getting 0=0 and this, while true, may mean that you&#8217;ve done some intermediate step which is not allowed.</p>
 <p>&nbsp;</p>
 <p>So, we start with the left hand side and manipulate it. First we see that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3D2%5Ccdot+2%5En&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}=2&#92;cdot 2^n" title="2^{n+1}=2&#92;cdot 2^n" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}=2\cdot 2^n\]</p>
 <p>&nbsp;</p>
-<p>We then note that <img src="//s0.wp.com/latex.php?latex=2%5En&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^n" title="2^n" class="latex" /> appears in the inductive hypothesis, and because we are assuming that that is true, we can use this here. So we have:</p>
+<p>We then note that \(2^n\) appears in the inductive hypothesis, and because we are assuming that that is true, we can use this here. So we have:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3D2%5Ccdot+2%5En%3E2%5Ccdot+n%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}=2&#92;cdot 2^n&gt;2&#92;cdot n^3" title="2^{n+1}=2&#92;cdot 2^n&gt;2&#92;cdot n^3" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}=2\cdot 2^n&gt;2\cdot n^3\]</p>
 <p>&nbsp;</p>
-<p>ok, now we have to do some inspection. We want to get the right hand side somehow to look like <img src="//s0.wp.com/latex.php?latex=%28n%2B1%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(n+1)^3" title="(n+1)^3" class="latex" /> but at the moment, we just have <img src="//s0.wp.com/latex.php?latex=n%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n^3" title="n^3" class="latex" />. In fact one can write</p>
+<p>ok, now we have to do some inspection. We want to get the right hand side somehow to look like \((n+1)^3\) but at the moment, we just have \(n^3\). In fact one can write</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%28n%2B1%29%5E3+%3D+n%5E3%5Cleft%281%2B%5Cfrac%7B1%7D%7Bn%7D%5Cright%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(n+1)^3 = n^3&#92;left(1+&#92;frac{1}{n}&#92;right)^3" title="(n+1)^3 = n^3&#92;left(1+&#92;frac{1}{n}&#92;right)^3" class="latex" /></p>
+<p style="text-align: center;">\[(n+1)^3 = n^3\left(1+\frac{1}{n}\right)^3\]</p>
 <p>&nbsp;</p>
-<p>You will often use a trick like this, so play around and make sure that this is clear. Now, why is this useful? Well, in the left hand side of our equation we have <img src="//s0.wp.com/latex.php?latex=2%5Ccdot+n%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2&#92;cdot n^3" title="2&#92;cdot n^3" class="latex" /> and this isn&#8217;t the same as <img src="//s0.wp.com/latex.php?latex=n%5E3%5Cleft%281%2B%5Cfrac%7B1%7D%7Bn%7D%5Cright%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n^3&#92;left(1+&#92;frac{1}{n}&#92;right)^3" title="n^3&#92;left(1+&#92;frac{1}{n}&#92;right)^3" class="latex" /> clearly. However, we see that in the expression:</p>
+<p>You will often use a trick like this, so play around and make sure that this is clear. Now, why is this useful? Well, in the left hand side of our equation we have \(2\cdot n^3\) and this isn&#8217;t the same as \(n^3\left(1+\frac{1}{n}\right)^3\) clearly. However, we see that in the expression:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cleft%281%2B%5Cfrac%7B1%7D%7Bn%7D%5Cright%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;left(1+&#92;frac{1}{n}&#92;right)^3" title="&#92;left(1+&#92;frac{1}{n}&#92;right)^3" class="latex" /></p>
+<p style="text-align: center;">\[\left(1+\frac{1}{n}\right)^3\]</p>
 <p>&nbsp;</p>
-<p>as n increases, this number gets closer and closer to 1. For n=1 for instance, this is <img src="//s0.wp.com/latex.php?latex=2%5E3%3D8&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^3=8" title="2^3=8" class="latex" />. For n=2 this is <img src="//s0.wp.com/latex.php?latex=1.5%5E3%3D3.375&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1.5^3=3.375" title="1.5^3=3.375" class="latex" />. How about for n=10? This is <img src="//s0.wp.com/latex.php?latex=1.1%5E3%3D1.331&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1.1^3=1.331" title="1.1^3=1.331" class="latex" />. Even if you don&#8217;t know this exactly, you should be able to see that this is less than 2. Indeed then we can say that:</p>
+<p>as n increases, this number gets closer and closer to 1. For n=1 for instance, this is \(2^3=8\). For n=2 this is \(1.5^3=3.375\). How about for n=10? This is \(1.1^3=1.331\). Even if you don&#8217;t know this exactly, you should be able to see that this is less than 2. Indeed then we can say that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%3E%5Cleft%281%2B%5Cfrac%7B1%7D%7Bn%7D%5Cright%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2&gt;&#92;left(1+&#92;frac{1}{n}&#92;right)^3" title="2&gt;&#92;left(1+&#92;frac{1}{n}&#92;right)^3" class="latex" /> for <img src="//s0.wp.com/latex.php?latex=n%5Cge+10&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 10" title="n&#92;ge 10" class="latex" /></p>
+<p style="text-align: center;">\(2&gt;\left(1+\frac{1}{n}\right)^3\) for \(n\ge 10\)</p>
 <p>&nbsp;</p>
 <p>Why is this useful? Well, we can now write:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3D2%5Ccdot+2%5En%3E2%5Ccdot+n%5E3%3E%5Cleft%281%2B%5Cfrac%7B1%7D%7Bn%7D%5Cright%29%5E3n%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}=2&#92;cdot 2^n&gt;2&#92;cdot n^3&gt;&#92;left(1+&#92;frac{1}{n}&#92;right)^3n^3" title="2^{n+1}=2&#92;cdot 2^n&gt;2&#92;cdot n^3&gt;&#92;left(1+&#92;frac{1}{n}&#92;right)^3n^3" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}=2\cdot 2^n&gt;2\cdot n^3&gt;\left(1+\frac{1}{n}\right)^3n^3\]</p>
 <p>&nbsp;</p>
 <p>Let&#8217;s now take everything back inside the brackets and this gives:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3D2%5Ccdot+2%5En%3E2%5Ccdot+n%5E3%3E%5Cleft%281%2B%5Cfrac%7B1%7D%7Bn%7D%5Cright%29%5E3n%5E3%3D%281%2Bn%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}=2&#92;cdot 2^n&gt;2&#92;cdot n^3&gt;&#92;left(1+&#92;frac{1}{n}&#92;right)^3n^3=(1+n)^3" title="2^{n+1}=2&#92;cdot 2^n&gt;2&#92;cdot n^3&gt;&#92;left(1+&#92;frac{1}{n}&#92;right)^3n^3=(1+n)^3" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}=2\cdot 2^n&gt;2\cdot n^3&gt;\left(1+\frac{1}{n}\right)^3n^3=(1+n)^3\]</p>
 <p>&nbsp;</p>
 <p>But this is exactly what we wanted to show:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3E%281%2Bn%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}&gt;(1+n)^3" title="2^{n+1}&gt;(1+n)^3" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}&gt;(1+n)^3\]</p>
 <p>&nbsp;</p>
 <p>Thus, because we showed the base case, and we proved that as long as the inductive hypothesis is true, then we can show that the next case holds, then we have shown that the original statement is true.</p>
 <p>&nbsp;</p>
@@ -317,40 +318,40 @@ img.emoji {
 <p>&nbsp;</p>
 <p><strong>Prove that:</strong></p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5En%3En%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^n&gt;n^3" title="2^n&gt;n^3" class="latex" /> for <img src="//s0.wp.com/latex.php?latex=n%5Cge+10&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 10" title="n&#92;ge 10" class="latex" /></p>
+<p style="text-align: center;">\(2^n&gt;n^3\) for \(n\ge 10\)</p>
 <p>&nbsp;</p>
 <ul>
-<li>Base case: <img src="//s0.wp.com/latex.php?latex=2%5E%7B10%7D%3D1024%3E10%5E3%3D1000&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{10}=1024&gt;10^3=1000" title="2^{10}=1024&gt;10^3=1000" class="latex" /> True, therefore the base case holds.</li>
+<li>Base case: \(2^{10}=1024&gt;10^3=1000\) True, therefore the base case holds.</li>
 </ul>
 <p>&nbsp;</p>
 <ul>
 <li>Inductive hypothesis:</li>
 </ul>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5En%3En%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^n&gt;n^3" title="2^n&gt;n^3" class="latex" /></p>
+<p style="text-align: center;">\[2^n&gt;n^3\]</p>
 <p>&nbsp;</p>
-<p>for some <img src="//s0.wp.com/latex.php?latex=n%5Cge+10&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 10" title="n&#92;ge 10" class="latex" />.</p>
+<p>for some \(n\ge 10\).</p>
 <p>&nbsp;</p>
 <ul>
 <li>Use the inductive hypothesis to prove that:</li>
 </ul>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3E%28n%2B1%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}&gt;(n+1)^3" title="2^{n+1}&gt;(n+1)^3" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}&gt;(n+1)^3\]</p>
 <p>&nbsp;</p>
 <p>Take the left hand side:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3D2%5Ccdot+2%5En&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}=2&#92;cdot 2^n" title="2^{n+1}=2&#92;cdot 2^n" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}=2\cdot 2^n\]</p>
 <p>&nbsp;</p>
 <p>Using the inductive hypothesis:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3D2%5Ccdot+2%5En%3E2%5Ccdot+n%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}=2&#92;cdot 2^n&gt;2&#92;cdot n^3" title="2^{n+1}=2&#92;cdot 2^n&gt;2&#92;cdot n^3" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}=2\cdot 2^n&gt;2\cdot n^3\]</p>
 <p>&nbsp;</p>
-<p>We know that <img src="//s0.wp.com/latex.php?latex=2%3E%5Cleft%281%2B%5Cfrac%7B1%7D%7Bn%7D%5Cright%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2&gt;&#92;left(1+&#92;frac{1}{n}&#92;right)^3" title="2&gt;&#92;left(1+&#92;frac{1}{n}&#92;right)^3" class="latex" /> for $n\ge 10$. Thus:</p>
+<p>We know that \(2&gt;\left(1+\frac{1}{n}\right)^3\) for $n\ge 10$. Thus:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3E%5Cleft%281%2B%5Cfrac%7B1%7D%7Bn%7D%5Cright%29%5E3%5Ccdot+n%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}&gt;&#92;left(1+&#92;frac{1}{n}&#92;right)^3&#92;cdot n^3" title="2^{n+1}&gt;&#92;left(1+&#92;frac{1}{n}&#92;right)^3&#92;cdot n^3" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}&gt;\left(1+\frac{1}{n}\right)^3\cdot n^3\]</p>
 <p>&nbsp;</p>
 <p>Which can be written as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=2%5E%7Bn%2B1%7D%3E%281%2Bn%29%5E3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2^{n+1}&gt;(1+n)^3" title="2^{n+1}&gt;(1+n)^3" class="latex" /></p>
+<p style="text-align: center;">\[2^{n+1}&gt;(1+n)^3\]</p>
 <p>&nbsp;</p>
 <p>We have thus proved, by mathematical induction the original statement holds.</p>
 <table class="rw-rating-table rw-ltr rw-left"><tr><td><nobr>How clear is this post?</nobr></td><td><div class="rw-left"><div class="rw-ui-container rw-class-blog-post rw-urid-124650"></div></div></td></tr></table><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-12464" class="share-twitter sd-button share-icon no-text" href="p=12464&amp;share=twitter.html" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-12464" class="share-facebook sd-button share-icon no-text" href="p=12464&amp;share=facebook.html" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-google-plus-1"><a rel="nofollow" data-shared="sharing-google-12464" class="share-google-plus-1 sd-button share-icon no-text" href="p=12464&amp;share=google-plus-1.html" target="_blank" title="Click to share on Google+"><span></span><span class="sharing-screen-reader-text">Click to share on Google+ (Opens in new window)</span></a></li><li class="share-print"><a rel="nofollow" data-shared="" class="share-print sd-button share-icon no-text" href="p=12464.html#print" target="_blank" title="Click to print"><span></span><span class="sharing-screen-reader-text">Click to print (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>							</div>

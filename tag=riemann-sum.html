@@ -161,7 +161,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive tag tag-riemann-sum tag-241 fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -230,21 +231,21 @@ img.emoji {
 <p>&nbsp;</p>
 <p>Let&#8217;s look at the example:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En%5Cleft%289%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%5E2-8%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%2B7%5Cright%29%5Cfrac%7B13%7D%7Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2-8&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)+7&#92;right)&#92;frac{13}{n}" title="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2-8&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)+7&#92;right)&#92;frac{13}{n}" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{n\rightarrow\infty}\sum_{i=1}^n\left(9\left(4+(i-1)\frac{6}{n}\right)^2-8\left(4+(i-1)\frac{6}{n}\right)+7\right)\frac{13}{n}\]</p>
 <p>&nbsp;</p>
 <p>There are many ways to tackle such a question but let&#8217;s take one particular path. Let&#8217;s start by the fact that when the limit is defined, the limit of a sum is the sum of the limits. We can split up our expression into 3, which looks like:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En9%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%5E2%5Cfrac%7B13%7D%7Bn%7D-%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En%5Cleft%288%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%5Cright%29%5Cfrac%7B13%7D%7Bn%7D%2B%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En7%5Cfrac%7B13%7D%7Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{13}{n}-&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(8&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)&#92;right)&#92;frac{13}{n}+&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n7&#92;frac{13}{n}" title="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{13}{n}-&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(8&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)&#92;right)&#92;frac{13}{n}+&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n7&#92;frac{13}{n}" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{n\rightarrow\infty}\sum_{i=1}^n9\left(4+(i-1)\frac{6}{n}\right)^2\frac{13}{n}-\lim_{n\rightarrow\infty}\sum_{i=1}^n\left(8\left(4+(i-1)\frac{6}{n}\right)\right)\frac{13}{n}+\lim_{n\rightarrow\infty}\sum_{i=1}^n7\frac{13}{n}\]</p>
 <p>&nbsp;</p>
 <p>Let&#8217;s tackle each of these separately. Let&#8217;s look at the first term:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En9%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%5E2%5Cfrac%7B13%7D%7Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{13}{n}" title="&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n9&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{13}{n}" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{n\rightarrow\infty}\sum_{i=1}^n9\left(4+(i-1)\frac{6}{n}\right)^2\frac{13}{n}\]</p>
 <p>&nbsp;</p>
 <p>Well, we can take the factor of 13 outside the front of the whole thing to start with, along with the factor of 9, and this will give</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=13%5Ctimes+9%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%5Csum_%7Bi%3D1%7D%5En%5Cleft%284%2B%28i-1%29%5Cfrac%7B6%7D%7Bn%7D%5Cright%29%5E2%5Cfrac%7B1%7D%7Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="13&#92;times 9&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{1}{n}" title="13&#92;times 9&#92;lim_{n&#92;rightarrow&#92;infty}&#92;sum_{i=1}^n&#92;left(4+(i-1)&#92;frac{6}{n}&#92;right)^2&#92;frac{1}{n}" class="latex" /></p>
+<p style="text-align: center;">\[13\times 9\lim_{n\rightarrow\infty}\sum_{i=1}^n\left(4+(i-1)\frac{6}{n}\right)^2\frac{1}{n}\]</p>
 <p>&nbsp;</p>
-<p>We see here that we have a sum of terms, and a factor which looks like <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7Bn%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{n}" title="&#92;frac{1}{n}" class="latex" /> in each term.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
+<p>We see here that we have a sum of terms, and a factor which looks like \(\frac{1}{n}\) in each term.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
 			<span class="updated" style="display:none;">
@@ -255,22 +256,22 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=13557.html">Some sum identities</a></h2><div class="fusion-post-content-container"><p>During tutorials last week, a number of students asked how to understand identities that are used in the calculation of various Riemann sums and their limits.</p>
 <p>These identities are:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+1%3Dn&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n 1=n" title="&#92;sum_{i=1}^n 1=n" class="latex" /></p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+i%3D%5Cfrac%7Bn%28n%2B1%29%7D%7B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n i=&#92;frac{n(n+1)}{2}" title="&#92;sum_{i=1}^n i=&#92;frac{n(n+1)}{2}" class="latex" /></p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+i%5E2%3D%5Cfrac%7Bn%28n%2B1%29%282n%2B1%29%7D%7B6%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n i^2=&#92;frac{n(n+1)(2n+1)}{6}" title="&#92;sum_{i=1}^n i^2=&#92;frac{n(n+1)(2n+1)}{6}" class="latex" /></p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+i%5E3%3D%5Cleft%28%5Cfrac%7Bn%28n%2B1%29%7D%7B2%7D%5Cright%29%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n i^3=&#92;left(&#92;frac{n(n+1)}{2}&#92;right)^2" title="&#92;sum_{i=1}^n i^3=&#92;left(&#92;frac{n(n+1)}{2}&#92;right)^2" class="latex" /></p>
+<p style="text-align: center;">\[\sum_{i=1}^n 1=n\]</p>
+<p style="text-align: center;">\[\sum_{i=1}^n i=\frac{n(n+1)}{2}\]</p>
+<p style="text-align: center;">\[\sum_{i=1}^n i^2=\frac{n(n+1)(2n+1)}{6}\]</p>
+<p style="text-align: center;">\[\sum_{i=1}^n i^3=\left(\frac{n(n+1)}{2}\right)^2\]</p>
 <p>&nbsp;</p>
 <p>Let&#8217;s go through these one by one. We must first remember what the sigma notation means. If we have:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+f%28i%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n f(i)" title="&#92;sum_{i=1}^n f(i)" class="latex" /></p>
+<p style="text-align: center;">\[\sum_{i=1}^n f(i)\]</p>
 <p>&nbsp;</p>
 <p>It means the sum of terms of the forms f(i) for i starting with 1 and going up to i=n. Sometimes n will actually be an integer, and sometimes it will be left arbitrary. So, the above sum can be written as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+f%28i%29%3Df%281%29%2Bf%282%29%2Bf%283%29%2Bf%284%29%2B....%2Bf%28n-2%29%2Bf%28n-1%29%2Bf%28n%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n f(i)=f(1)+f(2)+f(3)+f(4)+....+f(n-2)+f(n-1)+f(n)" title="&#92;sum_{i=1}^n f(i)=f(1)+f(2)+f(3)+f(4)+....+f(n-2)+f(n-1)+f(n)" class="latex" /></p>
+<p style="text-align: center;">\[\sum_{i=1}^n f(i)=f(1)+f(2)+f(3)+f(4)+....+f(n-2)+f(n-1)+f(n)\]</p>
 <p>&nbsp;</p>
 <p>We haven&#8217;t specified what f is, but that&#8217;s because this statement is general and applies for any time of function of i. In the first of the identities above, the function is simply f(i)=1, which isn&#8217;t a very interesting function, but it still is one. It says, whatever i we put in, output 1. So this sum can be written as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Csum_%7Bi%3D1%7D%5En+1%3D1%2B1%2B1%2B1%2B....%2B1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sum_{i=1}^n 1=1+1+1+1+....+1" title="&#92;sum_{i=1}^n 1=1+1+1+1+....+1" class="latex" /></p>
+<p style="text-align: center;">\[\sum_{i=1}^n 1=1+1+1+1+....+1\]</p>
 <p>&nbsp;</p>
 <p>Where there are n terms.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	
@@ -283,11 +284,11 @@ img.emoji {
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=13549.html">MAM1000W 2017 semester 2, lecture 1 (part ii)</a></h2><div class="fusion-post-content-container"><p><span style="text-decoration: underline;"><strong>The distance problem</strong></span></p>
 <p>If I want to know how far I walked during an hour, I can ask how far I walked in the first five minutes, and how far I walked in the second five minutes, and how far I walked in the third five minutes, etc. and add them all together. ie. I could write:</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=d%3Dd_1%2Bd_2%2Bd_3%2Bd_4%2B...d_%7B12%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="d=d_1+d_2+d_3+d_4+...d_{12}" title="d=d_1+d_2+d_3+d_4+...d_{12}" class="latex" /></p>
+<p>\[d=d_1+d_2+d_3+d_4+...d_{12}\]</p>
 <p>&nbsp;</p>
-<p>Where <img src="//s0.wp.com/latex.php?latex=d_i&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="d_i" title="d_i" class="latex" /> is the distance walked in the <img src="//s0.wp.com/latex.php?latex=i%5E%7Bth%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="i^{th}" title="i^{th}" class="latex" /> five minutes. To calculate a distance, we need to know how fast we are going, and for how long. In fact:</p>
+<p>Where \(d_i\) is the distance walked in the \(i^{th}\) five minutes. To calculate a distance, we need to know how fast we are going, and for how long. In fact:</p>
 <p>&nbsp;</p>
-<p><img src="//s0.wp.com/latex.php?latex=distance%3Dvelocity+%5Ctimes+time&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="distance=velocity &#92;times time" title="distance=velocity &#92;times time" class="latex" /></p>
+<p>\[distance=velocity \times time\]</p>
 <p>&nbsp;</p>
 <p>where you can think of velocity as the same thing as speed (though there are subtle differences which you will find out about later). This formula works if the velocity is constant, but what if it is changing. Well, if we have a graph of velocity against time, then we can think about splitting the graph into intervals (like the five minute intervals above), and approximating that during a small interval of time, the velocity is roughly constant.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=3.html" title="Posts by Jonathan Shock" rel="author">Jonathan Shock</a></span></span><span class="fusion-inline-sep">|</span>
 	

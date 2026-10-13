@@ -34,13 +34,13 @@
 
 		<meta property="og:title" content="UCT MAM1000 lecture notes part 48 - linear algebra part i"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=11619.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=11619.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="These notes are taken from the resource book and were originally written by Dr Erwin. I will be editing and adding to them throughout. Most mistakes within them can thus be presumed to be mine rather than Dr Erwin&#39;s.
 
 In this section we are going to develop a new set of methods to solve a type"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/10/matrices.001.png?fit=1024%2C768"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/10/matrices.001.png?fit=1024%2C768"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.33"}};
 			!function(e,n,t){var a;function i(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d"),i=String.fromCharCode;return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(i(55356,56806,55356,56826),0,0),3e3<t.toDataURL().length):"diversity"===e?(a.fillText(i(55356,57221),0,0),t=a.getImageData(16,16,1,1).data,a.fillText(i(55356,57221,55356,57343),0,0),(t=a.getImageData(16,16,1,1).data)[0],t[1],t[2],t[3],!0):("simple"===e?a.fillText(i(55357,56835),0,0):a.fillText(i(55356,57135),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function o(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:i("simple"),flag:i("flag"),unicode8:i("unicode8"),diversity:i("diversity")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag&&t.supports.unicode8&&t.supports.diversity||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?o(a.concatemoji):a.wpemoji&&a.twemoji&&(o(a.twemoji),o(a.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -89,7 +89,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.33" />
-<link rel="canonical" href="p=11619.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=11619.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-31p' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11619.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11619&.html#038;format=xml" />
@@ -176,7 +176,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-11619 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -262,82 +263,82 @@ img.emoji {
 <p><a href="wp-content/uploads/2015/10/matrices.001.png"><img class="aligncenter size-large wp-image-11620" src="wp-content/uploads/2015/10/matrices.001.png?resize=669%2C502" alt="matrices.001" srcset="wp-content/uploads/2015/10/matrices.001.png?resize=300%2C225 300w, wp-content/uploads/2015/10/matrices.001.png?fit=1024%2C768 1024w" sizes="(max-width: 669px) 100vw, 669px" data-recalc-dims="1" /></a></p>
 <p>As we go through I will try and show how we can go between these apparently different formalisms. To start with we won&#8217;t use matrices, but as we come on to them we will first think that they are horrible and abstract, and then realise that the machinery we develop for them is incredibly powerful.</p>
 <p>Let&#8217;s start with a very simple example of a question which will be the type that we will eventually want to answer using matrices.</p>
-<p>Suppose that we want to find all values of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> for which</p>
+<p>Suppose that we want to find all values of \(x\) and \(y\) for which</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=x+%2B+y+%3D3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x + y =3" title="x + y =3" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=2x-y+%3D+4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2x-y = 4" title="2x-y = 4" class="latex" /></p>
+<p style="text-align: center;">\(x + y =3\)<br />
+\(2x-y = 4\)</p>
 <p>&nbsp;</p>
-<p>(to be clear: we wish to find the values of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=y&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y" title="y" class="latex" /> that satisfy both of these equations simultaneously). This is a system of linear equations. Solving this system is easy: Rewrite the first equation as <img src="//s0.wp.com/latex.php?latex=y%3D3-x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y=3-x" title="y=3-x" class="latex" /> and substitute this into the second equation to get <img src="//s0.wp.com/latex.php?latex=2x-%283-x%29%3D4.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2x-(3-x)=4." title="2x-(3-x)=4." class="latex" /> From this, it follows that <img src="//s0.wp.com/latex.php?latex=x%3D%5Cfrac%7B7%7D%7B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=&#92;frac{7}{3}" title="x=&#92;frac{7}{3}" class="latex" /> and so <img src="//s0.wp.com/latex.php?latex=y%3D3-%5Cfrac%7B7%7D%7B3%7D%3D%5Cfrac%7B2%7D%7B3%7D.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y=3-&#92;frac{7}{3}=&#92;frac{2}{3}." title="y=3-&#92;frac{7}{3}=&#92;frac{2}{3}." class="latex" /></p>
-<p>Here we have treated the system purely algebraically, but let&#8217;s see what we&#8217;ve done graphically. Each of these equations is a constraint on the points in the <img src="//s0.wp.com/latex.php?latex=%7B%5Cmathcal+R%7D%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="{&#92;mathcal R}^2" title="{&#92;mathcal R}^2" class="latex" /> plane &#8211; this simply corresponds in this case to two lines. Which look like this:</p>
+<p>(to be clear: we wish to find the values of \(x\) and \(y\) that satisfy both of these equations simultaneously). This is a system of linear equations. Solving this system is easy: Rewrite the first equation as \(y=3-x\) and substitute this into the second equation to get \(2x-(3-x)=4.\) From this, it follows that \(x=\frac{7}{3}\) and so \(y=3-\frac{7}{3}=\frac{2}{3}.\)</p>
+<p>Here we have treated the system purely algebraically, but let&#8217;s see what we&#8217;ve done graphically. Each of these equations is a constraint on the points in the \({\mathcal R}^2\) plane &#8211; this simply corresponds in this case to two lines. Which look like this:</p>
 <p><a href="wp-content/uploads/2015/10/la1.png"><img class="aligncenter size-full wp-image-11622" src="wp-content/uploads/2015/10/la1.png?resize=750%2C760" alt="la1" srcset="wp-content/uploads/2015/10/la1.png?resize=296%2C300 296w, wp-content/uploads/2015/10/la1.png?fit=750%2C760 750w" sizes="(max-width: 750px) 100vw, 750px" data-recalc-dims="1" /></a></p>
-<p>What we mean by having solved the equations is to have converted them into two new equations, one which involves only x, and one which involves only y (note that we can&#8217;t think of the former as a function, because it&#8217;s not single valued). These two new equations <img src="//s0.wp.com/latex.php?latex=x%3D%5Cfrac%7B7%7D%7B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=&#92;frac{7}{3}" title="x=&#92;frac{7}{3}" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=y%3D3-%5Cfrac%7B7%7D%7B3%7D%3D%5Cfrac%7B2%7D%7B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y=3-&#92;frac{7}{3}=&#92;frac{2}{3}" title="y=3-&#92;frac{7}{3}=&#92;frac{2}{3}" class="latex" /> correspond to two new lines which we plot on the same graph:</p>
+<p>What we mean by having solved the equations is to have converted them into two new equations, one which involves only x, and one which involves only y (note that we can&#8217;t think of the former as a function, because it&#8217;s not single valued). These two new equations \(x=\frac{7}{3}\) and \(y=3-\frac{7}{3}=\frac{2}{3}\) correspond to two new lines which we plot on the same graph:</p>
 <p><a href="wp-content/uploads/2015/10/la2.png"><img class="aligncenter size-full wp-image-11623" src="wp-content/uploads/2015/10/la2.png?resize=750%2C760" alt="la2" srcset="wp-content/uploads/2015/10/la2.png?resize=296%2C300 296w, wp-content/uploads/2015/10/la2.png?fit=750%2C760 750w" sizes="(max-width: 750px) 100vw, 750px" data-recalc-dims="1" /></a></p>
 <p>In some way we&#8217;ve combined the two equations together to get two new equations which correspond to horizontal and vertical lines, where before we had intersecting slanted lines. The solution corresponds to the point of intersection of the two original lines, and of course to the intersection of the two new lines.</p>
 <p>In two dimensions this is relatively easy to see, and indeed in three dimensions as we will see too, but in higher dimensions it is harder to visualise. However, we should still keep in mind what is happening geometrically in higher dimensions.</p>
 <p>In principle, we can apply the same method as above (eliminating the variables) to any system of linear equations. However, if we are asked to solve a system like</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=u-v%2B3w%2Bx-5y%2B2z%3D3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="u-v+3w+x-5y+2z=3" title="u-v+3w+x-5y+2z=3" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=9u-3v-w%2B2x-y%2B12z%3D-8&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="9u-3v-w+2x-y+12z=-8" title="9u-3v-w+2x-y+12z=-8" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=17u%2Bw-21x-y%2B11z%3D35&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="17u+w-21x-y+11z=35" title="17u+w-21x-y+11z=35" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=2u%2B2v%2B3w%2Bx-6y-3z%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2u+2v+3w+x-6y-3z=0" title="2u+2v+3w+x-6y-3z=0" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=4u-2v%2Bw-54y%2B2z%3D-71&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="4u-2v+w-54y+2z=-71" title="4u-2v+w-54y+2z=-71" class="latex" /></p>
+<p style="text-align: center;">\(u-v+3w+x-5y+2z=3\)<br />
+\(9u-3v-w+2x-y+12z=-8\)<br />
+\(17u+w-21x-y+11z=35\)<br />
+\(2u+2v+3w+x-6y-3z=0\)<br />
+\(4u-2v+w-54y+2z=-71\)</p>
 <p>&nbsp;</p>
 <p>then things are going to get messy, fast, unless we have a systematic method. In this section of the course, we shall develop some systematic methods for solving systems of linear equations.</p>
 <p><strong>Systems of linear equations<br />
 </strong></p>
-<p><strong>Definition:</strong> An equation of the form <img src="//s0.wp.com/latex.php?latex=a_1x_1%2Ba_2x_2%2B+%5Ccdots+%2B+a_nx_n+%3D+b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_1x_1+a_2x_2+ &#92;cdots + a_nx_n = b" title="a_1x_1+a_2x_2+ &#92;cdots + a_nx_n = b" class="latex" /> (where <img src="//s0.wp.com/latex.php?latex=x_1%2Cx_2%2C%5Cldots%2Cx_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_1,x_2,&#92;ldots,x_n" title="x_1,x_2,&#92;ldots,x_n" class="latex" /> are variables and <img src="//s0.wp.com/latex.php?latex=a_1%2Ca_2%2C%5Cldots%2Ca_n%2Cb&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_1,a_2,&#92;ldots,a_n,b" title="a_1,a_2,&#92;ldots,a_n,b" class="latex" /> are real numbers) is called a <em>linear equation</em> in the variables <img src="//s0.wp.com/latex.php?latex=x_1%2Cx_2%2C%5Cldots%2Cx_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_1,x_2,&#92;ldots,x_n" title="x_1,x_2,&#92;ldots,x_n" class="latex" />.</p>
+<p><strong>Definition:</strong> An equation of the form \(a_1x_1+a_2x_2+ \cdots + a_nx_n = b\) (where \(x_1,x_2,\ldots,x_n\) are variables and \(a_1,a_2,\ldots,a_n,b\) are real numbers) is called a <em>linear equation</em> in the variables \(x_1,x_2,\ldots,x_n\).</p>
 <p>Each of the following is either a linear equation or can be rewritten as one:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=3x-5y%3D7&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3x-5y=7" title="3x-5y=7" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=y+%3D+2-6x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y = 2-6x" title="y = 2-6x" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=9x%2By-2z%3D3&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="9x+y-2z=3" title="9x+y-2z=3" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=x_1+%2B+2x_2+%3D+5x_3+-+12&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_1 + 2x_2 = 5x_3 - 12" title="x_1 + 2x_2 = 5x_3 - 12" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=10x_1+-+%5Cfrac%7B3%7D%7B2%7D+x_7+%2B+x_%7B21%7D+%3D+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="10x_1 - &#92;frac{3}{2} x_7 + x_{21} = 0" title="10x_1 - &#92;frac{3}{2} x_7 + x_{21} = 0" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=2x_1+%2B+3x_2+%2B4x_3+-2+x_5+%2B+9x_6+%2B11x_8+%3D+%5Cpi&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2x_1 + 3x_2 +4x_3 -2 x_5 + 9x_6 +11x_8 = &#92;pi" title="2x_1 + 3x_2 +4x_3 -2 x_5 + 9x_6 +11x_8 = &#92;pi" class="latex" /></p>
+<p style="text-align: center;">\(3x-5y=7\)<br />
+\(y = 2-6x\)<br />
+\(9x+y-2z=3\)<br />
+\(x_1 + 2x_2 = 5x_3 - 12\)<br />
+\(10x_1 - \frac{3}{2} x_7 + x_{21} = 0\)<br />
+\(2x_1 + 3x_2 +4x_3 -2 x_5 + 9x_6 +11x_8 = \pi\)</p>
 <p>&nbsp;</p>
 <p>Each of the following is not a linear equation:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=x%5E2%2By+%3D+4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^2+y = 4" title="x^2+y = 4" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=2xyz+%3D+5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2xyz = 5" title="2xyz = 5" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=%5Csin+%28x_1%29+-+3x_2+%2B+4x_3+%3D+-11&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;sin (x_1) - 3x_2 + 4x_3 = -11" title="&#92;sin (x_1) - 3x_2 + 4x_3 = -11" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=e%5E%7Bx_1%7D+%5Cln+%28x_2+%2B+x_3%29+-+x_4%5E3+%3D+2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^{x_1} &#92;ln (x_2 + x_3) - x_4^3 = 2" title="e^{x_1} &#92;ln (x_2 + x_3) - x_4^3 = 2" class="latex" /></p>
+<p style="text-align: center;">\(x^2+y = 4\)<br />
+\(2xyz = 5\)<br />
+\(\sin (x_1) - 3x_2 + 4x_3 = -11\)<br />
+\(e^{x_1} \ln (x_2 + x_3) - x_4^3 = 2\)</p>
 <p>&nbsp;</p>
-<p>Suppose we are given several linear equations and asked to determine which values of the variables satisfy <em>all</em> of them simultaneously. To be specific, suppose that we are given <img src="//s0.wp.com/latex.php?latex=m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="m" title="m" class="latex" /> linear equations in the <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> variables <img src="//s0.wp.com/latex.php?latex=x_1%2Cx_2%2C%5Cldots%2Cx_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_1,x_2,&#92;ldots,x_n" title="x_1,x_2,&#92;ldots,x_n" class="latex" />:</p>
+<p>Suppose we are given several linear equations and asked to determine which values of the variables satisfy <em>all</em> of them simultaneously. To be specific, suppose that we are given \(m\) linear equations in the \(n\) variables \(x_1,x_2,\ldots,x_n\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=a_%7B11%7Dx_1+%2B+a_%7B12%7Dx_2+%2B+%5Ccdots+%2B+a_%7B1n%7Dx_n+%3D+b_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_{11}x_1 + a_{12}x_2 + &#92;cdots + a_{1n}x_n = b_1" title="a_{11}x_1 + a_{12}x_2 + &#92;cdots + a_{1n}x_n = b_1" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=a_%7B21%7Dx_1+%2B+a_%7B22%7Dx_2+%2B+%5Ccdots+%2B+a_%7B2n%7Dx_n+%3D+b_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_{21}x_1 + a_{22}x_2 + &#92;cdots + a_{2n}x_n = b_2" title="a_{21}x_1 + a_{22}x_2 + &#92;cdots + a_{2n}x_n = b_2" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=%5Ccdots+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;cdots " title="&#92;cdots " class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=a_%7Bm1%7Dx_1+%2B+a_%7Bm2%7Dx_2+%2B+%5Ccdots+%2B+a_%7Bmn%7Dx_n+%3D+b_m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_{m1}x_1 + a_{m2}x_2 + &#92;cdots + a_{mn}x_n = b_m" title="a_{m1}x_1 + a_{m2}x_2 + &#92;cdots + a_{mn}x_n = b_m" class="latex" /></p>
+<p style="text-align: center;">\(a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1\)<br />
+\(a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2\)<br />
+\(\cdots\)<br />
+\(a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m\)</p>
 <p>&nbsp;</p>
-<p>This is called a <em>system of linear equations</em>. If <img src="//s0.wp.com/latex.php?latex=c_1%2Cc_2%2C%5Cldots%2Cc_n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="c_1,c_2,&#92;ldots,c_n" title="c_1,c_2,&#92;ldots,c_n" class="latex" /> are real numbers for which</p>
+<p>This is called a <em>system of linear equations</em>. If \(c_1,c_2,\ldots,c_n\) are real numbers for which</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=a_%7B11%7Dc_1+%2B+a_%7B12%7Dc_2+%2B+%5Ccdots+%2B+a_%7B1n%7Dc_n+%3D+b_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_{11}c_1 + a_{12}c_2 + &#92;cdots + a_{1n}c_n = b_1" title="a_{11}c_1 + a_{12}c_2 + &#92;cdots + a_{1n}c_n = b_1" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=a_%7B21%7Dc_1+%2B+a_%7B22%7Dc_2+%2B+%5Ccdots+%2B+a_%7B2n%7Dc_n+%3D+b_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_{21}c_1 + a_{22}c_2 + &#92;cdots + a_{2n}c_n = b_2" title="a_{21}c_1 + a_{22}c_2 + &#92;cdots + a_{2n}c_n = b_2" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=%5Ccdots+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;cdots " title="&#92;cdots " class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=a_%7Bm1%7Dc_1+%2B+a_%7Bm2%7Dc_2+%2B+%5Ccdots+%2B+a_%7Bmn%7Dc_n+%3D+b_m&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_{m1}c_1 + a_{m2}c_2 + &#92;cdots + a_{mn}c_n = b_m" title="a_{m1}c_1 + a_{m2}c_2 + &#92;cdots + a_{mn}c_n = b_m" class="latex" /></p>
+<p style="text-align: center;">\(a_{11}c_1 + a_{12}c_2 + \cdots + a_{1n}c_n = b_1\)<br />
+\(a_{21}c_1 + a_{22}c_2 + \cdots + a_{2n}c_n = b_2\)<br />
+\(\cdots\)<br />
+\(a_{m1}c_1 + a_{m2}c_2 + \cdots + a_{mn}c_n = b_m\)</p>
 <p>&nbsp;</p>
-<p>(i.e., if <img src="//s0.wp.com/latex.php?latex=%28x_1%2Cx_2%2C%5Cldots%2Cx_n%29+%3D+%28c_1%2Cc_2%2C%5Cldots%2Cc_n%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(x_1,x_2,&#92;ldots,x_n) = (c_1,c_2,&#92;ldots,c_n)" title="(x_1,x_2,&#92;ldots,x_n) = (c_1,c_2,&#92;ldots,c_n)" class="latex" /> satisfies every one of these linear equations), then the vector <img src="//s0.wp.com/latex.php?latex=%28c_1%2Cc_2%2C%5Cldots%2Cc_n%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(c_1,c_2,&#92;ldots,c_n)" title="(c_1,c_2,&#92;ldots,c_n)" class="latex" /> is <em>a solution</em> of this system of linear equations.</p>
+<p>(i.e., if \((x_1,x_2,\ldots,x_n) = (c_1,c_2,\ldots,c_n)\) satisfies every one of these linear equations), then the vector \((c_1,c_2,\ldots,c_n)\) is <em>a solution</em> of this system of linear equations.</p>
 <p>Consider the system of linear equations</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=x+%2B+2y+-z+%3D5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x + 2y -z =5" title="x + 2y -z =5" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=-x%2B3y%2Bz+%3D+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-x+3y+z = 0" title="-x+3y+z = 0" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=2x+-+y+-2z+%3D+5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2x - y -2z = 5" title="2x - y -2z = 5" class="latex" /></p>
+<p style="text-align: center;">\(x + 2y -z =5\)<br />
+\(-x+3y+z = 0\)<br />
+\(2x - y -2z = 5\)</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1%282%29+%2B+2%281%29+-%28-1%29+%3D5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1(2) + 2(1) -(-1) =5" title="1(2) + 2(1) -(-1) =5" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=-1%282%29%2B3%281%29%2B%28-1%29+%3D+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-1(2)+3(1)+(-1) = 0" title="-1(2)+3(1)+(-1) = 0" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=2%282%29+-%281%29+-2%28-1%29+%3D+5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="2(2) -(1) -2(-1) = 5" title="2(2) -(1) -2(-1) = 5" class="latex" /></p>
+<p style="text-align: center;">\(1(2) + 2(1) -(-1) =5\)<br />
+\(-1(2)+3(1)+(-1) = 0\)<br />
+\(2(2) -(1) -2(-1) = 5\)</p>
 <p>&nbsp;</p>
-<p>the vector <img src="//s0.wp.com/latex.php?latex=%28x%2Cy%2Cz%29+%3D+%282%2C1%2C-1%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(x,y,z) = (2,1,-1)" title="(x,y,z) = (2,1,-1)" class="latex" /> is a solution of this system. Note that here we are moving away from the notation for a vector as <img src="//s0.wp.com/latex.php?latex=%5Cleft%3Cx%2Cy%2Cz%5Cright%3E&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;left&lt;x,y,z&#92;right&gt;" title="&#92;left&lt;x,y,z&#92;right&gt;" class="latex" /> and interchangeably using the coordinate and the vector which goes from the origin to that coordinate.</p>
+<p>the vector \((x,y,z) = (2,1,-1)\) is a solution of this system. Note that here we are moving away from the notation for a vector as \(\left&lt;x,y,z\right&gt;\) and interchangeably using the coordinate and the vector which goes from the origin to that coordinate.</p>
 <p>Consider the system of linear equations</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=x%2By%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x+y=1" title="x+y=1" class="latex" /><br />
-<img src="//s0.wp.com/latex.php?latex=x%2By%3D-1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x+y=-1" title="x+y=-1" class="latex" /></p>
+<p style="text-align: center;">\(x+y=1\)<br />
+\(x+y=-1\)</p>
 <p>&nbsp;</p>
-<p>From the first equation, we have <img src="//s0.wp.com/latex.php?latex=y%3D1-x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y=1-x" title="y=1-x" class="latex" />. Substituting <img src="//s0.wp.com/latex.php?latex=y%3D1-x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="y=1-x" title="y=1-x" class="latex" /> into the second equation, we get <img src="//s0.wp.com/latex.php?latex=x%2B%281-x%29%3D-1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x+(1-x)=-1" title="x+(1-x)=-1" class="latex" /> which after simplification becomes <img src="//s0.wp.com/latex.php?latex=1%3D-1%2C&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1=-1," title="1=-1," class="latex" /> which is not true. This system of linear equations therefore has no solution. We can see the reason for this when we plot these equations and see that they look like</p>
+<p>From the first equation, we have \(y=1-x\). Substituting \(y=1-x\) into the second equation, we get \(x+(1-x)=-1\) which after simplification becomes \(1=-1,\) which is not true. This system of linear equations therefore has no solution. We can see the reason for this when we plot these equations and see that they look like</p>
 <p><a href="wp-content/uploads/2015/10/la3.png"><img class="aligncenter size-full wp-image-11624" src="wp-content/uploads/2015/10/la3.png?resize=750%2C760" alt="la3" srcset="wp-content/uploads/2015/10/la3.png?resize=296%2C300 296w, wp-content/uploads/2015/10/la3.png?fit=750%2C760 750w" sizes="(max-width: 750px) 100vw, 750px" data-recalc-dims="1" /></a></p>
 <p>They don&#8217;t intersect anywhere and thus they have no solution.</p>
 <p>&nbsp;</p>
-<p>We can see from the example above that some systems of linear equations have no solution. And, while we found a solution to the system of linear equations in the first example, we do not know whether <img src="//s0.wp.com/latex.php?latex=%282%2C1%2C-1%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(2,1,-1)" title="(2,1,-1)" class="latex" /> is the <em>only</em> solution or whether there are others. We shall therefore ask two, related, questions:</p>
+<p>We can see from the example above that some systems of linear equations have no solution. And, while we found a solution to the system of linear equations in the first example, we do not know whether \((2,1,-1)\) is the <em>only</em> solution or whether there are others. We shall therefore ask two, related, questions:</p>
 <p>&nbsp;</p>
 <p>Given a system of linear equations:<br />
 1) Does the system have at least one solution?<br />

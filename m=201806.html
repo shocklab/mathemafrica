@@ -160,7 +160,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive date fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -248,7 +249,7 @@ nums = Append[nums, nums[[-1]] + i]]<br />
 ]</p></blockquote>
 <blockquote><p>{{#[[1]], 0}, #[[2]]} &amp; /@ Partition[Riffle[Mean[#] &amp; /@ Partition[Riffle[nums, nums[[2 ;;]]], 2],<br />
 Abs[Differences[nums]]/2], 2];</p></blockquote>
-<blockquote><p>Show[Show[<br />
+<blockquote><p class="tex2jax_ignore">Show[Show[<br />
 Table[Graphics[Circle[%[[i, 1]], %[[i, 2]], {(i) \[Pi], (i + 1) \[Pi]}]], {i, Length[%]}], ImageSize -&gt; 1000], Plot[0, {x, 0, 91}],<br />
 Axes -&gt; True]</p></blockquote>
 <p>(You may have to copy this by hand rather than copy/paste.)</p>

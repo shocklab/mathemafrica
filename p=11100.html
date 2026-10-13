@@ -34,13 +34,13 @@
 
 		<meta property="og:title" content="UCT MAM1000 Lecture notes part 15 - Tuesday 11th August"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=11100.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=11100.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="This section is going to be a pretty diverse one, but is going to give you a very powerful set of tools for solving diverse problems in the real world.
 
 You will be able to calculate the probability of two people in a given sized room having the same birthday, you will be able to calculate"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.2"}};
 			!function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -88,7 +88,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.2" />
-<link rel="canonical" href="p=11100.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=11100.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-2T2' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11100.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D11100&.html#038;format=xml" />
@@ -175,7 +175,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-11100 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -255,93 +256,93 @@ img.emoji {
 <p>Combinatorics often deals with big numbers, because the number of ways of rearranging a given set of objects can grow far faster than exponentially with the number of objects (you&#8217;ll see in a bit about a really really really big number in the world of combinatorics, called Graham&#8217;s number).</p>
 <p>We have a special notation which we often use in the world of combinatorics called the factorial. The factorial is denoted by an exclamation mark, and is sometimes called shriek (because that&#8217;s what you do when you see what the answer is). It is very simply defined for the natural numbers as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=n%21%3Dn%28n-1%29%28n-2%29....%282%29%281%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n!=n(n-1)(n-2)....(2)(1)" title="n!=n(n-1)(n-2)....(2)(1)" class="latex" /></p>
+<p style="text-align: center;">\[n!=n(n-1)(n-2)....(2)(1)\]</p>
 <p>&nbsp;</p>
-<p>Though for <img src="//s0.wp.com/latex.php?latex=0%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="0!" title="0!" class="latex" /> it is defined to be <img src="//s0.wp.com/latex.php?latex=1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1" title="1" class="latex" />. This may sound strange at first, but when we think of where factorial is used, it makes sense.</p>
-<p><img src="//s0.wp.com/latex.php?latex=n%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n!" title="n!" class="latex" /> is the number of different ways that <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> objects can be arranged (ordered).</p>
-<p>How many ways can we order <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> objects? Let&#8217;s start with just 2: objects <img src="//s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a" title="a" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b" title="b" class="latex" /> can be ordered as <img src="//s0.wp.com/latex.php?latex=ab&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="ab" title="ab" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=ba&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="ba" title="ba" class="latex" />. With 3 objects we have <img src="//s0.wp.com/latex.php?latex=abc&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="abc" title="abc" class="latex" />, <img src="//s0.wp.com/latex.php?latex=acb&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="acb" title="acb" class="latex" />, <img src="//s0.wp.com/latex.php?latex=bac&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="bac" title="bac" class="latex" />, <img src="//s0.wp.com/latex.php?latex=bca&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="bca" title="bca" class="latex" />, <img src="//s0.wp.com/latex.php?latex=cab&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="cab" title="cab" class="latex" />, <img src="//s0.wp.com/latex.php?latex=cba&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="cba" title="cba" class="latex" />, ie. 6 combinations. With 4 objects we can start to see a pattern. The first object <img src="//s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a" title="a" class="latex" /> can go in four possible positions. Having chosen these positions there are then 3 possible positions for <img src="//s0.wp.com/latex.php?latex=b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="b" title="b" class="latex" />, then there are two left for <img src="//s0.wp.com/latex.php?latex=c&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="c" title="c" class="latex" /> and finally there will only be a single place for each of these that you can put <img src="//s0.wp.com/latex.php?latex=d&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="d" title="d" class="latex" />. So, there are <img src="//s0.wp.com/latex.php?latex=4%5Ctimes+3%5Ctimes2+%5Ctimes1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="4&#92;times 3&#92;times2 &#92;times1" title="4&#92;times 3&#92;times2 &#92;times1" class="latex" /> possible ways of ordering 4 objects. This reasoning leads to the general statement that to order <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> objects there are:</p>
+<p>Though for \(0!\) it is defined to be \(1\). This may sound strange at first, but when we think of where factorial is used, it makes sense.</p>
+<p>\(n!\) is the number of different ways that \(n\) objects can be arranged (ordered).</p>
+<p>How many ways can we order \(n\) objects? Let&#8217;s start with just 2: objects \(a\) and \(b\) can be ordered as \(ab\) and \(ba\). With 3 objects we have \(abc\), \(acb\), \(bac\), \(bca\), \(cab\), \(cba\), ie. 6 combinations. With 4 objects we can start to see a pattern. The first object \(a\) can go in four possible positions. Having chosen these positions there are then 3 possible positions for \(b\), then there are two left for \(c\) and finally there will only be a single place for each of these that you can put \(d\). So, there are \(4\times 3\times2 \times1\) possible ways of ordering 4 objects. This reasoning leads to the general statement that to order \(n\) objects there are:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=n%5Ctimes%28n-1%29%5Ctimes%28n-2%29%5Ctimes%28n-3%29...%5Ctime+3%5Ctimes+2+%5Ctimes+1%3Dn%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;times(n-1)&#92;times(n-2)&#92;times(n-3)...&#92;time 3&#92;times 2 &#92;times 1=n!" title="n&#92;times(n-1)&#92;times(n-2)&#92;times(n-3)...&#92;time 3&#92;times 2 &#92;times 1=n!" class="latex" /></p>
+<p style="text-align: center;">\[n\times(n-1)\times(n-2)\times(n-3)...\time 3\times 2 \times 1=n!\]</p>
 <p>&nbsp;</p>
-<p>ways. Which is how we defined <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> factorial. <img src="//s0.wp.com/latex.php?latex=4%21%3D4%5Ctimes3%5Ctimes+2%5Ctimes+1%3D24&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="4!=4&#92;times3&#92;times 2&#92;times 1=24" title="4!=4&#92;times3&#92;times 2&#92;times 1=24" class="latex" />. How many ways are there of ordering 0 objects? Well there is one way, and it is to simply have no objects, so we define <img src="//s0.wp.com/latex.php?latex=0%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="0!" title="0!" class="latex" /> to be 1. To ask how many ways are there of order <img src="//s0.wp.com/latex.php?latex=3.5&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3.5" title="3.5" class="latex" /> objects is clearly absurd and so <img src="//s0.wp.com/latex.php?latex=3.5%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3.5!" title="3.5!" class="latex" /> will be meaningless. We  can see also that <img src="//s0.wp.com/latex.php?latex=n%21%3Dn%5Ctimes+%28n-1%29%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n!=n&#92;times (n-1)!" title="n!=n&#92;times (n-1)!" class="latex" />. For <img src="//s0.wp.com/latex.php?latex=r%3Cn&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="r&lt;n" title="r&lt;n" class="latex" />:</p>
+<p>ways. Which is how we defined \(n\) factorial. \(4!=4\times3\times 2\times 1=24\). How many ways are there of ordering 0 objects? Well there is one way, and it is to simply have no objects, so we define \(0!\) to be 1. To ask how many ways are there of order \(3.5\) objects is clearly absurd and so \(3.5!\) will be meaningless. We  can see also that \(n!=n\times (n-1)!\). For \(r&lt;n\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bn%21%7D%7Br%21%7D%3D%5Cfrac%7Bn%28n-1%29%28n-2%29%28n-3%29....%28r%2B1%29r%21%7D%7Br%21%7D%3Dn%28n-1%29%28n-2%29%28n-3%29....%28r%2B1%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{n!}{r!}=&#92;frac{n(n-1)(n-2)(n-3)....(r+1)r!}{r!}=n(n-1)(n-2)(n-3)....(r+1)" title="&#92;frac{n!}{r!}=&#92;frac{n(n-1)(n-2)(n-3)....(r+1)r!}{r!}=n(n-1)(n-2)(n-3)....(r+1)" class="latex" /></p>
+<p style="text-align: center;">\[\frac{n!}{r!}=\frac{n(n-1)(n-2)(n-3)....(r+1)r!}{r!}=n(n-1)(n-2)(n-3)....(r+1)\]</p>
 <p>&nbsp;</p>
-<p>so <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B6%21%7D%7B4%21%7D%3D6%5Ctimes+5%3D30&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{6!}{4!}=6&#92;times 5=30" title="&#92;frac{6!}{4!}=6&#92;times 5=30" class="latex" />. It is also true that as <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> tends to <img src="//s0.wp.com/latex.php?latex=%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;infty" title="&#92;infty" class="latex" />:</p>
+<p>so \(\frac{6!}{4!}=6\times 5=30\). It is also true that as \(n\) tends to \(\infty\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=n%21%5Csim+%5Csqrt%7B2%5Cpi+n%7D%5Cleft%28%5Cfrac%7Bn%7D%7Be%7D%5Cright%29%5En&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n!&#92;sim &#92;sqrt{2&#92;pi n}&#92;left(&#92;frac{n}{e}&#92;right)^n" title="n!&#92;sim &#92;sqrt{2&#92;pi n}&#92;left(&#92;frac{n}{e}&#92;right)^n" class="latex" /></p>
+<p style="text-align: center;">\[n!\sim \sqrt{2\pi n}\left(\frac{n}{e}\right)^n\]</p>
 <p>&nbsp;</p>
 <p>This formula is known as Stirling&#8217;s approximation and can be very useful when dealing with factorials of large numbers.<br />
-Factorials get large very very quickly: <img src="//s0.wp.com/latex.php?latex=10%21%3D3628800&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="10!=3628800" title="10!=3628800" class="latex" />. This is how many ways there are of ordering ten objects, which doesn&#8217;t sound like a very big thing but you can see that there are over 3 million ways to do it.</p>
+Factorials get large very very quickly: \(10!=3628800\). This is how many ways there are of ordering ten objects, which doesn&#8217;t sound like a very big thing but you can see that there are over 3 million ways to do it.</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=1000%21%5Csim+4.023872600770938%2A10%5E%7B2567%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1000!&#92;sim 4.023872600770938*10^{2567}" title="1000!&#92;sim 4.023872600770938*10^{2567}" class="latex" /></p>
+<p style="text-align: center;">\[1000!\sim 4.023872600770938*10^{2567}\]</p>
 <p>&nbsp;</p>
 <p>Which is quite a big number, I think you&#8217;ll agree.</p>
-<p>This gives us a perfect opportunity now to use our inductive skills and prove a formula. For every positive integer <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" />:</p>
+<p>This gives us a perfect opportunity now to use our inductive skills and prove a formula. For every positive integer \(n\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%5En+x%5En%7D%7Bdx%5En%7D%3Dn%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d^n x^n}{dx^n}=n!" title="&#92;frac{d^n x^n}{dx^n}=n!" class="latex" /></p>
+<p style="text-align: center;">\[\frac{d^n x^n}{dx^n}=n!\]</p>
 <p>&nbsp;</p>
-<p>This says that if we take the derivative of <img src="//s0.wp.com/latex.php?latex=x%5En+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x^n " title="x^n " class="latex" />, <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> times the answer will be <img src="//s0.wp.com/latex.php?latex=n%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n!" title="n!" class="latex" />. There are three steps to an inductive proof.</p>
+<p>This says that if we take the derivative of \(x^n\), \(n\) times the answer will be \(n!\). There are three steps to an inductive proof.</p>
 <p>1) Prove the base case. The base case states that:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bdx%7D%7Bdx%7D%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{dx}{dx}=1" title="&#92;frac{dx}{dx}=1" class="latex" /></p>
+<p style="text-align: center;">\[\frac{dx}{dx}=1\]</p>
 <p>&nbsp;</p>
 <p>which is clearly true.</p>
-<p>2) Assume that the statement holds true for some <img src="//s0.wp.com/latex.php?latex=n%5Cge+1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge 1" title="n&#92;ge 1" class="latex" />:</p>
+<p>2) Assume that the statement holds true for some \(n\ge 1\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%5En+x%5En%7D%7Bdx%5En%7D%3Dn%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d^n x^n}{dx^n}=n!" title="&#92;frac{d^n x^n}{dx^n}=n!" class="latex" /></p>
+<p style="text-align: center;">\[\frac{d^n x^n}{dx^n}=n!\]</p>
 <p>&nbsp;</p>
-<p>3) Use this statement to prove that it holds true for <img src="//s0.wp.com/latex.php?latex=n%2B1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n+1" title="n+1" class="latex" />. We are looking to find what:</p>
+<p>3) Use this statement to prove that it holds true for \(n+1\). We are looking to find what:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%5E%7B%28n%2B1%29%7D+x%5E%7B%28n%2B1%29%7D%7D%7Bdx%5E%7B%28n%2B1%29%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d^{(n+1)} x^{(n+1)}}{dx^{(n+1)}}" title="&#92;frac{d^{(n+1)} x^{(n+1)}}{dx^{(n+1)}}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{d^{(n+1)} x^{(n+1)}}{dx^{(n+1)}}\]</p>
 <p>&nbsp;</p>
 <p>is equal to. Well we can write this as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%5En%7D%7Bdx%5En%7D%5Cleft%28%5Cfrac%7Bd+x%5E%7B%28n%2B1%29%7D%7D%7Bdx%7D%5Cright%29%3D%5Cfrac%7Bd%5En%7D%7Bdx%5En%7D%5Cleft%28%7B%28n%2B1%29%7Dx%5En%5Cright%29%3D%28n%2B1%29%5Cfrac%7Bd%5Enx%5En%7D%7Bdx%5En%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d^n}{dx^n}&#92;left(&#92;frac{d x^{(n+1)}}{dx}&#92;right)=&#92;frac{d^n}{dx^n}&#92;left({(n+1)}x^n&#92;right)=(n+1)&#92;frac{d^nx^n}{dx^n}" title="&#92;frac{d^n}{dx^n}&#92;left(&#92;frac{d x^{(n+1)}}{dx}&#92;right)=&#92;frac{d^n}{dx^n}&#92;left({(n+1)}x^n&#92;right)=(n+1)&#92;frac{d^nx^n}{dx^n}" class="latex" /></p>
+<p style="text-align: center;">\[\frac{d^n}{dx^n}\left(\frac{d x^{(n+1)}}{dx}\right)=\frac{d^n}{dx^n}\left({(n+1)}x^n\right)=(n+1)\frac{d^nx^n}{dx^n}\]</p>
 <p>&nbsp;</p>
-<p>But we are assuming already that <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%5En+x%5En%7D%7Bdx%5En%7D%3Dn%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d^n x^n}{dx^n}=n!" title="&#92;frac{d^n x^n}{dx^n}=n!" class="latex" /> so we can substitute this in here:</p>
+<p>But we are assuming already that \(\frac{d^n x^n}{dx^n}=n!\) so we can substitute this in here:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cfrac%7Bd%5E%7B%28n%2B1%29%7D+x%5E%7B%28n%2B1%29%7D%7D%7Bdx%5E%7B%28n%2B1%29%7D%7D%3D%28n%2B1%29n%21%3D%28n%2B1%29%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{d^{(n+1)} x^{(n+1)}}{dx^{(n+1)}}=(n+1)n!=(n+1)!" title="&#92;frac{d^{(n+1)} x^{(n+1)}}{dx^{(n+1)}}=(n+1)n!=(n+1)!" class="latex" /></p>
+<p style="text-align: center;">\[\frac{d^{(n+1)} x^{(n+1)}}{dx^{(n+1)}}=(n+1)n!=(n+1)!\]</p>
 <p>&nbsp;</p>
-<p>which is what we wanted to prove. Hence, by the Principle of Mathematical Induction, the statement is true for every positive integer <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" />.</p>
+<p>which is what we wanted to prove. Hence, by the Principle of Mathematical Induction, the statement is true for every positive integer \(n\).</p>
 <p>&nbsp;</p>
 <p><strong>One-to-one functions and permutations</strong></p>
 <p>&nbsp;</p>
-<p>It seems that talking about the rearrangement of <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> objects has little to do with functions, but in fact it fits in as a specific case of a particular type of function. If we have a function <img src="//s0.wp.com/latex.php?latex=f%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)" title="f(x)" class="latex" /> with domain <img src="//s0.wp.com/latex.php?latex=D%28f%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="D(f)" title="D(f)" class="latex" /> and range <img src="//s0.wp.com/latex.php?latex=R%28f%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="R(f)" title="R(f)" class="latex" />, then the function is said to be one-to-one if for every value <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> in the domain, there is a single value <img src="//s0.wp.com/latex.php?latex=f%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)" title="f(x)" class="latex" /> in the range, and for every value <img src="//s0.wp.com/latex.php?latex=f%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)" title="f(x)" class="latex" /> in the range, there is a single value <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> in the domain. This statement is the same as saying that for <img src="//s0.wp.com/latex.php?latex=x_1%2Cx_2%5Cin+D%28f%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_1,x_2&#92;in D(f)" title="x_1,x_2&#92;in D(f)" class="latex" />, if <img src="//s0.wp.com/latex.php?latex=x_1%5Cne+x_2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_1&#92;ne x_2" title="x_1&#92;ne x_2" class="latex" /> then <img src="//s0.wp.com/latex.php?latex=f%28x_1%29%5Cne+f%28x_2%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x_1)&#92;ne f(x_2)" title="f(x_1)&#92;ne f(x_2)" class="latex" />.</p>
-<p>A permutation is a one-to-one function whose domain and range are the same. Let&#8217;s say we have a function on the domain <img src="//s0.wp.com/latex.php?latex=%5B0%2C1%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[0,1]" title="[0,1]" class="latex" /> given by <img src="//s0.wp.com/latex.php?latex=f%28x%29%3D1-x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)=1-x" title="f(x)=1-x" class="latex" />. It is clear that the range of this function is also <img src="//s0.wp.com/latex.php?latex=%5B0%2C1%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[0,1]" title="[0,1]" class="latex" /> and that each value is mapped to a unique value in the range. This is a permutation of the real numbers in the region from <img src="//s0.wp.com/latex.php?latex=0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="0" title="0" class="latex" /> to <img src="//s0.wp.com/latex.php?latex=1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1" title="1" class="latex" />.</p>
+<p>It seems that talking about the rearrangement of \(n\) objects has little to do with functions, but in fact it fits in as a specific case of a particular type of function. If we have a function \(f(x)\) with domain \(D(f)\) and range \(R(f)\), then the function is said to be one-to-one if for every value \(x\) in the domain, there is a single value \(f(x)\) in the range, and for every value \(f(x)\) in the range, there is a single value \(x\) in the domain. This statement is the same as saying that for \(x_1,x_2\in D(f)\), if \(x_1\ne x_2\) then \(f(x_1)\ne f(x_2)\).</p>
+<p>A permutation is a one-to-one function whose domain and range are the same. Let&#8217;s say we have a function on the domain \([0,1]\) given by \(f(x)=1-x\). It is clear that the range of this function is also \([0,1]\) and that each value is mapped to a unique value in the range. This is a permutation of the real numbers in the region from \(0\) to \(1\).</p>
 <p>&nbsp;</p>
-<p>We can talk about functions either on a continuous set of numbers like <img src="//s0.wp.com/latex.php?latex=%5B0%2C1%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[0,1]" title="[0,1]" class="latex" /> or <img src="//s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BR%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="{&#92;mathbb{R}}" title="{&#92;mathbb{R}}" class="latex" />, or we can talk about them on discrete collections. The function <img src="//s0.wp.com/latex.php?latex=f%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)" title="f(x)" class="latex" /> on the domain <img src="//s0.wp.com/latex.php?latex=%5C%7B0%2C1%2C2%5C%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;{0,1,2&#92;}" title="&#92;{0,1,2&#92;}" class="latex" /> given by <img src="//s0.wp.com/latex.php?latex=f%280%29%3D1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(0)=1" title="f(0)=1" class="latex" />, <img src="//s0.wp.com/latex.php?latex=f%281%29%3D2&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(1)=2" title="f(1)=2" class="latex" />, <img src="//s0.wp.com/latex.php?latex=f%282%29%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(2)=0" title="f(2)=0" class="latex" />, is a one-to-one function where the domain and range are equal and thus this is a permutation. Permutations are generally easier to visualise on discrete sets of objects, or numbers, as we can really think of them as being rearrangements (or shufflings) of the original set. You get out what you put in to the function, just in a different order. We can write the above function as:</p>
+<p>We can talk about functions either on a continuous set of numbers like \([0,1]\) or \({\mathbb{R}}\), or we can talk about them on discrete collections. The function \(f(x)\) on the domain \(\{0,1,2\}\) given by \(f(0)=1\), \(f(1)=2\), \(f(2)=0\), is a one-to-one function where the domain and range are equal and thus this is a permutation. Permutations are generally easier to visualise on discrete sets of objects, or numbers, as we can really think of them as being rearrangements (or shufflings) of the original set. You get out what you put in to the function, just in a different order. We can write the above function as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=f%3D%5Cleft%28%5Cbegin%7Barray%7D%7Bccc%7D+0+%26+1+%26+2+%5C%5C+1+%26+2+%26+0+%5C%5C%5Cend%7Barray%7D%5Cright%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f=&#92;left(&#92;begin{array}{ccc} 0 &amp; 1 &amp; 2 &#92;&#92; 1 &amp; 2 &amp; 0 &#92;&#92;&#92;end{array}&#92;right)" title="f=&#92;left(&#92;begin{array}{ccc} 0 &amp; 1 &amp; 2 &#92;&#92; 1 &amp; 2 &amp; 0 &#92;&#92;&#92;end{array}&#92;right)" class="latex" /></p>
+<p style="text-align: center;">\[f=\left(\begin{array}{ccc} 0 &amp; 1 &amp; 2 \\ 1 &amp; 2 &amp; 0 \\\end{array}\right)\]</p>
 <p>&nbsp;</p>
-<p>We&#8217;ve already stated above that the number of ways of rearranging <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> objects is <img src="//s0.wp.com/latex.php?latex=n%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n!" title="n!" class="latex" /> and so we have that the number of different permutations on a set of size <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" /> is <img src="//s0.wp.com/latex.php?latex=n%21&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n!" title="n!" class="latex" />, precisely because the two questions are the same.</p>
+<p>We&#8217;ve already stated above that the number of ways of rearranging \(n\) objects is \(n!\) and so we have that the number of different permutations on a set of size \(n\) is \(n!\), precisely because the two questions are the same.</p>
 <p>&nbsp;</p>
 <p><strong>Bonus material: Really big numbers</strong></p>
 <p>While we&#8217;re on the subject of factorials, it might be fun to talk about how to describe really REALLY big numbers. It turns out that there is a handy notational convention called Knuth&#8217;s Up Arrow Notation which works as follows.</p>
 <p>We&#8217;ll come up with a new notation for an exponent, and simply label it using an arrow pointing up:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=4%5Cuparrow+3%3D4%5E3%3D64&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="4&#92;uparrow 3=4^3=64" title="4&#92;uparrow 3=4^3=64" class="latex" /></p>
+<p style="text-align: center;">\[4\uparrow 3=4^3=64\]</p>
 <p>&nbsp;</p>
 <p>We can include multiple arrow and they work like this:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=4%5Cuparrow%5Cuparrow3%3D4%5E%7B%5Cleft%284%5E4%5Cright%29%7D%3D4%5E%7B256%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="4&#92;uparrow&#92;uparrow3=4^{&#92;left(4^4&#92;right)}=4^{256}" title="4&#92;uparrow&#92;uparrow3=4^{&#92;left(4^4&#92;right)}=4^{256}" class="latex" /></p>
+<p style="text-align: center;">\[4\uparrow\uparrow3=4^{\left(4^4\right)}=4^{256}\]</p>
 <p>&nbsp;</p>
-<p>where you see we have a tower of <img src="//s0.wp.com/latex.php?latex=4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="4" title="4" class="latex" />&#8216;s 3 high. How about another arrow:</p>
+<p>where you see we have a tower of \(4\)&#8216;s 3 high. How about another arrow:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=4%5Cuparrow%5Cuparrow%5Cuparrow+3%3D4%5Cuparrow%5Cuparrow%284%5Cuparrow%5Cuparrow+4%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="4&#92;uparrow&#92;uparrow&#92;uparrow 3=4&#92;uparrow&#92;uparrow(4&#92;uparrow&#92;uparrow 4)" title="4&#92;uparrow&#92;uparrow&#92;uparrow 3=4&#92;uparrow&#92;uparrow(4&#92;uparrow&#92;uparrow 4)" class="latex" /></p>
+<p style="text-align: center;">\[4\uparrow\uparrow\uparrow 3=4\uparrow\uparrow(4\uparrow\uparrow 4)\]</p>
 <p>&nbsp;</p>
 <p>where here we have 3 brackets worth of double up arrows. This could be written as:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=4%5Cuparrow%5Cuparrow%5Cuparrow+3%3D4%5Cuparrow%5Cuparrow%284%5E%7B4%5E%7B4%5E4%7D%7D%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="4&#92;uparrow&#92;uparrow&#92;uparrow 3=4&#92;uparrow&#92;uparrow(4^{4^{4^4}})" title="4&#92;uparrow&#92;uparrow&#92;uparrow 3=4&#92;uparrow&#92;uparrow(4^{4^{4^4}})" class="latex" /></p>
+<p style="text-align: center;">\[4\uparrow\uparrow\uparrow 3=4\uparrow\uparrow(4^{4^{4^4}})\]</p>
 <p>&nbsp;</p>
-<p>This is a tower of <img src="//s0.wp.com/latex.php?latex=4&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="4" title="4" class="latex" />&#8216;s which itself is <img src="//s0.wp.com/latex.php?latex=4%5E%7B4%5E%7B4%5E4%7D%7D%5Csim+4%5E%7B10%5E%7B154%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="4^{4^{4^4}}&#92;sim 4^{10^{154}}" title="4^{4^{4^4}}&#92;sim 4^{10^{154}}" class="latex" /> high. We can&#8217;t even think about what that might be like.</p>
+<p>This is a tower of \(4\)&#8216;s which itself is \(4^{4^{4^4}}\sim 4^{10^{154}}\) high. We can&#8217;t even think about what that might be like.</p>
 <p>In fact for what we are going to look at we will be interested in:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=3%5Cuparrow%5Cuparrow%5Cuparrow+3%3D3%5E%7B3%5E%7B.%5E%7B.%5E.3%7D%7D%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3&#92;uparrow&#92;uparrow&#92;uparrow 3=3^{3^{.^{.^.3}}}" title="3&#92;uparrow&#92;uparrow&#92;uparrow 3=3^{3^{.^{.^.3}}}" class="latex" /></p>
+<p style="text-align: center;">\[3\uparrow\uparrow\uparrow 3=3^{3^{.^{.^.3}}}\]</p>
 <p>&nbsp;</p>
-<p>where the tower is <img src="//s0.wp.com/latex.php?latex=3%5E%7B3%5E3%7D%3D7625597484987&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3^{3^3}=7625597484987" title="3^{3^3}=7625597484987" class="latex" /> 3s high. This is already huge but we are going to get far far larger in what&#8217;s to come, numbers which make this look small:</p>
+<p>where the tower is \(3^{3^3}=7625597484987\) 3s high. This is already huge but we are going to get far far larger in what&#8217;s to come, numbers which make this look small:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=3%5Cuparrow%5Cuparrow%5Cuparrow%5Cuparrow+3%3D3%5Cuparrow%5Cuparrow%5Cuparrow+%283%5Cuparrow%5Cuparrow%5Cuparrow+3%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="3&#92;uparrow&#92;uparrow&#92;uparrow&#92;uparrow 3=3&#92;uparrow&#92;uparrow&#92;uparrow (3&#92;uparrow&#92;uparrow&#92;uparrow 3)" title="3&#92;uparrow&#92;uparrow&#92;uparrow&#92;uparrow 3=3&#92;uparrow&#92;uparrow&#92;uparrow (3&#92;uparrow&#92;uparrow&#92;uparrow 3)" class="latex" /></p>
+<p style="text-align: center;">\[3\uparrow\uparrow\uparrow\uparrow 3=3\uparrow\uparrow\uparrow (3\uparrow\uparrow\uparrow 3)\]</p>
 <p>&nbsp;</p>
 <table class="rw-rating-table rw-ltr rw-left"><tr><td><nobr>How clear is this post?</nobr></td><td><div class="rw-left"><div class="rw-ui-container rw-class-blog-post rw-urid-111010"></div></div></td></tr></table>							</div>
 

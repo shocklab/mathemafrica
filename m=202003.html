@@ -160,7 +160,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive date fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -281,11 +282,11 @@ img.emoji {
 <span>March 28th, 2020</span><span class="fusion-inline-sep">|</span><a href="cat=19.html" rel="category">English</a>, <a href="cat=40.html" rel="category">Level: intermediate</a>, <a href="cat=1.html" rel="category">Uncategorized</a><span class="fusion-inline-sep">|</span><span class="fusion-comments"><a href="p=16127.html#respond">0 Comments</a></span></div><div class="fusion-alignright"><a href="p=16127.html" class="fusion-read-more">Read More</a></div></div></div><div id="post-16082" class="fusion-post-large post fusion-clearfix post-16082 type-post status-publish format-standard hentry category-uncategorized">
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=16082.html">The Res-Net-NODE Narrative</a></h2><div class="fusion-post-content-container"><p align="center"><strong>Humble Beginnings: Ordinary Differential Equations</strong></p>
-<p>The story begins with differential equations. Consider <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" /> such that <img src="//s0.wp.com/latex.php?latex=f%3A%5B0%2CT%5D%5Ctimes+%5Cmathbb%7BR%7D%5En%5Cto+%5Cmathbb%7BR%7D%5En&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f:[0,T]&#92;times &#92;mathbb{R}^n&#92;to &#92;mathbb{R}^n" title="f:[0,T]&#92;times &#92;mathbb{R}^n&#92;to &#92;mathbb{R}^n" class="latex" /> is a continuous function. We can construct a rather simple differential equation given this in the following way. We let</p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%5Cbegin%7Bcases%7D++%7By%27%28t%29%7D%3Df%28t%2Cy%28t%29%29%5C%5C++y%280%29%3Dy_0%5Cin+%5Cmathbb%7BR%7D%5En++%5Cend%7Bcases%7D++&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;begin{cases}  {y&#039;(t)}=f(t,y(t))&#92;&#92;  y(0)=y_0&#92;in &#92;mathbb{R}^n  &#92;end{cases}  " title="&#92;begin{cases}  {y&#039;(t)}=f(t,y(t))&#92;&#92;  y(0)=y_0&#92;in &#92;mathbb{R}^n  &#92;end{cases}  " class="latex" /></p>
-<p>A solution to this system is a continuous map that is defined in the neighbourhood of <img src="//s0.wp.com/latex.php?latex=t%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t=0" title="t=0" class="latex" /> such that this map satisfies the differential equation. </p>
-<p>Ordinary differential equations are well-studied, and we know that, for example, a solution to the given differential equation will exist whenever the function <img src="//s0.wp.com/latex.php?latex=f&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f" title="f" class="latex" /> satisfies the following:</p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=%28%5Cforall+x%2Cy%5Cin+%5Cmathbb%7BR%7D%5En%29%28%5Cexists+C%3E0+%28%5Cin+%5Cmathbb%7BR%7D%29%29%28%7C%7Cf%28t%2Cy%29-f%28t%2Cx%29%7C%7C%5Cleq+C%7C%7Cy-x%7C%7C%29++&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(&#92;forall x,y&#92;in &#92;mathbb{R}^n)(&#92;exists C&gt;0 (&#92;in &#92;mathbb{R}))(||f(t,y)-f(t,x)||&#92;leq C||y-x||)  " title="(&#92;forall x,y&#92;in &#92;mathbb{R}^n)(&#92;exists C&gt;0 (&#92;in &#92;mathbb{R}))(||f(t,y)-f(t,x)||&#92;leq C||y-x||)  " class="latex" /></p>
+<p>The story begins with differential equations. Consider \(f\) such that \(f:[0,T]\times \mathbb{R}^n\to \mathbb{R}^n\) is a continuous function. We can construct a rather simple differential equation given this in the following way. We let</p>
+<p align="center">\[\begin{cases}  {y'(t)}=f(t,y(t))\\  y(0)=y_0\in \mathbb{R}^n  \end{cases}\]</p>
+<p>A solution to this system is a continuous map that is defined in the neighbourhood of \(t=0\) such that this map satisfies the differential equation. </p>
+<p>Ordinary differential equations are well-studied, and we know that, for example, a solution to the given differential equation will exist whenever the function \(f\) satisfies the following:</p>
+<p align="center">\[(\forall x,y\in \mathbb{R}^n)(\exists C&gt;0 (\in \mathbb{R}))(||f(t,y)-f(t,x)||\leq C||y-x||)\]</p>
 <p>This property is known as <em>Lipschitz continuity</em>. A function that satisfies this condition is said to be Lipschitz. We shall see that whenever we require this condition, on up coming situations, wonderful things happen!</p>
 <p>A remarkable field that almost always couples with differential equations is numerical analysis, where we learn to solve differential equations numerically and we study these numerical schemes. We shall explore numerical integration briefly.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=61.html" title="Posts by Siphelele Danisa" rel="author">Siphelele Danisa</a></span></span><span class="fusion-inline-sep">|</span>
 	

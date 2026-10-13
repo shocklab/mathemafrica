@@ -160,7 +160,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="archive date fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -232,9 +233,9 @@ img.emoji {
 <blockquote><p>Here, we shall attempt to mitigate the challenges that we have encountered, as before, and we shall give a rather beautiful closing which shall link concepts in this space of inverse reinforcement learning to &#8216;general&#8217; machine learning structures, in particular generative adversarial networks. </p></blockquote>
 <p align="center"><strong>Inverse Reinforcement Learning with Unknown Dynamics and Possibly Higher Dimensional Spaces</strong></p>
 <p>As we saw previously, the maximum entropy inverse reinforcement learning approach proceeds by defining the probability of a certain trajectory under the expert as being,</p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=p%28%5Ctau%29%3D%5Cdfrac%7B1%7D%7BZ%7De%5E%7BR_%5Cpsi+%28%5Ctau%29%7D%2C&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="p(&#92;tau)=&#92;dfrac{1}{Z}e^{R_&#92;psi (&#92;tau)}," title="p(&#92;tau)=&#92;dfrac{1}{Z}e^{R_&#92;psi (&#92;tau)}," class="latex" /></p>
+<p align="center">\[p(\tau)=\dfrac{1}{Z}e^{R_\psi (\tau)},\]</p>
 <p>where </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=Z%3D%5Cint+e%5E%7BR_%5Cpsi%28%5Ctau%29%7Dd+%5Ctau.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Z=&#92;int e^{R_&#92;psi(&#92;tau)}d &#92;tau." title="Z=&#92;int e^{R_&#92;psi(&#92;tau)}d &#92;tau." class="latex" /></p>
+<p align="center">\[Z=\int e^{R_\psi(\tau)}d \tau.\]</p>
 <p>We mentioned that this is hard to compute in higher dimensional spaces.&hellip;</p></div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=61.html" title="Posts by Siphelele Danisa" rel="author">Siphelele Danisa</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	
@@ -258,22 +259,22 @@ img.emoji {
 
 <div class="fusion-post-content post-content"><h2 class="entry-title"><a href="p=16521.html">Inverse Reinforcement Learning: The general basics</a></h2><div class="fusion-post-content-container"><p align="center"><strong>Standard Reinforcement Learning</strong></p>
 <p>The very basic ideas in Reinforcement Learning are usually defined in the context of Markov Decision Processes. For everything that follows, unless stated otherwise, assume that the structures are finite.</p>
-<p>A Markov Decision Process (MDP) is a tuple <img src="//s0.wp.com/latex.php?latex=%28S%2CA%2C+P%2C+%5Cgamma%2C+R%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(S,A, P, &#92;gamma, R)" title="(S,A, P, &#92;gamma, R)" class="latex" /> where the following is true:<br />
-<em>1. <img src="//s0.wp.com/latex.php?latex=S&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="S" title="S" class="latex" /> is the set of states <img src="//s0.wp.com/latex.php?latex=s_k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s_k" title="s_k" class="latex" /> with <img src="//s0.wp.com/latex.php?latex=k%5Cin+%5Cmathbb%7BN%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k&#92;in &#92;mathbb{N} " title="k&#92;in &#92;mathbb{N} " class="latex" />.<br />
-2. <img src="//s0.wp.com/latex.php?latex=A&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="A" title="A" class="latex" /> is the set of actions <img src="//s0.wp.com/latex.php?latex=a_k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_k" title="a_k" class="latex" /> with <img src="//s0.wp.com/latex.php?latex=k%5Cin+%5Cmathbb%7BN%7D+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="k&#92;in &#92;mathbb{N} " title="k&#92;in &#92;mathbb{N} " class="latex" />.<br />
-3. <img src="//s0.wp.com/latex.php?latex=P&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="P" title="P" class="latex" /> is the matrix of transition probabilities for taking action <img src="//s0.wp.com/latex.php?latex=a_k&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a_k" title="a_k" class="latex" /> given state <img src="//s0.wp.com/latex.php?latex=s_j&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s_j" title="s_j" class="latex" />.<br />
-4. <img src="//s0.wp.com/latex.php?latex=%5Cgamma&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;gamma" title="&#92;gamma" class="latex" /> is the discount factor in the unit interval.<br />
-5. <img src="//s0.wp.com/latex.php?latex=R&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="R" title="R" class="latex" /> is defined as the reward function, and is taken as a function from <img src="//s0.wp.com/latex.php?latex=A%5Ctimes+S%5Cto+%5Cmathbb%7BR%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="A&#92;times S&#92;to &#92;mathbb{R}" title="A&#92;times S&#92;to &#92;mathbb{R}" class="latex" />.</em></p>
+<p>A Markov Decision Process (MDP) is a tuple \((S,A, P, \gamma, R)\) where the following is true:<br />
+<em>1. \(S\) is the set of states \(s_k\) with \(k\in \mathbb{N}\).<br />
+2. \(A\) is the set of actions \(a_k\) with \(k\in \mathbb{N}\).<br />
+3. \(P\) is the matrix of transition probabilities for taking action \(a_k\) given state \(s_j\).<br />
+4. \(\gamma\) is the discount factor in the unit interval.<br />
+5. \(R\) is defined as the reward function, and is taken as a function from \(A\times S\to \mathbb{R}\).</em></p>
 <p>In this context, we have policies as maps
-</p><p align="center"><img src="//s0.wp.com/latex.php?latex=%5Cpi%3AS%5Cto+A+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi:S&#92;to A " title="&#92;pi:S&#92;to A " class="latex" />, </p>
-<p>state value functions for a policy, <img src="//s0.wp.com/latex.php?latex=%5Cpi+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pi " title="&#92;pi " class="latex" />, evaluated at <img src="//s0.wp.com/latex.php?latex=s_1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="s_1" title="s_1" class="latex" /> as </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=V%5E%5Cpi%28s_1%29%3D%5Cmathbb%7BE%7D%5B%5Csum_%7Bi%3D0%7D%5Cgamma+%5Ei+R%28s_i%29%7C%5Cpi%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="V^&#92;pi(s_1)=&#92;mathbb{E}[&#92;sum_{i=0}&#92;gamma ^i R(s_i)|&#92;pi]" title="V^&#92;pi(s_1)=&#92;mathbb{E}[&#92;sum_{i=0}&#92;gamma ^i R(s_i)|&#92;pi]" class="latex" />, </p>
+</p><p align="center">\(\pi:S\to A\), </p>
+<p>state value functions for a policy, \(\pi\), evaluated at \(s_1\) as </p>
+<p align="center">\(V^\pi(s_1)=\mathbb{E}[\sum_{i=0}\gamma ^i R(s_i)|\pi]\), </p>
 <p>and state action values defined as </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=Q%5E%5Cpi+%28s%2Ca%29%3DR%28s%29%2B%5Cgamma+%5Cmathbb%7BE%7D_%7Bs%27%5Csim+P_%7Bsa%7D%7D%5BV%5E%5Cpi+%28s%27%29%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Q^&#92;pi (s,a)=R(s)+&#92;gamma &#92;mathbb{E}_{s&#039;&#92;sim P_{sa}}[V^&#92;pi (s&#039;)]" title="Q^&#92;pi (s,a)=R(s)+&#92;gamma &#92;mathbb{E}_{s&#039;&#92;sim P_{sa}}[V^&#92;pi (s&#039;)]" class="latex" />. </p>
+<p align="center">\(Q^\pi (s,a)=R(s)+\gamma \mathbb{E}_{s'\sim P_{sa}}[V^\pi (s')]\). </p>
 <p>The optimal functions are defined as </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=V%5E%2A%28s%29%3D%5Csup_%5Cpi+V%5E%7B%5Cpi%7D%28s%29%2C+&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="V^*(s)=&#92;sup_&#92;pi V^{&#92;pi}(s), " title="V^*(s)=&#92;sup_&#92;pi V^{&#92;pi}(s), " class="latex" /> </p>
+<p align="center">\[V^*(s)=\sup_\pi V^{\pi}(s),\]</p>
 <p>and </p>
-<p align="center"><img src="//s0.wp.com/latex.php?latex=Q%5E%2A%28s%2Ca%29%3D%5Csup_%5Cpi+Q%5E%5Cpi+%28s%2Ca%29.&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="Q^*(s,a)=&#92;sup_&#92;pi Q^&#92;pi (s,a)." title="Q^*(s,a)=&#92;sup_&#92;pi Q^&#92;pi (s,a)." class="latex" /></p>
+<p align="center">\[Q^*(s,a)=\sup_\pi Q^\pi (s,a).\]</p>
 <blockquote><p>Here we assume that we have a reward function, and this reward function is used to determine an optimal policy.</p></blockquote>&hellip;</div></div><div class="fusion-meta-info"><div class="fusion-alignleft">By <span class="vcard"><span class="fn"><a href="author=61.html" title="Posts by Siphelele Danisa" rel="author">Siphelele Danisa</a></span></span><span class="fusion-inline-sep">|</span>
 	
 	

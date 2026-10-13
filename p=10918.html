@@ -34,7 +34,7 @@
 
 		<meta property="og:title" content="UCT MAM1000 lecture notes part 7"/>
 		<meta property="og:type" content="article"/>
-		<meta property="og:url" content="p=10918.html"/>
+		<meta property="og:url" content="https://shocklab.github.io/mathemafrica/p=10918.html"/>
 		<meta property="og:site_name" content="Mathemafrica"/>
 		<meta property="og:description" content="Today we are going to look at improper integrals. This will give us access to a whole host of integrals which, naively, looking at them in terms of Riemann sums don&#39;t make obvious sense.
 
@@ -46,7 +46,7 @@ $latex \int_a^bf(x)dx$
 
 as long"/>
 
-									<meta property="og:image" content="wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
+									<meta property="og:image" content="https://shocklab.github.io/mathemafrica/wp-content/uploads/2015/06/mathemafirca-logo-2.jpg"/>
 							<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"\/mathemafrica\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.27"}};
 			!function(e,n,t){var a;function i(e){var t=n.createElement("canvas"),a=t.getContext&&t.getContext("2d"),i=String.fromCharCode;return!(!a||!a.fillText)&&(a.textBaseline="top",a.font="600 32px Arial","flag"===e?(a.fillText(i(55356,56806,55356,56826),0,0),3e3<t.toDataURL().length):"diversity"===e?(a.fillText(i(55356,57221),0,0),t=a.getImageData(16,16,1,1).data,a.fillText(i(55356,57221,55356,57343),0,0),(t=a.getImageData(16,16,1,1).data)[0],t[1],t[2],t[3],!0):("simple"===e?a.fillText(i(55357,56835),0,0):a.fillText(i(55356,57135),0,0),0!==a.getImageData(16,16,1,1).data[0]))}function o(e){var t=n.createElement("script");t.src=e,t.type="text/javascript",n.getElementsByTagName("head")[0].appendChild(t)}t.supports={simple:i("simple"),flag:i("flag"),unicode8:i("unicode8"),diversity:i("diversity")},t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.simple&&t.supports.flag&&t.supports.unicode8&&t.supports.diversity||(a=function(){t.readyCallback()},n.addEventListener?(n.addEventListener("DOMContentLoaded",a,!1),e.addEventListener("load",a,!1)):(e.attachEvent("onload",a),n.attachEvent("onreadystatechange",function(){"complete"===n.readyState&&t.readyCallback()})),(a=t.source||{}).concatemoji?o(a.concatemoji):a.wpemoji&&a.twemoji&&(o(a.twemoji),o(a.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -95,7 +95,7 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.4.27" />
-<link rel="canonical" href="p=10918.html" />
+<link rel="canonical" href="https://shocklab.github.io/mathemafrica/p=10918.html" />
 <link rel='shortlink' href='http://wp.me/p6ysha-2Q6' />
 <link rel="alternate" type="application/json+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D10918.html" />
 <link rel="alternate" type="text/xml+oembed" href="rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fwww.mathemafrica.org%2F%3Fp%3D10918&.html#038;format=xml" />
@@ -182,7 +182,8 @@ img.emoji {
 	</script>
 
 	
-	</head>
+	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+</head>
 <body class="single single-post postid-10918 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
 		<div id="home" style="position:relative;top:1px;"></div>
@@ -256,109 +257,109 @@ img.emoji {
 				<p>Today we are going to look at <strong>improper integrals</strong>. This will give us access to a whole host of integrals which, naively, looking at them in terms of Riemann sums don&#8217;t make obvious sense.</p>
 <p>When we defined the definite integral we gave some constraints. We can now integrate (either approximately or exactly):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_a%5Ebf%28x%29dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_a^bf(x)dx" title="&#92;int_a^bf(x)dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_a^bf(x)dx\]</p>
 <p>&nbsp;</p>
-<p>as long as <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" /> is finite and as long as there are no infinite discontinuities in <img src="//s0.wp.com/latex.php?latex=a%5Cle+x%5Cle+b&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a&#92;le x&#92;le b" title="a&#92;le x&#92;le b" class="latex" />. An infinite discontinuity means that <img src="//s0.wp.com/latex.php?latex=f%28x%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="f(x)" title="f(x)" class="latex" /> is not bounded at some point in <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" /> (intuitively this means that the function goes to <img src="//s0.wp.com/latex.php?latex=%5Cpm+%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pm &#92;infty" title="&#92;pm &#92;infty" class="latex" /> at some value of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" /> in <img src="//s0.wp.com/latex.php?latex=%5Ba%2Cb%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[a,b]" title="[a,b]" class="latex" />.</p>
+<p>as long as \([a,b]\) is finite and as long as there are no infinite discontinuities in \(a\le x\le b\). An infinite discontinuity means that \(f(x)\) is not bounded at some point in \([a,b]\) (intuitively this means that the function goes to \(\pm \infty\) at some value of \(x\) in \([a,b]\).</p>
 <p>If we have an integral which does not abide by these constraints, we may still be able to calculate an answer for the area under the curve, but it will now be called an improper integral. The reason that these are defined as improper is because they will not themselves be well defined as Riemann sums, however, they will be limits of Riemann sums as we will soon see.</p>
 <p><strong>Improper integrals of the first kind: Infinite integration limits</strong></p>
-<p>We can first ask about the integral over an open region, this will give us some intuition as to how to perform improper integrals. Can we perform some integral over the range <img src="//s0.wp.com/latex.php?latex=%280%2C10%5D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="(0,10]" title="(0,10]" class="latex" /> of <img src="//s0.wp.com/latex.php?latex=x&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x" title="x" class="latex" />? Certainly this doesn&#8217;t make much sense if we are thinking about a Riemann sum. How much of the first rectangle do we include if we are supposed to be going down to, but not including <img src="//s0.wp.com/latex.php?latex=0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="0" title="0" class="latex" /> ? The answer is that we can think about this as a limit of a well defined Riemann integral:</p>
+<p>We can first ask about the integral over an open region, this will give us some intuition as to how to perform improper integrals. Can we perform some integral over the range \((0,10]\) of \(x\)? Certainly this doesn&#8217;t make much sense if we are thinking about a Riemann sum. How much of the first rectangle do we include if we are supposed to be going down to, but not including \(0\) ? The answer is that we can think about this as a limit of a well defined Riemann integral:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B%280%2C10%5D%7Dx+dx%3D%5Clim_%7Bt%5Crightarrow+0%7D%5Cint_t%5E%7B10%7D+x+dx%3D%5Clim_%7Bt%5Crightarrow+0%7D+%5Cleft.%5Cfrac%7Bx%5E2%7D%7B2%7D%5Cright%7C_t%5E%7B10%7D%3D%5Clim_%7Bt%5Crightarrow+0%7D+%5Cfrac%7B10%5E2%7D%7B2%7D-%5Cfrac%7Bt%5E2%7D%7B2%7D%3D50&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{(0,10]}x dx=&#92;lim_{t&#92;rightarrow 0}&#92;int_t^{10} x dx=&#92;lim_{t&#92;rightarrow 0} &#92;left.&#92;frac{x^2}{2}&#92;right|_t^{10}=&#92;lim_{t&#92;rightarrow 0} &#92;frac{10^2}{2}-&#92;frac{t^2}{2}=50" title="&#92;int_{(0,10]}x dx=&#92;lim_{t&#92;rightarrow 0}&#92;int_t^{10} x dx=&#92;lim_{t&#92;rightarrow 0} &#92;left.&#92;frac{x^2}{2}&#92;right|_t^{10}=&#92;lim_{t&#92;rightarrow 0} &#92;frac{10^2}{2}-&#92;frac{t^2}{2}=50" class="latex" /></p>
+<p style="text-align: center;">\[\int_{(0,10]}x dx=\lim_{t\rightarrow 0}\int_t^{10} x dx=\lim_{t\rightarrow 0} \left.\frac{x^2}{2}\right|_t^{10}=\lim_{t\rightarrow 0} \frac{10^2}{2}-\frac{t^2}{2}=50\]</p>
 <p>&nbsp;</p>
-<p>In this case the limit is equal to the regular Riemann integral over the closed region. Nothing very strange going on there, and it makes sense because we expect that just not including the point <img src="//s0.wp.com/latex.php?latex=x%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x=0" title="x=0" class="latex" /> shouldn&#8217;t change the area under the curve by a finite amount.</p>
-<p>We can however use this technique when we want to ask about more tricky integrals: those where there is an open range and the open end of the range is at <img src="//s0.wp.com/latex.php?latex=%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;infty" title="&#92;infty" class="latex" />, or <img src="//s0.wp.com/latex.php?latex=-%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-&#92;infty" title="-&#92;infty" class="latex" /> or both. We know how to integrate:</p>
+<p>In this case the limit is equal to the regular Riemann integral over the closed region. Nothing very strange going on there, and it makes sense because we expect that just not including the point \(x=0\) shouldn&#8217;t change the area under the curve by a finite amount.</p>
+<p>We can however use this technique when we want to ask about more tricky integrals: those where there is an open range and the open end of the range is at \(\infty\), or \(-\infty\) or both. We know how to integrate:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_1%5E%7B4%7D%5Cfrac%7B1%7D%7Bx%5E2%7Ddx%3D%5Cleft.%5Cfrac%7B-1%7D%7Bx%7D%5Cright%7C_1%5E4%3D%5Cfrac%7B-1%7D%7B4%7D-%5Cfrac%7B-1%7D%7B1%7D%3D%5Cfrac%7B3%7D%7B4%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_1^{4}&#92;frac{1}{x^2}dx=&#92;left.&#92;frac{-1}{x}&#92;right|_1^4=&#92;frac{-1}{4}-&#92;frac{-1}{1}=&#92;frac{3}{4}" title="&#92;int_1^{4}&#92;frac{1}{x^2}dx=&#92;left.&#92;frac{-1}{x}&#92;right|_1^4=&#92;frac{-1}{4}-&#92;frac{-1}{1}=&#92;frac{3}{4}" class="latex" /></p>
+<p style="text-align: center;">\[\int_1^{4}\frac{1}{x^2}dx=\left.\frac{-1}{x}\right|_1^4=\frac{-1}{4}-\frac{-1}{1}=\frac{3}{4}\]</p>
 <p>&nbsp;</p>
 <p>This is just the area under the curve given below:</p>
 <p>&nbsp;</p>
 <p><a href="wp-content/uploads/2015/07/overx2.png"><img class="aligncenter size-full wp-image-10920" src="wp-content/uploads/2015/07/overx2.png?resize=833%2C616" alt="overx2" srcset="wp-content/uploads/2015/07/overx2.png?resize=300%2C222 300w, wp-content/uploads/2015/07/overx2.png?fit=833%2C616 833w" sizes="(max-width: 833px) 100vw, 833px" data-recalc-dims="1" /></a></p>
 <p>&nbsp;</p>
-<p>How about if we wanted to integrate further? Can we go up to 100 rather than 4? Sure, this will give an answer of <img src="//s0.wp.com/latex.php?latex=1-%5Cfrac%7B1%7D%7B100%7D%3D%5Cfrac%7B99%7D%7B100%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="1-&#92;frac{1}{100}=&#92;frac{99}{100}" title="1-&#92;frac{1}{100}=&#92;frac{99}{100}" class="latex" />. But this is rather interesting. We have gone a lot further out, but the value of the integral has only change from 0.75 to 0.99. What about if we go even further out? We can see easily that as we go further and further out, the answer will get closer and closer to 1. In fact we can define an integral, called an improper integral, where we integrate all the way up to <img src="//s0.wp.com/latex.php?latex=%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;infty" title="&#92;infty" class="latex" />. This integral is defined like:</p>
+<p>How about if we wanted to integrate further? Can we go up to 100 rather than 4? Sure, this will give an answer of \(1-\frac{1}{100}=\frac{99}{100}\). But this is rather interesting. We have gone a lot further out, but the value of the integral has only change from 0.75 to 0.99. What about if we go even further out? We can see easily that as we go further and further out, the answer will get closer and closer to 1. In fact we can define an integral, called an improper integral, where we integrate all the way up to \(\infty\). This integral is defined like:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_1%5E%5Cinfty%5Cfrac%7B1%7D%7Bx%5E2%7Ddx%3D%5Clim_%7Bt%5Crightarrow%5Cinfty%7D%5Cint_1%5Et%5Cfrac%7B1%7D%7Bx%5E2%7Ddx%3D%5Clim_%7Bt%5Crightarrow%5Cinfty%7D%5Cleft.%5Cfrac%7B-1%7D%7Bx%7D%5Cright%7C_1%5Et%3D%5Clim_%7Bt%5Crightarrow%5Cinfty%7D%5Cleft%28%5Cfrac%7B-1%7D%7Bt%7D-%5Cfrac%7B-1%7D%7B1%7D%5Cright%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_1^&#92;infty&#92;frac{1}{x^2}dx=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;int_1^t&#92;frac{1}{x^2}dx=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;left.&#92;frac{-1}{x}&#92;right|_1^t=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;left(&#92;frac{-1}{t}-&#92;frac{-1}{1}&#92;right)" title="&#92;int_1^&#92;infty&#92;frac{1}{x^2}dx=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;int_1^t&#92;frac{1}{x^2}dx=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;left.&#92;frac{-1}{x}&#92;right|_1^t=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;left(&#92;frac{-1}{t}-&#92;frac{-1}{1}&#92;right)" class="latex" /></p>
+<p style="text-align: center;">\[\int_1^\infty\frac{1}{x^2}dx=\lim_{t\rightarrow\infty}\int_1^t\frac{1}{x^2}dx=\lim_{t\rightarrow\infty}\left.\frac{-1}{x}\right|_1^t=\lim_{t\rightarrow\infty}\left(\frac{-1}{t}-\frac{-1}{1}\right)\]</p>
 <p>&nbsp;</p>
-<p>The limit of <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B-1%7D%7Bt%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{-1}{t}" title="&#92;frac{-1}{t}" class="latex" /> as <img src="//s0.wp.com/latex.php?latex=t%5Crightarrow%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t&#92;rightarrow&#92;infty" title="t&#92;rightarrow&#92;infty" class="latex" /> is 0, and so the final answer is 1. It is the value that we were getting closer and closer to before we even knew what an improper integral was.</p>
+<p>The limit of \(\frac{-1}{t}\) as \(t\rightarrow\infty\) is 0, and so the final answer is 1. It is the value that we were getting closer and closer to before we even knew what an improper integral was.</p>
 <p><strong>Let&#8217;s look at another example</strong></p>
-<p>You may have guessed at first that if we have an integral that goes from <img src="//s0.wp.com/latex.php?latex=%5B0%2C%5Cinfty%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="[0,&#92;infty)" title="[0,&#92;infty)" class="latex" /> that the area under the curve should be infinite, but this isn&#8217;t necessarily so as we saw in the last example. Let&#8217;s look at another. We can certainly perform the following integral for finite <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" />:</p>
+<p>You may have guessed at first that if we have an integral that goes from \([0,\infty)\) that the area under the curve should be infinite, but this isn&#8217;t necessarily so as we saw in the last example. Let&#8217;s look at another. We can certainly perform the following integral for finite \(t\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=A%28t%29%3D%5Cint_0%5Et%5Cfrac%7B1%7D%7B1%2Bx%5E2%7Ddx%3D%5Cleft.%5Carctan+x%5Cright%7C_0%5Et%3D%5Carctan+t-0%3D%5Carctan+t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="A(t)=&#92;int_0^t&#92;frac{1}{1+x^2}dx=&#92;left.&#92;arctan x&#92;right|_0^t=&#92;arctan t-0=&#92;arctan t" title="A(t)=&#92;int_0^t&#92;frac{1}{1+x^2}dx=&#92;left.&#92;arctan x&#92;right|_0^t=&#92;arctan t-0=&#92;arctan t" class="latex" /></p>
+<p style="text-align: center;">\[A(t)=\int_0^t\frac{1}{1+x^2}dx=\left.\arctan x\right|_0^t=\arctan t-0=\arctan t\]</p>
 <p>&nbsp;</p>
-<p>What happens if we take <img src="//s0.wp.com/latex.php?latex=t%5Crightarrow%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t&#92;rightarrow&#92;infty" title="t&#92;rightarrow&#92;infty" class="latex" />:</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bt%5Crightarrow%5Cinfty%7D%5Carctan+t%3D%5Cfrac%7B%5Cpi%7D%7B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{t&#92;rightarrow&#92;infty}&#92;arctan t=&#92;frac{&#92;pi}{2}" title="&#92;lim_{t&#92;rightarrow&#92;infty}&#92;arctan t=&#92;frac{&#92;pi}{2}" class="latex" /></p>
+<p>What happens if we take \(t\rightarrow\infty\):</p>
+<p style="text-align: center;">\[\lim_{t\rightarrow\infty}\arctan t=\frac{\pi}{2}\]</p>
 <p>&nbsp;</p>
 <p>Thus:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_0%5E%5Cinfty%5Cfrac%7B1%7D%7B1%2Bx%5E2%7Ddx%3D%5Clim_%7Bt%5Crightarrow%5Cinfty%7D%5Cint_0%5Et%5Cfrac%7B1%7D%7B1%2Bx%5E2%7Ddx%3D%5Cfrac%7B%5Cpi%7D%7B2%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_0^&#92;infty&#92;frac{1}{1+x^2}dx=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;int_0^t&#92;frac{1}{1+x^2}dx=&#92;frac{&#92;pi}{2}" title="&#92;int_0^&#92;infty&#92;frac{1}{1+x^2}dx=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;int_0^t&#92;frac{1}{1+x^2}dx=&#92;frac{&#92;pi}{2}" class="latex" /></p>
+<p style="text-align: center;">\[\int_0^\infty\frac{1}{1+x^2}dx=\lim_{t\rightarrow\infty}\int_0^t\frac{1}{1+x^2}dx=\frac{\pi}{2}\]</p>
 <p>&nbsp;</p>
-<p>This example and the previous are said to be convergent. As <img src="//s0.wp.com/latex.php?latex=t%5Crightarrow%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t&#92;rightarrow&#92;infty" title="t&#92;rightarrow&#92;infty" class="latex" /> the value of the integral converges to some fixed value. Sometimes this will not be so:</p>
+<p>This example and the previous are said to be convergent. As \(t\rightarrow\infty\) the value of the integral converges to some fixed value. Sometimes this will not be so:</p>
 <p>&nbsp;</p>
 <p><strong>A non-convergent example</strong></p>
 <p>For example, if we wanted to try something very very similar to the above examples:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_1%5E%5Cinfty%5Cfrac%7B1%7D%7Bx%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_1^&#92;infty&#92;frac{1}{x}dx" title="&#92;int_1^&#92;infty&#92;frac{1}{x}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_1^\infty\frac{1}{x}dx\]</p>
 <p>&nbsp;</p>
-<p>This looks so similar to the first example, and we can see that as <img src="//s0.wp.com/latex.php?latex=x%5Crightarrow%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x&#92;rightarrow&#92;infty" title="x&#92;rightarrow&#92;infty" class="latex" /> the function itself goes to zero, but in this case it doesn&#8217;t go to zero quite fast enough, as we integrate more and more of the function, we continue to get contributions and they never go to zero:</p>
+<p>This looks so similar to the first example, and we can see that as \(x\rightarrow\infty\) the function itself goes to zero, but in this case it doesn&#8217;t go to zero quite fast enough, as we integrate more and more of the function, we continue to get contributions and they never go to zero:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_1%5E%5Cinfty%5Cfrac%7B1%7D%7Bx%7Ddx%3D%5Clim_%7Bt%5Crightarrow%5Cinfty%7D%5Cint_1%5Et%5Cfrac%7B1%7D%7Bx%7Ddx%3D%5Clim_%7Bt%5Crightarrow%5Cinfty%7D%5Cleft.%5Cln%7Cx%7C%5Cright%7C_1%5Et%3D%5Clim_%7Bt%5Crightarrow%5Cinfty%7D%28%5Cln%7Ct%7C-0%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_1^&#92;infty&#92;frac{1}{x}dx=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;int_1^t&#92;frac{1}{x}dx=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;left.&#92;ln|x|&#92;right|_1^t=&#92;lim_{t&#92;rightarrow&#92;infty}(&#92;ln|t|-0)" title="&#92;int_1^&#92;infty&#92;frac{1}{x}dx=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;int_1^t&#92;frac{1}{x}dx=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;left.&#92;ln|x|&#92;right|_1^t=&#92;lim_{t&#92;rightarrow&#92;infty}(&#92;ln|t|-0)" class="latex" /></p>
+<p style="text-align: center;">\[\int_1^\infty\frac{1}{x}dx=\lim_{t\rightarrow\infty}\int_1^t\frac{1}{x}dx=\lim_{t\rightarrow\infty}\left.\ln|x|\right|_1^t=\lim_{t\rightarrow\infty}(\ln|t|-0)\]</p>
 <p>&nbsp;</p>
-<p>But as <img src="//s0.wp.com/latex.php?latex=t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t" title="t" class="latex" /> increases, <img src="//s0.wp.com/latex.php?latex=%5Cln%7Ct%7C&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;ln|t|" title="&#92;ln|t|" class="latex" /> continues to increase, and so this doesn&#8217;t give a finite answer. The result of this integral is <img src="//s0.wp.com/latex.php?latex=%2B%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="+&#92;infty" title="+&#92;infty" class="latex" /> and thus it is said to be divergent.</p>
+<p>But as \(t\) increases, \(\ln|t|\) continues to increase, and so this doesn&#8217;t give a finite answer. The result of this integral is \(+\infty\) and thus it is said to be divergent.</p>
 <p>&nbsp;</p>
-<p>We can do exactly the same thing for an integral where the lower limit is <img src="//s0.wp.com/latex.php?latex=-%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-&#92;infty" title="-&#92;infty" class="latex" /> in exactly the same way:</p>
+<p>We can do exactly the same thing for an integral where the lower limit is \(-\infty\) in exactly the same way:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-%5Cinfty%7D%5E%7B-1%7D%5Cfrac%7B1%7D%7Bx%5E4%7Ddx%3D%5Clim_%7Bt%5Crightarrow-%5Cinfty%7D%5Cint_t%5E%7B-1%7D%5Cfrac%7B1%7D%7Bx%5E4%7Ddx%3D%5Clim_%7Bt%5Crightarrow-%5Cinfty%7D%5Cleft.%5Cfrac%7B-1%7D%7B3x%5E3%7D%5Cright%7C_t%5E%7B-1%7D%3D%5Clim_%7Bt%5Crightarrow%5Cinfty%7D%5Cleft%28%5Cfrac%7B-1%7D%7B3%28-1%29%5E3%7D-%5Cfrac%7B-1%7D%7B3t%5E3%7D%5Cright%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-&#92;infty}^{-1}&#92;frac{1}{x^4}dx=&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;int_t^{-1}&#92;frac{1}{x^4}dx=&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;left.&#92;frac{-1}{3x^3}&#92;right|_t^{-1}=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;left(&#92;frac{-1}{3(-1)^3}-&#92;frac{-1}{3t^3}&#92;right)" title="&#92;int_{-&#92;infty}^{-1}&#92;frac{1}{x^4}dx=&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;int_t^{-1}&#92;frac{1}{x^4}dx=&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;left.&#92;frac{-1}{3x^3}&#92;right|_t^{-1}=&#92;lim_{t&#92;rightarrow&#92;infty}&#92;left(&#92;frac{-1}{3(-1)^3}-&#92;frac{-1}{3t^3}&#92;right)" class="latex" /></p>
+<p style="text-align: center;">\[\int_{-\infty}^{-1}\frac{1}{x^4}dx=\lim_{t\rightarrow-\infty}\int_t^{-1}\frac{1}{x^4}dx=\lim_{t\rightarrow-\infty}\left.\frac{-1}{3x^3}\right|_t^{-1}=\lim_{t\rightarrow\infty}\left(\frac{-1}{3(-1)^3}-\frac{-1}{3t^3}\right)\]</p>
 <p>&nbsp;</p>
-<p>In this case we can also take the limit which gives a convergent quantity and we get <img src="//s0.wp.com/latex.php?latex=%5Cfrac%7B1%7D%7B3%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;frac{1}{3}" title="&#92;frac{1}{3}" class="latex" />.<br />
+<p>In this case we can also take the limit which gives a convergent quantity and we get \(\frac{1}{3}\).<br />
 On the other hand:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-%5Cinfty%7D%5E%7B-1%7D%5Cfrac%7B1%7D%7B%5Csqrt%7B-x%7D%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-&#92;infty}^{-1}&#92;frac{1}{&#92;sqrt{-x}}dx" title="&#92;int_{-&#92;infty}^{-1}&#92;frac{1}{&#92;sqrt{-x}}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_{-\infty}^{-1}\frac{1}{\sqrt{-x}}dx\]</p>
 <p>&nbsp;</p>
-<p>Is not convergent. ie. it is divergent and the answer is <img src="//s0.wp.com/latex.php?latex=%2B%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="+&#92;infty" title="+&#92;infty" class="latex" />.</p>
-<p>In fact we can find out for what value of <img src="//s0.wp.com/latex.php?latex=n&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n" title="n" class="latex" />:</p>
+<p>Is not convergent. ie. it is divergent and the answer is \(+\infty\).</p>
+<p>In fact we can find out for what value of \(n\):</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_1%5E%5Cinfty+x%5E%7Bn%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_1^&#92;infty x^{n}dx" title="&#92;int_1^&#92;infty x^{n}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_1^\infty x^{n}dx\]</p>
 <p>&nbsp;</p>
-<p>is convergent. The answer is that for <img src="//s0.wp.com/latex.php?latex=n%3C-1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&lt;-1" title="n&lt;-1" class="latex" /> the integral is convergent, and <img src="//s0.wp.com/latex.php?latex=n%5Cge-1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;ge-1" title="n&#92;ge-1" class="latex" /> it is divergent. We saw that if <img src="//s0.wp.com/latex.php?latex=n%3D-1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n=-1" title="n=-1" class="latex" /> it is divergent because of the logarithm (in fact this is called a logarithmic divergence). It should be very clear that for <img src="//s0.wp.com/latex.php?latex=n%3E0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&gt;0" title="n&gt;0" class="latex" /> this is divergent, but you can check for <img src="//s0.wp.com/latex.php?latex=n%5Cle+0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="n&#92;le 0" title="n&#92;le 0" class="latex" />.</p>
+<p>is convergent. The answer is that for \(n&lt;-1\) the integral is convergent, and \(n\ge-1\) it is divergent. We saw that if \(n=-1\) it is divergent because of the logarithm (in fact this is called a logarithmic divergence). It should be very clear that for \(n&gt;0\) this is divergent, but you can check for \(n\le 0\).</p>
 <p>The definition, summarising the above, for an improper integral of type I can be found in Stewart page 414.</p>
-<p>Sometimes we have to be a bit more clever about taking the limit as it won&#8217;t be all that obvious. This often happens when you are integrating a product of functions, one of which diverges as <img src="//s0.wp.com/latex.php?latex=x%5Crightarrow+%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x&#92;rightarrow &#92;infty" title="x&#92;rightarrow &#92;infty" class="latex" /> or <img src="//s0.wp.com/latex.php?latex=-%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-&#92;infty" title="-&#92;infty" class="latex" /> and one of which goes to zero in this limit. For instance:</p>
+<p>Sometimes we have to be a bit more clever about taking the limit as it won&#8217;t be all that obvious. This often happens when you are integrating a product of functions, one of which diverges as \(x\rightarrow \infty\) or \(-\infty\) and one of which goes to zero in this limit. For instance:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-%5Cinfty%7D%5E0+x+e%5E%7Bx%7Ddx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-&#92;infty}^0 x e^{x}dx" title="&#92;int_{-&#92;infty}^0 x e^{x}dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_{-\infty}^0 x e^{x}dx\]</p>
 <p>&nbsp;</p>
 <p>We can define this integral through the limit:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-%5Cinfty%7D%5E0+x+e%5E%7Bx%7Ddx%3D%5Clim_%7Bt%5Crightarrow-%5Cinfty%7D%5Cint_t%5E0xe%5Exdx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-&#92;infty}^0 x e^{x}dx=&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;int_t^0xe^xdx" title="&#92;int_{-&#92;infty}^0 x e^{x}dx=&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;int_t^0xe^xdx" class="latex" /></p>
+<p style="text-align: center;">\[\int_{-\infty}^0 x e^{x}dx=\lim_{t\rightarrow-\infty}\int_t^0xe^xdx\]</p>
 <p>&nbsp;</p>
 <p>and then integrate by parts to get:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bt%5Crightarrow-%5Cinfty%7D%5Cleft%28-te%5Et-1%2Be%5Et%5Cright%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;left(-te^t-1+e^t&#92;right)" title="&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;left(-te^t-1+e^t&#92;right)" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{t\rightarrow-\infty}\left(-te^t-1+e^t\right)\]</p>
 <p>&nbsp;</p>
-<p>Clearly as <img src="//s0.wp.com/latex.php?latex=t%5Crightarrow-%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="t&#92;rightarrow-&#92;infty" title="t&#92;rightarrow-&#92;infty" class="latex" /> -1 doesn&#8217;t behave badly, and we know also that <img src="//s0.wp.com/latex.php?latex=e%5Et&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="e^t" title="e^t" class="latex" /> goes to zero in this limit, but how about <img src="//s0.wp.com/latex.php?latex=te%5Et&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="te^t" title="te^t" class="latex" />? We can use l&#8217;Hospital&#8217;s rule to calculate this. This states:</p>
+<p>Clearly as \(t\rightarrow-\infty\) -1 doesn&#8217;t behave badly, and we know also that \(e^t\) goes to zero in this limit, but how about \(te^t\)? We can use l&#8217;Hospital&#8217;s rule to calculate this. This states:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=lim_%7Bt%5Crightarrow-%5Cinfty%7D%5Cfrac%7Bf%28t%29%7D%7Bg%28t%29%7D%3Dlim_%7Bt%5Crightarrow-%5Cinfty%7D%5Cfrac%7Bf%27%28t%29%7D%7Bg%27%28t%29%7D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="lim_{t&#92;rightarrow-&#92;infty}&#92;frac{f(t)}{g(t)}=lim_{t&#92;rightarrow-&#92;infty}&#92;frac{f&#039;(t)}{g&#039;(t)}" title="lim_{t&#92;rightarrow-&#92;infty}&#92;frac{f(t)}{g(t)}=lim_{t&#92;rightarrow-&#92;infty}&#92;frac{f&#039;(t)}{g&#039;(t)}" class="latex" /></p>
+<p style="text-align: center;">\[lim_{t\rightarrow-\infty}\frac{f(t)}{g(t)}=lim_{t\rightarrow-\infty}\frac{f'(t)}{g'(t)}\]</p>
 <p>&nbsp;</p>
 <p>This can be iterated as many times as necessary until you can see the answer. In this case we just need to take the derivative once:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bt%5Crightarrow-%5Cinfty%7D%5Cfrac%7Bt%7D%7Be%5E%7B-t%7D%7D%3D-%5Clim_%7Bt%5Crightarrow-%5Cinfty%7D%5Cfrac%7B1%7D%7Be%5E%7B-t%7D%7D%3D0&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;frac{t}{e^{-t}}=-&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;frac{1}{e^{-t}}=0" title="&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;frac{t}{e^{-t}}=-&#92;lim_{t&#92;rightarrow-&#92;infty}&#92;frac{1}{e^{-t}}=0" class="latex" /></p>
+<p style="text-align: center;">\[\lim_{t\rightarrow-\infty}\frac{t}{e^{-t}}=-\lim_{t\rightarrow-\infty}\frac{1}{e^{-t}}=0\]</p>
 <p>&nbsp;</p>
-<p>Thus, the overall integral is convergent and <img src="//s0.wp.com/latex.php?latex=%3D-1&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="=-1" title="=-1" class="latex" />.</p>
+<p>Thus, the overall integral is convergent and \(=-1\).</p>
 <p>&nbsp;</p>
 <p><strong>Both limits at infinity</strong></p>
-<p>The final extension of this is to have both the upper and lower limits be <img src="//s0.wp.com/latex.php?latex=%2B%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="+&#92;infty" title="+&#92;infty" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=-%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-&#92;infty" title="-&#92;infty" class="latex" />. In this case we can simply make a split and use the above definitions:</p>
+<p>The final extension of this is to have both the upper and lower limits be \(+\infty\) and \(-\infty\). In this case we can simply make a split and use the above definitions:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7Df%28x%29dx%3D%5Cint_%7B-%5Cinfty%7D%5Eaf%28x%29dx%2B%5Cint_a%5E%5Cinfty+f%28x%29+dx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-&#92;infty}^{&#92;infty}f(x)dx=&#92;int_{-&#92;infty}^af(x)dx+&#92;int_a^&#92;infty f(x) dx" title="&#92;int_{-&#92;infty}^{&#92;infty}f(x)dx=&#92;int_{-&#92;infty}^af(x)dx+&#92;int_a^&#92;infty f(x) dx" class="latex" /></p>
+<p style="text-align: center;">\[\int_{-\infty}^{\infty}f(x)dx=\int_{-\infty}^af(x)dx+\int_a^\infty f(x) dx\]</p>
 <p>&nbsp;</p>
-<p>where <img src="//s0.wp.com/latex.php?latex=a&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="a" title="a" class="latex" /> is any finite number. If either of these terms in not convergent, then the whole integral is said to be divergent.</p>
+<p>where \(a\) is any finite number. If either of these terms in not convergent, then the whole integral is said to be divergent.</p>
 <p>Let&#8217;s look at an example that, done in the wrong way (but one which seems logical) will give the wrong answer:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D+xdx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-&#92;infty}^{&#92;infty} xdx" title="&#92;int_{-&#92;infty}^{&#92;infty} xdx" class="latex" /></p>
+<p style="text-align: center;">\[\int_{-\infty}^{\infty} xdx\]</p>
 <p>&nbsp;</p>
-<p>If we were to take this as a limit of <img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-t%7D%5Et+xdx&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-t}^t xdx" title="&#92;int_{-t}^t xdx" class="latex" /> we would get that the answer is zero &#8211; it looks like the two sides of the odd function cancel each other out. But this is only because in this case we are taking the limits to <img src="//s0.wp.com/latex.php?latex=%2B%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="+&#92;infty" title="+&#92;infty" class="latex" /> and <img src="//s0.wp.com/latex.php?latex=-%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="-&#92;infty" title="-&#92;infty" class="latex" /> at the same rate. We can tend to these limits at different rates and find that the answer can be anything we want. Instead, the correct way to do this is to write:</p>
+<p>If we were to take this as a limit of \(\int_{-t}^t xdx\) we would get that the answer is zero &#8211; it looks like the two sides of the odd function cancel each other out. But this is only because in this case we are taking the limits to \(+\infty\) and \(-\infty\) at the same rate. We can tend to these limits at different rates and find that the answer can be anything we want. Instead, the correct way to do this is to write:</p>
 <p>&nbsp;</p>
-<p style="text-align: center;"><img src="//s0.wp.com/latex.php?latex=%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D+xdx%3D%5Cint_%7B-%5Cinfty%7D%5E0+xdx%2B%5Cint_%7B0%7D%5E%7B%5Cinfty%7D+xdx%3D%5Cleft%28%5Clim_%7Bt%5Crightarrow+%7B-%5Cinfty%7D%7D%5Cint_%7Bt%7D%5E0+xdx%5Cright%29%2B%5Cleft%28%5Clim_%7Bs%5Crightarrow+%7B%5Cinfty%7D%7D%5Cint_%7B0%7D%5Es+xdx%5Cright%29&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;int_{-&#92;infty}^{&#92;infty} xdx=&#92;int_{-&#92;infty}^0 xdx+&#92;int_{0}^{&#92;infty} xdx=&#92;left(&#92;lim_{t&#92;rightarrow {-&#92;infty}}&#92;int_{t}^0 xdx&#92;right)+&#92;left(&#92;lim_{s&#92;rightarrow {&#92;infty}}&#92;int_{0}^s xdx&#92;right)" title="&#92;int_{-&#92;infty}^{&#92;infty} xdx=&#92;int_{-&#92;infty}^0 xdx+&#92;int_{0}^{&#92;infty} xdx=&#92;left(&#92;lim_{t&#92;rightarrow {-&#92;infty}}&#92;int_{t}^0 xdx&#92;right)+&#92;left(&#92;lim_{s&#92;rightarrow {&#92;infty}}&#92;int_{0}^s xdx&#92;right)" class="latex" /></p>
+<p style="text-align: center;">\[\int_{-\infty}^{\infty} xdx=\int_{-\infty}^0 xdx+\int_{0}^{\infty} xdx=\left(\lim_{t\rightarrow {-\infty}}\int_{t}^0 xdx\right)+\left(\lim_{s\rightarrow {\infty}}\int_{0}^s xdx\right)\]</p>
 <p>&nbsp;</p>
 <p>Both of these contributions do not converge, and so the whole thing diverges.</p>
 <p>&nbsp;</p>
-<p>NB. The definition of divergent is simply that something is not convergent: It doesn&#8217;t have to go to <img src="//s0.wp.com/latex.php?latex=%5Cpm+%5Cinfty&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;pm &#92;infty" title="&#92;pm &#92;infty" class="latex" /> to be divergent. For instance <img src="//s0.wp.com/latex.php?latex=%5Clim_%7Bt%5Crightarrow%5Cinfty%7D%5Ccos+t&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="&#92;lim_{t&#92;rightarrow&#92;infty}&#92;cos t" title="&#92;lim_{t&#92;rightarrow&#92;infty}&#92;cos t" class="latex" /> oscillates, and so is not convergent, and so is said to be divergent.</p>
+<p>NB. The definition of divergent is simply that something is not convergent: It doesn&#8217;t have to go to \(\pm \infty\) to be divergent. For instance \(\lim_{t\rightarrow\infty}\cos t\) oscillates, and so is not convergent, and so is said to be divergent.</p>
 <p>In the next section we will look at improper integrals of the second kind.</p>
 <p>For some good examples, look</p>
 <p><a href="http://tutorial.math.lamar.edu/Problems/CalcII/ImproperIntegrals.aspx">http://tutorial.math.lamar.edu/Problems/CalcII/ImproperIntegrals.aspx</a></p>
