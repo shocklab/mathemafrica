@@ -17,7 +17,7 @@ repository is that work plus the fixes below.
 - Jonathan wrote most of the maths posts himself and is the author of most of
   the lost figures, so he can adjudicate any reconstruction.
 
-## State as of 2026-09-09
+## State as of 2026-10-13
 
 Done and pushed:
 
@@ -31,8 +31,16 @@ Done and pushed:
 - 127 images refetched from the Wayback Machine.
 - The 70 recovered camera JPEGs downscaled to a 1600 px longest side (260 MB to
   14 MB).
+- Lost figures redrawn (below); the reconstruction note sits in each image's
+  metadata, not on the image (Jonathan, 2026-10-13).
+- Equations converted from latex.php images to MathJax 3.2.2, vendored in
+  `mathjax/` (see gotchas).
+- `og:url`, `og:image` and canonical made absolute under the github.io address
+  by `_reconstruction/absolute_urls.py`.
+- Two slips in Jonathan's own posts corrected at his request: the ODE particular
+  solution on p=11480 and "y-axis" for "x-axis" on p=13193.
 
-Not done: the domain, and the figure reconstruction below.
+Not done: the domain (below).
 
 ## Gotchas, so you don't rediscover them
 
@@ -52,11 +60,16 @@ still 404 on sanxofon's copy for exactly this reason.
 is the only reason plain relative links work from any mount point. Do not
 reintroduce a root-absolute prefix; it would pin the site to one URL again.
 
-**The equations are LaTeX hiding in image URLs.** Maths renders through
-`s0.wp.com/latex.php?latex=...`, which still works, and the query parameter holds
-the original LaTeX source. That is how the figure inventory recovered the
-mathematical context around each lost image. 8,660 equations depend on that
-service, so converting them to MathJax would cut the last outside dependency.
+**The equations are MathJax now.** WordPress served every equation as an image
+from `s0.wp.com/latex.php?latex=...`, the LaTeX in the query string.
+`_reconstruction/latex_to_mathjax.py` put that LaTeX back into the pages
+(14,532 equations in 400 pages; a paragraph holding only an equation becomes
+display maths) and the pages load `mathjax/tex-chtml-full.js`. MathJax rejects
+three things WordPress's real LaTeX accepted (`minipage`, `\hfill`,
+`\Big\slash`); the converter rewrites them. Mathematica's `\[Pi]` in quoted code
+reads as a display delimiter, so those paragraphs carry `tex2jax_ignore`. The
+earlier figure inventory was built from the latex.php URLs; the git history
+before commit eda440e still has them.
 
 **A hidden spam link was injected into the archive.** A backdoored
 `traffic-stats-widget` plugin put a `display:none` link to garcinia-cambogia.fr
@@ -69,17 +82,13 @@ length, before concluding anything is wrong.
 
 ## The domain
 
-Not lost. Still registered at GoDaddy, expiring **2026-11-06**, still delegated
-to `ns5/ns6.kasserver.com` (All-Inkl), but the zone is empty so nothing resolves.
-The hosting lapsed, not the registration, which means it cannot simply be bought;
-it needs access to the registrar or the DNS account. If nobody renews by the
-expiry it will drop, and a domain with this much inbound linkage is likely to be
-caught by a drop-catcher rather than sit waiting.
-
-Once there is DNS control, the records and the `CNAME` step are in `README.md`.
-While doing that, consider making `og:url` and `og:image` absolute again; they
-are currently relative, which is no worse than the broken state they were in, but
-is wrong for social sharing.
+Held by IMAGINARY gGmbH (Andreas Matt) at GoDaddy, on auto-renewal, which
+IMAGINARY pays for; Jonathan is happy for it to stay in their name (thread
+"Good news: Mathematica resurrected!", 8 September 2026). Still delegated to
+`ns5/ns6.kasserver.com` (All-Inkl) with an empty zone, so nothing resolves.
+Andreas has to make the DNS change; the records are in `README.md`. Once the
+domain resolves here: add the `CNAME` file, enable HTTPS in the Pages settings,
+and run `_reconstruction/absolute_urls.py https://mathemafrica.org/`.
 
 ## Figure reconstruction (in progress)
 
@@ -148,7 +157,7 @@ One script per post under `_reconstruction/posts/`, each writing straight into
 `wp-content/uploads/` and asserting the post's own arithmetic before it draws.
 `rebuild_all.py` runs the lot and doubles as the regression test for changes to
 `figstyle`. `dump_post.py <post.html>` prints a post as prose with figure slots
-and the equations decoded out of the latex.php URLs; that is the way in to a new
+and the equations as $...$ source; that is the way in to a new
 post. Never guess an upload path: `figstyle.paths_in(post)` reads the YYYY/MM
 directory out of the HTML.
 
@@ -171,15 +180,16 @@ frame only where the origin lies outside the plotted range, and
 If a post you are working on still has a surviving figure, look at it before
 drawing its siblings. It is the best guide available.
 
-### The one decision still open
+### Marking reconstructed figures
 
-**Should a reconstructed figure be visibly marked as one?** Every figure
-currently carries a small grey "figure reconstructed from the post text, 2026"
-below the axes, defined once in `figstyle.NOTE` and placed by `figstyle.save`.
-The alternatives are a clean image with the list recorded in `README.md`, or a
-clean image with the note in the PNG metadata. Jonathan was asked and shut the
-session down before answering, then said to carry on, so the marker stayed as
-the default. Changing it is a one-line edit plus `rebuild_all.py`.
+Jonathan decided on 2026-10-13: clean images, with the note in the file
+metadata. `figstyle.stamp` writes `figstyle.NOTE` into the PNG, JPEG or GIF
+without re-encoding it, and `rebuild_all.py` stamps every image a run writes.
+`figstyle.VISIBLE_MARK = True` would print it under the figure again.
+
+Other slips in the posts are recorded in the scripts' docstrings and left as
+written: p=11387 ("hypergeometric" for hyperbolic), p=12480, p=15794, p=13259
+(the 10-term value) and p=16848 ("0.5*495"). Correcting them is Jonathan's call.
 
 ## Conventions
 

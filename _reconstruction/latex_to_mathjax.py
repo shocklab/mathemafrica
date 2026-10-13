@@ -29,7 +29,12 @@ IMG = re.compile(r'''<img\b[^>]*?\bsrc=(?P<q>["'])(?:https?:)?//s0\.wp\.com/'''
 # a paragraph whose only content is one equation image is a displayed equation
 DISPLAY = re.compile(r'(<p\b[^>]*>)(?:\s|&nbsp;|<br\s*/?>)*(' + IMG.pattern
                      + r')(?:\s|&nbsp;|<br\s*/?>)*(</p>)')
-SCRIPT = ('<script async id="MathJax-script" '
+# Only the delimiters written here are typeset. MathJax would otherwise also
+# act on $$, bare \begin{...} and \ref{...} left in the posts' own prose.
+SCRIPT = ('<script>window.MathJax = {tex: {inlineMath: [["\\\\(", "\\\\)"]], '
+          'displayMath: [["\\\\[", "\\\\]"]], processEnvironments: false, '
+          'processRefs: false}};</script>\n'
+          '<script async id="MathJax-script" '
           'src="mathjax/tex-chtml-full.js"></script>')
 
 
@@ -41,7 +46,12 @@ def adapt(tex):
     tex = re.sub(r'\\hfill\s*\(([^)]*)\)', r'\\qquad(\1)', tex)
     tex = re.sub(r'\\hfill', '', tex)
     tex = tex.replace(r'\Big\slash', r'\Big/')
-    return tex.strip()
+    # a trailing control space ("\ ") must keep its space, or the backslash
+    # joins the closing delimiter and MathJax pairs the wrong delimiters
+    tex = tex.strip()
+    if (len(tex) - len(tex.rstrip("\\"))) % 2:
+        tex += " "
+    return tex
 
 
 def source(query):

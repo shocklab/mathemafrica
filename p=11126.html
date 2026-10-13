@@ -177,7 +177,8 @@ img.emoji {
 	</script>
 
 	
-	<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
+	<script>window.MathJax = {tex: {inlineMath: [["\\(", "\\)"]], displayMath: [["\\[", "\\]"]], processEnvironments: false, processRefs: false}};</script>
+<script async id="MathJax-script" src="mathjax/tex-chtml-full.js"></script>
 </head>
 <body class="single single-post postid-11126 single-format-standard fusion-body no-mobile-sticky-header no-mobile-slidingbar layout-wide-mode has-sidebar menu-text-align-left mobile-menu-design-classic fusion-image-hovers fusion-show-pagination-text">
 				<div id="wrapper" class="">
@@ -257,7 +258,7 @@ img.emoji {
 <p>In fact this generalises completely. If we have \({n}\) items and we want to choose \({r}\) from them then we have:</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p align="center">\[\displaystyle _nC_r=\left( \begin{array}{c} n \\ r \\ \end{array} \right)=\frac{n!}{r!(n-r)!} \ \ \ \ \\]</p>
+<p align="center">\[\displaystyle _nC_r=\left( \begin{array}{c} n \\ r \\ \end{array} \right)=\frac{n!}{r!(n-r)!} \ \ \ \ \ \]</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>where we read &#8220;n choose r&#8221; and both \({_nC_r}\) and \({\left( \begin{array}{c} n \\ r \\ \end{array} \right)}\) are just two different ways of writing this.</p>
@@ -266,7 +267,7 @@ img.emoji {
 <p>Clearly the order of the numbers doesn&#8217;t matter, and we can choose 6 numbers from 49. This is \({_{49}C_6}\) which is:</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p align="center">\[\displaystyle \frac{49!}{6!(49-6)!}=\frac{49\times 48 \times 47 \times 46 \times 45 \times 44}{6!}=13983816 \ \ \ \ \\]</p>
+<p align="center">\[\displaystyle \frac{49!}{6!(49-6)!}=\frac{49\times 48 \times 47 \times 46 \times 45 \times 44}{6!}=13983816 \ \ \ \ \ \]</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>If you buy one lottery ticket, then the chances of you winning are 1 in 13983816, which is pretty terrible!</p>
@@ -280,7 +281,7 @@ img.emoji {
 <p>There is a very nice identity, which at first site might not seem very useful, but in fact it will help a lot with working out expressions of the form \({_nC_r}\). This is Pascal&#8217;s identity:</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p align="center">\[\displaystyle \left( \begin{array}{c} n \\ r \\ \end{array} \right)+\left( \begin{array}{c} n \\ r+1 \\ \end{array} \right)=\left( \begin{array}{c} n+1 \\ r+1 \\ \end{array} \right) \ \ \ \ \\]</p>
+<p align="center">\[\displaystyle \left( \begin{array}{c} n \\ r \\ \end{array} \right)+\left( \begin{array}{c} n \\ r+1 \\ \end{array} \right)=\left( \begin{array}{c} n+1 \\ r+1 \\ \end{array} \right) \ \ \ \ \ \]</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>We can prove this by starting with the left hand side:</p>
