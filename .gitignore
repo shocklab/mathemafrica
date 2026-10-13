@@ -5,3 +5,8 @@ __*
 venv/
 parse_authors.py
 scripts/
+
+# local project records (names and money; repo is public)
+facts-registry.md
+decision-log.md
+handoffs/
