@@ -12,8 +12,9 @@ Game B" and "Markov Chain for Switching randomly between A and B". Their
 recorded shapes, 300x87 and 300x73, are wide and short, which is a linear chain
 of the seven states -3..3 the text describes, with 3 and -3 absorbing.
 
-The post's arithmetic has one typo, "q_3 = 0.5*495 + 0.5*0.095", which is
-plainly 0.495; the value 0.295 it then quotes confirms that reading.
+The post's arithmetic had one typo, "q_3 = 0.5*495 + 0.5*0.095", which is
+plainly 0.495; the value 0.295 it then quotes confirms that reading. It was
+corrected on 2026-10-13.
 """
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -117,7 +118,7 @@ check("crude estimate for game B (post: about 0.53)",
 check("z0 for game B (post: about 0.47)", round(z0(p3, p12), 2), 0.47)
 check("  ... so game B is losing", z0(p3, p12) < 0.5, True)
 check("q12 (post: 0.62)", 0.5 * p + 0.5 * p12, 0.62)
-check("q3 (post: 0.295, its '0.5*495' being a typo for 0.495)",
+check("q3 (post: 0.5*0.495 + 0.5*0.095 = 0.295)",
       0.5 * p + 0.5 * p3, 0.295)
 check("z0 when switching randomly (post: about 0.53)",
       round(z0(0.5 * p + 0.5 * p3, 0.5 * p + 0.5 * p12), 2), 0.53)

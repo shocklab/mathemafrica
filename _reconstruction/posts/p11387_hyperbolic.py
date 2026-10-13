@@ -16,9 +16,8 @@ Two lost figures:
 The post's third lost image, l2.gif, is an animation of lines mapped under the
 cosine, and is left missing.
 
-One slip in the post, left as it is: it calls cosh and sinh "hypergeometric"
-cosine and sine. They are hyperbolic; hypergeometric functions are a different
-thing entirely.
+The post called cosh and sinh "hypergeometric" cosine and sine. They are
+hyperbolic, and the post was corrected to say so on 2026-10-13.
 """
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

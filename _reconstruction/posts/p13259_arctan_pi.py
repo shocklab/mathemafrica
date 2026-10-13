@@ -14,7 +14,8 @@ The post counts terms inclusively: its "number of terms = 10" is n running
 from 0 to 10, which is 11 terms. That reading is what reproduces its numbers,
 and it is checked below. Its 100-term and ten-million-term values then match
 to every digit printed; its 10-term value differs from the true sum in the
-tenth decimal, so there is a typo in the post there.
+tenth decimal. The post had 3.232315809505594 for 3.232315809405594, and was
+corrected on 2026-10-13.
 """
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

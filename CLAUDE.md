@@ -37,8 +37,7 @@ Done and pushed:
   `mathjax/` (see gotchas).
 - `og:url`, `og:image` and canonical made absolute under the github.io address
   by `_reconstruction/absolute_urls.py`.
-- Two slips in Jonathan's own posts corrected at his request: the ODE particular
-  solution on p=11480 and "y-axis" for "x-axis" on p=13193.
+- Seven slips in Jonathan's own posts corrected at his request (see below).
 
 Not done: the domain (below).
 
@@ -187,9 +186,19 @@ metadata. `figstyle.stamp` writes `figstyle.NOTE` into the PNG, JPEG or GIF
 without re-encoding it, and `rebuild_all.py` stamps every image a run writes.
 `figstyle.VISIBLE_MARK = True` would print it under the figure again.
 
-Other slips in the posts are recorded in the scripts' docstrings and left as
-written: p=11387 ("hypergeometric" for hyperbolic), p=12480, p=15794, p=13259
-(the 10-term value) and p=16848 ("0.5*495"). Correcting them is Jonathan's call.
+Slips in Jonathan's own posts are corrected in the HTML at his request
+(2026-10-13): p=11480, p=13193, p=11387, p=12480, p=15794, p=13259 and p=16848.
+Each script's docstring records what the post said before.
+
+### Repeatable output
+
+`rebuild_all.py` run twice gives byte-identical images; check that after any
+change to `figstyle`. Two things broke it before. Pillow's JPEG encoder (10.0.1
+in this environment) gives different bytes for the same pixels between runs,
+sometimes with a smudge along the last row, so `figstyle.save` writes JPEGs
+through macOS `sips`. And `G.subgraph()` in networkx orders nodes by string
+hash, which moves a seeded spring layout between runs; build graphs in a fixed
+order.
 
 ## Conventions
 

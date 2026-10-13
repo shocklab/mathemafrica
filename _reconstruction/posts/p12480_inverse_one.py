@@ -9,8 +9,8 @@ and green and red are the two halves. domains2-1.png then shows "the graphs
 above (dashed blue, green and red)" with their reflections in y=x solid and the
 line itself dashed black.
 
-The post has a small slip after the second figure, "the green and blue solid
-lines do", where it means green and red; nothing here depends on it.
+After the second figure the post said "the green and blue solid lines do",
+where it means green and red; it was corrected on 2026-10-13.
 """
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))

@@ -14,9 +14,9 @@ The post also prints a table of the proportion of p-values below 0.001, 0.005,
 non-central t power to within Monte Carlo error, which is what confirms this
 setup, and the re-run here is checked against that same theory.
 
-One slip in the post, worth knowing before reading it: the paragraph beginning
-"Consider figure 3 and the final column in the table" describes the mean of
-0.3, which is figure 4. Its arithmetic only works there. The typical p-value is
+The paragraph beginning "Consider figure 4 and the final column in the table"
+said "figure 3" until 2026-10-13, but it describes the mean of 0.3, which is
+figure 4. Its arithmetic only works there. The typical p-value is
 0.294 at mean 0.1 but 0.0556 at mean 0.3, and it is the latter the text calls
 "just over 0.05"; likewise 0.48 of experiments significant, and 0.1544/0.48 of
 those below 0.005, is "about half" and "one-third" for the 0.3 column alone.

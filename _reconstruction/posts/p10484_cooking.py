@@ -32,6 +32,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import itertools
 import matplotlib.pyplot as plt
 import networkx as nx
+import numpy as np
 from figstyle import BLUE, RED, save, check, paths_in
 
 P = paths_in("p=10484.html")
@@ -98,8 +99,16 @@ def draw(H, dest, figsize, triangle=None, seed=7):
 SUB = ["caramel", "pear", "apple", "cinnamon", "cardamom", "ginger",
        "coconut", "curry leaf", "chocolate", "vanilla", "clove", "orange",
        "nutmeg", "allspice"]
-H4 = G.subgraph(SUB).copy()
-draw(H4, P["foodgroups4.png"], (8.0, 4.5))
+# Of seeds 0-299, the widest node spacing among layouts where the two pairs
+# the post names, and the one leaf edge, pass under no other node (checked
+# below). A dense graph cannot keep every edge clear of every node.
+SEED4 = 77
+# built in a fixed order: G.subgraph() orders nodes by string hash, which
+# changes between runs and so moved the layout with every rebuild
+H4 = nx.Graph()
+H4.add_nodes_from(SUB)
+H4.add_edges_from((u, v) for u, v in G.edges() if u in SUB and v in SUB)
+draw(H4, P["foodgroups4.png"], (8.0, 4.5), seed=SEED4)
 
 # --- foodgroups2: a small graph whose only triangle is the recipe ---------
 H2 = nx.Graph([("mandarin", "nutmeg"), ("mandarin", "cinnamon"),
@@ -112,6 +121,24 @@ draw(H2, P["foodgroups2.png"], (6.4, 5.0),
 
 # --- what the post asserts ------------------------------------------------
 print("  p=10484 checks:")
+_pos = nx.spring_layout(H4, seed=SEED4, k=1.05)
+_xy = {n: np.array(_pos[n]) for n in SUB}
+_lo = np.min(list(_xy.values()), axis=0)
+_span = np.max(list(_xy.values()), axis=0) - _lo
+_in = {n: (_xy[n] - _lo) / _span * np.array([6.4, 3.6]) for n in SUB}  # inches
+
+
+def _clear(u, v):
+    a, b = _in[u], _in[v]
+    def d(p):
+        t = np.clip(np.dot(p - a, b - a) / np.dot(b - a, b - a), 0, 1)
+        return np.linalg.norm(p - (a + t * (b - a)))
+    return min(d(_in[n]) for n in SUB if n not in (u, v))
+
+
+for u, v in [("caramel", "pear"), ("coconut", "curry leaf")]:
+    check(f"the {u}-{v} edge passes under no other node",
+          _clear(u, v) > 0.45, True)
 check("caramel and pear go well together (post)",
       H4.has_edge("caramel", "pear"), True)
 check("coconut and curry leaf go well together (post)",

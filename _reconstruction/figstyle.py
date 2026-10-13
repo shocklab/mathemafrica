@@ -144,16 +144,37 @@ def save(fig, dest, dpi=110, mark=True):
                  fontsize=6.5, color="#9a9a9a")
     out = os.path.join(UPLOADS, dest)
     os.makedirs(os.path.dirname(out), exist_ok=True)
-    if out.lower().endswith(".gif"):
-        # matplotlib has no GIF writer; a few archived stills are named .gif
+    if out.lower().endswith((".gif", ".jpg", ".jpeg")):
+        # Render to PNG and let Pillow encode: matplotlib has no GIF writer.
+        # Plots holding inf or nan (tan at its asymptotes, a 3D surface with
+        # zero-length normals) can leave a stray pixel in the bottom-right
+        # corner, which JPEG smears into a smudge and which varies from run
+        # to run. The outer pixels are padding, so they are set to white.
         import io
-        from PIL import Image
+        from PIL import Image, ImageDraw
         buf = io.BytesIO()
         fig.savefig(buf, format="png", dpi=dpi, facecolor="white",
                     bbox_inches="tight", pad_inches=0.18)
         buf.seek(0)
-        Image.open(buf).convert("RGB").convert(
-            "P", palette=Image.ADAPTIVE).save(out)
+        im = Image.open(buf).convert("RGB")
+        w, h = im.size
+        ImageDraw.Draw(im).rectangle([0, 0, w - 1, h - 1], outline="white",
+                                     width=2)
+        if out.lower().endswith(".gif"):
+            im.convert("P", palette=Image.ADAPTIVE).save(out)
+        else:
+            # Pillow's JPEG encoder (10.0.1 here) gives different bytes for the
+            # same pixels from run to run, sometimes with a smudge along the
+            # last row. macOS's own encoder is repeatable, so it writes JPEGs.
+            import subprocess
+            import tempfile
+            with tempfile.TemporaryDirectory() as tmp:
+                png = os.path.join(tmp, "f.png")
+                im.save(png)
+                subprocess.run(["sips", "-s", "format", "jpeg",
+                                "-s", "formatOptions", "90", png,
+                                "--out", out],
+                               check=True, capture_output=True)
     else:
         fig.savefig(out, dpi=dpi, facecolor="white",
                     bbox_inches="tight", pad_inches=0.18)
@@ -367,6 +388,8 @@ def cases(lhs, rows, dest, fontsize=17, dpi=130, gap=18, row_pt=40,
     os.makedirs(os.path.dirname(out), exist_ok=True)
     fig.savefig(out, dpi=dpi, facecolor="white")
     plt.close(fig)
+    if mark:
+        stamp(out)
     return out
 
 
@@ -478,6 +501,8 @@ def display(expr, dest, fontsize=19, dpi=130, pad=16, mark=True):
     os.makedirs(os.path.dirname(out), exist_ok=True)
     fig.savefig(out, dpi=dpi, facecolor="white")
     plt.close(fig)
+    if mark:
+        stamp(out)
     return out
 
 
@@ -533,6 +558,8 @@ def table(headers, rows, dest, fontsize=15, dpi=130, pad=16, col_gap=26,
     os.makedirs(os.path.dirname(out), exist_ok=True)
     fig.savefig(out, dpi=dpi, facecolor="white")
     plt.close(fig)
+    if mark:
+        stamp(out)
     return out
 
 
@@ -625,4 +652,6 @@ def stack(lines, dest, fontsize=17, dpi=130, pad=16, gap=14, mark=True,
     os.makedirs(os.path.dirname(out), exist_ok=True)
     fig.savefig(out, dpi=dpi, facecolor="white")
     plt.close(fig)
+    if mark:
+        stamp(out)
     return out
