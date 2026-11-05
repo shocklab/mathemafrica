@@ -2,7 +2,7 @@
 
 A static reconstruction of [mathemafrica.org](http://mathemafrica.org), the maths
 blog that ran from 2014 to 2018 and was lost when its server stopped being paid
-for. Live at **https://shocklab.github.io/mathemafrica/**.
+for. Live at **https://mathemafrica.org/**.
 
 ## Provenance
 
@@ -70,9 +70,10 @@ The original site was WordPress with query permalinks, so pages were addressed a
 - The `og:url`, `og:image` and canonical tags are absolute, so link previews
   and search engines resolve them.
 
-## Putting mathemafrica.org back in front of it
+## Domain
 
-At the DNS host for the domain:
+GitHub Pages serves this repository at mathemafrica.org, named in the `CNAME`
+file. The domain's DNS records are:
 
     @      A      185.199.108.153
     @      A      185.199.109.153
@@ -84,9 +85,8 @@ At the DNS host for the domain:
     @      AAAA   2606:50c0:8003::153
     www    CNAME  shocklab.github.io.
 
-and in this repository, add a `CNAME` file containing `mathemafrica.org`, then
-enable HTTPS in the repository's Pages settings once the certificate is issued.
-Finally point the sharing tags at the domain:
+The sharing tags carry the domain. If the site moves, rerun the script with the
+new address:
 
     python3 _reconstruction/absolute_urls.py https://mathemafrica.org/
 
